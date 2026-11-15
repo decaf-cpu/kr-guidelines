@@ -33,7 +33,7 @@
   },
   "kasl": {
    "id": "kasl",
-   "run_at": "2026-11-15T21:00:21+09:00",
+   "run_at": "2026-11-16T07:48:28+09:00",
    "boards": [
     {
      "url": "https://www.kasl.org/bbs/?code=guide",
@@ -48,12 +48,12 @@
     }
    ],
    "error": null,
-   "file_dates": 3,
+   "file_dates": 0,
    "ok": true
   },
   "kasid": {
    "id": "kasid",
-   "run_at": "2026-11-15T21:00:21+09:00",
+   "run_at": "2026-11-16T07:48:28+09:00",
    "boards": [
     {
      "url": "https://www.kasid.org/academic/education/guide/01",
@@ -73,22 +73,22 @@
   },
   "kchugr": {
    "id": "kchugr",
-   "run_at": "2026-11-15T21:00:21+09:00",
+   "run_at": "2026-11-16T07:48:28+09:00",
    "boards": [
     {
      "url": "https://www.hpylori.or.kr/content/education/guide.php",
      "name": "가이드라인",
      "source": "config",
-     "pages": 0,
+     "pages": 1,
      "rows": 0,
      "matched": 0,
      "new": 0,
      "members_only": 0,
-     "error": "목록 접속 실패"
+     "error": null
     }
    ],
    "error": "게시판은 열렸으나 진료지침 항목 0건 (파서 설정 확인 필요)",
-   "file_dates": 5,
+   "file_dates": 0,
    "ok": false
   },
   "ksnm": {
@@ -105,7 +105,7 @@
   },
   "ksc": {
    "id": "ksc",
-   "run_at": "2026-11-15T21:00:24+09:00",
+   "run_at": "2026-11-16T07:48:30+09:00",
    "boards": [
     {
      "url": "https://www.circulation.or.kr/bbs/?code=guide",
@@ -137,7 +137,7 @@
   },
   "klcs": {
    "id": "klcs",
-   "run_at": "2026-11-15T21:00:21+09:00",
+   "run_at": "2026-11-16T07:48:28+09:00",
    "boards": [
     {
      "url": "https://www.livercancer.or.kr/html/?pmode=guidelines",
@@ -157,7 +157,7 @@
   },
   "khrs": {
    "id": "khrs",
-   "run_at": "2026-11-15T21:00:25+09:00",
+   "run_at": "2026-11-16T07:48:31+09:00",
    "boards": [
     {
      "url": "https://www.k-hrs.org/expert/guide/atrial",
@@ -240,7 +240,7 @@
   },
   "ksola": {
    "id": "ksola",
-   "run_at": "2026-11-15T21:00:27+09:00",
+   "run_at": "2026-11-16T07:48:32+09:00",
    "boards": [
     {
      "url": "https://www.lipid.or.kr/reference/guideline.php",
@@ -260,27 +260,27 @@
   },
   "kta": {
    "id": "kta",
-   "run_at": "2026-11-15T21:00:28+09:00",
+   "run_at": "2026-11-16T07:48:34+09:00",
    "boards": [
     {
      "url": "https://www.thyroid.kr/board/list.html?code=c_guide",
      "name": "진료지침",
      "source": "config",
-     "pages": 1,
-     "rows": 0,
-     "matched": 0,
+     "pages": 2,
+     "rows": 18,
+     "matched": 18,
      "new": 0,
      "members_only": 0,
      "error": null
     }
    ],
-   "error": "게시판은 열렸으나 진료지침 항목 0건 (파서 설정 확인 필요)",
+   "error": null,
    "file_dates": 0,
-   "ok": false
+   "ok": true
   },
   "kda": {
    "id": "kda",
-   "run_at": "2026-11-15T21:00:27+09:00",
+   "run_at": "2026-11-16T07:48:34+09:00",
    "boards": [
     {
      "url": "https://www.diabetes.or.kr/bbs/?code=guide",
@@ -379,7 +379,7 @@
   },
   "ksn": {
    "id": "ksn",
-   "run_at": "2026-11-15T21:00:30+09:00",
+   "run_at": "2026-11-16T07:48:35+09:00",
    "boards": [
     {
      "url": "https://ksn.or.kr/bbs/?code=guideline_k",
@@ -399,7 +399,7 @@
   },
   "kattd": {
    "id": "kattd",
-   "run_at": "2026-11-15T21:00:31+09:00",
+   "run_at": "2026-11-16T07:48:35+09:00",
    "boards": [
     {
      "url": "https://new.lungkorea.org/board/guide",
@@ -419,7 +419,7 @@
   },
   "ksh": {
    "id": "ksh",
-   "run_at": "2026-11-15T21:00:24+09:00",
+   "run_at": "2026-11-16T07:48:31+09:00",
    "boards": [
     {
      "url": "https://www.koreanhypertension.org/reference/guide",
@@ -444,23 +444,23 @@
   },
   "ksid": {
    "id": "ksid",
-   "run_at": "2026-11-15T21:00:34+09:00",
+   "run_at": "2026-11-16T07:48:39+09:00",
    "boards": [
     {
      "url": "https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do",
      "name": "감염 질환별 가이드라인",
      "source": "config",
-     "pages": 1,
-     "rows": 0,
-     "matched": 0,
+     "pages": 2,
+     "rows": 29,
+     "matched": 29,
      "new": 0,
      "members_only": 0,
      "error": null
     }
    ],
-   "error": "게시판은 열렸으나 진료지침 항목 0건 (파서 설정 확인 필요)",
+   "error": null,
    "file_dates": 0,
-   "ok": false
+   "ok": true
   },
   "kcr": {
    "id": "kcr",
@@ -519,27 +519,27 @@
   },
   "ksmo": {
    "id": "ksmo",
-   "run_at": "2026-11-15T21:00:35+09:00",
+   "run_at": "2026-11-16T07:48:39+09:00",
    "boards": [
     {
      "url": "https://www.ksmo.or.kr/Pages/Publication/publication03.aspx",
      "name": "의료인을 위한 지침서",
      "source": "config",
      "pages": 1,
-     "rows": 12,
-     "matched": 12,
+     "rows": 3,
+     "matched": 3,
      "new": 0,
      "members_only": 0,
      "error": null
     }
    ],
    "error": null,
-   "file_dates": 8,
+   "file_dates": 0,
    "ok": true
   },
   "kpba": {
    "id": "kpba",
-   "run_at": "2026-11-15T21:00:21+09:00",
+   "run_at": "2026-11-16T07:48:28+09:00",
    "boards": [
     {
      "url": "https://www.kpba.kr/html/?pmode=guideline",
@@ -564,7 +564,7 @@
   },
   "ksg": {
    "id": "ksg",
-   "run_at": "2026-11-15T21:00:21+09:00",
+   "run_at": "2026-11-16T07:48:28+09:00",
    "boards": [
     {
      "url": "https://gastrokorea.org/bbs2/index.php?code=guide2",
@@ -595,15 +595,15 @@
   },
   "kaaaci": {
    "id": "kaaaci",
-   "run_at": "2026-11-15T21:27:22+09:00",
+   "run_at": "2026-11-16T07:48:37+09:00",
    "boards": [
     {
      "url": "https://www.allergy.or.kr/board/treatment?gubun=1",
      "name": "진료지침",
      "source": "discovered",
-     "pages": 6,
-     "rows": 49,
-     "matched": 47,
+     "pages": 2,
+     "rows": 30,
+     "matched": 30,
      "new": 0,
      "members_only": 0,
      "error": null
@@ -721,7 +721,7 @@
   },
   "kapard": {
    "id": "kapard",
-   "run_at": "2026-11-15T22:25:25+09:00",
+   "run_at": "2026-11-16T07:48:41+09:00",
    "boards": [
     {
      "url": "https://www.kapard.or.kr/community/guide.php",
@@ -730,13 +730,13 @@
      "pages": 1,
      "rows": 16,
      "matched": 16,
-     "new": 16,
+     "new": 0,
      "members_only": 0,
      "error": null
     }
    ],
    "error": null,
-   "file_dates": 8,
+   "file_dates": 0,
    "ok": true
   },
   "kspc": {
@@ -805,7 +805,7 @@
   },
   "ksmfm": {
    "id": "ksmfm",
-   "run_at": "2026-11-15T22:56:29+09:00",
+   "run_at": "2026-11-16T07:48:43+09:00",
    "boards": [
     {
      "url": "https://www.ksmfm.or.kr/workshop_pds/guide.php",
@@ -814,13 +814,13 @@
      "pages": 1,
      "rows": 5,
      "matched": 5,
-     "new": 5,
+     "new": 0,
      "members_only": 0,
      "error": null
     }
    ],
    "error": null,
-   "file_dates": 4,
+   "file_dates": 0,
    "ok": true
   },
   "ksfp": {
@@ -998,6 +998,6 @@
    "ok": false
   }
  },
- "updated": "2026-11-15T22:57:09+09:00",
- "requests": 21
+ "updated": "2026-11-16T07:49:03+09:00",
+ "requests": 84
 }
