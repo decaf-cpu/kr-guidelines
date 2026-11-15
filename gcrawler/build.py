@@ -84,6 +84,24 @@ def fix_dates(items: list[dict]) -> list[dict]:
     return out
 
 
+def society_boards(socs_list: list[dict], status: dict, discovered: dict) -> dict[str, str]:
+    """학회별 진료지침 게시판 주소: 설정한 게시판 → 실제 수집된 게시판 → 자동 탐색 후보 → 홈페이지."""
+    out = {}
+    for s in socs_list:
+        url = None
+        if s.get("boards"):
+            url = s["boards"][0]["url"]
+        if not url:
+            rec = (status.get("societies") or {}).get(s["id"]) or {}
+            ok = [b["url"] for b in rec.get("boards", []) if not b.get("error") and b.get("matched")]
+            url = ok[0] if ok else None
+        if not url:
+            cands = (discovered.get(s["id"]) or {}).get("candidates") or []
+            url = cands[0]["url"] if cands else None
+        out[s["id"]] = url or s.get("homepage")
+    return out
+
+
 def load_overrides() -> list[dict]:
     import yaml
 
@@ -105,7 +123,9 @@ def apply_overrides(items: list[dict], overrides: list[dict]) -> list[dict]:
     return out
 
 
-def merge_items(items: list[dict], socs: dict[str, dict], overrides: list[dict] | None = None) -> list[dict]:
+def merge_items(items: list[dict], socs: dict[str, dict], overrides: list[dict] | None = None,
+                boards: dict[str, str] | None = None) -> list[dict]:
+    boards = boards or {}
     items = apply_overrides(fix_dates(items), overrides or [])
     groups: dict[str, dict] = {}
     for it in items:
@@ -125,9 +145,14 @@ def merge_items(items: list[dict], socs: dict[str, dict], overrides: list[dict] 
             if all(f.get("url") != url for f in files):
                 files.insert(0, {"name": it["title"], "url": url, "kind": (re.search(r"\.(pdf|hwp|hwpx|docx?|pptx?)", url, re.I) or [None, "file"])[1].lower()})
             url = it["board"]
+        main = boards.get(it["society"])
+        ib = it.get("board")
+        # 학회명 링크: 그 지침이 실린 진료지침 게시판 (같은 게시판의 분류·쪽 주소면 게시판 첫 화면)
+        board = main if not ib or (main and ib.startswith(main.split("#")[0])) else ib
         src = {
             "society": it["society"],
             "url": url,
+            "board": board or (soc.get("homepage") if soc else None),
             "board_name": it.get("board_name"),
             "attachments": files[:6],
             "link_resolved": it.get("link_resolved", True),
@@ -208,7 +233,8 @@ def build(base_url: str = "./") -> dict:
     manual, manual_errors = load_manual(socs)
     for m in manual:
         m["first_seen"] = m["first_seen"] or (doc.get("updated") or "")[:10] or None
-    items = merge_items(doc.get("items", []) + manual, socs, load_overrides())
+    boards = society_boards(socs_list, status, load_json(DATA / "discovered.json", {}))
+    items = merge_items(doc.get("items", []) + manual, socs, load_overrides(), boards)
     hidden = sum(1 for it in doc.get("items", []) if it.get("access") == "members")
 
     if OUT.exists():
@@ -222,7 +248,8 @@ def build(base_url: str = "./") -> dict:
         {
             "taxonomy": load_taxonomy(),
             "societies": [
-                {k: s.get(k) for k in ("id", "name", "short", "homepage", "group", "specialty", "division", "enabled", "note", "manual")}
+                {**{k: s.get(k) for k in ("id", "name", "short", "homepage", "group", "specialty", "division", "enabled", "note", "manual")},
+                 "board": boards.get(s["id"]) if s.get("enabled", True) or s.get("manual") else s.get("homepage")}
                 for s in socs_list
             ],
         },
