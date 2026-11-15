@@ -73,7 +73,7 @@ def fix_dates(items: list[dict]) -> list[dict]:
         d, prec = it.get("date"), it.get("date_precision")
         ty = year_from_title(it.get("title", ""))
         if d and prec == "day" and (it.get("society"), d) in bulk:
-            it["posted"] = d
+            # 일괄 등록일(사이트 이전일)은 실제 게시일이 아니므로 '게시'로 표시하지 않는다
             fd = it.get("file_date")
             if ty:
                 it.update(date=ty[0], date_precision=ty[1], date_source="title")
