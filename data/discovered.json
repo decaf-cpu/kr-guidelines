@@ -43,18 +43,21 @@
  },
  "kshf": {
   "checked": "2026-11-15",
+  "homepage": "https://www.kshf.or.kr/main.php",
   "ok": false,
   "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
   "candidates": []
  },
  "klcs": {
   "checked": "2026-11-15",
+  "homepage": "https://www.klcs.or.kr",
   "ok": false,
-  "error": "홈페이지 접속 실패",
+  "error": "홈페이지 접속 실패 (해외 접속 차단·주소 오류 가능)",
   "candidates": []
  },
  "ksh": {
   "checked": "2026-11-15",
+  "homepage": "https://www.koreanhypertension.org",
   "ok": true,
   "candidates": [
    {
@@ -66,12 +69,19 @@
  },
  "khrs": {
   "checked": "2026-11-15",
-  "ok": false,
-  "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
-  "candidates": []
+  "homepage": "https://www.k-hrs.org/main",
+  "ok": true,
+  "candidates": [
+   {
+    "url": "https://www.k-hrs.org/expert/guide/atrial",
+    "label": "부정맥 진료지침",
+    "score": 5
+   }
+  ]
  },
  "kscvi": {
   "checked": "2026-11-15",
+  "homepage": "https://www.kscvi.org",
   "ok": false,
   "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
   "candidates": []
@@ -145,6 +155,7 @@
  },
  "kaaaci": {
   "checked": "2026-11-15",
+  "homepage": "https://www.allergy.or.kr",
   "ok": true,
   "candidates": [
    {
@@ -173,6 +184,7 @@
  },
  "ksat": {
   "checked": "2026-11-15",
+  "homepage": "https://www.ksat.or.kr",
   "ok": false,
   "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
   "candidates": []
@@ -195,20 +207,23 @@
  },
  "ksh-hema": {
   "checked": "2026-11-15",
+  "homepage": "https://www.hematology.or.kr/main/main.html",
   "ok": false,
   "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
   "candidates": []
  },
  "kgs": {
   "checked": "2026-11-15",
+  "homepage": "https://www.geriatrics.or.kr/index.php",
   "ok": false,
   "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
   "candidates": []
  },
  "kpba": {
   "checked": "2026-11-15",
+  "homepage": "https://www.kpba.or.kr",
   "ok": false,
-  "error": "홈페이지 접속 실패",
+  "error": "홈페이지 접속 실패 (해외 접속 차단·주소 오류 가능)",
   "candidates": []
  }
 }
