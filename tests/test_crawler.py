@@ -494,3 +494,7 @@ def test_label_year_from_category_label():
     row = parse_row(el, base, {"label_year": True})
     assert row is not None and row.label_year == "2024"
     assert parse_row(el, base, {}).label_year is None  # 설정한 게시판에서만
+    # 연도가 분류명 밖 텍스트로 붙은 형태, 목록 태그가 dt인 형태
+    for label in ('<span class="cate"><em>COVID-19 진료지침</em> 2024</span>', '<dl><dt>COVID-19 진료지침 2024</dt></dl>'):
+        el2 = BeautifulSoup(html.replace('<span class="cate">COVID-19 진료지침 2024</span>', label), "lxml").li
+        assert parse_row(el2, base, {"label_year": True}).label_year == "2024"

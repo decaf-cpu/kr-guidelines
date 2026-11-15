@@ -276,11 +276,11 @@ def parse_row(el: Tag, base_url: str, cfg: dict | None = None) -> Row | None:
     label_year = None
     if cfg.get("label_year"):
         this_year = dt.date.today().year
-        for c in el.find_all(["span", "em", "div", "p", "td", "dd", "strong", "b"]):
-            if c.find("a") is not None or c.find(["span", "em", "div", "p", "strong", "b"]) is not None:
+        for c in el.find_all(True):  # 문서 순서 — 분류 표시는 보통 제목보다 앞에 있음
+            if c.name in ("a", "script", "style"):
                 continue
             t = clean(c.get_text(" "))
-            if t == title or len(t) > 40:
+            if len(t) > 40 or not t or t == title or (title and title in t):
                 continue
             m = re.fullmatch(r"\D.{0,35}?\s((?:19|20)\d{2})", t)
             if m and 1990 <= int(m.group(1)) <= this_year:
