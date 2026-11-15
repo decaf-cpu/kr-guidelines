@@ -83,7 +83,10 @@ def canonical_url(url: str) -> str:
     q = [(k, v) for k, v in parse_qsl(p.query, keep_blank_values=True) if v != "" and k.lower() not in _VOLATILE_PARAMS]
     q.sort()
     netloc = p.netloc.lower()
-    return urlunparse((p.scheme.lower(), netloc, p.path or "/", "", urlencode(q, doseq=True), ""))
+    if netloc.startswith("www."):
+        netloc = netloc[4:]
+    scheme = "https" if p.scheme.lower() in ("http", "https") else p.scheme.lower()
+    return urlunparse((scheme, netloc, p.path or "/", "", urlencode(q, doseq=True), ""))
 
 
 def set_query_param(url: str, key: str, value: str) -> str:
@@ -254,6 +257,24 @@ def _dedupe(rows: list[Row]) -> list[Row]:
     return out
 
 
+def _sibling_groups(soup: BeautifulSoup, min_size: int = 3) -> list[list[Tag]]:
+    groups = []
+    for parent in soup.find_all(True):
+        if parent.name in {"html", "head", "select", "script", "style"} or _in_nav(parent):
+            continue
+        kids = [c for c in parent.find_all(recursive=False) if isinstance(c, Tag)]
+        if len(kids) < min_size:
+            continue
+        by_tag: dict[str, list[Tag]] = {}
+        for c in kids:
+            if c.find("a") is not None or c.name == "a":
+                by_tag.setdefault(c.name, []).append(c)
+        for tag, els in by_tag.items():
+            if tag != "a" and len(els) >= min_size:
+                groups.append(els)
+    return groups[:200]
+
+
 def extract_rows(html: str, base_url: str, cfg: dict | None = None) -> list[Row]:
     cfg = cfg or {}
     soup = BeautifulSoup(html, "lxml")
@@ -266,6 +287,7 @@ def extract_rows(html: str, base_url: str, cfg: dict | None = None) -> list[Row]
 
     candidate_sets = {
         "tr": [el for el in soup.find_all("tr") if not _in_nav(el)],
+        "dl": [el for el in soup.find_all("dl") if not _in_nav(el) and not el.find("dl")],
         "li": [el for el in soup.find_all("li") if not _in_nav(el) and not el.find("li")],
         "div": [
             el
@@ -273,6 +295,9 @@ def extract_rows(html: str, base_url: str, cfg: dict | None = None) -> list[Row]
             if not _in_nav(el)
         ],
     }
+    # 같은 부모 아래 같은 태그가 3번 이상 반복되고 각자 링크를 가진 묶음 = 게시판 행일 가능성
+    for i, group in enumerate(_sibling_groups(soup)):
+        candidate_sets[f"sib{i}"] = group
     best_rows: list[Row] = []
     best_score = 0.0
     for els in candidate_sets.values():
@@ -291,39 +316,80 @@ def extract_rows(html: str, base_url: str, cfg: dict | None = None) -> list[Row]
     return extract_links_fallback(soup, base_url)
 
 
+GENERIC_LINK = re.compile(
+    r"^\s*(\[?\s*(전문|간략본|요약본|요약|국문|영문|한글|원문|본문|첨부|첨부\s*파일|파일|pdf|hwp|ppt|자료)?\s*"
+    r"(보기|다운로드|다운|download|열기|바로\s*가기|view|link|click)?\s*\]?\s*)+$",
+    re.I,
+)
+
+
+def _context_title(a: Tag) -> str:
+    """'전문보기' 같은 링크면 가까운 블록의 제목다운 글자를 찾는다."""
+    own = clean(a.get_text(" "))
+    for parent in a.parents:
+        if not isinstance(parent, Tag) or parent.name in {"body", "html"}:
+            break
+        # 같은 블록 안의 제목 요소 우선
+        head = parent.find(["h1", "h2", "h3", "h4", "h5", "h6", "strong", "dt", "th", "b"])
+        if head is not None and len(clean(head.get_text(" "))) >= 4 and not GENERIC_LINK.match(clean(head.get_text(" "))):
+            return clean(head.get_text(" "))
+        text = clean(parent.get_text(" "))
+        # 블록 안 다른 링크 문구(전문보기·간략본보기 등)를 지운 나머지
+        for x in parent.find_all("a"):
+            t = clean(x.get_text(" "))
+            if t and GENERIC_LINK.match(t):
+                text = text.replace(t, " ")
+        text = clean(text)
+        if len(text) >= 6:
+            return text[:200] if len(text) <= 200 else ""
+        if len(text) > 200:
+            break
+    # 앞쪽 형제 요소의 글자
+    prev = a.find_previous(string=lambda x: x and len(x.strip()) >= 6)
+    return clean(prev)[:200] if prev else own
+
+
 def extract_links_fallback(soup: BeautifulSoup, base_url: str) -> list[Row]:
-    """게시판이 아닌 정적 페이지(지침 PDF 링크 나열)용: 본문 첨부 링크를 그대로 항목으로."""
-    rows = []
+    """게시판이 아닌 정적 페이지(지침 PDF 링크 나열)용: 본문 첨부 링크를 항목으로.
+    같은 제목에 딸린 여러 파일(전문·요약본 등)은 한 항목의 첨부로 묶는다."""
+    by_title: dict[str, Row] = {}
     for a in soup.find_all("a"):
         href = (a.get("href") or "").strip()
         if not href or href.lower().startswith(("javascript", "#")) or _in_nav(a):
             continue
         if not is_attachment(a, href):
             continue
-        title = clean(a.get_text(" ")) or clean(a.get("title"))
-        if len(title) < 4 or re.fullmatch(r"(pdf|hwp|다운로드|download|첨부\s*파일|파일)", title, re.I):
-            # 링크 글자가 '다운로드' 뿐이면 같은 블록의 글을 제목으로
-            parent = a.find_parent(["li", "tr", "p", "div", "dd"])
-            title = clean(parent.get_text(" ")) if parent else title
+        label = clean(a.get_text(" ")) or clean(a.get("title"))
+        img = a.find("img")
+        if not label and img is not None:
+            label = clean(img.get("alt"))
+        title = label
+        if len(title) < 4 or GENERIC_LINK.match(title):
+            title = _context_title(a)
         if len(title) < 4:
             continue
         u = urljoin(base_url, href)
-        date = find_date(title)
-        rows.append(
-            Row(
-                title=title[:300],
-                url=u,
-                date=date[0] if date else None,
-                date_precision=date[1] if date else None,
-                attachments=[{"name": title[:200], "url": u, "kind": attachment_kind(title, u)}],
+        att = {"name": label or title[:200], "url": u, "kind": attachment_kind(label + " " + title, u)}
+        row = by_title.get(title)
+        if row is None:
+            date = find_date(title)
+            by_title[title] = Row(
+                title=title[:300], url=u,
+                date=date[0] if date else None, date_precision=date[1] if date else None,
+                attachments=[att],
             )
-        )
-    return _dedupe(rows)
+        elif all(x["url"] != u for x in row.attachments):
+            row.attachments.append(att)
+    return list(by_title.values())
 
 
 # ── 페이지 이동 ──────────────────────────────────
-def detect_page_param(html: str, base_url: str, forced: str | None = None) -> tuple[str, str] | None:
-    """'2' 링크를 찾아 페이지 파라미터 이름과 2쪽 URL을 돌려준다."""
+OFFSET_PARAMS = re.compile(r"^(offset|start|startrow|start_row|from|first|pos|row|startnum|start_num|limit_start)$", re.I)
+
+
+def detect_page_param(html: str, base_url: str, forced: str | None = None) -> tuple | None:
+    """'2' 링크를 찾아 (페이지 파라미터 이름, 2쪽 URL, 간격)을 돌려준다.
+    간격이 None이면 페이지 번호 방식, 숫자면 offset 방식(2쪽 = offset 간격)."""
     soup = BeautifulSoup(html, "lxml")
     for a in soup.find_all("a", href=True):
         if clean(a.get_text()) != "2":
@@ -334,23 +400,27 @@ def detect_page_param(html: str, base_url: str, forced: str | None = None) -> tu
         u = urljoin(base_url, href)
         q = dict(parse_qsl(urlparse(u).query, keep_blank_values=True))
         if forced and q.get(forced) == "2":
-            return forced, u
+            return forced, u, None
         for name in PAGE_PARAM_CANDIDATES:
             for k, v in q.items():
                 if k.lower() == name.lower() and v == "2":
-                    return k, u
+                    return k, u, None
+        for k, v in q.items():
+            if OFFSET_PARAMS.match(k) and v.isdigit() and int(v) > 1:
+                return k, u, int(v)
     if forced:
-        return forced, set_query_param(base_url, forced, "2")
+        return forced, set_query_param(base_url, forced, "2"), None
     return None
 
 
-def page_urls(first_url: str, page2: tuple[str, str] | None, max_pages: int) -> list[str]:
+def page_urls(first_url: str, page2: tuple | None, max_pages: int) -> list[str]:
     urls = [first_url]
     if not page2 or max_pages <= 1:
         return urls
-    param, template = page2
+    param, template = page2[0], page2[1]
+    step = page2[2] if len(page2) > 2 else None
     for n in range(2, max_pages + 1):
-        urls.append(set_query_param(template, param, str(n)))
+        urls.append(set_query_param(template, param, str(step * (n - 1) if step else n)))
     return urls
 
 

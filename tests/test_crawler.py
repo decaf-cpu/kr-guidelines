@@ -195,3 +195,39 @@ def test_per_host_delay_under_threads():
     a = sorted(stamps["a"])
     assert all(y - x >= 0.19 for x, y in zip(a, a[1:]))  # 같은 사이트: 간격 보장
     assert stamps["b"][0] - t0 < 0.1                    # 다른 사이트: 기다리지 않음
+
+
+def test_generic_link_titles_and_merge():
+    from gcrawler.parse import extract_rows
+    html_ = """<html><body><div class="content"><ul>
+    <li><strong>한국 위암 진료 가이드라인 2024</strong> <a href="/file/gastric2024.pdf">전문보기</a> <a href="/file/gastric2024_s.pdf">간략본보기</a></li>
+    <li><strong>간외 담관암 진료 가이드라인</strong> <a href="/file/bile.pdf">전문보기</a></li>
+    </ul></div></body></html>"""
+    rows = extract_rows(html_, "https://www.ksmo.or.kr/Pages/Publication/publication03.aspx")
+    titles = {r.title: r for r in rows}
+    assert "한국 위암 진료 가이드라인 2024" in titles
+    assert len(titles["한국 위암 진료 가이드라인 2024"].attachments) == 2
+    assert "간외 담관암 진료 가이드라인" in titles
+
+
+def test_fix_dates():
+    from gcrawler.build import fix_dates
+    items = [{"society": "x", "title": f"지침 {i}", "date": "2020-02-01", "date_precision": "day"} for i in range(6)]
+    items.append({"society": "x", "title": "주사용 조영제 지침(2016년 제2판)", "date": "2020-02-01", "date_precision": "day"})
+    items.append({"society": "y", "title": "2000년 제1판 고혈압 진료지침", "date": "2026-05-08", "date_precision": "day"})
+    items.append({"society": "y", "title": "2026년 제6판 고혈압 진료지침", "date": "2026-05-22", "date_precision": "day"})
+    out = {it["title"]: it for it in fix_dates(items)}
+    assert out["지침 0"]["date_source"] == "bulk"
+    assert out["주사용 조영제 지침(2016년 제2판)"]["date"] == "2016"
+    assert out["2000년 제1판 고혈압 진료지침"]["date"] == "2000"
+    assert out["2026년 제6판 고혈압 진료지침"]["date"] == "2026-05-22"
+
+
+def test_discovery_img_alt_and_frames():
+    from gcrawler.discover import find_candidates, redirects
+    h = '<ul class="depth2"><li><a href="/sub0401.php"><img src="m.gif" alt="진료지침"></a></li></ul>'
+    assert find_candidates(h, "https://www.a.or.kr/main.php", "https://www.a.or.kr/")[0]["url"] == "https://www.a.or.kr/sub0401.php"
+    fs = '<html><frameset><frame src="/main/index.php"></frameset></html>'
+    assert redirects(fs, "https://www.a.or.kr/") == ["https://www.a.or.kr/main/index.php"]
+    mr = '<html><head><meta http-equiv="refresh" content="0; url=/kor/"></head></html>'
+    assert redirects(mr, "https://www.a.or.kr/") == ["https://www.a.or.kr/kor/"]

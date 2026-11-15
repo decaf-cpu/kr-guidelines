@@ -66,9 +66,29 @@ class Store:
     def __init__(self):
         self.path = DATA / "guidelines.json"
         doc = load_json(self.path, {"items": []})
-        self.items: dict[str, dict] = {it["id"]: it for it in doc.get("items", [])}
+        self.items: dict[str, dict] = {}
+        for it in doc.get("items", []):
+            self._absorb(it)
         self.new_ids: set[str] = set()
         self._lock = threading.Lock()
+
+    def _absorb(self, it: dict) -> None:
+        """주소 정규화 규칙이 바뀌어도 같은 글이 두 번 저장되지 않게 id를 다시 계산해 합친다."""
+        from .parse import canonical_url
+
+        canon = canonical_url(it["url"]) if it.get("url") and it.get("link_resolved", True) else None
+        iid = item_id(it.get("society", ""), canon, it.get("title", ""), it.get("board", ""))
+        it["id"] = iid
+        old = self.items.get(iid)
+        if old is None:
+            self.items[iid] = it
+            return
+        keep, other = (old, it) if (old.get("first_seen") or "9") <= (it.get("first_seen") or "9") else (it, old)
+        for k, v in other.items():
+            keep.setdefault(k, v)
+        if keep.get("access") == "unknown" and other.get("access") not in (None, "unknown"):
+            keep["access"] = other["access"]
+        self.items[iid] = keep
 
     def get(self, iid: str) -> dict | None:
         return self.items.get(iid)

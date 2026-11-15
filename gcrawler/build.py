@@ -8,6 +8,9 @@ from email.utils import format_datetime
 from pathlib import Path
 from xml.sax.saxutils import escape
 
+from collections import Counter
+
+from .parse import year_from_title
 from .store import DATA, ROOT, load_json, load_societies, load_taxonomy, save_json
 
 SITE_SRC = ROOT / "site"
@@ -19,7 +22,43 @@ def norm_title(t: str) -> str:
     return _NORM.sub("", (t or "").lower())
 
 
+def fix_dates(items: list[dict]) -> list[dict]:
+    """게시일이 발행 시점을 반영하지 못하는 경우를 바로잡는다.
+    - 일괄 등록: 한 학회에서 같은 날짜가 5건 이상·25% 이상이면 사이트 이전 등으로 한꺼번에 올린 날짜로 간주
+    - 옛 지침 재게시: 제목 연도가 게시 연도보다 2년 이상 이르면 제목 연도를 발행연도로
+    원래 게시일은 posted에 남긴다."""
+    by_soc: dict[str, Counter] = {}
+    totals: Counter = Counter()
+    for it in items:
+        totals[it.get("society")] += 1
+        if it.get("date_precision") == "day":
+            by_soc.setdefault(it.get("society"), Counter())[it["date"]] += 1
+    bulk = {
+        (soc, d)
+        for soc, c in by_soc.items()
+        for d, n in c.items()
+        if n >= 5 and n >= 0.25 * totals[soc]
+    }
+    out = []
+    for it in items:
+        it = dict(it)
+        d, prec = it.get("date"), it.get("date_precision")
+        ty = year_from_title(it.get("title", ""))
+        if d and prec == "day" and (it.get("society"), d) in bulk:
+            it["posted"] = d
+            if ty:
+                it.update(date=ty[0], date_precision="year", date_source="title")
+            else:
+                it["date_source"] = "bulk"
+        elif d and ty and int(d[:4]) - int(ty[0]) >= 2:
+            it["posted"] = d
+            it.update(date=ty[0], date_precision="year", date_source="title")
+        out.append(it)
+    return out
+
+
 def merge_items(items: list[dict], socs: dict[str, dict]) -> list[dict]:
+    items = fix_dates(items)
     groups: dict[str, dict] = {}
     for it in items:
         if it.get("access") == "members":
@@ -43,6 +82,7 @@ def merge_items(items: list[dict], socs: dict[str, dict]) -> list[dict]:
                 "date": it.get("date"),
                 "date_precision": it.get("date_precision"),
                 "date_source": it.get("date_source"),
+                "posted": it.get("posted"),
                 "first_seen": it.get("first_seen"),
                 "lang": it.get("lang"),
                 "tags": list(it.get("tags", [])),

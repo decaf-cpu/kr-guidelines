@@ -21,7 +21,11 @@
   };
   const dateNote = (it) => {
     if (!it.date) return "수집일";
-    if (it.date_precision === "year") return it.date_source === "title" ? "제목 연도" : "연도";
+    if (it.date_source === "bulk") return "일괄 등록일";
+    if (it.date_precision === "year") {
+      const base = it.date_source === "title" ? "제목 연도" : "연도";
+      return it.posted ? `${base} · 게시 ${it.posted.replace(/-/g, ".")}` : base;
+    }
     return "";
   };
   const daysAgo = (iso) => (Date.now() - new Date(iso + "T00:00:00+09:00").getTime()) / 864e5;

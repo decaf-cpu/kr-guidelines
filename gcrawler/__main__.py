@@ -70,6 +70,9 @@ def main(argv=None) -> int:
     k.add_argument("--limit", type=int, default=15)
     k.add_argument("--ignore-robots", action="store_true")
 
+    pr = sub.add_parser("probe", help="진단용 HTML 저장")
+    pr.add_argument("ids", nargs="*")
+
     b = sub.add_parser("build")
     b.add_argument("--base-url", default="./")
 
@@ -83,6 +86,11 @@ def main(argv=None) -> int:
         res = run(ids, mode=mode, max_pages=args.max_pages, detail_per_society=detail,
                   rediscover=args.rediscover, fetcher=Fetcher(delay=args.delay), workers=args.workers)
         print(f"완료: 신규 {res['new']}건 / 누적 {res['total']}건 / 요청 {res['requests']}회")
+        return 0
+    if args.cmd == "probe":
+        from .probe import run as probe_run
+
+        probe_run(args.ids or None)
         return 0
     if args.cmd == "check":
         return cmd_check(args)

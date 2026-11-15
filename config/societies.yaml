@@ -29,12 +29,30 @@
 - id: kaim
   name: 대한내과학회
   short: 내과학회
-  homepage: https://www.kaim.or.kr
+  homepage: https://www.kaim.or.kr/index.php
   group: 내과계
   specialty: 내과
   division: 내과 일반
-  boards: []
-
+  boards:
+    - url: https://www.kaim.or.kr/newguide/?sn=10
+      name: 진료지침
+      dedicated: true
+    - url: https://www.kaim.or.kr/guideline/?sn=2
+      name: 전공의 진료지침
+      dedicated: true
+    - url: https://www.kaim.or.kr/guideline/?sn=3
+      name: 낙상예방 진료지침
+      dedicated: true
+    - url: https://www.kaim.or.kr/guideline/?sn=4
+      name: 5대암검진 질지침
+      dedicated: true
+    - url: https://www.kaim.or.kr/guideline/?sn=6
+      name: 코로나19 진료지침
+      dedicated: true
+    - url: https://www.kaim.or.kr/guideline/?sn=7
+      name: 코로나19 백신지침
+      dedicated: true
+  note: "'연관학회 진료지침'(sn=1)은 다른 학회 지침 모음이라 제외"
 # ───────────── 소화기 ─────────────
 - id: ksg
   name: 대한소화기학회
@@ -69,25 +87,23 @@
   specialty: 내과
   division: 간
   boards: []
-
+  note: GitHub 서버(해외)에서 접속되지 않음 — 해외 접속 차단 또는 주소 확인 필요
 - id: kges
   name: 대한소화기내시경학회
   short: 소화기내시경학회
-  homepage: https://www.gie.or.kr
+  homepage: https://gie.or.kr/index.php
   group: 내과계
   specialty: 내과
   division: 소화기
   boards: []
-
 - id: kasid
   name: 대한장연구학회
   short: 장연구학회
-  homepage: https://www.kasid.org
+  homepage: https://www.kasid.org/index
   group: 내과계
   specialty: 내과
   division: 소화기
   boards: []
-
 - id: kchugr
   name: 대한상부위장관·헬리코박터학회
   short: 상부위장관·헬리코박터학회
@@ -95,8 +111,13 @@
   group: 내과계
   specialty: 내과
   division: 소화기
-  boards: []
-
+  boards:
+    - url: https://www.hpylori.or.kr/content/education/guide.php
+      name: 가이드라인
+      dedicated: true
+    - url: https://www.hpylori.or.kr/content/community/post_list.php?bt=12
+      name: 진료지침레터
+      dedicated: false
 - id: ksnm
   name: 대한소화기기능성질환·운동학회
   short: 소화기기능성질환·운동학회
@@ -105,8 +126,8 @@
   specialty: 내과
   division: 소화기
   boards: []
-  note: 홈페이지 주소 확인 필요
-
+  enabled: false
+  note: ksnm.org는 대한핵의학회 주소로 확인됨. 올바른 홈페이지 주소 확인 필요
 - id: kpba
   name: 대한췌장담도학회
   short: 췌장담도학회
@@ -115,17 +136,16 @@
   specialty: 내과
   division: 소화기
   boards: []
-
+  note: GitHub 서버(해외)에서 접속되지 않음 — 해외 접속 차단 또는 주소 확인 필요
 # ───────────── 순환기 ─────────────
 - id: ksc
   name: 대한심장학회
   short: 심장학회
-  homepage: https://www.circulation.or.kr
+  homepage: https://www.circulation.or.kr/index.php
   group: 내과계
   specialty: 내과
   division: 순환기
   boards: []
-
 - id: ksh
   name: 대한고혈압학회
   short: 고혈압학회
@@ -138,21 +158,19 @@
 - id: kshf
   name: 대한심부전학회
   short: 심부전학회
-  homepage: https://www.kshf.or.kr
+  homepage: https://www.kshf.or.kr/main.php
   group: 내과계
   specialty: 내과
   division: 순환기
   boards: []
-
 - id: khrs
   name: 대한부정맥학회
   short: 부정맥학회
-  homepage: https://www.k-hrs.org
+  homepage: https://www.k-hrs.org/main
   group: 내과계
   specialty: 내과
   division: 순환기
   boards: []
-
 - id: kscvi
   name: 대한심혈관중재학회
   short: 심혈관중재학회
@@ -161,7 +179,7 @@
   specialty: 내과
   division: 순환기
   boards: []
-
+  note: 자동 접속 차단(쿠키 확인 페이지)으로 수집 불가
 - id: ksola
   name: 한국지질·동맥경화학회
   short: 지질·동맥경화학회
@@ -169,8 +187,10 @@
   group: 내과계
   specialty: 내과
   division: 내분비·대사
-  boards: []
-
+  boards:
+    - url: https://www.lipid.or.kr/reference/guideline.php
+      name: 이상지질혈증 진료지침서
+      dedicated: true
 # ───────────── 내분비·대사 ─────────────
 - id: kda
   name: 대한당뇨병학회
@@ -183,7 +203,21 @@
     - url: https://www.diabetes.or.kr/bbs/?code=guide
       name: 진료지침
       dedicated: true
-
+    - url: https://www.diabetes.or.kr/bbs/?code=guide&category=2023
+      name: 진료지침 2023
+      dedicated: true
+    - url: https://www.diabetes.or.kr/bbs/?code=guide&category=2021
+      name: 진료지침 2021
+      dedicated: true
+    - url: https://www.diabetes.or.kr/bbs/?code=guide&category=2019
+      name: 진료지침 2019
+      dedicated: true
+    - url: https://www.diabetes.or.kr/bbs/?code=guide&category=2017
+      name: 진료지침 2017
+      dedicated: true
+    - url: https://www.diabetes.or.kr/bbs/?code=guide&category=2015
+      name: 진료지침 2015
+      dedicated: true
 - id: kes
   name: 대한내분비학회
   short: 내분비학회
@@ -192,7 +226,8 @@
   specialty: 내과
   division: 내분비·대사
   boards: []
-
+  enabled: false
+  note: 진료지침 자료실(guide_pds)이 로그인 필요(회원 전용)
 - id: kta
   name: 대한갑상선학회
   short: 갑상선학회
@@ -205,41 +240,49 @@
 - id: ksbmr
   name: 대한골대사학회
   short: 골대사학회
-  homepage: https://www.ksbmr.org
+  homepage: https://www.ksbmr.org/index.php
   group: 내과계
   specialty: 내과
   division: 내분비·대사
-  boards: []
-
+  boards:
+    - url: https://www.ksbmr.org/bbs/?code=guideline
+      name: 골다공증 진료지침
+      dedicated: true
+    - url: https://www.ksbmr.org/bbs/?code=advice
+      name: 학회 권고안
+      dedicated: true
+    - url: https://www.ksbmr.org/bbs/?code=fls
+      name: FLS Guideline
+      dedicated: true
 - id: ksso
   name: 대한비만학회
   short: 비만학회
-  homepage: https://www.kosso.or.kr
+  homepage: https://www.kosso.or.kr/main.html
   group: 내과계
   specialty: 내과
   division: 내분비·대사
   boards: []
-
 # ───────────── 신장 ─────────────
 - id: ksn
   name: 대한신장학회
   short: 신장학회
-  homepage: https://www.ksn.or.kr
+  homepage: https://ksn.or.kr/main.php
   group: 내과계
   specialty: 내과
   division: 신장
   boards: []
-
 # ───────────── 호흡기·알레르기 ─────────────
 - id: kattd
   name: 대한결핵및호흡기학회
   short: 결핵및호흡기학회
-  homepage: https://www.lungkorea.org
+  homepage: https://new.lungkorea.org/kr
   group: 내과계
   specialty: 내과
   division: 호흡기
-  boards: []
-
+  boards:
+    - url: https://new.lungkorea.org/board/guide
+      name: 진료지침
+      dedicated: true
 - id: kaaaci
   name: 대한천식알레르기학회
   short: 천식알레르기학회
@@ -253,12 +296,14 @@
 - id: ksid
   name: 대한감염학회
   short: 감염학회
-  homepage: https://www.ksid.or.kr
+  homepage: https://www.ksid.or.kr/main/main.html
   group: 내과계
   specialty: 내과
   division: 감염
-  boards: []
-
+  boards:
+    - url: https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do
+      name: 감염 질환별 가이드라인
+      dedicated: true
 - id: ksat
   name: 대한항균요법학회
   short: 항균요법학회
@@ -283,12 +328,11 @@
 - id: ksh-hema
   name: 대한혈액학회
   short: 혈액학회
-  homepage: https://www.hematology.or.kr
+  homepage: https://www.hematology.or.kr/main/main.html
   group: 내과계
   specialty: 내과
   division: 혈액
   boards: []
-
 - id: ksmo
   name: 대한종양내과학회
   short: 종양내과학회
@@ -296,13 +340,15 @@
   group: 내과계
   specialty: 내과
   division: 종양
-  boards: []
-
+  boards:
+    - url: https://www.ksmo.or.kr/Pages/Publication/publication03.aspx
+      name: 의료인을 위한 지침서
+      dedicated: true
 # ───────────── 노년 ─────────────
 - id: kgs
   name: 대한노인병학회
   short: 노인병학회
-  homepage: https://www.geriatrics.or.kr
+  homepage: https://www.geriatrics.or.kr/index.php
   group: 내과계
   specialty: 내과
   division: 노년

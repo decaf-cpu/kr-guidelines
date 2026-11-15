@@ -1,0 +1,39 @@
+name: 진단 (학회 HTML 저장)
+
+# probe 브랜치에 push하면 실행. probe-ids.txt에 학회 id를 적으면 그 학회만,
+# 비워 두면 수집 현황에서 '정상'이 아닌 학회 전부. 결과는 probe 브랜치의 probe-out/에 커밋.
+on:
+  push:
+    branches: [probe]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: 진단
+        run: |
+          rm -rf probe-out
+          ids="$(cat probe-ids.txt 2>/dev/null | tr '\n' ' ')"
+          python -m gcrawler probe $ids
+          for id in $(python -c "import json;print(' '.join(json.load(open('probe-out/index.json'))))"); do
+            mkdir -p probe-out/$id
+            timeout 300 python -m gcrawler check $id --limit 25 > probe-out/$id/check.txt 2>&1 || echo "exit $?" >> probe-out/$id/check.txt
+          done
+      - name: 결과 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f probe-out
+          git commit -m "probe: $(TZ=Asia/Seoul date '+%F %T')" || echo "변경 없음"
+          git push origin HEAD:probe
