@@ -14,7 +14,7 @@
 #     title: 2025 류마티스관절염 진료지침     # 지침 이름 (필수)
 #     url: https://...                    # 지침 게시물 또는 파일 주소 (필수)
 #     date: 2025                          # 발행 시점: 2025 / 2025-10 / 2025-10-04 (선택)
-#     added: 2026-11-15                   # 등록한 날 — NEW 표시와 RSS에 쓰임 (선택)
+#     added: 2026-11-15                   # 등록한 날 = 수집일. NEW는 이날부터 30일 + 발간 1년 이내 (선택, 없으면 NEW 없음)
 #     files:                              # 첨부 파일 (선택)
 #       - https://.../guideline.pdf
 #
@@ -26,72 +26,89 @@
 - society: kspid
   title: "영유아 RSV 하기도감염 예방을 위한 지속성 단클론항체 사용 권고 (2026년 개정)"
   url: https://www.kspid.or.kr/board/list.html?code=guide&num=1015
+  added: 2026-11-16
   date: "2026-08-28"
   files:
     - https://www.kspid.or.kr/board/download.php?code=guide&num=1818&comm=
 - society: kspid
   title: "칸디다 오리스 관리지침"
   url: https://www.kspid.or.kr/board/list.html?code=guide&num=992
+  added: 2026-11-16
   date: "2026-04-13"
 - society: kspid
   title: "소아청소년 마이코플라스마 진료지침 2026"
   url: https://www.kspid.or.kr/board/list.html?code=guide&num=956
+  added: 2026-11-16
   date: "2026-01-07"
 - society: kspid
   title: "RSV 예방을 위한 지속성 단클론항체(nirsevimab: 베이포투스®주) 사용 권고"
   url: https://www.kspid.or.kr/board/list.html?code=guide&num=913
+  added: 2026-11-16
   date: "2025-05-09"
 - society: kspid
   title: "소아청소년 마크로라이드 불응성 마이코플라스마 폐렴 2차 항생제 안전 사용 가이드"
   url: https://www.kspid.or.kr/board/list.html?code=guide&num=898
+  added: 2026-11-16
   date: "2025-03-26"
 - society: kspid
   title: "엠폭스(Mpox) 치료지침 제3판"
   url: https://www.kspid.or.kr/board/list.html?code=guide&num=897
+  added: 2026-11-16
   date: "2024"   # 게시일은 2025-03-26, 개정 3판은 2024년 (감염학회 게시판 분류 2024)
 - society: kspid
   title: "의료인을 위한 말라리아 예방 및 관리 안내서"
   url: https://www.kspid.or.kr/board/list.html?code=guide&num=896
+  added: 2026-11-16
   date: "2025-03-26"
 - society: kspid
   title: "2024년도 코로나바이러스감염증-19 관리지침"
   url: https://www.kspid.or.kr/board/list.html?code=guide&num=866
+  added: 2026-11-16
   date: "2024"
 - society: kspid
   title: "카바페넴 내성 장내세균목 항생제 사용 지침(2024년)"
   url: https://www.kspid.or.kr/board/list.html?code=guide&num=865
+  added: 2026-11-16
   date: "2024"
 - society: kspid
   title: "예방접종의 실시기준과 방법(2023년 개정판)"
   url: https://www.kspid.or.kr/board/list.html?code=guide&num=864
+  added: 2026-11-16
   date: "2023"
 - society: kspid
   title: "2024년 소아 마크로라이드 불응성 마이코플라스마 폐렴 항생제 선택 권고"
   url: https://www.kspid.or.kr/board/list.html?code=guide&num=850
+  added: 2026-11-16
   date: "2024"
 - society: kspid
   title: "결핵진료지침 제5판(2024년)"
   url: https://www.kspid.or.kr/board/list.html?code=guide&num=849
+  added: 2026-11-16
   date: "2024"
 - society: kspid
   title: "코로나19 환자 치료를 위한 임상진료지침(2022-2023년)"
   url: https://www.kspid.or.kr/board/list.html?code=guide&num=848
+  added: 2026-11-16
   date: "2023"
 - society: kspid
   title: "[2023년 9월 개정]코로나바이러스감염증 19 확진 임신부에서 출생한 신생아의 격리 및 검사에 대한 권고"
   url: https://www.kspid.or.kr/board/list.html?code=guide&num=847
+  added: 2026-11-16
   date: "2023-09"
 - society: kspid
   title: "2019년 소아 마크로라이드 불응성 중증 마이코플라즈마 폐렴 치료 지침"
   url: https://www.kspid.or.kr/board/list.html?code=guide&num=846
+  added: 2026-11-16
   date: "2019"
 - society: kspid
   title: "신생아중환자실에서의 감염예방관리 지침(2020년)"
   url: https://www.kspid.or.kr/board/list.html?code=guide&num=845
+  added: 2026-11-16
   date: "2020"
 - society: kspid
   title: "의료관련감염 표준예방지침서(2017년)"
   url: https://www.kspid.or.kr/board/list.html?code=guide&num=844
+  added: 2026-11-16
   date: "2017"
 
 # ── 대한항균요법학회 (ksat) — 진료지침 https://www.ksat.or.kr/medical/sub01.html, 2026-11-16 확인 ──
@@ -99,50 +116,62 @@
 - society: ksat
   title: "2026년도 칸디다 오리스 관리지침"
   url: https://www.ksat.or.kr/medical/sub01/2026_01.pdf
+  added: 2026-11-16
   date: "2026"
 - society: ksat
   title: "급성 상기도 감염 항생제 적정사용을 위한 실무지침"
   url: https://www.ksat.or.kr/medical/sub01/2026_02.pdf
+  added: 2026-11-16
   date: "2026"
 - society: ksat
   title: "복강내 감염 항생제 적정사용을 위한 실무지침"
   url: https://www.ksat.or.kr/medical/sub01/2026_03.pdf
+  added: 2026-11-16
   date: "2026"
 - society: ksat
   title: "요로감염 항생제 적정사용을 위한 실무지침"
   url: https://www.ksat.or.kr/medical/sub01/2026_04.pdf
+  added: 2026-11-16
   date: "2026"
 - society: ksat
   title: "지역사회획득 폐렴 항생제 적정사용을 위한 실무지침"
   url: https://www.ksat.or.kr/medical/sub01/2026_05.pdf
+  added: 2026-11-16
   date: "2026"
 - society: ksat
   title: "피부 연조직 감염 항생제 적정사용을 위한 실무지침"
   url: https://www.ksat.or.kr/medical/sub01/2026_06.pdf
+  added: 2026-11-16
   date: "2026"
 - society: ksat
   title: "항생제 적정사용 실무지침 핸드북"
   url: https://www.ksat.or.kr/medical/sub01/2026_07.pdf
+  added: 2026-11-16
   date: "2026"
 - society: ksat
   title: "2024 카바페넴 내성 장내세균목 감염증 항생제 사용지침"
   url: https://www.ksat.or.kr/medical/sub01/2024_01.pdf
+  added: 2026-11-16
   date: "2024"
 - society: ksat
   title: "항생제 사용관리 프로그램 통합운영 가이드라인"
   url: https://www.ksat.or.kr/medical/sub01/2023_01_kor.pdf
+  added: 2026-11-16
   date: "2023"
 - society: ksat
   title: "항생제 사용관리 프로그램의 국내 실행을 위한 핵심요소 -종합병원대상-"
   url: https://www.ksat.or.kr/medical/sub01/2023_02_kor.pdf
+  added: 2026-11-16
   date: "2023"
 - society: ksat
   title: "[대항균] Paxlovid Drug interaction 지침"
   url: https://www.ksat.or.kr/medical/sub01/2023_02_kor_new.pdf
+  added: 2026-11-16
   date: "2023-02-20"
 - society: ksat
   title: "성인 복강 내 감염 항생제 사용지침"
   url: https://www.ksat.or.kr/medical/sub01/2022_03_kor.pdf
+  added: 2026-11-16
   date: "2022-12"
   files:
     - {url: https://www.ksat.or.kr/medical/sub01/2022_03_kor.pdf, name: "국문"}
@@ -150,6 +179,7 @@
 - society: ksat
   title: "한국에서의 항생제 스튜어드십 프로그램 적용 지침"
   url: https://www.ksat.or.kr/medical/sub01/2021_01_kor.pdf
+  added: 2026-11-16
   date: "2021-09"
   files:
     - {url: https://www.ksat.or.kr/medical/sub01/2021_01_kor.pdf, name: "국문"}
@@ -157,6 +187,7 @@
 - society: ksat
   title: "급성위장관계 감염 항생제 사용지침"
   url: https://www.ksat.or.kr/medical/sub01/2019_02_kor.pdf
+  added: 2026-11-16
   date: "2019"
   files:
     - {url: https://www.ksat.or.kr/medical/sub01/2019_02_kor.pdf, name: "학회지 국문"}
@@ -165,10 +196,12 @@
 - society: ksat
   title: "요로감염 항생제 사용지침"
   url: https://www.ksat.or.kr/medical/file/200406.pdf
+  added: 2026-11-16
   date: "2018"
 - society: ksat
   title: "성인 지역사회획득 폐렴 항생제 사용지침"
   url: https://www.ksat.or.kr/medical/sub01/2017_04_kor.pdf
+  added: 2026-11-16
   date: "2017"
   files:
     - {url: https://www.ksat.or.kr/medical/sub01/2017_04_kor.pdf, name: "질병관리본부판"}
@@ -177,6 +210,7 @@
 - society: ksat
   title: "성인 급성 상기도 감염 항생제 사용지침"
   url: https://www.ksat.or.kr/medical/sub01/2017_02_kor.pdf
+  added: 2026-11-16
   date: "2017"
   files:
     - {url: https://www.ksat.or.kr/medical/sub01/2017_02_kor.pdf, name: "질병관리본부판"}
@@ -185,6 +219,7 @@
 - society: ksat
   title: "피부·연조직 감염 항생제 사용지침"
   url: https://www.ksat.or.kr/medical/sub01/2017_01_kor.pdf
+  added: 2026-11-16
   date: "2017"
   files:
     - {url: https://www.ksat.or.kr/medical/sub01/2017_01_kor.pdf, name: "국문"}
@@ -192,30 +227,37 @@
 - society: ksat
   title: "Clinical Practice Guidelines for Soft Tissue Infections"
   url: https://www.ksat.or.kr/medical/sub01/2012_02_eng.pdf
+  added: 2026-11-16
   date: "2012"
 - society: ksat
   title: "국내 성인 세균성 수막염의 임상진료지침 권고안"
   url: https://www.ksat.or.kr/medical/sub01/2012_01_kor.pdf
+  added: 2026-11-16
   date: "2012"
 - society: ksat
   title: "국내자료를 근거로 한 호중구감소성 발열 환자의 경험적 치료 지침"
   url: https://www.ksat.or.kr/medical/file/220525.pdf
+  added: 2026-11-16
   date: "2011"
 - society: ksat
   title: "요로 감염 임상진료지침 권고안: 무증상 세균뇨, 단순 요로감염, 복잡성 요로감염, 세균성 전립선염"
   url: https://www.ksat.or.kr/medical/file/guideline_01.pdf
+  added: 2026-11-16
   date: "2011"
 - society: ksat
   title: "심혈관계 감염 진료지침 권고안"
   url: https://www.ksat.or.kr/medical/sub01/2011_01_kor.pdf
+  added: 2026-11-16
   date: "2011"
 - society: ksat
   title: "소화기계 감염 진료지침 권고안"
   url: https://www.ksat.or.kr/medical/sub01/2010_01_kor.pdf
+  added: 2026-11-16
   date: "2010"
 
 # ── 대한자궁내막증학회 (kses) — 홈페이지가 해외에서 열리지 않아 사용자가 확인해 준 주소로 등록 ──
 - society: kses
   title: "자궁내막증 진료지침서"
   url: http://www.kse2014.or.kr/file/pds2/2024_doc.pdf
+  added: 2026-11-16
   date: "2024"

@@ -533,3 +533,13 @@ def test_merge_same_guideline_across_societies():
     assert any("NOAC" in g["title"] for g in merged if set(g["societies"]) == {"ksc", "khrs"})
     assert by[frozenset({"ksc", "ksh"})]["title"] == "2022 고혈압 진료지침"
     assert frozenset({"ksc", "ksid"}) in by
+
+
+def test_published_within_year():
+    import datetime as dt
+    from gcrawler.build import published_within_year as p
+
+    t = dt.date(2026, 11, 16)
+    assert p({"date": "2026-01-07"}, t) and p({"date": "2026"}, t) and p({"date": "2025-12"}, t)
+    assert not p({"date": "2025"}, t)  # 2025년 1월일 수도 있음
+    assert not p({"date": "2025-10-30"}, t) and not p({"date": None}, t)

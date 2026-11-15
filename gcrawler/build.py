@@ -332,8 +332,25 @@ def merge_items(items: list[dict], socs: dict[str, dict], overrides: list[dict] 
     return out
 
 
+def published_within_year(g: dict, today: dt.date | None = None) -> bool:
+    """발간일이 최근 1년 안인지. 연도·월만 아는 항목은 그 기간의 첫날로 따져 확실한 것만 (사이트 NEW 규칙과 같음)."""
+    d = g.get("date") or ""
+    m = re.match(r"^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?", d)
+    if not m:
+        return False
+    start = dt.date(int(m.group(1)), int(m.group(2) or 1), int(m.group(3) or 1))
+    today = today or dt.date.today()
+    try:
+        cutoff = today.replace(year=today.year - 1)
+    except ValueError:  # 2월 29일
+        cutoff = today.replace(year=today.year - 1, day=28)
+    return start >= cutoff
+
+
 def write_feed(items: list[dict], socs: dict[str, dict], base_url: str, path: Path) -> None:
-    latest = sorted((g for g in items if not g.get("backfill")), key=lambda g: g.get("first_seen") or "", reverse=True)[:60]
+    # 새로 올라온 글(초기 수집분 제외) 중 발간 1년 이내만
+    fresh = (g for g in items if not g.get("backfill") and published_within_year(g))
+    latest = sorted(fresh, key=lambda g: g.get("first_seen") or "", reverse=True)[:60]
     parts = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<rss version="2.0"><channel>',
@@ -366,8 +383,7 @@ def build(base_url: str = "./") -> dict:
     doc = load_json(DATA / "guidelines.json", {"items": []})
     status = load_json(DATA / "status.json", {"societies": {}})
     manual, manual_errors = load_manual(socs)
-    for m in manual:
-        m["first_seen"] = m["first_seen"] or (doc.get("updated") or "")[:10] or None
+    # 수동 등록에 added(등록일)가 없으면 수집일을 모르는 것으로 둔다 (빌드할 때마다 '오늘'이 되면 NEW가 계속 붙음)
     boards = society_boards(socs_list, status, load_json(DATA / "discovered.json", {}))
     items = merge_items(doc.get("items", []) + manual, socs, load_overrides(), boards, load_duplicates())
     hidden = sum(1 for it in doc.get("items", []) if it.get("access") == "members")

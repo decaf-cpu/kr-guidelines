@@ -44,6 +44,18 @@
     return end >= cutoff;
   };
   const daysAgo = (iso) => (Date.now() - new Date(iso + "T00:00:00+09:00").getTime()) / 864e5;
+  // 발간일이 최근 1년 안인지: 연도·월만 아는 항목은 그 기간의 첫날로 따져 확실한 것만
+  const publishedWithinYear = (it) => {
+    const d = it.date;
+    if (!d) return false;
+    const [y, m, dd] = d.split("-").map(Number);
+    const start = new Date(y, (m || 1) - 1, dd || 1);
+    const cutoff = new Date();
+    cutoff.setFullYear(cutoff.getFullYear() - 1);
+    return start >= cutoff;
+  };
+  // NEW: 수집한 지 30일 이내 + 발간 1년 이내
+  const isNewItem = (it) => !!it.first_seen && daysAgo(it.first_seen) <= 30 && publishedWithinYear(it);
 
   // ── URL 해시 ↔ 상태 ───────────────────
   function readHash() {
@@ -119,7 +131,7 @@
   // ── 렌더: 목록 ────────────────────────
   function itemHTML(it) {
     const main = it.sources[0];
-    const isNew = !it.backfill && it.first_seen && daysAgo(it.first_seen) <= 30;
+    const isNew = isNewItem(it);
     const socs = it.sources
       .map((s) => `<a class="tag soc" href="${esc(s.board || SOCS[s.society]?.board || s.url)}" target="_blank" rel="noopener" title="${esc(SOCS[s.society]?.name)} 진료지침 게시판">${esc(SOCS[s.society]?.short || s.society)}${s.manual ? " ✎" : ""}</a>`)
       .join("");
