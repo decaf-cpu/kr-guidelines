@@ -110,7 +110,7 @@ def run(ids: list[str] | None = None) -> None:
                 extra.setdefault(parts[0], []).append(parts[1])
                 if parts[0] not in ids:
                     ids.append(parts[0])
-    f = Fetcher(delay=1.0, respect_robots=False, retries=1, timeout=20)
+    f = Fetcher(delay=1.5, respect_robots=True, retries=1, timeout=20)
     for i in ids:
         soc = socs[i]
         boards = [b["url"] for b in soc.get("boards", [])]
