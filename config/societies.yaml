@@ -587,7 +587,7 @@
   division: 산부인과
   enabled: false
   manual: true          # 자동 수집 대신 config/manual.yaml에 손으로 등록
-  note: "해외(수집 서버)에서 접속되지 않아 진료지침 > 자궁내막증 임상지침서를 수동 등록"
+  note: "해외(수집 서버)에서 접속되지 않아 자궁내막증 진료지침서(kse2014.or.kr)를 수동 등록"
   boards: []
 - id: kspm
   name: 대한주산의학회
