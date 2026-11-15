@@ -1,0 +1,98 @@
+name: 진료지침 수집·배포
+
+on:
+  schedule:
+    # 매일 03:17 KST (UTC 18:17) — 정각을 피해 학회 서버 부하·러너 혼잡을 줄임
+    - cron: "17 18 * * *"
+  workflow_dispatch:
+    inputs:
+      full:
+        description: "전체 수집 (게시판 전체 페이지, 처음 한 번 권장)"
+        type: boolean
+        default: false
+      society:
+        description: "특정 학회 id만 (쉼표로 여러 개, 비우면 전체)"
+        type: string
+        default: ""
+      rediscover:
+        description: "게시판 자동 탐색 다시 하기"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - "config/**"
+      - "gcrawler/**"
+      - ".github/workflows/crawl.yml"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: crawl-and-deploy
+  cancel-in-progress: false
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: 의존성 설치
+        run: pip install -r requirements.txt pytest
+
+      - name: 테스트
+        run: python -m pytest -q
+
+      - name: 수집
+        if: github.event_name != 'push'
+        env:
+          FULL: ${{ inputs.full }}
+          SOCIETY: ${{ inputs.society }}
+          REDISCOVER: ${{ inputs.rediscover }}
+        run: |
+          args=""
+          [ "$FULL" = "true" ] && args="$args --full"
+          [ "$REDISCOVER" = "true" ] && args="$args --rediscover"
+          [ -n "$SOCIETY" ] && args="$args --society $SOCIETY"
+          python -m gcrawler crawl $args
+
+      - name: 수집 결과 커밋
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "변경 없음"
+          else
+            git commit -m "data: 진료지침 수집 $(TZ=Asia/Seoul date +%F)"
+            git pull --rebase origin main
+            git push
+          fi
+
+      - name: 사이트 빌드
+        run: python -m gcrawler build --base-url "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: crawl
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
