@@ -1,1 +1,214 @@
-{}
+{
+ "kaim": {
+  "checked": "2026-11-15",
+  "ok": false,
+  "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
+  "candidates": []
+ },
+ "kges": {
+  "checked": "2026-11-15",
+  "ok": false,
+  "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
+  "candidates": []
+ },
+ "kasl": {
+  "checked": "2026-11-15",
+  "ok": false,
+  "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
+  "candidates": []
+ },
+ "kasid": {
+  "checked": "2026-11-15",
+  "ok": false,
+  "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
+  "candidates": []
+ },
+ "kchugr": {
+  "checked": "2026-11-15",
+  "ok": false,
+  "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
+  "candidates": []
+ },
+ "ksnm": {
+  "checked": "2026-11-15",
+  "ok": false,
+  "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
+  "candidates": []
+ },
+ "ksc": {
+  "checked": "2026-11-15",
+  "ok": false,
+  "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
+  "candidates": []
+ },
+ "kshf": {
+  "checked": "2026-11-15",
+  "ok": false,
+  "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
+  "candidates": []
+ },
+ "klcs": {
+  "checked": "2026-11-15",
+  "ok": false,
+  "error": "홈페이지 접속 실패",
+  "candidates": []
+ },
+ "ksh": {
+  "checked": "2026-11-15",
+  "ok": true,
+  "candidates": [
+   {
+    "url": "https://www.koreanhypertension.org/reference/guide",
+    "label": "고혈압 진료지침",
+    "score": 5
+   }
+  ]
+ },
+ "khrs": {
+  "checked": "2026-11-15",
+  "ok": false,
+  "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
+  "candidates": []
+ },
+ "kscvi": {
+  "checked": "2026-11-15",
+  "ok": false,
+  "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
+  "candidates": []
+ },
+ "ksola": {
+  "checked": "2026-11-15",
+  "ok": true,
+  "candidates": [
+   {
+    "url": "https://www.lipid.or.kr/reference/guideline.php",
+    "label": "진료지침",
+    "score": 5
+   },
+   {
+    "url": "https://lipid.or.kr/reference/guideline.php",
+    "label": "이상지질혈증 진료지침 2026 보러가기",
+    "score": 5
+   }
+  ]
+ },
+ "kes": {
+  "checked": "2026-11-15",
+  "ok": true,
+  "candidates": [
+   {
+    "url": "https://www.endocrinology.or.kr/intro/committee_detail.php?number=37",
+    "label": "- 진료지침위원회",
+    "score": 5
+   },
+   {
+    "url": "https://www.endocrinology.or.kr/guide_pds/",
+    "label": "진료지침 및 Fact Sheet",
+    "score": 5
+   },
+   {
+    "url": "https://www.endocrinology.or.kr/bbs/?code=usa_guide",
+    "label": "국제 가이드라인",
+    "score": 4
+   }
+  ]
+ },
+ "kta": {
+  "checked": "2026-11-15",
+  "ok": false,
+  "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
+  "candidates": []
+ },
+ "ksbmr": {
+  "checked": "2026-11-15",
+  "ok": false,
+  "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
+  "candidates": []
+ },
+ "ksso": {
+  "checked": "2026-11-15",
+  "ok": false,
+  "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
+  "candidates": []
+ },
+ "ksn": {
+  "checked": "2026-11-15",
+  "ok": false,
+  "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
+  "candidates": []
+ },
+ "kattd": {
+  "checked": "2026-11-15",
+  "ok": false,
+  "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
+  "candidates": []
+ },
+ "kaaaci": {
+  "checked": "2026-11-15",
+  "ok": true,
+  "candidates": [
+   {
+    "url": "https://www.allergy.or.kr/board/treatment?gubun=1",
+    "label": "진료지침",
+    "score": 5
+   },
+   {
+    "url": "https://www.allergy.or.kr/board/treatment-dev?gubun=2",
+    "label": "개발 중 진료지침",
+    "score": 5
+   }
+  ]
+ },
+ "ksid": {
+  "checked": "2026-11-15",
+  "ok": false,
+  "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
+  "candidates": []
+ },
+ "kcr": {
+  "checked": "2026-11-15",
+  "ok": false,
+  "error": "홈페이지 접속 실패",
+  "candidates": []
+ },
+ "ksat": {
+  "checked": "2026-11-15",
+  "ok": false,
+  "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
+  "candidates": []
+ },
+ "ksmo": {
+  "checked": "2026-11-15",
+  "ok": true,
+  "candidates": [
+   {
+    "url": "https://www.ksmo.or.kr/Pages/Publication/publication03.aspx",
+    "label": "지침서",
+    "score": 3
+   },
+   {
+    "url": "https://www.ksmo.or.kr/Pages/Publication/publication01.aspx",
+    "label": "학회지·지침서",
+    "score": 3
+   }
+  ]
+ },
+ "ksh-hema": {
+  "checked": "2026-11-15",
+  "ok": false,
+  "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
+  "candidates": []
+ },
+ "kgs": {
+  "checked": "2026-11-15",
+  "ok": false,
+  "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
+  "candidates": []
+ },
+ "kpba": {
+  "checked": "2026-11-15",
+  "ok": false,
+  "error": "홈페이지 접속 실패",
+  "candidates": []
+ }
+}

@@ -1,5 +1,3137 @@
 {
- "updated": null,
- "count": 0,
- "items": []
+ "updated": "2026-11-15T19:17:36+09:00",
+ "count": 130,
+ "items": [
+  {
+   "id": "054f70d13bfea742",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "자기공명영상(MRI)용 가돌리늄 조영제 유해반응에 관한 한국 임상진료 지침",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6861?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "eyJpdiI6IlQybGthMUdtRjN4NElaOHpsOGFXQlE9PSIsInZhbHVlIjoieDR0akREamluK1FJb1k1aklnVHdHQT09IiwibWFjIjoiN2I5OGEzYjIwZmZiZDE2ZTlhOTAwYTYxMjhkMjZiZDQwODdmNTZkMzg3MjI0OWNjNGU3NDM3YWVhNjZmMzUxYSIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IlQybGthMUdtRjN4NElaOHpsOGFXQlE9PSIsInZhbHVlIjoieDR0akREamluK1FJb1k1aklnVHdHQT09IiwibWFjIjoiN2I5OGEzYjIwZmZiZDE2ZTlhOTAwYTYxMjhkMjZiZDQwODdmNTZkMzg3MjI0OWNjNGU3NDM3YWVhNjZmMzUxYSIsInRhZyI6IiJ9?field=1",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "14863e0e66bd621d",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "주사용 요오드화 조영제 및 MRI용 가돌리늄 조영제 유해반응에 관한 한국 임상진료지침(2016년 제 2판)",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6859?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "eyJpdiI6Im5pVUxCczZycEh5N204TGxyZm1HSFE9PSIsInZhbHVlIjoiTmdrUnl3dVp6V1dzOVphYXphS2tZQT09IiwibWFjIjoiMGVmM2IyOGUyNWQ1MmVkOTc2ZGFlZDQ3MGIyMWE2Mzg0MjdjNTg1MmU0YzBjOWNlYWUzNDI4OTlkN2IxZWExZiIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6Im5pVUxCczZycEh5N204TGxyZm1HSFE9PSIsInZhbHVlIjoiTmdrUnl3dVp6V1dzOVphYXphS2tZQT09IiwibWFjIjoiMGVmM2IyOGUyNWQ1MmVkOTc2ZGFlZDQ3MGIyMWE2Mzg0MjdjNTg1MmU0YzBjOWNlYWUzNDI4OTlkN2IxZWExZiIsInRhZyI6IiJ9?field=1",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "14d499483abe736c",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "알레르기 면역요법 진료지침",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6891?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "eyJpdiI6IlVVSy9DNGdSRUJSelhOOUFudWtVMVE9PSIsInZhbHVlIjoicmJBeGxaSlRxeUt0UVpFa1dwZzZTdz09IiwibWFjIjoiNjdlMTkzYTRiNmMwOTljYTBmOTQ5M2ExMjFiN2Q5MWIwZDNjYjUyN2JmYTk5NzAwMjQ2MjFhOTM5Zjc2MzFjZCIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IlVVSy9DNGdSRUJSelhOOUFudWtVMVE9PSIsInZhbHVlIjoicmJBeGxaSlRxeUt0UVpFa1dwZzZTdz09IiwibWFjIjoiNjdlMTkzYTRiNmMwOTljYTBmOTQ5M2ExMjFiN2Q5MWIwZDNjYjUyN2JmYTk5NzAwMjQ2MjFhOTM5Zjc2MzFjZCIsInRhZyI6IiJ9?field=1",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "15efce71971b27f0",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "주사용 요오드화 조영제 유해반응에 관한 한국 임상진료 지침",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6862?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "eyJpdiI6Im45aThtL1lWRnNOcWJpTG1BektUVWc9PSIsInZhbHVlIjoiSjRETFNDYlhIbnM2K0VzQlY0V090UT09IiwibWFjIjoiNDE2NGRiYTk2MDJiOTYxNTYwZjcxNzdhYmJjOWNjNDQwZjUzNDQ1ZTYxMjNiZjc4NWE0YjBlZDVjNmVlMzVmYyIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6Im45aThtL1lWRnNOcWJpTG1BektUVWc9PSIsInZhbHVlIjoiSjRETFNDYlhIbnM2K0VzQlY0V090UT09IiwibWFjIjoiNDE2NGRiYTk2MDJiOTYxNTYwZjcxNzdhYmJjOWNjNDQwZjUzNDQ1ZTYxMjNiZjc4NWE0YjBlZDVjNmVlMzVmYyIsInRhZyI6IiJ9?field=1",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "1738d463f573c7e3",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "대한천식알레르기학회 알레르기비염 진료지침: 파트 2. 비약물치료의 업데이트",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6894?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "attachments": [
+    {
+     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "kind": "pdf"
+    }
+   ],
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "2a8513c504bf7406",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "KAAACI Guidelines for Allergen Immunotherapy",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6895?gubun=1",
+   "link_resolved": true,
+   "lang": "en",
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "attachments": [
+    {
+     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "kind": "pdf"
+    }
+   ],
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "2cc0f560d6e6f2e9",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "메타콜린 기관지유발검사 시행방법: 대한천식알레르기학회 의견서",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6890?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "attachments": [
+    {
+     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "kind": "pdf"
+    }
+   ],
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "3253bd3c33e8a153",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "한국 성인 천식의 진료지침",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6886?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "eyJpdiI6InRUTnVwQmJQMCt1a3pMeEdVQzhKUUE9PSIsInZhbHVlIjoiS3Rmakhqb2JWQWNzZC96VlBROXVUZz09IiwibWFjIjoiNGQzYTFlNmRlMjZmOTg2M2RjNzA2MDQ2ZTQyODUwZmUxYTA2YTcwNTZhNGYyNTgwYjY4MzVhNTcyYjcwOTZmNSIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6InRUTnVwQmJQMCt1a3pMeEdVQzhKUUE9PSIsInZhbHVlIjoiS3Rmakhqb2JWQWNzZC96VlBROXVUZz09IiwibWFjIjoiNGQzYTFlNmRlMjZmOTg2M2RjNzA2MDQ2ZTQyODUwZmUxYTA2YTcwNTZhNGYyNTgwYjY4MzVhNTcyYjcwOTZmNSIsInRhZyI6IiJ9?field=1",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "325aa50b84fa8bac",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "임상의를 위한 진료가이드라인 알레르기비염",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6878?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "eyJpdiI6IjJhVWRoY3ZXUjRieGgzYytuZUZHU1E9PSIsInZhbHVlIjoiZnFudWhsUVo2b3BrMlhvaEpmMlNnQT09IiwibWFjIjoiZTNlZDM1YzhjM2E0YjgxYmNmNjQwMDVhMzFiY2EwZTI5ODA4NDdiZWMyODFhOTM2Y2RmYzhkMmFiZTI1ODU2MSIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IjJhVWRoY3ZXUjRieGgzYytuZUZHU1E9PSIsInZhbHVlIjoiZnFudWhsUVo2b3BrMlhvaEpmMlNnQT09IiwibWFjIjoiZTNlZDM1YzhjM2E0YjgxYmNmNjQwMDVhMzFiY2EwZTI5ODA4NDdiZWMyODFhOTM2Y2RmYzhkMmFiZTI1ODU2MSIsInRhZyI6IiJ9?field=1",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "36dcb442c77124d6",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment-dev?gubun=2",
+   "board_name": "개발 중 진료지침",
+   "title": "개발 규정 다운로드",
+   "url": "https://www.allergy.or.kr/assets/file/진료지침_개발 규정.docx",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "개발 규정 다운로드",
+     "url": "https://www.allergy.or.kr/assets/file/진료지침_개발 규정.docx",
+     "kind": "docx"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15"
+  },
+  {
+   "id": "3894cffd9ea94f8c",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "성인 만성기침 바로알기",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6864?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "eyJpdiI6IkNqeElwZHdyVW5nSUEvbU4zOVVrbUE9PSIsInZhbHVlIjoidmRLN0pnV05YOGpkZFgyekZtVENxQT09IiwibWFjIjoiZjU5N2MyOTQ0NzI4MDk3YjBiZGEyY2ViNWFhOWE0MzZhZmJhNzYzNjNhMjA0ZjI2NTc1Y2NkYmE2ZDE2MGM1YSIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IkNqeElwZHdyVW5nSUEvbU4zOVVrbUE9PSIsInZhbHVlIjoidmRLN0pnV05YOGpkZFgyekZtVENxQT09IiwibWFjIjoiZjU5N2MyOTQ0NzI4MDk3YjBiZGEyY2ViNWFhOWE0MzZhZmJhNzYzNjNhMjA0ZjI2NTc1Y2NkYmE2ZDE2MGM1YSIsInRhZyI6IiJ9?field=1",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "3b533ced7d0c26b8",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "대한천식알레르기학회 알레르기비염 진료지침: 파트 1. 약물치료의 업데이트",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6893?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "attachments": [
+    {
+     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "kind": "pdf"
+    }
+   ],
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "3f15c0937077558e",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "난치성 아토피피부염의 치료에 관한 전문가 의견서",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6875?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "합의문"
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "attachments": [
+    {
+     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "kind": "pdf"
+    }
+   ],
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "5ecb4307d841eb17",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "2005 한국 기관지천식 치료지침",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6892?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "eyJpdiI6Im9TVEpjZXRyblE0UCtXa2pDNzFKTnc9PSIsInZhbHVlIjoiOEY4cFVic29CYXo3ZVRXMTRtM1RNdz09IiwibWFjIjoiNzExNTBmNzc2OTE3MjRkMDkzNjcxODVmNGU2OWU3OTQ5NzZkZjQ2YzAxNjM4MGY5NTU4NDFjMjE4MTJhNWFhMCIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6Im9TVEpjZXRyblE0UCtXa2pDNzFKTnc9PSIsInZhbHVlIjoiOEY4cFVic29CYXo3ZVRXMTRtM1RNdz09IiwibWFjIjoiNzExNTBmNzc2OTE3MjRkMDkzNjcxODVmNGU2OWU3OTQ5NzZkZjQ2YzAxNjM4MGY5NTU4NDFjMjE4MTJhNWFhMCIsInRhZyI6IiJ9?field=1",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "5f83202cf6ddd231",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "임상의를 위한 진료지침 알레르기비염 2022년 개정판",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6877?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "개정"
+   ],
+   "attachments": [
+    {
+     "name": "eyJpdiI6IjhpNDVhdi9rclh3TzlIZzZoVGRaR3c9PSIsInZhbHVlIjoiZ2ZJN1BHK3V3cTNTTWE4RmIvYkVDZz09IiwibWFjIjoiYjdhOWVlMmQ2YWEwN2Y2MjE1M2E4Y2QwZmZiOTZhMjA4OWUzYjUxNTkyNTI4NDY2OTI1ZGIxYTY5NTE2YmNhYSIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IjhpNDVhdi9rclh3TzlIZzZoVGRaR3c9PSIsInZhbHVlIjoiZ2ZJN1BHK3V3cTNTTWE4RmIvYkVDZz09IiwibWFjIjoiYjdhOWVlMmQ2YWEwN2Y2MjE1M2E4Y2QwZmZiOTZhMjA4OWUzYjUxNTkyNTI4NDY2OTI1ZGIxYTY5NTE2YmNhYSIsInRhZyI6IiJ9?field=1",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "66d2547daa3b84b3",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "한국의 알레르기비염 진단과 치료 지침서",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6879?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "eyJpdiI6IlBlaWcrRUZvRmJyY1EvZHpXcXdtS3c9PSIsInZhbHVlIjoiUmhuTThzMmdlcUhiRG1IQm44Z1dVZz09IiwibWFjIjoiOWE5NDMyMTAyMmMyMzM3NDM0MGMwNTkyN2I3NTM1ODI2YTAyZGI3MDI4NjYyMGMyMmE0YjYzYzUxNDk1M2FhYiIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IlBlaWcrRUZvRmJyY1EvZHpXcXdtS3c9PSIsInZhbHVlIjoiUmhuTThzMmdlcUhiRG1IQm44Z1dVZz09IiwibWFjIjoiOWE5NDMyMTAyMmMyMzM3NDM0MGMwNTkyN2I3NTM1ODI2YTAyZGI3MDI4NjYyMGMyMmE0YjYzYzUxNDk1M2FhYiIsInRhZyI6IiJ9?field=1",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "83cecc4b459a5d38",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "미세먼지/황사 건강피해 예방 및 권고지침: 천식",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6884?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "권고·성명"
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "attachments": [
+    {
+     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "kind": "pdf"
+    }
+   ],
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "8554a12f335b6550",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "만성기침 진료지침",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6867?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "eyJpdiI6ImxsMldBUnUraVdEVnE4Y045QXo2dEE9PSIsInZhbHVlIjoidWZacERYMXhUY0JFclkwejJIOE5tdz09IiwibWFjIjoiMDYwNTMzYjdjOGZhYzM1MmUxZjAyNGRiZDI3YTI1ZTAyMmY2ZmIxYjEwMDRkNmM4ZmI3NDc1OTBkZGFkYjllMSIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6ImxsMldBUnUraVdEVnE4Y045QXo2dEE9PSIsInZhbHVlIjoidWZacERYMXhUY0JFclkwejJIOE5tdz09IiwibWFjIjoiMDYwNTMzYjdjOGZhYzM1MmUxZjAyNGRiZDI3YTI1ZTAyMmY2ZmIxYjEwMDRkNmM4ZmI3NDc1OTBkZGFkYjllMSIsInRhZyI6IiJ9?field=1",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "87fa88b166db7671",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "두드러기 치료 지침서",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6874?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "eyJpdiI6IjV1eTBsQ1pEeHp5U2IwaU9IeTFiYWc9PSIsInZhbHVlIjoici9odGgrWWY3VXZLUEJQbnYxekZTUT09IiwibWFjIjoiMWQ1OTRmYTkwYWMxODUxZTQzMjNjOWRkOGEyY2M0YTlkYmVlMzZiYmNkZjhhOWIzNmFkYWQ5MWU5NDcxZjIzNiIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IjV1eTBsQ1pEeHp5U2IwaU9IeTFiYWc9PSIsInZhbHVlIjoici9odGgrWWY3VXZLUEJQbnYxekZTUT09IiwibWFjIjoiMWQ1OTRmYTkwYWMxODUxZTQzMjNjOWRkOGEyY2M0YTlkYmVlMzZiYmNkZjhhOWIzNmFkYWQ5MWU5NDcxZjIzNiIsInRhZyI6IiJ9?field=1",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "8e56a487db4d7c81",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "알레르기 및 임상면역 의학용어 한글표준화집",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6851?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "eyJpdiI6IjhpUHl1bkdBTXRmUWdVWlBobS8wTGc9PSIsInZhbHVlIjoiaDRvNytvaWJYTGs5SXhMb0RZVXJMdz09IiwibWFjIjoiODRjN2YzMDkzZjYxMmY2ZjMxMjg3MzNhYWZhNDEyMWIxZTZlNWZiMTNjNTRhZjRiZDNhMmFmY2FiMDM5Njc3MiIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IjhpUHl1bkdBTXRmUWdVWlBobS8wTGc9PSIsInZhbHVlIjoiaDRvNytvaWJYTGs5SXhMb0RZVXJMdz09IiwibWFjIjoiODRjN2YzMDkzZjYxMmY2ZjMxMjg3MzNhYWZhNDEyMWIxZTZlNWZiMTNjNTRhZjRiZDNhMmFmY2FiMDM5Njc3MiIsInRhZyI6IiJ9?field=1",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "8f359f8cb2aa312f",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "Evaluation and Management of Difficult-to-Treat and Severe Asthma: An Expert Opinion From the Korean Academy of Asthma, Allergy and Clinical Immunology, the Working Group on Severe Asthma",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6881?gubun=1",
+   "link_resolved": true,
+   "lang": "en",
+   "tags": [
+    "합의문"
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "attachments": [
+    {
+     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "kind": "pdf"
+    }
+   ],
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "93230c77088c69bd",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "한국 천식 진료 지침",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6883?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "eyJpdiI6IlpHZUJlN3BZVGgvTzNqNTFMeXNNcXc9PSIsInZhbHVlIjoiYUxOSnd0R2hiRHlkM29vZ2VwaGovQT09IiwibWFjIjoiOTAzYmNlZTM4NTgzNjk2NmM4MTNmNTNmZTY3NzQyZTAzYjU3YTliYzM5Y2FkYWZhNDU0MzRkMTNkYzkwMDVmZCIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IlpHZUJlN3BZVGgvTzNqNTFMeXNNcXc9PSIsInZhbHVlIjoiYUxOSnd0R2hiRHlkM29vZ2VwaGovQT09IiwibWFjIjoiOTAzYmNlZTM4NTgzNjk2NmM4MTNmNTNmZTY3NzQyZTAzYjU3YTliYzM5Y2FkYWZhNDU0MzRkMTNkYzkwMDVmZCIsInRhZyI6IiJ9?field=1",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "99b173c61ee079a1",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "KAAACI Evidence-Based Clinical Practice Guidelines for Chronic Cough in Adults and Children in Korea",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6865?gubun=1",
+   "link_resolved": true,
+   "lang": "en",
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "attachments": [
+    {
+     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "kind": "pdf"
+    }
+   ],
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "9a5959cdd0f74dc1",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "주사용 요오드화 조영제 및 MRI용 가돌리늄 조영제 유해반응에 관한 한국 임상진료지침(2022년 제 3판)",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6856?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "eyJpdiI6IjZ0eU9sRVFpTE5OKzJKWUdnK1F6YkE9PSIsInZhbHVlIjoiKzNnVDNDell5MGV2Vkx5citGUDV0dz09IiwibWFjIjoiYmE0MDhjODA4YWE1OWQ0M2U2ZGZjOWFlMjM2ZWRkYWRjNWZkMDg5ODYzMzU5M2RlN2JkYmEzYTJmOGU4ODU4ZCIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IjZ0eU9sRVFpTE5OKzJKWUdnK1F6YkE9PSIsInZhbHVlIjoiKzNnVDNDell5MGV2Vkx5citGUDV0dz09IiwibWFjIjoiYmE0MDhjODA4YWE1OWQ0M2U2ZGZjOWFlMjM2ZWRkYWRjNWZkMDg5ODYzMzU5M2RlN2JkYmEzYTJmOGU4ODU4ZCIsInRhZyI6IiJ9?field=1",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "9f60df7387ad7af9",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "만성기침 진료지침 요약본",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6866?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "요약본"
+   ],
+   "attachments": [
+    {
+     "name": "eyJpdiI6InlrTmUrdWs1T0EzeGMrdEtyUTNycXc9PSIsInZhbHVlIjoicyswempaaTZBZUxCN0xyR0FrVWdQUT09IiwibWFjIjoiMjVhNmQ4NGE5ZDk3YTJhNDU2ZWMzNWQ3YWI1OGMwZGExMGE0YWE1ZjUzNzQwOWU1YWQ3ODk3NmRlYTIzMGRhNCIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6InlrTmUrdWs1T0EzeGMrdEtyUTNycXc9PSIsInZhbHVlIjoicyswempaaTZBZUxCN0xyR0FrVWdQUT09IiwibWFjIjoiMjVhNmQ4NGE5ZDk3YTJhNDU2ZWMzNWQ3YWI1OGMwZGExMGE0YWE1ZjUzNzQwOWU1YWQ3ODk3NmRlYTIzMGRhNCIsInRhZyI6IiJ9?field=1",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "a7ee759bd1a898f9",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "기관지유발검사 시행과 해석: 전문가 의견서",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6852?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "합의문"
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "attachments": [
+    {
+     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "kind": "pdf"
+    }
+   ],
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "abc61209eebb016a",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "약물알레르기 검사의 시행과 해석: 전문가 의견서",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6858?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "합의문"
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "attachments": [
+    {
+     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "kind": "pdf"
+    }
+   ],
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "ac1560ebd63dbe9d",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "KAAACI Allergic Rhinitis Guidelines: Part 1. Update in Pharmacotherapy",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6876?gubun=1",
+   "link_resolved": true,
+   "lang": "en",
+   "tags": [
+    "개정"
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "attachments": [
+    {
+     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "kind": "pdf"
+    }
+   ],
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "acfa7dc80ed6b9b4",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "COVID-19 Vaccine-associated Anaphylaxis and Allergic Reactions: Consensus Statements of the KAAACI Urticaria/Angioedema/Anaphylaxis Working Group",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6868?gubun=1",
+   "link_resolved": true,
+   "lang": "en",
+   "tags": [
+    "합의문"
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "attachments": [
+    {
+     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "kind": "pdf"
+    }
+   ],
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "aed534f20f220f05",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "난치 아토피피부염 전신 치료에 관한 전문가 의견서 업데이트",
+   "url": "https://www.allergy.or.kr/board/treatment/view/7820?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "합의문"
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "attachments": [
+    {
+     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "kind": "pdf"
+    }
+   ],
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "b2592611ec1d1c31",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "한국 성인 천식의 진료 지침",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6885?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "eyJpdiI6IjRkeVJXWWtmcG90ZGlhZ3pSanBCeWc9PSIsInZhbHVlIjoiZkRSelNpZVUrN2lhWVRNdjF1K0E1Zz09IiwibWFjIjoiMjhhYjQ1ZGQyMTQ1Y2U3MjIwZTg2NDE0NmRiOWQ1YmMxMDRkOTYwOTk5NTVlMWI0OTAwMGJhY2JhMTIyYjk4NyIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IjRkeVJXWWtmcG90ZGlhZ3pSanBCeWc9PSIsInZhbHVlIjoiZkRSelNpZVUrN2lhWVRNdjF1K0E1Zz09IiwibWFjIjoiMjhhYjQ1ZGQyMTQ1Y2U3MjIwZTg2NDE0NmRiOWQ1YmMxMDRkOTYwOTk5NTVlMWI0OTAwMGJhY2JhMTIyYjk4NyIsInRhZyI6IiJ9?field=1",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "b3001d915621cf1d",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "The KAAACI/KDA Evidence-Based Practice Guidelines for Chronic Spontaneous Urticaria in Korean Adults and Children: Part 1. Definition, Methodology and First-line Management",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6873?gubun=1",
+   "link_resolved": true,
+   "lang": "en",
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "attachments": [
+    {
+     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "kind": "pdf"
+    }
+   ],
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "b32e4e71c5ac8b38",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "유도객담검사의 시행과 해석: 전문가 의견서",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6854?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "합의문"
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "attachments": [
+    {
+     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "kind": "pdf"
+    }
+   ],
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "b7836791b44f5650",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment-dev?gubun=2",
+   "board_name": "개발 중 진료지침",
+   "title": "개발 규정 부록 다운로드",
+   "url": "https://www.allergy.or.kr/assets/file/진료지침_개발 규정 부록.docx",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "개발 규정 부록 다운로드",
+     "url": "https://www.allergy.or.kr/assets/file/진료지침_개발 규정 부록.docx",
+     "kind": "docx"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15"
+  },
+  {
+   "id": "bda8af6342d06846",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "한국 아나필락시스의 진료",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6870?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "attachments": [
+    {
+     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "kind": "pdf"
+    }
+   ],
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "be26f8df061771cb",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "한국 천식진료지침 2021",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6880?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "eyJpdiI6IkxLU1BKczZRVVFpRFdjNWRTWW5hWmc9PSIsInZhbHVlIjoiNnIvVGViTWlVeG5aM3g3SUx0S2YzQT09IiwibWFjIjoiZGE5M2U5YjU3NWNmMjMzMmFmZDFhODIzMjIzNDFjMjRlZWNlOWFjNDUxZjFhNGE2ZWM0NzIxNWE3NjM0MmY2NiIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IkxLU1BKczZRVVFpRFdjNWRTWW5hWmc9PSIsInZhbHVlIjoiNnIvVGViTWlVeG5aM3g3SUx0S2YzQT09IiwibWFjIjoiZGE5M2U5YjU3NWNmMjMzMmFmZDFhODIzMjIzNDFjMjRlZWNlOWFjNDUxZjFhNGE2ZWM0NzIxNWE3NjM0MmY2NiIsInRhZyI6IiJ9?field=1",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "c47032e65bbf5d49",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "KAAACI Allergic Rhinitis Guidelines: Part 2. Update in Non-pharmacological Management",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6889?gubun=1",
+   "link_resolved": true,
+   "lang": "en",
+   "tags": [
+    "개정"
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "attachments": [
+    {
+     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "kind": "pdf"
+    }
+   ],
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "ccde1fc88fdc4f82",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "Korean Clinical Practice Guidelines for Adverse Reactions to Intravenous Iodinate and MRI-Gadolinium Contrast Agents: Revised Clinical Consensus and Recommendations (3rd Edition, 2022)",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6855?gubun=1",
+   "link_resolved": true,
+   "lang": "en",
+   "tags": [
+    "개정",
+    "합의문",
+    "권고·성명"
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "attachments": [
+    {
+     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "kind": "pdf"
+    }
+   ],
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "d4c9ab2f1f50830b",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "알레르기 면역요법",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6863?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "attachments": [
+    {
+     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "kind": "pdf"
+    }
+   ],
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "dc3dafc988b736e5",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "한국 만성두드러기 진료지침",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6888?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "eyJpdiI6IlpTQ25xZXlHYlhzaGtENDl4czl1Znc9PSIsInZhbHVlIjoibEFmcHNJdW03R05aM0dOWkg5SmZmQT09IiwibWFjIjoiNzE4NmMzYTBkNWI4MGU1NDc1OWIxNTQwZGM0N2VjZjI0ZTg5YzA0ZDNiYWQzYjg4MTgzZDg0M2RkZTAwODI1NSIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IlpTQ25xZXlHYlhzaGtENDl4czl1Znc9PSIsInZhbHVlIjoibEFmcHNJdW03R05aM0dOWkg5SmZmQT09IiwibWFjIjoiNzE4NmMzYTBkNWI4MGU1NDc1OWIxNTQwZGM0N2VjZjI0ZTg5YzA0ZDNiYWQzYjg4MTgzZDg0M2RkZTAwODI1NSIsInRhZyI6IiJ9?field=1",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "dcda80caaad50d11",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "항생제 피부반응시험 지침-즉시형 과민반응의 과거력이 있는 환자(2012년 제 1판)",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6860?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "환자용"
+   ],
+   "attachments": [
+    {
+     "name": "eyJpdiI6ImZncXZNWU1DYjBWcnU1WmxFbmtPdlE9PSIsInZhbHVlIjoiM3FMZzFZaStOQ1NkSDBoeVpaZ1IrZz09IiwibWFjIjoiY2EwMTU5ZWYwYjlkYWNjMmViNmI2NmU0MDEwMTVkMWNlZjJmZWU0ZDE0NDZiZWNmNzFhZGVkYzY5MjJlODE1MyIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6ImZncXZNWU1DYjBWcnU1WmxFbmtPdlE9PSIsInZhbHVlIjoiM3FMZzFZaStOQ1NkSDBoeVpaZ1IrZz09IiwibWFjIjoiY2EwMTU5ZWYwYjlkYWNjMmViNmI2NmU0MDEwMTVkMWNlZjJmZWU0ZDE0NDZiZWNmNzFhZGVkYzY5MjJlODE1MyIsInRhZyI6IiJ9?field=1",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "e257d448148b8f73",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "아나필락시스 카드",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6869?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "eyJpdiI6InZKMnZLdk9zWmFudWZkNHEvY2Vad3c9PSIsInZhbHVlIjoiVlk5d1dWVVhxSFFKUGd0dXppUEREQT09IiwibWFjIjoiYzk3MDllMWJiZTY1ZTg4NTQzOThkMzQ4OTY4ZjFjZjY2Y2I3N2RmOWFlNzk2NzQ5MjViMTZkMGIwYTExZmE0NCIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6InZKMnZLdk9zWmFudWZkNHEvY2Vad3c9PSIsInZhbHVlIjoiVlk5d1dWVVhxSFFKUGd0dXppUEREQT09IiwibWFjIjoiYzk3MDllMWJiZTY1ZTg4NTQzOThkMzQ4OTY4ZjFjZjY2Y2I3N2RmOWFlNzk2NzQ5MjViMTZkMGIwYTExZmE0NCIsInRhZyI6IiJ9?field=1",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "e5dec75a238183bf",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "중증 천식 환자 스테로이드 사용과 감량에 대한 전문가 의견서",
+   "url": "https://www.allergy.or.kr/board/treatment/view/7821?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "환자용",
+    "합의문"
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "attachments": [
+    {
+     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "kind": "pdf"
+    }
+   ],
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "e68a00624cd30084",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "호기산화질소 측정 검사 시행과 해석: 전문가 의견서",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6853?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "합의문"
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "attachments": [
+    {
+     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "kind": "pdf"
+    }
+   ],
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "e76c0b916b806557",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "아나필락시스(알레르기 쇽)",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6871?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "eyJpdiI6IkpxSEZBRzZPSStlOTBzMHIzbjJpWXc9PSIsInZhbHVlIjoiVTlTaDlFbHFiS3kybEM1WGlSb0xnQT09IiwibWFjIjoiMzk3ZjkzODMxZDNhMzMwZmNjOWYyMjgzYjk2MjRkMGQxYzJmYTYyZTY5OTRkZDM5MGJjNDNiNDEwNTk4YzY2YSIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IkpxSEZBRzZPSStlOTBzMHIzbjJpWXc9PSIsInZhbHVlIjoiVTlTaDlFbHFiS3kybEM1WGlSb0xnQT09IiwibWFjIjoiMzk3ZjkzODMxZDNhMzMwZmNjOWYyMjgzYjk2MjRkMGQxYzJmYTYyZTY5OTRkZDM5MGJjNDNiNDEwNTk4YzY2YSIsInRhZyI6IiJ9?field=1",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "e78643092a7ec82f",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "The KAAACI/KDA Evidence-Based Practice Guidelines for Chronic Spontaneous Urticaria in Korean Adults and Children: Part 2. Management of H1-Antihistamine-Refractory Chronic Urticaria",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6872?gubun=1",
+   "link_resolved": true,
+   "lang": "en",
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "attachments": [
+    {
+     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "kind": "pdf"
+    }
+   ],
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "ec45e4cbe2ed50eb",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "한국 천식 진료 지침 요약본",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6882?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "요약본"
+   ],
+   "attachments": [
+    {
+     "name": "eyJpdiI6IlJyS2hkWThtRldqMjJjdXNQVkVPcGc9PSIsInZhbHVlIjoiOWNZTHFkc3cwN1V2bVNKWnhFSGRDQT09IiwibWFjIjoiMjVhMzY4MDAyNzVhMDNiYzU3Mzc2MGJlZTY5NGI4MDgyODg1NDA5ZjRlOWRjZDA0ZTJiNWY1ZTJjNjIzMjlmNSIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IlJyS2hkWThtRldqMjJjdXNQVkVPcGc9PSIsInZhbHVlIjoiOWNZTHFkc3cwN1V2bVNKWnhFSGRDQT09IiwibWFjIjoiMjVhMzY4MDAyNzVhMDNiYzU3Mzc2MGJlZTY5NGI4MDgyODg1NDA5ZjRlOWRjZDA0ZTJiNWY1ZTJjNjIzMjlmNSIsInRhZyI6IiJ9?field=1",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "ef4d0f28ad7ee9a9",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "천식 행동 지침",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6887?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "eyJpdiI6IlFqNFM2Z0VVcXRYdi9nZ2RjUmdRWUE9PSIsInZhbHVlIjoidnIwdWZkb0dpcXVjbzIxMVZhMnAzdz09IiwibWFjIjoiOGVmMTAyMjAxMGM5ZWQxOGEzMDMxNTc5MjhlNThlM2I4Mzk0NjIyNTY5MDA0MGQ1NGViZjc3OGYzOGM3ZmFlZiIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IlFqNFM2Z0VVcXRYdi9nZ2RjUmdRWUE9PSIsInZhbHVlIjoidnIwdWZkb0dpcXVjbzIxMVZhMnAzdz09IiwibWFjIjoiOGVmMTAyMjAxMGM5ZWQxOGEzMDMxNTc5MjhlNThlM2I4Mzk0NjIyNTY5MDA0MGQ1NGViZjc3OGYzOGM3ZmFlZiIsInRhZyI6IiJ9?field=1",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "f355a8a47a1e165d",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kaaaci",
+   "board": "https://www.allergy.or.kr/board/treatment?gubun=1",
+   "board_name": "진료지침",
+   "title": "사용 전 베타락탐 항생제 피부시험의 유용성에 대한 전문가 의견",
+   "url": "https://www.allergy.or.kr/board/treatment/view/6857?gubun=1",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "합의문"
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "attachments": [
+    {
+     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
+     "kind": "pdf"
+    }
+   ],
+   "date": "2020-02-01",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "402d1d2534d0bb72",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kda",
+   "board": "https://www.diabetes.or.kr/bbs/?code=guide",
+   "board_name": "진료지침",
+   "title": "2025 당뇨병 진료지침_ 표_그림(JPG 파일)",
+   "url": "https://www.diabetes.or.kr/bbs/?code=guide&mode=view&number=2100&page=1&code=guide",
+   "link_resolved": true,
+   "lang": "ko",
+   "date": "2025-09-16",
+   "date_precision": "day",
+   "date_source": "list",
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "attachments": [
+    {
+     "name": "2025 진료지침(전문) 표와 그림.zip",
+     "url": "https://diabetes.or.kr/bbs/download.php?code=guide&number=1528",
+     "kind": "zip"
+    }
+   ]
+  },
+  {
+   "id": "a6b0e738fae37d7b",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kda",
+   "board": "https://www.diabetes.or.kr/bbs/?code=guide",
+   "board_name": "진료지침",
+   "title": "2025 당뇨병 진료지침_요약",
+   "url": "https://www.diabetes.or.kr/bbs/?code=guide&mode=view&number=2099&page=1&code=guide",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "요약본"
+   ],
+   "date": "2025-09-09",
+   "date_precision": "day",
+   "date_source": "list",
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "attachments": [
+    {
+     "name": "2025 당뇨병 진료지침_요약문_수정본(26.2.12).pdf",
+     "url": "https://diabetes.or.kr/bbs/download.php?code=guide&number=1596",
+     "kind": "pdf"
+    }
+   ]
+  },
+  {
+   "id": "e7f8a5999ce3dc0c",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kda",
+   "board": "https://www.diabetes.or.kr/bbs/?code=guide",
+   "board_name": "진료지침",
+   "title": "2025 당뇨병 진료지침 _전문",
+   "url": "https://www.diabetes.or.kr/bbs/?code=guide&mode=view&number=2078&page=1&code=guide",
+   "link_resolved": true,
+   "lang": "ko",
+   "date": "2025-07-09",
+   "date_precision": "day",
+   "date_source": "list",
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "attachments": [
+    {
+     "name": "2025 당뇨병 진료지침_전문_최종본.pdf",
+     "url": "https://diabetes.or.kr/bbs/download.php?code=guide&number=1522",
+     "kind": "pdf"
+    }
+   ]
+  },
+  {
+   "id": "01163f14bdd362e0",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Revision of Quality Indicators for the Endoscopy Quality Improvement Program of the National Cancer Screening Program in Korea. Korean J Gastroenterol 2018; 71(5): 269-281",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=3&number=2007&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "tags": [
+    "개정"
+   ],
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5395",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5395",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "0256a6576c083151",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide3",
+   "board_name": "임상진료지침 정보센터",
+   "title": "임상진료지침 실무를 위한 핸드북[Version 2.0] (임상진료지침 개발 방법론) (2022)",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide3&category=&gubun=&page=1&number=2193&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "download.php?code=guide3&number=5497",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide3&number=5497",
+     "kind": "file"
+    },
+    {
+     "name": "download.php?code=guide3&number=5498",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide3&number=5498",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-09-23",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "077d70b672769ff8",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide3",
+   "board_name": "임상진료지침 정보센터",
+   "title": "진료지침 개발의 길잡이(2009)",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide3&category=&gubun=&page=1&number=2190&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "download.php?code=guide3&number=5494",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide3&number=5494",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-09-23",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "08b99e0247280a5c",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Guidelines for the Treatment of Functional Dyspepsia. Korean J Gastroenterol 2011; 57(2): 67-81",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=4&number=1996&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5384",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5384",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "1b7b5b8ff4eddfd4",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Guidelines for the Treatment of Gastroesophageal Reflux Disease. Korean J Gastroenterol 2011; 57(2): 57-66",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=4&number=1995&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5383",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5383",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "1cb14241e53e9c33",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Guidelines for the Treatment of Constipation. Korean J Gastroenterol 2011; 57(2): 100-114",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=4&number=1994&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5382",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5382",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "218ae98974e4e7ea",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Guidelines of Prevention and Treatment for NSAID-related Peptic Ulcers. Korean J Gastroenterol 2009; 54(5): 309-317",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=4&number=1992&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5380",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5380",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "242b0f71f637697d",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Diagnosis and Treatment Guidelines for Helicobacter pylori Infection in Korea. Korean J Gastroenterol 2009; 54(5): 269-278",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=5&number=1988&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5376",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5376",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "2dcddbcdf3612553",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Guidelines of Treatment for Peptic Ulcer Disease in Special Conditions. Korean J Gastroenterol 2009; 54(5): 318-327",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=4&number=1993&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5381",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5381",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "2f51e0d2b934bd5d",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Diagnostic Guideline of Intestinal Tuberculosis. Korean J Gastroenterol 2009; 53(3): 177-186",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=5&number=1986&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5374",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5374",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "36085a7109176938",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Guidelines for Non-variceal Upper Gastrointestinal Bleeding. Korean J Gastroenterol 2020; 75(6): 322-332",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=2&number=2010&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5398",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5398",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "42c4f1c555bb6e59",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Clinical Guidelines for Drug-induced Peptic Ulcer, 2020 Revised Edition. Korean J Gastroenterol 2020; 76(3): 108-133",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=2&number=2011&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "tags": [
+    "개정"
+   ],
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5399",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5399",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "4d65bb217910aaef",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Second Korean Guidelines for the Management of Crohn’s Disease. Korean J Gastroenterol 2017; 69(1): 29-54",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=3&number=2006&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5394",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5394",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "4e22b2639722b7ce",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "2021 Korean Society of Gastrointestinal Endoscopy Clinical Practice Guidelines for Endoscopic Sedation. Korean J Gastroenterol 2022; 79(4): 141-155",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=2&number=2016&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5404",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5404",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "50bc3fab7a93718a",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide3",
+   "board_name": "임상진료지침 정보센터",
+   "title": "코호트 연구의 이해",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide3&category=&gubun=&page=1&number=2243&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "download.php?code=guide3&number=5527",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide3&number=5527",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2025-01-21",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "55d5d25f3fc8c278",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Diagnosis of Intestinal Behcet's Disease. Korean J Gastroenterol 2009; 53(3): 187-193",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=5&number=1987&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5375",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5375",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "5b93dd5f454dbc0d",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "SARS-CoV-2 Vaccination for Adult Patients with Inflammatory Bowel Disease: Expert Consensus Statements by KASID. Korean J Gastroenterol 2021; 78(2): 117-128",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=2&number=2013&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "tags": [
+    "환자용",
+    "합의문"
+   ],
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5401",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5401",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "62deae016bcc7cf9",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide3",
+   "board_name": "임상진료지침 정보센터",
+   "title": "임상진료지침 실무를 위한 핸드북[Version 2.0] (GRADE 방법론) (2022)",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide3&category=&gubun=&page=1&number=2192&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "download.php?code=guide3&number=5496",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide3&number=5496",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-09-23",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "68d0853ac3354c9d",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Guidelines of Treatment for Bleeding Peptic Ulcer Disease. Korean J Gastroenterol 2009; 54(5): 298-308",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=4&number=1991&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5379",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5379",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "6bf7652d601cf3d5",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "IDEN Consensus on Management of Antithrombotic Agents in Patients Undergoing Gastrointestinal Endoscopy. Korean J Gastroenterol 2024; 83(6): 217-232",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=1&number=2205&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "tags": [
+    "환자용",
+    "합의문"
+   ],
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5500",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5500",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-10-16",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "6cda90f79d0bfe40",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Korean Guidelines for Colorectal Cancer Screening and Polyp Detection. Korean J Gastroenterol 2012; 59(2): 65-84",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=3&number=1999&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5387",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5387",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "6d8969504470a457",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Quality Indicators of Endoscopic Retrograde Cholangiopancreatography in Korea Korean J Gastroenterol 2024; 84(3): 111-122",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=1&number=2297&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5579",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5579",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2025-04-16",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "7294f6a99a4001b9",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Korean Guidelines for Colonoscopic Polypectomy. Korean J Gastroenterol 2012; 59(2): 85-98",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=3&number=2000&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5388",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5388",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "72c0b0399ab6e338",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Updated Guidelines 2012 for Gastroesophageal Reflux Disease. Korean J Gastroenterol 2012; 60(4): 195-218",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=3&number=2002&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "tags": [
+    "개정"
+   ],
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5390",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5390",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "74961fbe9431ffed",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Korean Guidelines for Postpolypectomy Colonoscopic Surveillance: 2022 Revised Edition. Korean J Gastroenterol 2022; 80(3): 115-134",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=2&number=2017&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "tags": [
+    "개정"
+   ],
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5405",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5405",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "74ccf1873770027c",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Evidence-Based Guidelines for the Diagnosis and Treatment of Helicobacter pylori Infection in Korea: 2025 Revised Edition. Korean J Gastroenterol 2026; 86(3): 156-192",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=1&number=2535&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "tags": [
+    "개정"
+   ],
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=6243",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=6243",
+     "kind": "file"
+    },
+    {
+     "name": "download.php?code=guide2&number=6244",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=6244",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2026-10-27",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "810fb7a1eb5a2c82",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Guidelines of Diagnosis for Peptic Ulcer Disease. Korean J Gastroenterol 2009; 54(5): 279-284",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=4&number=1989&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5377",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5377",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "83a55cacf57c83f3",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Guideline for Minimizing Radiation Exposure of Interventionalists during Fluoroscopy-guided Interventional Procedures Korean J Gastroenterol 2024; 84(6): 251-264",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=1&number=2298&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5580",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5580",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2025-04-16",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "8c9d492437efcf5d",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Guidelines for the Treatment of Irritable Bowel Syndrome. Korean J Gastroenterol 2011; 57(2): 82-99",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=4&number=1997&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5385",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5385",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "8f7e5ff6b0fa4b8c",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "KASID Guidelines for the Medical Treatment of Ulcerative Colitis: 2026. Korean J Gastroenterol 2026; 86(4): 352-405",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=1&number=2538&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=6247",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=6247",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2026-10-27",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "9051199f14e14323",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Korean Guidelines for Post-polypectomy Colonoscopic Surveillance. Korean J Gastroenterol 2012; 59(2): 99-117",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=3&number=2001&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5389",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5389",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "928b2960d760aadb",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Guidelines of Treatment for Non-bleeding Peptic Ulcer Disease. Korean J Gastroenterol 2009; 54(5): 285-297",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=4&number=1990&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5378",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5378",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "9995315cd00c71f2",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Use of Device-Assisted Enteroscopy in Small Bowel Disease: An Expert Consensus Statement by the Korean Association for the Study of Intestinal Diseases. Korean J Gastroenterol 2023; 81(1): 1-16",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=2&number=2018&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "tags": [
+    "합의문"
+   ],
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5406",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5406",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "9aba411554b6dc5f",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Clinical Practice Guideline for the Management of Antithrombotic Agents in Patients Undergoing Gastrointestinal Endoscopy. Korean J Gastroenterol 2020; 76(6): 282-296",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=2&number=2012&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "tags": [
+    "환자용"
+   ],
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5400",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5400",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "9b1243332733f008",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "KASID Guidelines for Sexuality, Fertility, Pregnancy, and Lactation in Inflammatory Bowel Disease: 2026. Korean J Gastroenterol 2026; 86(4): 406-454",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=1&number=2539&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=6248",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=6248",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2026-10-27",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "a42dae1ecf550d9d",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide3",
+   "board_name": "임상진료지침 정보센터",
+   "title": "네트워크 메타분석의 이해",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide3&category=&gubun=&page=1&number=2189&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "ko",
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-09-23",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "a7ae84f58e36b3b6",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Synopsis on Clinical Practice Guideline of Gastric Cancer in Korea: An Evidence-Based Approach. Korean J Gastroenterol 2014; 63(2): 66-81",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=3&number=2004&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "tags": [
+    "요약본"
+   ],
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5392",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5392",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "ad07929733cb5e2e",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Clinical and Technical Guideline for Endoscopic Ultrasound-guided Tissue Acquisition of Pancreatic Solid Tumor: Korean Society of Gastrointestinal Endoscopy. Korean J Gastroenterol 2021; 78(2): 73-93",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=2&number=2014&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5402",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5402",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "aeee41c7c09cb6fd",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Seoul Consensus on Clinical Practice Guidelines for Functional Constipation. Korean J Gastroenterol 2025; 85(3): 319-344",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=1&number=2395&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "tags": [
+    "합의문"
+   ],
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5983",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5983",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2025-12-12",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "b04bd38078629913",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide3",
+   "board_name": "임상진료지침 정보센터",
+   "title": "[본문] 비뚤림위험평가도구매뉴얼 (NECA)",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide3&category=&gubun=&page=1&number=2299&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "download.php?code=guide3&number=5581",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide3&number=5581",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2025-04-16",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "b9d1d085067702fe",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide3",
+   "board_name": "임상진료지침 정보센터",
+   "title": "한국형 진료지침 수용개발 방법의 이해와 활용(2011)",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide3&category=&gubun=&page=1&number=2191&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "download.php?code=guide3&number=5495",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide3&number=5495",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-09-23",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "d2fcc0e7ef9ba193",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide3",
+   "board_name": "임상진료지침 정보센터",
+   "title": "[부록] 비뚤림위험평가도구매뉴얼 (NECA)",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide3&category=&gubun=&page=1&number=2300&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "download.php?code=guide3&number=5582",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide3&number=5582",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2025-04-16",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "d550ba8075930638",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Clinical Practice Guideline for Percutaneous Endoscopic Gastrostomy. Korean J Gastroenterol 2023; 82(3): 107-121",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=1&number=2019&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5407",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5407",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "d728b1fa9baa0c2e",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Guidelines for the Diagnosis and Treatment of Helicobacter pylori Infection in Korea, 2013 Revised Edition. Korean J Gastroenterol 2013; 62(1): 3-2",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=3&number=2003&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "tags": [
+    "개정"
+   ],
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5391",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5391",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "d9d55024ea22d7de",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Guideline Recommendation for Endpoints Used in Clinical Trials for Functional Dyspepsia. Korean J Gastroenterol 2018; 72(4): 170-178",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=3&number=2008&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "tags": [
+    "권고·성명"
+   ],
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5396",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5396",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "dec876338c69666f",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Clinical Practice Guideline for Endoscopic Resection of Early Gastrointestinal Cancer. Korean J Gastroenterol 2020; 75(5): 264-291",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=2&number=2009&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5397",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5397",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "ec3997f29217a738",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Diagnostic Guideline of Crohn's Disease. Korean J Gastroenterol 2009; 53(3): 161-176",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=5&number=1985&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5373",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5373",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "f0c3c223b512364c",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Diagnostic Guideline of Ulcerative Colitis. Korean J Gastroenterol 2009; 53(3): 145-160",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=5&number=1984&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5372",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5372",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "f27805f285c8b237",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Second Korean Guideline for the Management of Ulcerative Colitis. Korean J Gastroenterol 2017; 69(1): 1-28",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=3&number=2005&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5393",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5393",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "f32c2f5a10058fa6",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "KASID Guidelines for the Medical Treatment of Crohn’s Disease: 2026. Korean J Gastroenterol 2026; 86(4): 313-351",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=1&number=2537&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=6246",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=6246",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2026-10-27",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "f466900d0775fa1e",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "KASID Guidelines for Diagnosis and Monitoring of Inflammatory Bowel Disease: 2026. Korean J Gastroenterol 2026; 86(4): 267-312",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=1&number=2536&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=6245",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=6245",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2026-10-27",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "f6fe0e822173a189",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "KASID Guidance for Clinical Practice Management of Adult Inflammatory Bowel Disease during the COVID-19 Pandemic: Expert Consensus Statement. Korean J Gastroenterol 2021; 78(2): 105-116",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=2&number=2015&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "tags": [
+    "합의문"
+   ],
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5403",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5403",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "fecce82781010255",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksg",
+   "board": "https://gastrokorea.org/bbs2/index.php?code=guide2",
+   "board_name": "소화기학회지에 발표된 진료지침",
+   "title": "Guidelines for the Management of Ulcerative Colitis. Korean J Gastroenterol 2012; 59(2): 118-140",
+   "url": "https://gastrokorea.org/bbs2/index.php?code=guide2&category=&gubun=&page=4&number=1998&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "attachments": [
+    {
+     "name": "download.php?code=guide2&number=5386",
+     "url": "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=5386",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "date": "2024-04-05",
+   "date_precision": "day",
+   "date_source": "detail"
+  },
+  {
+   "id": "00acbe0bc7f788eb",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksh",
+   "board": "https://www.koreanhypertension.org/reference/guide",
+   "board_name": "고혈압 진료지침",
+   "title": "[대한고혈압학회] 2026년 제6판 고혈압 진료지침(수정본)",
+   "url": "https://www.koreanhypertension.org/reference/guide?mode=read&idno=10446",
+   "link_resolved": true,
+   "lang": "ko",
+   "date": "2026-05-22",
+   "date_precision": "day",
+   "date_source": "list",
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15"
+  },
+  {
+   "id": "064867dbeb665e00",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksh",
+   "board": "https://www.koreanhypertension.org/reference/guide",
+   "board_name": "고혈압 진료지침",
+   "title": "[대한고혈압학회] 2026년 제6판 고혈압 진료지침 표,그림 권고안 모음",
+   "url": "https://www.koreanhypertension.org/reference/guide?mode=read&idno=10488",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "권고·성명"
+   ],
+   "date": "2026-11-05",
+   "date_precision": "day",
+   "date_source": "list",
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15"
+  },
+  {
+   "id": "0b3684ccbaadb0ba",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksh",
+   "board": "https://www.koreanhypertension.org/reference/guide",
+   "board_name": "고혈압 진료지침",
+   "title": "[대한고혈압학회] 2025 FACTSHEET",
+   "url": "https://www.koreanhypertension.org/reference/guide?mode=read&idno=10391",
+   "link_resolved": true,
+   "lang": "ko",
+   "date": "2025-11-06",
+   "date_precision": "day",
+   "date_source": "list",
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15"
+  },
+  {
+   "id": "15a4d301940eccd8",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksh",
+   "board": "https://www.koreanhypertension.org/reference/guide",
+   "board_name": "고혈압 진료지침",
+   "title": "[대한고혈압학회] 2023 FACTSHEET",
+   "url": "https://www.koreanhypertension.org/reference/guide?mode=read&idno=10178",
+   "link_resolved": true,
+   "lang": "ko",
+   "date": "2023-11-03",
+   "date_precision": "day",
+   "date_source": "list",
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15"
+  },
+  {
+   "id": "201b8a65800e6a95",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksh",
+   "board": "https://www.koreanhypertension.org/reference/guide",
+   "board_name": "고혈압 진료지침",
+   "title": "[대한고혈압학회] 2000년 제1판 고혈압 진료지침",
+   "url": "https://www.koreanhypertension.org/reference/guide?mode=read&idno=10438",
+   "link_resolved": true,
+   "lang": "ko",
+   "date": "2026-05-08",
+   "date_precision": "day",
+   "date_source": "list",
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15"
+  },
+  {
+   "id": "42169de4cae60503",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksh",
+   "board": "https://www.koreanhypertension.org/reference/guide",
+   "board_name": "고혈압 진료지침",
+   "title": "[대한고혈압학회] 공단 공동연구 보고서",
+   "url": "https://www.koreanhypertension.org/reference/guide?mode=read&idno=10101",
+   "link_resolved": true,
+   "lang": "ko",
+   "date": "2023-01-19",
+   "date_precision": "day",
+   "date_source": "list",
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15"
+  },
+  {
+   "id": "79f67c0b5c640fe1",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksh",
+   "board": "https://www.koreanhypertension.org/reference/guide",
+   "board_name": "고혈압 진료지침",
+   "title": "[대한고혈압학회] 2024 FACTSHEET",
+   "url": "https://www.koreanhypertension.org/reference/guide?mode=read&idno=10270",
+   "link_resolved": true,
+   "lang": "ko",
+   "date": "2024-11-08",
+   "date_precision": "day",
+   "date_source": "list",
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15"
+  },
+  {
+   "id": "b0442973613f4e1c",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksh",
+   "board": "https://www.koreanhypertension.org/reference/guide",
+   "board_name": "고혈압 진료지침",
+   "title": "[대한고혈압학회] 2022년 제5판 고혈압 진료지침",
+   "url": "https://www.koreanhypertension.org/reference/guide?mode=read&idno=10081",
+   "link_resolved": true,
+   "lang": "ko",
+   "date": "2022-11-05",
+   "date_precision": "day",
+   "date_source": "list",
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15"
+  },
+  {
+   "id": "db3d30188d97cd33",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksh",
+   "board": "https://www.koreanhypertension.org/reference/guide",
+   "board_name": "고혈압 진료지침",
+   "title": "[대한고혈압학회] 2026 FACTSHEET",
+   "url": "https://www.koreanhypertension.org/reference/guide?mode=read&idno=10490",
+   "link_resolved": true,
+   "lang": "ko",
+   "date": "2026-11-05",
+   "date_precision": "day",
+   "date_source": "list",
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15"
+  },
+  {
+   "id": "fff1ac8d087e2169",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksh",
+   "board": "https://www.koreanhypertension.org/reference/guide",
+   "board_name": "고혈압 진료지침",
+   "title": "[대한고혈압학회] 2026년 제6판 고혈압 진료지침 하이라이트 논문(영문)",
+   "url": "https://www.koreanhypertension.org/reference/guide?mode=read&idno=10447",
+   "link_resolved": true,
+   "lang": "ko",
+   "date": "2026-05-22",
+   "date_precision": "day",
+   "date_source": "list",
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15"
+  },
+  {
+   "id": "14522a842328e896",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksmo",
+   "board": "https://www.ksmo.or.kr/Pages/Publication/publication03.aspx",
+   "board_name": "지침서",
+   "title": "전문보기",
+   "url": "https://www.ksmo.or.kr/file/book1-08.pdf",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "전문보기",
+     "url": "https://www.ksmo.or.kr/file/book1-08.pdf",
+     "kind": "pdf"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15"
+  },
+  {
+   "id": "39e9f6f5c995a91b",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksmo",
+   "board": "https://www.ksmo.or.kr/Pages/Publication/publication03.aspx",
+   "board_name": "지침서",
+   "title": "전문보기",
+   "url": "https://www.ksmo.or.kr/file/book1-07.pdf",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "전문보기",
+     "url": "https://www.ksmo.or.kr/file/book1-07.pdf",
+     "kind": "pdf"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15"
+  },
+  {
+   "id": "3e5c7cac2e9283af",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksmo",
+   "board": "https://www.ksmo.or.kr/Pages/Publication/publication03.aspx",
+   "board_name": "지침서",
+   "title": "전문보기",
+   "url": "https://www.ksmo.or.kr/file/book1-05.pdf",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "전문보기",
+     "url": "https://www.ksmo.or.kr/file/book1-05.pdf",
+     "kind": "pdf"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15"
+  },
+  {
+   "id": "412794524ab3ddca",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksmo",
+   "board": "https://www.ksmo.or.kr/Pages/Publication/publication03.aspx",
+   "board_name": "지침서",
+   "title": "전문보기",
+   "url": "https://www.ksmo.or.kr/file/book1-03.pdf",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "전문보기",
+     "url": "https://www.ksmo.or.kr/file/book1-03.pdf",
+     "kind": "pdf"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15"
+  },
+  {
+   "id": "4f824fe960b9c2bb",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksmo",
+   "board": "https://www.ksmo.or.kr/Pages/Publication/publication03.aspx",
+   "board_name": "지침서",
+   "title": "간략본보기",
+   "url": "https://www.ksmo.or.kr/file/간외_담관암_간략본.pdf",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "간략본보기",
+     "url": "https://www.ksmo.or.kr/file/간외_담관암_간략본.pdf",
+     "kind": "pdf"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15"
+  },
+  {
+   "id": "604f76d5a435eaf1",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksmo",
+   "board": "https://www.ksmo.or.kr/Pages/Publication/publication03.aspx",
+   "board_name": "지침서",
+   "title": "전문보기",
+   "url": "https://www.ksmo.or.kr/file/한국위암진료가이드라인2024.pdf",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "전문보기",
+     "url": "https://www.ksmo.or.kr/file/한국위암진료가이드라인2024.pdf",
+     "kind": "pdf"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15"
+  },
+  {
+   "id": "60ced5e2ea9adf08",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksmo",
+   "board": "https://www.ksmo.or.kr/Pages/Publication/publication03.aspx",
+   "board_name": "지침서",
+   "title": "전문보기",
+   "url": "https://www.ksmo.or.kr/file/book1-10.pdf",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "전문보기",
+     "url": "https://www.ksmo.or.kr/file/book1-10.pdf",
+     "kind": "pdf"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15"
+  },
+  {
+   "id": "7ffd6aae468b148c",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksmo",
+   "board": "https://www.ksmo.or.kr/Pages/Publication/publication03.aspx",
+   "board_name": "지침서",
+   "title": "전문보기",
+   "url": "https://www.ksmo.or.kr/file/최종_한국간_외담관암_진료가이드.pdf",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "전문보기",
+     "url": "https://www.ksmo.or.kr/file/최종_한국간_외담관암_진료가이드.pdf",
+     "kind": "pdf"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15"
+  },
+  {
+   "id": "97bae35a1b9e537d",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksmo",
+   "board": "https://www.ksmo.or.kr/Pages/Publication/publication03.aspx",
+   "board_name": "지침서",
+   "title": "전문보기",
+   "url": "https://www.ksmo.or.kr/file/3.pdf",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "전문보기",
+     "url": "https://www.ksmo.or.kr/file/3.pdf",
+     "kind": "pdf"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15"
+  },
+  {
+   "id": "9d900eba03e8e427",
+   "first_seen": "2026-11-15",
+   "access": "unknown",
+   "society": "ksmo",
+   "board": "https://www.ksmo.or.kr/Pages/Publication/publication03.aspx",
+   "board_name": "지침서",
+   "title": "전문보기",
+   "url": "https://www.ksmo.or.kr/file/진행성고형암 진료권고안.pdf",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "전문보기",
+     "url": "https://www.ksmo.or.kr/file/진행성고형암 진료권고안.pdf",
+     "kind": "pdf"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15"
+  },
+  {
+   "id": "d5e03889a24fcb92",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksmo",
+   "board": "https://www.ksmo.or.kr/Pages/Publication/publication03.aspx",
+   "board_name": "지침서",
+   "title": "전문보기",
+   "url": "https://www.ksmo.or.kr/file/NGS진료권고안_final.pdf",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "전문보기",
+     "url": "https://www.ksmo.or.kr/file/NGS진료권고안_final.pdf",
+     "kind": "pdf"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15"
+  },
+  {
+   "id": "e6f7328f18b6b490",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksmo",
+   "board": "https://www.ksmo.or.kr/Pages/Publication/publication03.aspx",
+   "board_name": "지침서",
+   "title": "전문보기",
+   "url": "https://www.ksmo.or.kr/file/2.pdf",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "전문보기",
+     "url": "https://www.ksmo.or.kr/file/2.pdf",
+     "kind": "pdf"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15"
+  },
+  {
+   "id": "fea6a477270d85e9",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksmo",
+   "board": "https://www.ksmo.or.kr/Pages/Publication/publication03.aspx",
+   "board_name": "지침서",
+   "title": "전문보기",
+   "url": "https://www.ksmo.or.kr/file/진행성고형암_진료권고안.pdf",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "전문보기",
+     "url": "https://www.ksmo.or.kr/file/진행성고형암_진료권고안.pdf",
+     "kind": "pdf"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15"
+  },
+  {
+   "id": "28084924ba0e4d3f",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksola",
+   "board": "https://www.lipid.or.kr/reference/guideline.php",
+   "board_name": "진료지침",
+   "title": "이상지질혈증 진료지침 2026 요약슬라이드(영문)",
+   "url": "https://www.lipid.or.kr/reference/guideline.php?boardid=guideline&mode=view&idx=1455&sk=&sw=&offset=&category=",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "요약본"
+   ],
+   "date": "2026-09-10",
+   "date_precision": "day",
+   "date_source": "list",
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "attachments": [
+    {
+     "name": "이상지질혈증 진료지침 2026_요약본_영문.pdf",
+     "url": "https://www.lipid.or.kr/module/board/download.php?boardid=guideline&b_idx=1455&idx=10849",
+     "kind": "pdf"
+    },
+    {
+     "name": "사파리",
+     "url": "https://support.apple.com/ko_KR/downloads/safari",
+     "kind": "file"
+    }
+   ]
+  },
+  {
+   "id": "c3232d9d8c36c056",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksola",
+   "board": "https://lipid.or.kr/reference/guideline.php",
+   "board_name": "이상지질혈증 진료지침 2026 보러가기",
+   "title": "이상지질혈증 진료지침 2026 요약슬라이드(영문)",
+   "url": "https://lipid.or.kr/reference/guideline.php?boardid=guideline&mode=view&idx=1455&sk=&sw=&offset=&category=",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "요약본"
+   ],
+   "date": "2026-09-10",
+   "date_precision": "day",
+   "date_source": "list",
+   "last_seen": "2026-11-15",
+   "checked": "2026-11-15",
+   "attachments": [
+    {
+     "name": "이상지질혈증 진료지침 2026_요약본_영문.pdf",
+     "url": "https://lipid.or.kr/module/board/download.php?boardid=guideline&b_idx=1455&idx=10849",
+     "kind": "pdf"
+    },
+    {
+     "name": "사파리",
+     "url": "https://support.apple.com/ko_KR/downloads/safari",
+     "kind": "file"
+    }
+   ]
+  }
+ ]
 }
