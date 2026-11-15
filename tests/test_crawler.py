@@ -498,3 +498,38 @@ def test_label_year_from_category_label():
     for label in ('<span class="cate"><em>COVID-19 진료지침</em> 2024</span>', '<dl><dt>COVID-19 진료지침 2024</dt></dl>'):
         el2 = BeautifulSoup(html.replace('<span class="cate">COVID-19 진료지침 2024</span>', label), "lxml").li
         assert parse_row(el2, base, {"label_year": True}).label_year == "2024"
+
+
+def test_merge_same_guideline_across_societies():
+    from gcrawler.build import merge_items
+
+    socs = {
+        "ksc": {"id": "ksc", "group": "내과계", "division": "순환기", "short": "심장학회"},
+        "khrs": {"id": "khrs", "group": "내과계", "division": "순환기", "short": "부정맥학회"},
+        "ksh": {"id": "ksh", "group": "내과계", "division": "순환기", "short": "고혈압학회"},
+        "ksid": {"id": "ksid", "group": "내과계", "division": "감염", "short": "감염학회"},
+    }
+
+    def it(i, soc, title, date):
+        return {"id": i, "society": soc, "title": title, "url": f"https://x/{i}", "date": date,
+                "date_precision": "year" if len(date) == 4 else "day", "access": "public"}
+
+    nfd = __import__("unicodedata").normalize("NFD", "2022 대한부정맥학회_심방세동 환자에서 비타민K비의존성 경구")
+    items = [
+        it("a", "ksc", "2018 심방세동 치료 가이드라인", "2018"),
+        it("b", "khrs", "2018 대한부정맥학회 심방세동 치료 가이드라인", "2018"),
+        it("c", "ksc", "2022 대한부정맥학회_심방세동 환자에서 비타민K비의존성 경구용 항응고제(NOAC) 사...", "2022"),
+        it("d", "khrs", nfd, "2022"),  # 자모 분리형 + 잘린 제목
+        it("e", "ksc", "2022 고혈압 진료지침", "2022-11-11"),
+        it("f", "ksh", "[대한고혈압학회] 2022년 제5판 고혈압 진료지침", "2022-11-05"),
+        it("g", "ksc", "대한내과학회 COVID-19 백신 접종 권고안", "2021-06-01"),
+        it("h", "ksid", "대한내과학회 코로나19 백신 접종 권고안", "2021-05-12"),
+        it("i", "khrs", "2018 대한부정맥학회 심방세동 환자의 심박수 조절 지침", "2018"),  # 다른 지침
+        it("j", "ksh", "[대한고혈압학회] 2018년 제4판 고혈압 진료지침", "2018"),  # 연도가 다르면 안 합침
+    ]
+    merged = merge_items(items, socs)
+    by = {frozenset(g["societies"]): g for g in merged if len(g["societies"]) > 1}
+    assert len(merged) == 6
+    assert any("NOAC" in g["title"] for g in merged if set(g["societies"]) == {"ksc", "khrs"})
+    assert by[frozenset({"ksc", "ksh"})]["title"] == "2022 고혈압 진료지침"
+    assert frozenset({"ksc", "ksid"}) in by

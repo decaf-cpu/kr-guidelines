@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import datetime as dt
 import re
+import unicodedata
 from dataclasses import dataclass, field
 from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlunparse
 
@@ -158,7 +159,8 @@ _WS = re.compile(r"\s+")
 
 
 def clean(text: str | None) -> str:
-    return _WS.sub(" ", text or "").strip()
+    # 일부 사이트는 한글을 자모 분리형(NFD)으로 내보냄 → 완성형(NFC)으로 맞춰야 검색·중복 판정이 됨
+    return _WS.sub(" ", unicodedata.normalize("NFC", text or "")).strip()
 
 
 def _in_nav(el: Tag) -> bool:

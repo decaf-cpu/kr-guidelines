@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import datetime as dt
 import re
+import unicodedata
 import shutil
 from email.utils import format_datetime
 from pathlib import Path
@@ -23,7 +24,122 @@ _FILE_URL = re.compile(r"(\.(pdf|hwp|hwpx|docx?|pptx?|xlsx?|zip)(?:$|[?#&])|down
 
 
 def norm_title(t: str) -> str:
-    return _NORM.sub("", (t or "").lower())
+    return _NORM.sub("", unicodedata.normalize("NFC", t or "").lower())
+
+
+# ── 학회 간 같은 지침 찾기 ─────────────────────────
+# 같은 지침을 여러 학회가 올리면 제목이 조금씩 다르다:
+#   '2018 심방세동 치료 가이드라인' / '2018 대한부정맥학회 심방세동 치료 가이드라인'
+#   '2022 고혈압 진료지침' / '[대한고혈압학회] 2022년 제5판 고혈압 진료지침'
+#   '대한내과학회 COVID-19 백신 접종 권고안' / '대한내과학회 코로나19 백신 접종 권고안'
+#   목록에서 잘린 제목 '…(NOAC) 사...' / '…비타민K비의존성 경구'
+_SOC_NAME = re.compile(r"(대한|한국)[가-힣·\s]{1,20}?(학회|의사회|협회|연구회)|[가-힣]{2,12}학회|질병관리(본부|청)")
+_COVID = re.compile(r"(covid\s*-?\s*19|코로나\s*19|코로나\s*바?이러스\s*감염증\s*-?\s*19|신종\s*코로나\s*바이러스\s*감염증)", re.I)
+_EDITION = re.compile(r"(제\s*\d+\s*판|\d+\s*판|\(?\d+(st|nd|rd|th)\s*ed(ition)?\.?\)?|개정판)", re.I)
+_TRUNC = re.compile(r"(\.\.\.|…)\s*$")
+
+
+def fuzzy_key(t: str) -> str:
+    """연도·학회명·판수·표기 차이를 지운 제목 열쇠 (연도는 따로 비교)."""
+    t = unicodedata.normalize("NFC", t or "")
+    if _TRUNC.search(t):
+        t = re.sub(r"\S*$", "", _TRUNC.sub("", t))  # 잘린 제목은 끝의 잘린 낱말까지 버림
+    t = _COVID.sub(" covid19 ", t)
+    t = _SOC_NAME.sub(" ", t)
+    t = _EDITION.sub(" ", t)
+    t = re.sub(r"(19|20)\d{2}\s*년?\s*도?", " ", t)
+    t = re.sub(r"지침서", "지침", t)
+    return norm_title(t)
+
+
+def _year_of(g: dict) -> str | None:
+    ty = year_from_title(g.get("title", ""))
+    if ty:
+        return ty[0][:4]
+    return (g.get("date") or "")[:4] or None
+
+
+def _same_guideline(a: dict, b: dict) -> bool:
+    if set(a["societies"]) & set(b["societies"]):
+        return False  # 한 학회 안의 비슷한 제목은 판·요약본 등 서로 다른 문서일 수 있음
+    ya, yb = _year_of(a), _year_of(b)
+    if not ya or ya != yb:
+        return False
+    ka, kb = fuzzy_key(a["title"]), fuzzy_key(b["title"])
+    if len(ka) < 6 or len(kb) < 6:
+        return False
+    if ka == kb:
+        return True
+    short, long_ = sorted((ka, kb), key=len)
+    # 목록에서 잘린 제목: 짧은 쪽이 긴 쪽의 앞부분이고 충분히 길 때만
+    return len(short) >= 15 and long_.startswith(short)
+
+
+def _display_title(titles: list[str]) -> str:
+    # 내용이 가장 긴 제목, 같으면 잘리지 않은 쪽, 그다음 군더더기(학회명·판수)가 적은 짧은 쪽
+    return max(titles, key=lambda t: (len(fuzzy_key(t)), not _TRUNC.search(t), -len(t)))
+
+
+def _absorb_group(target: dict, g: dict) -> None:
+    for s in g["sources"]:
+        if not any(t["society"] == s["society"] and t["url"] == s["url"] for t in target["sources"]):
+            target["sources"].append(s)
+    target["_titles"] = target["_titles"] + g["_titles"]
+    target["title"] = _display_title(target["_titles"])
+    rank = {"day": 3, "month": 2, "year": 1}
+    if rank.get(g.get("date_precision"), 0) > rank.get(target.get("date_precision"), 0):
+        target.update({k: g.get(k) for k in ("date", "date_precision", "date_source", "date_ref", "posted")})
+    if (g.get("first_seen") or "9999") < (target.get("first_seen") or "9999"):
+        target["first_seen"] = g["first_seen"]
+    target["backfill"] = target["backfill"] and g["backfill"]
+    target["tags"] = sorted(set(target["tags"]) | set(g["tags"]))
+    target["societies"] = list(dict.fromkeys(target["societies"] + g["societies"]))
+    target["groups"] = sorted(set(target["groups"]) | set(g["groups"]))
+    target["divisions"] = sorted(set(target["divisions"]) | set(g["divisions"]))
+
+
+def _settle_year(g: dict) -> None:
+    """학회마다 날짜가 다르면(게시일·재게시일) 제목에 적힌 발행연도를 따른다."""
+    ys = {y[0][:4] for t in g["_titles"] if (y := year_from_title(t))}
+    if len(ys) == 1 and g.get("date") and g["date"][:4] not in ys and g.get("date_source") != "lookup":
+        y = ys.pop()
+        if g["date"][:4] > y:
+            g["posted"] = g["date"]
+        g.update(date=y, date_precision="year", date_source="title")
+
+
+def merge_across_societies(groups: list[dict], same_as: list[list[dict]] | None = None) -> list[dict]:
+    """학회마다 제목이 조금 다른 같은 지침을 한 항목으로 합친다.
+    1) 자동: 다른 학회 + 같은 연도 + fuzzy_key가 같거나 잘린 제목의 앞부분
+    2) 수동: config/duplicates.yaml에 적은 묶음 (학회 id + 제목 일부)"""
+    for g in groups:
+        g.setdefault("_titles", [g["title"]])
+    out: list[dict] = []
+    for g in groups:
+        target = next((o for o in out if _same_guideline(o, g)), None)
+        if target is None:
+            out.append(g)
+        else:
+            _absorb_group(target, g)
+    for bundle in same_as or []:
+        found: list[dict] = []
+        for m in bundle:
+            for o in out:
+                if m.get("society") in o["societies"] and any(str(m.get("title", "")) in t for t in o["_titles"]):
+                    if all(o is not f for f in found):
+                        found.append(o)
+                    break
+        keep = found[0]["title"] if found else None  # 수동 묶음은 처음 적은 학회의 제목을 쓴다
+        for o in found[1:]:
+            _absorb_group(found[0], o)
+            out = [x for x in out if x is not o]
+        if keep:
+            found[0]["title"] = keep
+    for g in out:
+        if len(g["societies"]) > 1:
+            _settle_year(g)
+        g.pop("_titles", None)
+    return out
 
 
 def fix_dates(items: list[dict]) -> list[dict]:
@@ -111,6 +227,13 @@ def society_boards(socs_list: list[dict], status: dict, discovered: dict) -> dic
     return out
 
 
+def load_duplicates() -> list[list[dict]]:
+    import yaml
+
+    p = ROOT / "config" / "duplicates.yaml"
+    return (yaml.safe_load(p.read_text(encoding="utf-8")) or []) if p.exists() else []
+
+
 def load_overrides() -> list[dict]:
     import yaml
 
@@ -133,7 +256,7 @@ def apply_overrides(items: list[dict], overrides: list[dict]) -> list[dict]:
 
 
 def merge_items(items: list[dict], socs: dict[str, dict], overrides: list[dict] | None = None,
-                boards: dict[str, str] | None = None) -> list[dict]:
+                boards: dict[str, str] | None = None, same_as: list[list[dict]] | None = None) -> list[dict]:
     boards = boards or {}
     items = apply_overrides(fix_dates(items), overrides or [])
     groups: dict[str, dict] = {}
@@ -204,6 +327,7 @@ def merge_items(items: list[dict], socs: dict[str, dict], overrides: list[dict] 
         g["groups"] = sorted({s["group"] for s in ss})
         g["divisions"] = sorted({s["division"] for s in ss})
         g["societies"] = list(dict.fromkeys(s["id"] for s in ss))
+    out = merge_across_societies(out, same_as)
     out.sort(key=lambda g: ((g.get("date") or g.get("first_seen") or ""), g["title"]), reverse=True)
     return out
 
@@ -245,7 +369,7 @@ def build(base_url: str = "./") -> dict:
     for m in manual:
         m["first_seen"] = m["first_seen"] or (doc.get("updated") or "")[:10] or None
     boards = society_boards(socs_list, status, load_json(DATA / "discovered.json", {}))
-    items = merge_items(doc.get("items", []) + manual, socs, load_overrides(), boards)
+    items = merge_items(doc.get("items", []) + manual, socs, load_overrides(), boards, load_duplicates())
     hidden = sum(1 for it in doc.get("items", []) if it.get("access") == "members")
 
     if OUT.exists():

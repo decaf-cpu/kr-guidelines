@@ -5,6 +5,7 @@ import datetime as dt
 import hashlib
 import json
 import threading
+import unicodedata
 from pathlib import Path
 
 import yaml
@@ -78,6 +79,8 @@ class Store:
         """주소 정규화 규칙이 바뀌어도 같은 글이 두 번 저장되지 않게 id를 다시 계산해 합친다."""
         from .parse import canonical_url
 
+        if it.get("title"):
+            it["title"] = unicodedata.normalize("NFC", it["title"])
         canon = canonical_url(it["url"]) if it.get("url") and it.get("link_resolved", True) else None
         iid = item_id(it.get("society", ""), canon, it.get("title", ""), it.get("board", ""))
         it["id"] = iid
