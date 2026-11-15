@@ -466,12 +466,38 @@ def page_urls(first_url: str, page2: tuple | None, max_pages: int) -> list[str]:
 
 
 # ── 상세 페이지 ──────────────────────────────────
+_YEAR_LABEL = re.compile(r"^(?:발행|발간|게재|출판|개발|제정|개정)?\s*(?:연도|년도)$|^(?:publication\s*)?year$", re.I)
+_DOI = re.compile(r"(?:https?://(?:dx\.)?doi\.org/|\bdoi:\s*)(10\.\d{4,9}/[^\s\"'<>]+)", re.I)
+
+
+def labeled_year(soup) -> str | None:
+    """'연도 | 2017'처럼 항목명 옆 칸에 적힌 발행연도 (dt/dd, th/td, 나란한 div)."""
+    this_year = dt.date.today().year
+    for el in soup.find_all(["dt", "th", "div", "span", "label", "strong", "p"]):
+        if len(el.get_text(strip=True)) > 12 or not _YEAR_LABEL.match(clean(el.get_text(" "))):
+            continue
+        sib = el.find_next_sibling()
+        if sib is None:
+            continue
+        m = re.fullmatch(r"\s*((?:19|20)\d{2})\s*년?\s*", sib.get_text(" "))
+        if m and 1990 <= int(m.group(1)) <= this_year:
+            return m.group(1)
+    return None
+
+
 def parse_detail(html: str, base_url: str) -> dict:
     soup = BeautifulSoup(html, "lxml")
     for bad in soup(["script", "style", "noscript"]):
         bad.decompose()
     text = clean(soup.get_text(" "))
     date = find_labeled_date(text)
+    pub_year = labeled_year(soup)
+    doi = None
+    for a in soup.find_all("a", href=True):
+        m = _DOI.search(a["href"])
+        if m and not _in_nav(a):
+            doi = "https://doi.org/" + m.group(1).rstrip(".,;)")
+            break
     attachments = []
     seen = set()
     for a in soup.find_all("a"):
@@ -486,4 +512,4 @@ def parse_detail(html: str, base_url: str) -> dict:
         seen.add(u)
         name = clean(a.get_text(" ")) or clean(a.get("title")) or u.rsplit("/", 1)[-1]
         attachments.append({"name": name[:200], "url": u, "kind": attachment_kind(name, u)})
-    return {"date": date, "attachments": attachments[:20]}
+    return {"date": date, "attachments": attachments[:20], "pub_year": pub_year, "doi": doi}

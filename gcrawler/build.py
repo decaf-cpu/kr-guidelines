@@ -10,7 +10,7 @@ from xml.sax.saxutils import escape
 
 from collections import Counter
 
-from .filedate import file_value, unreliable_file_days
+from .filedate import drop_shared_links, file_value, unreliable_file_days
 from .filters import is_guideline
 from .manual import load_manual
 from .parse import GENERIC_LINK, year_from_title
@@ -31,6 +31,8 @@ def fix_dates(items: list[dict]) -> list[dict]:
     - 일괄 등록: 한 학회에서 같은 날짜가 5건 이상·25% 이상이면 사이트 이전 등으로 한꺼번에 올린 날짜로 간주
     - 옛 지침 재게시: 제목 연도가 게시 연도보다 2년 이상 이르면 제목 연도를 발행연도로
     원래 게시일은 posted에 남긴다."""
+    items = [dict(it, attachments=[dict(a) for a in it.get("attachments", []) or []]) for it in items]
+    drop_shared_links(items)
     by_soc: dict[str, Counter] = {}
     totals: Counter = Counter()
     for it in items:
@@ -43,6 +45,7 @@ def fix_dates(items: list[dict]) -> list[dict]:
         for d, n in c.items()
         if n >= 5 and n >= 0.25 * totals[soc]
     }
+    bulk_pairs = bulk
     # 서로 다른 지침이 같은 파일 날짜를 가지면 문서 날짜가 아니라 양식·재저장 날짜 → 버리고 PDF 본문의 발행연도를 쓴다
     bad_file = unreliable_file_days(items)
     out = []
@@ -61,6 +64,12 @@ def fix_dates(items: list[dict]) -> list[dict]:
                 it.update(date=None, date_precision=None, date_source=None)
         if not it.get("date") and it.get("text_year"):
             it.update(date=it["text_year"], date_precision="year", date_source="file-text")
+        # 상세 페이지의 '연도' 칸: 학회가 직접 적은 발행연도. 날짜가 없거나 일괄 등록일이거나 그보다 늦은 게시일이면 이것을 쓴다
+        py = it.get("pub_year")
+        if py and (not it.get("date") or (it.get("society"), it.get("date")) in bulk_pairs or it["date"][:4] != py):
+            if it.get("date") and it["date"][:4] > py and (it.get("society"), it["date"]) not in bulk_pairs:
+                it["posted"] = it["date"]
+            it.update(date=py, date_precision="year", date_source="detail-year")
         d, prec = it.get("date"), it.get("date_precision")
         ty = year_from_title(it.get("title", ""))
         if d and prec == "day" and (it.get("society"), d) in bulk:
@@ -140,6 +149,8 @@ def merge_items(items: list[dict], socs: dict[str, dict], overrides: list[dict] 
         key = norm_title(it["title"])
         url = it.get("url")
         files = list(it.get("attachments", []))
+        if it.get("doi") and all(f.get("url") != it["doi"] for f in files):
+            files.insert(0, {"name": "원문 (DOI)", "url": it["doi"], "kind": "원문"})
         if url and not it.get("manual") and _FILE_URL.search(url) and it.get("board"):
             # 제목 링크가 파일 자체면: 제목은 학회 게시 페이지로, 파일은 첨부로
             if all(f.get("url") != url for f in files):

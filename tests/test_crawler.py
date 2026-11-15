@@ -428,3 +428,29 @@ def test_override_sets_lookup_date():
     items = [{"society": "s", "title": "Guidelines for X in Korea", "date": None}]
     out = apply_overrides(items, [{"society": "s", "title": "Guidelines for X", "date": "2023", "source": "PMID 1"}])
     assert out[0]["date"] == "2023" and out[0]["date_precision"] == "year" and out[0]["date_source"] == "lookup"
+
+
+def test_shared_attachment_is_site_chrome():
+    from gcrawler.filedate import drop_shared_links
+    banner = {"name": "벤토린 안내.pdf", "url": "https://x/banner.pdf"}
+    items = [{"society": "s", "title": f"지침 {i}", "attachments": [dict(banner)], "file_date": ["2025-12-01", "day", "file-pdf"],
+              "file_checked_v": 4} for i in range(3)]
+    assert drop_shared_links(items) == 3
+    assert all(not it["attachments"] and "file_date" not in it and "file_checked_v" not in it for it in items)
+
+
+def test_detail_year_label_and_doi():
+    from gcrawler.parse import parse_detail
+    html = """<div class="write-wrap"><ul><li><div class="form-tit">연도</div><div class="form-con"> 2017 </div></li>
+    <li><div class="form-tit">링크</div><div class="form-con"><a href="https://doi.org/10.4168/aard.2017.5.4.185">doi</a></div></li></ul></div>"""
+    r = parse_detail(html, "https://x/view/1")
+    assert r["pub_year"] == "2017" and r["doi"] == "https://doi.org/10.4168/aard.2017.5.4.185"
+
+
+def test_pub_year_replaces_bulk_date():
+    from gcrawler.build import fix_dates
+    items = [{"id": str(i), "society": "s", "title": f"지침 {chr(65 + i)}", "date": "2020-02-01", "date_precision": "day",
+              "date_source": "detail"} for i in range(6)]
+    items[0]["pub_year"] = "2017"
+    out = {it["id"]: it for it in fix_dates(items)}
+    assert out["0"]["date"] == "2017" and out["0"]["date_source"] == "detail-year" and not out["0"].get("posted")

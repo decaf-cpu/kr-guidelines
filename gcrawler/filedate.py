@@ -101,6 +101,36 @@ def text_year(fetcher: Fetcher, url: str, verify: bool = True, referer: str | No
 _VARIANT = re.compile(r"요약본|요약|전체본|전문|본문|슬라이드|국문|영문|한글|korean|english|summary|full ?text|updated?|업데이트|수정본|\(.*?\)|[^0-9a-z가-힣]", re.I)
 
 
+def shared_links(items, n: int = 3) -> set[tuple[str, str]]:
+    """한 학회에서 서로 다른 지침 n건 이상에 똑같이 붙은 '첨부'는 게시물 첨부가 아니라
+    사이트 공통 배너·안내 파일(예: 모든 페이지에 걸린 약품 안내 PDF, 브라우저 다운로드 링크)이다."""
+    seen: dict[tuple[str, str], set[str]] = {}
+    for it in items:
+        for a in it.get("attachments", []) or []:
+            seen.setdefault((it.get("society"), a.get("url")), set()).add(it.get("title") or "")
+    return {k for k, t in seen.items() if len(t) >= n}
+
+
+def drop_shared_links(items) -> int:
+    """공통 링크를 첨부에서 빼고, 그 링크로 얻은 파일 날짜는 지워서 다시 확인하게 한다. 고친 항목 수."""
+    shared = shared_links(items)
+    fixed = 0
+    for it in items:
+        atts = it.get("attachments") or []
+        keep = [a for a in atts if (it.get("society"), a.get("url")) not in shared]
+        if len(keep) == len(atts):
+            continue
+        fixed += 1
+        first_was_shared = bool(atts) and (it.get("society"), atts[0].get("url")) in shared
+        it["attachments"] = keep
+        if first_was_shared:
+            for k in ("file_date", "file_checked", "file_checked_v", "text_year", "text_checked_v"):
+                it.pop(k, None)
+            if (it.get("date_source") or "").startswith("file"):
+                it["date"] = it["date_precision"] = it["date_source"] = None
+    return fixed
+
+
 def file_value(it: dict) -> str | None:
     """항목이 파일에서 얻은 날짜(본 날짜이거나 일괄 등록일 대신 쓸 날짜)."""
     if (it.get("date_source") or "").startswith("file") and it.get("date"):

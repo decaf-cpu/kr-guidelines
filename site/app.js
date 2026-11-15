@@ -27,7 +27,7 @@
       return { "file-text": "PDF 본문 발행연도", "file-pdf": "PDF 작성일", "file-filename": "파일명 연도", "file-lastmod": "파일 등록일" }[it.date_source] || "파일 날짜";
     }
     if (it.date_precision === "year") {
-      const base = it.date_source === "title" ? "제목 연도" : "연도";
+      const base = { title: "제목 연도", "detail-year": "게시판 표기 연도" }[it.date_source] || "연도";
       return it.posted ? `${base} · 게시 ${it.posted.replace(/-/g, ".")}` : base;
     }
     return "";

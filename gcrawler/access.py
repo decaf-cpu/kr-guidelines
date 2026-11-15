@@ -66,7 +66,8 @@ def check_detail(fetcher: Fetcher, url: str, verify: bool = True, check_file: bo
     if page_requires_login(html):
         return {"access": "members"}
     info = parse_detail(html, r.url)
-    result = {"access": "public", "detail_date": info["date"], "attachments": info["attachments"]}
+    result = {"access": "public", "detail_date": info["date"], "attachments": info["attachments"],
+              "pub_year": info.get("pub_year"), "doi": info.get("doi")}
 
     # 첨부파일만 회원 전용인 경우가 흔함 → 첫 첨부 하나만 확인
     if check_file and info["attachments"]:

@@ -11,7 +11,7 @@ from concurrent.futures import ThreadPoolExecutor
 from . import adapters
 from .access import check_detail, page_requires_login
 from .discover import discover
-from .filedate import file_date, file_value, text_year, unreliable_file_days
+from .filedate import drop_shared_links, file_date, file_value, text_year, unreliable_file_days
 from .fetch import Fetcher
 from .filters import KOREAN_ORG, is_guideline, lang_of, tags_for
 from .parse import (
@@ -83,6 +83,12 @@ def crawl_board(fetcher: Fetcher, soc: dict, board: dict, store: Store, mode: st
         page2 = detect_page_param(first_html, resp.url, board.get("page_param"))
         urls = page_urls(resp.url, page2, max_pages)
 
+    from collections import Counter
+
+    mine = [it for it in store.items.values() if it.get("society") == soc["id"]]
+    _days = Counter(it["date"] for it in mine if it.get("date_precision") == "day" and it.get("date"))
+    bulk_days = {d for d, c in _days.items() if c >= 5 and c >= 0.25 * len(mine)}  # 사이트 이전 등 일괄 등록일
+
     # 이 게시판을 처음 수집하는 경우: 이미 올라와 있던 글은 '초기 수집'으로 표시(NEW 아님)
     first_time = not any(it.get("board") == board["url"] for it in store.items.values())
     prev_titles: set[str] | None = None
@@ -139,11 +145,20 @@ def crawl_board(fetcher: Fetcher, soc: dict, board: dict, store: Store, mode: st
                 it["backfill"] = first_time
 
             # 상세 확인: 새 글이거나 아직 공개 여부를 모르는 글만, 학회당 횟수 제한
-            if row.url and it.get("access") == "unknown" and detail_budget[0] > 0:
+            # + 예전에 확인한 글 중 날짜가 없거나 일괄 등록일뿐인 글은 상세의 '연도' 칸을 읽으러 한 번 더 (파일은 받지 않음)
+            recheck = (it.get("access") == "public" and (it.get("detail_v") or 0) < DETAIL_VERSION
+                       and soc.get("fetch_files") is not False and (not it.get("date") or it.get("date") in bulk_days))
+            if row.url and (it.get("access") == "unknown" or recheck) and detail_budget[0] > 0:
                 detail_budget[0] -= 1
-                info = check_detail(fetcher, row.url, verify=verify)
-                it["access"] = info.get("access", "unknown")
+                info = check_detail(fetcher, row.url, verify=verify, check_file=not recheck)
+                if not recheck or info.get("access") != "unknown":
+                    it["access"] = info.get("access", "unknown")
                 it["checked"] = today()
+                it["detail_v"] = DETAIL_VERSION
+                if info.get("pub_year"):
+                    it["pub_year"] = info["pub_year"]
+                if info.get("doi"):
+                    it["doi"] = info["doi"]
                 if info.get("attachments") and not it.get("attachments"):
                     it["attachments"] = info["attachments"]
                 cur = (it.get("date"), it.get("date_precision"))
@@ -170,6 +185,7 @@ def crawl_board(fetcher: Fetcher, soc: dict, board: dict, store: Store, mode: st
 
 
 FILE_CHECK_VERSION = 4
+DETAIL_VERSION = 2  # 상세 페이지에서 '연도' 칸·DOI를 읽기 시작한 판
 
 
 def fill_file_dates(fetcher: Fetcher, soc: dict, store: Store, budget: int = 60) -> int:
@@ -179,6 +195,7 @@ def fill_file_dates(fetcher: Fetcher, soc: dict, store: Store, budget: int = 60)
     if soc.get("fetch_files") is False:
         return 0
     mine = [it for it in store.items.values() if it.get("society") == soc["id"]]
+    drop_shared_links(mine)
     days = Counter(it["date"] for it in mine if it.get("date_precision") == "day" and it.get("date"))
     bulk = {d for d, c in days.items() if c >= 5 and c >= 0.25 * len(mine)}
     n = 0
