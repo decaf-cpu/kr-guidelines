@@ -68,12 +68,14 @@
 - id: klcs
   name: 대한간암학회
   short: 간암학회
-  homepage: https://www.klcs.or.kr
+  homepage: https://www.livercancer.or.kr
   group: 내과계
   specialty: 내과
   division: 간
-  boards: []
-  note: GitHub 서버(해외)에서 접속되지 않음 — 해외 접속 차단 또는 주소 확인 필요
+  boards:
+    - url: https://www.livercancer.or.kr/html/?pmode=guidelines
+      name: 진료가이드라인
+      dedicated: true
 - id: kges
   name: 대한소화기내시경학회
   short: 소화기내시경학회
