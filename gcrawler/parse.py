@@ -221,6 +221,8 @@ def parse_row(el: Tag, base_url: str, cfg: dict | None = None) -> Row | None:
     if best is None:
         return None
     a, title = best
+    if re.search(r"(회원만|회원\s*전용|로그인\s*후)", (a.get("onclick") or "") + " " + (a.get("href") or "")):
+        return None
     # 제목이 잘린 경우(… 처리) title 속성의 전체 제목 사용
     full = clean(a.get("title"))
     if full and len(full) > len(title) and full.rstrip(".…").startswith(title.rstrip(".…")[:10]):
@@ -311,7 +313,7 @@ def extract_rows(html: str, base_url: str, cfg: dict | None = None) -> list[Row]
             score = 0.01 * len(rows)
         if score > best_score:
             best_score, best_rows = score, rows
-    if best_rows and best_score >= 1:
+    if best_rows and best_score >= 2:
         return best_rows
     return extract_links_fallback(soup, base_url)
 

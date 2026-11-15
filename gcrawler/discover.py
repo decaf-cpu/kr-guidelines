@@ -134,6 +134,10 @@ def find_candidates(html: str, page_url: str, homepage: str, js_map: dict[str, s
         if not same_site(url, homepage):
             continue
         s = score_label(label)
+        if re.search(r"(mode=view|wr_id=|[?&]num=\d|number=\d|/view/|[?&]idx=\d|document_srl|[?&]no=\d|[?&]seq=\d)", url, re.I):
+            s -= 4  # 개별 게시물 주소는 게시판 메뉴가 아님
+        if "..." in label or "…" in label or len(label) > 20:
+            s -= 2
         if s <= 0:
             continue
         key = canonical_url(url)

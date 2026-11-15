@@ -14,7 +14,7 @@ LOGIN_TEXT = re.compile(
     r"members?\s*only|please\s*log\s*in|login\s*required|permission\s*denied)",
     re.I,
 )
-LOGIN_URL = re.compile(r"(login|signin|sign_in|member/log|mem_login|/auth)", re.I)
+LOGIN_URL = re.compile(r"(login|signin|sign_in|member/log|mem_login|/auth|[?&]url=%2F)", re.I)
 
 
 def _html_says_login(html: str) -> bool:
@@ -29,6 +29,28 @@ def _html_says_login(html: str) -> bool:
     return bool(LOGIN_TEXT.search(body_text)) and (has_pw or len(body_text) < 3000)
 
 
+_REFRESH_URL = re.compile(r"<meta[^>]+http-equiv=[\"']?refresh[^>]+url\s*=\s*([^\"'>\s]+)", re.I)
+_JS_LOC = re.compile(r"location(?:\.href|\.replace)?\s*[=(]\s*['\"]([^'\"]+)['\"]", re.I)
+
+
+def page_requires_login(html: str) -> bool:
+    """목록/상세 페이지가 본문 안에서 로그인 페이지로 보내거나 '회원만' 경고를 띄우는지."""
+    head = html[:200000]
+    soup = BeautifulSoup(head, "lxml")
+    urls = []
+    for m in soup.find_all("meta"):
+        if "refresh" in (m.get("http-equiv") or "").lower():
+            mm = re.search(r"url\s*=\s*['\"]?([^'\"\s>]+)", m.get("content") or "", re.I)
+            if mm:
+                urls.append(mm.group(1))
+    for sc in soup.find_all("script"):
+        if sc.string:
+            urls += _JS_LOC.findall(sc.string)
+    if any(LOGIN_URL.search(u) or re.search(r"member/\?sn=3", u) for u in urls):
+        return True
+    return _html_says_login(head)
+
+
 def check_detail(fetcher: Fetcher, url: str, verify: bool = True, check_file: bool = True) -> dict:
     """상세 페이지를 열어 공개 여부·날짜·첨부를 확인."""
     r = fetcher.get(url, verify=verify)
@@ -41,7 +63,7 @@ def check_detail(fetcher: Fetcher, url: str, verify: bool = True, check_file: bo
     if LOGIN_URL.search(r.url) and not LOGIN_URL.search(url):
         return {"access": "members"}
     html = decode(r)
-    if _html_says_login(html):
+    if page_requires_login(html):
         return {"access": "members"}
     info = parse_detail(html, r.url)
     result = {"access": "public", "detail_date": info["date"], "attachments": info["attachments"]}

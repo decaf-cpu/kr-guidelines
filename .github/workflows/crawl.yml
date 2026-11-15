@@ -54,7 +54,7 @@ jobs:
         run: python -m pytest -q
 
       - name: 수집
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[crawl]')
         env:
           FULL: ${{ inputs.full }}
           SOCIETY: ${{ inputs.society }}
@@ -67,7 +67,7 @@ jobs:
           python -m gcrawler crawl $args
 
       - name: 수집 결과 커밋
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[crawl]')
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

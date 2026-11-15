@@ -6,7 +6,7 @@ import logging
 from concurrent.futures import ThreadPoolExecutor
 
 from . import adapters
-from .access import check_detail
+from .access import check_detail, page_requires_login
 from .discover import discover
 from .fetch import Fetcher
 from .filters import is_guideline, lang_of, tags_for
@@ -66,6 +66,10 @@ def crawl_board(fetcher: Fetcher, soc: dict, board: dict, store: Store, mode: st
     if first_html is None:
         code = resp.status_code if resp is not None else None
         result["error"] = f"목록 접속 실패 (HTTP {code})" if code else "목록 접속 실패"
+        return result
+
+    if page_requires_login(first_html):
+        result["error"] = "회원 전용 게시판 (로그인 필요)"
         return result
 
     if adapter is not None and hasattr(adapter, "page_url"):

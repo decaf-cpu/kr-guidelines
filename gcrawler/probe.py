@@ -101,14 +101,24 @@ def run(ids: list[str] | None = None) -> None:
     status = load_json(DATA / "status.json", {"societies": {}})["societies"]
     if not ids:
         ids = [i for i in socs if not status.get(i, {}).get("ok")]
+    extra: dict[str, list[str]] = {}
+    xf = ROOT / "probe-urls.txt"  # "학회id URL" 형식으로 추가로 열어 볼 주소
+    if xf.exists():
+        for line in xf.read_text(encoding="utf-8").splitlines():
+            parts = line.split()
+            if len(parts) == 2:
+                extra.setdefault(parts[0], []).append(parts[1])
+                if parts[0] not in ids:
+                    ids.append(parts[0])
     f = Fetcher(delay=1.0, respect_robots=False, retries=1, timeout=20)
     for i in ids:
         soc = socs[i]
         boards = [b["url"] for b in soc.get("boards", [])]
         boards += [b["url"] for b in status.get(i, {}).get("boards", []) if b.get("url") and b["url"] not in boards]
+        boards = extra.get(i, []) + [b for b in boards if b not in extra.get(i, [])]
         print("probe", i, soc["homepage"], len(boards))
         try:
-            probe_one(f, soc, boards[:4])
+            probe_one(f, soc, boards[:6])
         except Exception as e:  # 진단 도구이므로 계속 진행
             (OUT / i).mkdir(parents=True, exist_ok=True)
             (OUT / i / "log.txt").write_text(f"ERROR {type(e).__name__}: {e}\n", encoding="utf-8")

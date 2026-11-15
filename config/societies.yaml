@@ -34,25 +34,10 @@
   specialty: 내과
   division: 내과 일반
   boards:
-    - url: https://www.kaim.or.kr/newguide/?sn=10
-      name: 진료지침
+    - url: https://www.kaim.or.kr/newguide/?sn=2&sn2=7
+      name: 대한내과학회 개발/참여 진료지침
       dedicated: true
-    - url: https://www.kaim.or.kr/guideline/?sn=2
-      name: 전공의 진료지침
-      dedicated: true
-    - url: https://www.kaim.or.kr/guideline/?sn=3
-      name: 낙상예방 진료지침
-      dedicated: true
-    - url: https://www.kaim.or.kr/guideline/?sn=4
-      name: 5대암검진 질지침
-      dedicated: true
-    - url: https://www.kaim.or.kr/guideline/?sn=6
-      name: 코로나19 진료지침
-      dedicated: true
-    - url: https://www.kaim.or.kr/guideline/?sn=7
-      name: 코로나19 백신지침
-      dedicated: true
-  note: "'연관학회 진료지침'(sn=1)은 다른 학회 지침 모음이라 제외"
+  note: "기존 진료지침 메뉴(/guideline/)는 회원 전용. 분과·관련학회 진료지침 모음은 다른 학회 지침이라 제외"
 # ───────────── 소화기 ─────────────
 - id: ksg
   name: 대한소화기학회
@@ -96,6 +81,8 @@
   specialty: 내과
   division: 소화기
   boards: []
+  enabled: false
+  note: robots.txt가 게시판(/bbs/) 수집을 막고 있어 제외
 - id: kasid
   name: 대한장연구학회
   short: 장연구학회
@@ -115,9 +102,7 @@
     - url: https://www.hpylori.or.kr/content/education/guide.php
       name: 가이드라인
       dedicated: true
-    - url: https://www.hpylori.or.kr/content/community/post_list.php?bt=12
-      name: 진료지침레터
-      dedicated: false
+  note: 가이드라인 목록을 스크립트로 불러와 맞춤 파서 필요, 진료지침레터는 회원 전용
 - id: ksnm
   name: 대한소화기기능성질환·운동학회
   short: 소화기기능성질환·운동학회
@@ -254,6 +239,8 @@
     - url: https://www.ksbmr.org/bbs/?code=fls
       name: FLS Guideline
       dedicated: true
+  enabled: false
+  note: 진료지침 전문 다운로드가 회원 전용
 - id: ksso
   name: 대한비만학회
   short: 비만학회
@@ -262,6 +249,8 @@
   specialty: 내과
   division: 내분비·대사
   boards: []
+  enabled: false
+  note: robots.txt가 게시판 수집을 막고 있어 제외
 # ───────────── 신장 ─────────────
 - id: ksn
   name: 대한신장학회
@@ -323,6 +312,8 @@
   specialty: 내과
   division: 류마티스
   boards: []
+  enabled: false
+  note: robots.txt가 사이트 전체 수집을 막고 있어 제외
 
 # ───────────── 혈액·종양 ─────────────
 - id: ksh-hema
