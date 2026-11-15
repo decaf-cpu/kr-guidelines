@@ -110,13 +110,13 @@
 - id: ksnm
   name: 대한소화기기능성질환·운동학회
   short: 소화기기능성질환·운동학회
-  homepage: https://www.ksnm.org
+  homepage: https://www.ksnm.kr
   group: 내과계
   specialty: 내과
   division: 소화기
   boards: []
   enabled: false
-  note: ksnm.org는 대한핵의학회 주소로 확인됨. 올바른 홈페이지 주소 확인 필요
+  note: 진료지침 자료실(resource/guideline)이 회원 전용(권한 필요)
 - id: kpba
   name: 대한췌장담도학회
   short: 췌장담도학회
@@ -156,6 +156,8 @@
   specialty: 내과
   division: 순환기
   boards: []
+  enabled: false
+  note: 공개된 진료지침 게시판을 찾지 못함
 - id: khrs
   name: 대한부정맥학회
   short: 부정맥학회
@@ -172,7 +174,8 @@
   specialty: 내과
   division: 순환기
   boards: []
-  note: 자동 접속 차단(쿠키 확인 페이지)으로 수집 불가
+  enabled: false
+  note: 자동 접속 차단 장치(쿠키 확인 페이지)가 있어 수집하지 않음
 - id: ksola
   name: 한국지질·동맥경화학회
   short: 지질·동맥경화학회
@@ -314,8 +317,10 @@
   group: 내과계
   specialty: 내과
   division: 감염
-  boards: []
-  note: 홈페이지 주소 확인 필요
+  boards:
+    - url: https://www.ksat.or.kr/medical/sub01.html
+      name: KSAT 진료지침
+      dedicated: true
 
 # ───────────── 류마티스 ─────────────
 - id: kcr
@@ -338,6 +343,8 @@
   specialty: 내과
   division: 혈액
   boards: []
+  enabled: false
+  note: 진료지침이 회원 전용
 - id: ksmo
   name: 대한종양내과학회
   short: 종양내과학회
@@ -358,3 +365,5 @@
   specialty: 내과
   division: 노년
   boards: []
+  enabled: false
+  note: 공개된 진료지침 게시판을 찾지 못함
