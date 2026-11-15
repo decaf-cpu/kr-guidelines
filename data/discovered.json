@@ -221,9 +221,14 @@
  },
  "kpba": {
   "checked": "2026-11-15",
-  "homepage": "https://www.kpba.or.kr",
-  "ok": false,
-  "error": "홈페이지 접속 실패 (해외 접속 차단·주소 오류 가능)",
-  "candidates": []
+  "homepage": "https://www.kpba.kr",
+  "ok": true,
+  "candidates": [
+   {
+    "url": "https://www.kpba.kr/html/?pmode=guideline",
+    "label": "진료 가이드라인",
+    "score": 5
+   }
+  ]
  }
 }
