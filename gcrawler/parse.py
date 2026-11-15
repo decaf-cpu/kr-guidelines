@@ -64,7 +64,13 @@ def find_labeled_date(text: str) -> tuple[str, str] | None:
     return find_date(m.group(2)) if m else None
 
 
+_COMPACT = re.compile(r"(?<!\d)((?:19|20)\d{2})(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])(?!\d)")
+
+
 def year_from_title(title: str) -> tuple[str, str] | None:
+    m = _COMPACT.search(title or "")  # '권고안_20200211' 같은 날짜
+    if m and _valid(int(m.group(1)), int(m.group(2)), int(m.group(3))):
+        return f"{m.group(1)}-{m.group(2)}-{m.group(3)}", "day"
     this_year = dt.date.today().year
     years = [int(y) for y in _YEAR.findall(title or "") if int(y) <= this_year]
     if not years:

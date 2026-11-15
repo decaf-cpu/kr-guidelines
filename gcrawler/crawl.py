@@ -168,7 +168,7 @@ def crawl_board(fetcher: Fetcher, soc: dict, board: dict, store: Store, mode: st
     return result
 
 
-FILE_CHECK_VERSION = 2
+FILE_CHECK_VERSION = 3
 
 
 def fill_file_dates(fetcher: Fetcher, soc: dict, store: Store, budget: int = 60) -> int:
@@ -196,7 +196,7 @@ def fill_file_dates(fetcher: Fetcher, soc: dict, store: Store, budget: int = 60)
         budget -= 1
         it["file_checked"] = today()
         it["file_checked_v"] = FILE_CHECK_VERSION
-        got = file_date(fetcher, cands[0], verify=soc.get("verify_ssl", True))
+        got = file_date(fetcher, cands[0], verify=soc.get("verify_ssl", True), referer=it.get("board"))
         if got:
             if undated:
                 it["date"], it["date_precision"], it["date_source"] = got[0], got[1], f"file-{got[2]}"

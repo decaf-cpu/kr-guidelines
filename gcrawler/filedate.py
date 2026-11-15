@@ -71,9 +71,10 @@ def _filename(r, url: str) -> str:
     return name
 
 
-def file_date(fetcher: Fetcher, url: str, verify: bool = True) -> tuple[str, str, str] | None:
-    """(날짜, 정밀도, 근거) 또는 None."""
-    r = fetcher.get(url, verify=verify, stream=True, headers={"Range": f"bytes=-{CHUNK}"})
+def file_date(fetcher: Fetcher, url: str, verify: bool = True, referer: str | None = None) -> tuple[str, str, str] | None:
+    """(날짜, 정밀도, 근거) 또는 None. referer: 게시판 주소(목록에서 클릭한 것과 같은 요청)."""
+    base = {"Referer": referer} if referer else {}
+    r = fetcher.get(url, verify=verify, stream=True, headers={**base, "Range": f"bytes=-{CHUNK}"})
     if r is None or r.status_code >= 400:
         if r is not None:
             r.close()
@@ -106,14 +107,14 @@ def file_date(fetcher: Fetcher, url: str, verify: bool = True) -> tuple[str, str
     if is_pdf:
         got = _from_pdf_bytes(tail)
         if not got and ranged:
-            r2 = fetcher.get(url, verify=verify, stream=True, headers={"Range": f"bytes=0-{CHUNK - 1}"})
+            r2 = fetcher.get(url, verify=verify, stream=True, headers={**base, "Range": f"bytes=0-{CHUNK - 1}"})
             if r2 is not None and r2.status_code < 400:
                 got = _from_pdf_bytes(_read(r2, CHUNK))
         if got:
             return got[0], got[1], "pdf"
     y = year_from_title(re.sub(r"[_\-.]", " ", name))
     if y:
-        return y[0], "year", "filename"
+        return y[0], y[1], "filename"
     if last_mod:
         try:
             d = parsedate_to_datetime(last_mod).date()

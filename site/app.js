@@ -31,6 +31,16 @@
     }
     return "";
   };
+  // 발행 시점이 최근 n개월 이내인지 (연·월 단위 날짜는 그 기간의 마지막 날 기준)
+  const withinMonths = (it, n) => {
+    const d = it.date;
+    if (!d) return false;
+    const [y, m, dd] = d.split("-").map(Number);
+    const end = dd ? new Date(y, m - 1, dd) : m ? new Date(y, m, 0) : new Date(y, 11, 31);
+    const cutoff = new Date();
+    cutoff.setMonth(cutoff.getMonth() - n);
+    return end >= cutoff;
+  };
   const daysAgo = (iso) => (Date.now() - new Date(iso + "T00:00:00+09:00").getTime()) / 864e5;
 
   // ── URL 해시 ↔ 상태 ───────────────────
@@ -43,7 +53,7 @@
     state.period = p.get("p") || "";
     state.view = p.get("v") || "timeline";
     state.sort = p.get("o") || "date";
-    state.newOnly = p.get("new") === "1";
+    state.newOnly = p.get("recent") === "1";
     state.koOnly = p.get("ko") === "1";
   }
   function writeHash() {
@@ -55,7 +65,7 @@
     if (state.period) p.set("p", state.period);
     if (state.view !== "timeline") p.set("v", state.view);
     if (state.sort !== "date") p.set("o", state.sort);
-    if (state.newOnly) p.set("new", "1");
+    if (state.newOnly) p.set("recent", "1");
     if (state.koOnly) p.set("ko", "1");
     const h = p.toString();
     history.replaceState(null, "", h ? "#" + h : location.pathname + location.search);
@@ -70,7 +80,7 @@
       const y = parseInt(effDate(it).slice(0, 4), 10);
       if (!y || y < new Date().getFullYear() - parseInt(state.period, 10) + 1) return false;
     }
-    if (state.newOnly && !(!it.backfill && it.first_seen && daysAgo(it.first_seen) <= 183)) return false;
+    if (state.newOnly && !withinMonths(it, 6)) return false;
     if (state.koOnly && it.lang !== "ko") return false;
     if (state.q) {
       const hay = (it.title + " " + it.societies.map((s) => (SOCS[s]?.name || "") + " " + (SOCS[s]?.short || "")).join(" ") + " " + it.divisions.join(" ") + " " + effDate(it)).toLowerCase();
