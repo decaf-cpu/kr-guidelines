@@ -343,3 +343,21 @@ def test_filedate_without_range_support():
 
 def test_admin_titles_excluded():
     assert not is_guideline("개발 규정 부록 다운로드", dedicated=True)
+
+
+def test_title_links_to_board_when_url_is_file():
+    from gcrawler.build import merge_items
+    socs = {"ksmo": {"id": "ksmo", "enabled": True, "group": "내과계", "division": "종양", "short": "종양내과학회"}}
+    items = [{"id": "a", "society": "ksmo", "title": "한국 췌장암 진료 가이드라인", "url": "https://www.ksmo.or.kr/file/book1-07.pdf",
+              "board": "https://www.ksmo.or.kr/Pages/Publication/publication03.aspx", "attachments": [], "access": "public"},
+             {"id": "b", "society": "ksmo", "title": "2024 위암 진료 가이드라인", "url": "https://www.ksmo.or.kr/bbs/view.php?no=3",
+              "board": "https://www.ksmo.or.kr/bbs/list.php", "attachments": [], "access": "public"}]
+    g = {x["title"]: x for x in merge_items(items, socs)}
+    s = g["한국 췌장암 진료 가이드라인"]["sources"][0]
+    assert s["url"].endswith("publication03.aspx") and s["attachments"][0]["url"].endswith("book1-07.pdf")
+    assert g["2024 위암 진료 가이드라인"]["sources"][0]["url"].endswith("view.php?no=3")
+
+
+def test_foreign_society_names():
+    assert not is_guideline("The North American Neuroendocrine Tumor Society Consensus Guidelines for Surveillance", dedicated=True)
+    assert is_guideline("한국 췌장암 진료 가이드라인 (2021)", dedicated=True)

@@ -18,6 +18,7 @@ from .store import DATA, ROOT, load_json, load_societies, load_taxonomy, save_js
 SITE_SRC = ROOT / "site"
 OUT = ROOT / "_site"
 _NORM = re.compile(r"[^0-9a-z가-힣]+")
+_FILE_URL = re.compile(r"(\.(pdf|hwp|hwpx|docx?|pptx?|xlsx?|zip)(?:$|[?#&])|download|filedown|file_down|fileDownload|down\.php|getfile)", re.I)
 
 
 def norm_title(t: str) -> str:
@@ -75,11 +76,18 @@ def merge_items(items: list[dict], socs: dict[str, dict]) -> list[dict]:
         if soc is None or (not soc.get("enabled", True) and not it.get("manual")):
             continue
         key = norm_title(it["title"])
+        url = it.get("url")
+        files = list(it.get("attachments", []))
+        if url and not it.get("manual") and _FILE_URL.search(url) and it.get("board"):
+            # 제목 링크가 파일 자체면: 제목은 학회 게시 페이지로, 파일은 첨부로
+            if all(f.get("url") != url for f in files):
+                files.insert(0, {"name": it["title"], "url": url, "kind": (re.search(r"\.(pdf|hwp|hwpx|docx?|pptx?)", url, re.I) or [None, "file"])[1].lower()})
+            url = it["board"]
         src = {
             "society": it["society"],
-            "url": it.get("url"),
+            "url": url,
             "board_name": it.get("board_name"),
-            "attachments": it.get("attachments", [])[:6],
+            "attachments": files[:6],
             "link_resolved": it.get("link_resolved", True),
             "manual": bool(it.get("manual")),
         }

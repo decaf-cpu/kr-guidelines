@@ -26,6 +26,9 @@ FOREIGN = re.compile(
     r"\b(ESC|ACC|AHA|ACC/AHA|HRS|EHRA|ESH|ISH|ADA|EASD|AACE|ATA|ETA|KDIGO|KDOQI|NICE|WHO|CDC|IDSA|ATS|ERS|GOLD|GINA|"
     r"EASL|AASLD|APASL|ACG|AGA|ASGE|ESGE|ECCO|ACR|EULAR|ASCO|ESMO|NCCN|ASH|EHA|AGS)\b"
 )
+FOREIGN_NAME = re.compile(
+    r"((North\s+)?American|European|Japan(ese)?|British|Asian\s+Pacific|World|International)\s+([A-Z][\w-]*\s+){0,4}(Society|Association|College|Federation|Organization)",
+)
 KOREAN_ORG = re.compile(r"(대한|한국|korea|국내|KSC|KASL|KDA|KSN|KATRD|KSID|KCR|KSMO|KAAACI|KSH|K-)", re.I)
 
 HANGUL = re.compile(r"[가-힣]")
@@ -40,7 +43,7 @@ def is_guideline(title: str, dedicated: bool = False) -> bool:
         return False
     if EVENT.search(t) and not PUBLISH.search(t):
         return False
-    if FOREIGN.search(t) and not KOREAN_ORG.search(t):
+    if (FOREIGN.search(t) or FOREIGN_NAME.search(t)) and not KOREAN_ORG.search(t):
         return False  # 외국 학회 지침 소개·번역
     if dedicated:
         return True
