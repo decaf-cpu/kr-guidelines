@@ -595,7 +595,7 @@
   },
   "kaaaci": {
    "id": "kaaaci",
-   "run_at": "2026-11-15T21:17:30+09:00",
+   "run_at": "2026-11-15T21:23:27+09:00",
    "boards": [
     {
      "url": "https://www.allergy.or.kr/board/treatment?gubun=1",
@@ -630,6 +630,6 @@
    "ok": true
   }
  },
- "updated": "2026-11-15T21:18:18+09:00",
- "requests": 32
+ "updated": "2026-11-15T21:24:17+09:00",
+ "requests": 34
 }

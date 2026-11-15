@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T21:18:18+09:00",
+ "updated": "2026-11-15T21:24:17+09:00",
  "count": 392,
  "items": [
   {
@@ -15,8 +15,8 @@
    "lang": "ko",
    "attachments": [
     {
-     "name": "eyJpdiI6IjZJajZKaWZDaTJJcHRDNWpWU3F3Umc9PSIsInZhbHVlIjoieEhnZXhKVzl0SXJwbm95dURuUnR2UT09IiwibWFjIjoiNjE1MzkzMzljM2JlNzZkY2I1NmViOTNiMjU2YmFmY2JhMGY4ZDJlNzYxYTE2ZDllODNmZGQwNzE3YTMyYTBhYyIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IjZJajZKaWZDaTJJcHRDNWpWU3F3Umc9PSIsInZhbHVlIjoieEhnZXhKVzl0SXJwbm95dURuUnR2UT09IiwibWFjIjoiNjE1MzkzMzljM2JlNzZkY2I1NmViOTNiMjU2YmFmY2JhMGY4ZDJlNzYxYTE2ZDllODNmZGQwNzE3YTMyYTBhYyIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6Inh5VG42cFF5b0JZb0w0YlM3U1ZSVHc9PSIsInZhbHVlIjoiT2Y2WndYVFU2S2xqTUxHQmUwYmdTdz09IiwibWFjIjoiNzg3OWExZTRiMDQxNDQ1NjNiZDQ5MDBkOTRjMTNiZmQzMjJmNTFiMzQ4NjlkZTcwZjg1NDE5OTY4OTllNTliOCIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6Inh5VG42cFF5b0JZb0w0YlM3U1ZSVHc9PSIsInZhbHVlIjoiT2Y2WndYVFU2S2xqTUxHQmUwYmdTdz09IiwibWFjIjoiNzg3OWExZTRiMDQxNDQ1NjNiZDQ5MDBkOTRjMTNiZmQzMjJmNTFiMzQ4NjlkZTcwZjg1NDE5OTY4OTllNTliOCIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -32,7 +32,9 @@
     "2022-12-19",
     "day",
     "file-pdf"
-   ]
+   ],
+   "detail_v": 2,
+   "pub_year": "2022"
   },
   {
    "id": "1c4b79310554283c",
@@ -82,25 +84,14 @@
    ],
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
    "backfill": true,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "file_date": [
-    "2025-12-01",
-    "day",
-    "file-pdf"
-   ],
-   "text_checked_v": 1
+   "detail_v": 2,
+   "pub_year": "2017",
+   "doi": "https://doi.org/10.4168/aard.2017.5.4.185"
   },
   {
    "id": "21afc3858558c29c",
@@ -115,25 +106,14 @@
    "lang": "ko",
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
    "backfill": true,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "file_date": [
-    "2025-12-01",
-    "day",
-    "file-pdf"
-   ],
-   "text_checked_v": 1
+   "detail_v": 2,
+   "pub_year": "2023",
+   "doi": "https://doi.org/10.4168/aard.2023.11.2.56"
   },
   {
    "id": "2669a9965ea8d580",
@@ -176,25 +156,14 @@
    ],
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
    "backfill": true,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "file_date": [
-    "2025-12-01",
-    "day",
-    "file-pdf"
-   ],
-   "text_checked_v": 1
+   "detail_v": 2,
+   "pub_year": "2024",
+   "doi": "https://doi.org/10.4168/aard.2024.12.2.58"
   },
   {
    "id": "37ef103d10841e39",
@@ -209,8 +178,8 @@
    "lang": "ko",
    "attachments": [
     {
-     "name": "eyJpdiI6InJLWjZaWEtBejVaTmJRbjRZb3Z1UkE9PSIsInZhbHVlIjoiQW9YbmhwaTgramtsSmJyY054cTVhZz09IiwibWFjIjoiMTliNTNjMWZhM2MzZGY1MTI5ZmM2YTRlZGY0NmViY2ZlYzg5ZmU3MjJkNzNkMTQ3YjU1NGU5NzY0YjMxYWQxMSIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6InJLWjZaWEtBejVaTmJRbjRZb3Z1UkE9PSIsInZhbHVlIjoiQW9YbmhwaTgramtsSmJyY054cTVhZz09IiwibWFjIjoiMTliNTNjMWZhM2MzZGY1MTI5ZmM2YTRlZGY0NmViY2ZlYzg5ZmU3MjJkNzNkMTQ3YjU1NGU5NzY0YjMxYWQxMSIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6InpnQ3BUVjcxeVdmd0RZK0JaUmp2Unc9PSIsInZhbHVlIjoiamM3YkpNL0cxalF4SFcrenVpdVJLQT09IiwibWFjIjoiOTA0NzI4MmZmY2U2ZmRjZDc2OWY0YTAzZTkyN2MyNDZmZDFiZWEwM2UwMDk5NzdiNmMyNjEyMzNlMjk4MTg3ZiIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6InpnQ3BUVjcxeVdmd0RZK0JaUmp2Unc9PSIsInZhbHVlIjoiamM3YkpNL0cxalF4SFcrenVpdVJLQT09IiwibWFjIjoiOTA0NzI4MmZmY2U2ZmRjZDc2OWY0YTAzZTkyN2MyNDZmZDFiZWEwM2UwMDk5NzdiNmMyNjEyMzNlMjk4MTg3ZiIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -226,7 +195,9 @@
     "2017-03-21",
     "day",
     "file-pdf"
-   ]
+   ],
+   "detail_v": 2,
+   "pub_year": "2017"
   },
   {
    "id": "397a35d8658c9fae",
@@ -241,8 +212,8 @@
    "lang": "ko",
    "attachments": [
     {
-     "name": "eyJpdiI6InJiV2hqQTh3WGE2ajg3L01JNFd4Unc9PSIsInZhbHVlIjoiVWRUQW9aNVRYTHQ5UWRNelZBM3ozQT09IiwibWFjIjoiZTgzYzJiM2FiZTI5NGIzYTY1YTRiZmExNjQyYWIyOTk5NDU1NWJhNjEzZjFlM2YxOTUyMTExNjBkNzVjOGZiNyIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6InJiV2hqQTh3WGE2ajg3L01JNFd4Unc9PSIsInZhbHVlIjoiVWRUQW9aNVRYTHQ5UWRNelZBM3ozQT09IiwibWFjIjoiZTgzYzJiM2FiZTI5NGIzYTY1YTRiZmExNjQyYWIyOTk5NDU1NWJhNjEzZjFlM2YxOTUyMTExNjBkNzVjOGZiNyIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6Im9jRHNYeTVGSnF1Y2I4b01CSDQwckE9PSIsInZhbHVlIjoiandBb3cvNmVDT2ErUjJQM05Xbm9qQT09IiwibWFjIjoiYzdkMGMxZmEwMDRkYTEwZDI1NTlhMzdjNGQyODExMDFiNmEzYjVjYjMwODJjM2I1OTNkMTg0ZTJiMzA3NTFiYSIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6Im9jRHNYeTVGSnF1Y2I4b01CSDQwckE9PSIsInZhbHVlIjoiandBb3cvNmVDT2ErUjJQM05Xbm9qQT09IiwibWFjIjoiYzdkMGMxZmEwMDRkYTEwZDI1NTlhMzdjNGQyODExMDFiNmEzYjVjYjMwODJjM2I1OTNkMTg0ZTJiMzA3NTFiYSIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -258,7 +229,9 @@
     "2022-09-15",
     "day",
     "file-pdf"
-   ]
+   ],
+   "detail_v": 2,
+   "pub_year": "2022"
   },
   {
    "id": "3ba0a08feeb9e942",
@@ -300,8 +273,8 @@
    "lang": "ko",
    "attachments": [
     {
-     "name": "eyJpdiI6IkhMN2pZekY2MGpiSWsyaTA5Y0xMWGc9PSIsInZhbHVlIjoiSElsNlRRcVZ2WTFRKzFZVWZQTUY5dz09IiwibWFjIjoiOTgzYjFmNjM0NWZlYzY0YjM4MTNmM2VhN2NjYTRlMGUwZDQ3ZTljYzI1NDVkNDNlODNlZTRlNzdkMjI2Yjk0NyIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IkhMN2pZekY2MGpiSWsyaTA5Y0xMWGc9PSIsInZhbHVlIjoiSElsNlRRcVZ2WTFRKzFZVWZQTUY5dz09IiwibWFjIjoiOTgzYjFmNjM0NWZlYzY0YjM4MTNmM2VhN2NjYTRlMGUwZDQ3ZTljYzI1NDVkNDNlODNlZTRlNzdkMjI2Yjk0NyIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6IkJUWUt1a0p5L0hEQnBQUkhpMGdCL0E9PSIsInZhbHVlIjoiblVPRG51RC9mQm5xVkNJQlNndk96QT09IiwibWFjIjoiM2E4MjhjOTFhMjE2ZTQ5OWRkZmNkZmYzYjBhZDc4YzBhOGZhZmQ4NTZlMWViYTY4NTE3M2M3NmRmZWY5NWQyYiIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IkJUWUt1a0p5L0hEQnBQUkhpMGdCL0E9PSIsInZhbHVlIjoiblVPRG51RC9mQm5xVkNJQlNndk96QT09IiwibWFjIjoiM2E4MjhjOTFhMjE2ZTQ5OWRkZmNkZmYzYjBhZDc4YzBhOGZhZmQ4NTZlMWViYTY4NTE3M2M3NmRmZWY5NWQyYiIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -310,7 +283,9 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "detail_v": 2,
+   "pub_year": "2016"
   },
   {
    "id": "3dba4b88e7e896fa",
@@ -387,8 +362,8 @@
    ],
    "attachments": [
     {
-     "name": "eyJpdiI6IlNMZVAzMU1YTzBnN0huWllUZmcvN1E9PSIsInZhbHVlIjoiTVNlV0xXbmUySDhaK1EvT0h2MlQ5QT09IiwibWFjIjoiZWQwODIzMjgyNjIxMTg0N2UwNTUxM2JjNjIyMDg3NDhhMDM5ZDI0ZjEwZThlODRhMjIwYWQwMjVhYWMyNDAxZSIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IlNMZVAzMU1YTzBnN0huWllUZmcvN1E9PSIsInZhbHVlIjoiTVNlV0xXbmUySDhaK1EvT0h2MlQ5QT09IiwibWFjIjoiZWQwODIzMjgyNjIxMTg0N2UwNTUxM2JjNjIyMDg3NDhhMDM5ZDI0ZjEwZThlODRhMjIwYWQwMjVhYWMyNDAxZSIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6IllwcTFNU2llMWtIelRZQ1AzS09rZWc9PSIsInZhbHVlIjoiVzJnMVV2eDVVc3FaYjVYV0h2bE9jQT09IiwibWFjIjoiNzA5ZGE1NGQ4MGJhOWM0OGNmYjI2ZTljMzQwNDBjNDAyYjFjOWYyOWRiNjMzOWY4Mzc4NWQ5NzUxZjk1N2NkNiIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IllwcTFNU2llMWtIelRZQ1AzS09rZWc9PSIsInZhbHVlIjoiVzJnMVV2eDVVc3FaYjVYV0h2bE9jQT09IiwibWFjIjoiNzA5ZGE1NGQ4MGJhOWM0OGNmYjI2ZTljMzQwNDBjNDAyYjFjOWYyOWRiNjMzOWY4Mzc4NWQ5NzUxZjk1N2NkNiIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -397,7 +372,9 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "detail_v": 2,
+   "pub_year": "2022"
   },
   {
    "id": "4721fe2dbc399e08",
@@ -412,8 +389,8 @@
    "lang": "ko",
    "attachments": [
     {
-     "name": "eyJpdiI6IlpXcmxTVi8raDNUVThWSW5vQWFKTXc9PSIsInZhbHVlIjoiVEtGYWZWNG9jTldIbXNIaU5nZmk2QT09IiwibWFjIjoiMTljMDUwZWIzZGMyOGE2NjE2MmVjYjM4MWJiOTYxZGEyOWQwYmIzN2U1NmQ2N2JjYTM1NDZkNjRlMmI2MGJmYyIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IlpXcmxTVi8raDNUVThWSW5vQWFKTXc9PSIsInZhbHVlIjoiVEtGYWZWNG9jTldIbXNIaU5nZmk2QT09IiwibWFjIjoiMTljMDUwZWIzZGMyOGE2NjE2MmVjYjM4MWJiOTYxZGEyOWQwYmIzN2U1NmQ2N2JjYTM1NDZkNjRlMmI2MGJmYyIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6ImVZc0hjekRQY3RXNWp4QWRvU2JBTEE9PSIsInZhbHVlIjoieGNIdFRsZTc4WkxlcU4wakJqQ1c0UT09IiwibWFjIjoiMWQwOWE5ZjlmOTljZWE2MGY0ZTUwOGM1ZjE3NTUzOWNhM2Q3YTkzZmYwMWUwZDVmNjAyNWJmODVlYmM2ZmJhZSIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6ImVZc0hjekRQY3RXNWp4QWRvU2JBTEE9PSIsInZhbHVlIjoieGNIdFRsZTc4WkxlcU4wakJqQ1c0UT09IiwibWFjIjoiMWQwOWE5ZjlmOTljZWE2MGY0ZTUwOGM1ZjE3NTUzOWNhM2Q3YTkzZmYwMWUwZDVmNjAyNWJmODVlYmM2ZmJhZSIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -429,7 +406,9 @@
     "2023-05-10",
     "day",
     "file-pdf"
-   ]
+   ],
+   "detail_v": 2,
+   "pub_year": "2023"
   },
   {
    "id": "4f54ab07c85d1473",
@@ -479,8 +458,8 @@
    ],
    "attachments": [
     {
-     "name": "eyJpdiI6Iml6dksrcGFJMysxZkNUc091NXpXT0E9PSIsInZhbHVlIjoiNjhzUHYzUFhTUEJVZ1JwL04yd1ozQT09IiwibWFjIjoiMzE0MGU5ZmJlZjZmYzIwMmM5MzMwZjUzZmEyMWI2MjI4NjkwZmIzOTkwZDBmOWQ4MjdjOTAzM2MzYTk0ZGRiNyIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6Iml6dksrcGFJMysxZkNUc091NXpXT0E9PSIsInZhbHVlIjoiNjhzUHYzUFhTUEJVZ1JwL04yd1ozQT09IiwibWFjIjoiMzE0MGU5ZmJlZjZmYzIwMmM5MzMwZjUzZmEyMWI2MjI4NjkwZmIzOTkwZDBmOWQ4MjdjOTAzM2MzYTk0ZGRiNyIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6IlBybTZzdi9uYjNvbDk2c0QzUGJPOGc9PSIsInZhbHVlIjoiOExYVWhuVUJjQURoSWU2aGFQYkdwUT09IiwibWFjIjoiZjhhZDNjMWMwMDhmMzVkNjVlMmY4MTBiZmNhYzljMzc2ZTYwOGIyODVhY2YyZGRmOTc5MDlmYjZkYzU5MDkzMyIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IlBybTZzdi9uYjNvbDk2c0QzUGJPOGc9PSIsInZhbHVlIjoiOExYVWhuVUJjQURoSWU2aGFQYkdwUT09IiwibWFjIjoiZjhhZDNjMWMwMDhmMzVkNjVlMmY4MTBiZmNhYzljMzc2ZTYwOGIyODVhY2YyZGRmOTc5MDlmYjZkYzU5MDkzMyIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -496,7 +475,9 @@
     "2018-07-09",
     "day",
     "file-pdf"
-   ]
+   ],
+   "detail_v": 2,
+   "pub_year": "2018"
   },
   {
    "id": "51023365b8f6a658",
@@ -511,8 +492,8 @@
    "lang": "ko",
    "attachments": [
     {
-     "name": "eyJpdiI6Imp3VzBBaHVyMzllSDlxeGRlQm5yUXc9PSIsInZhbHVlIjoiY3dYaHNKaHA1Z1ZwM2FnY1l6Q2VyQT09IiwibWFjIjoiNDMwMTg1ZmZkNzU3NmQ2ZWM3ZjU3ZTM5ZWU4MTg2ZmM4MjIyYWEwZjgyMjIzZGZlOGZmMmE4MGM3NTY3YTk0YyIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6Imp3VzBBaHVyMzllSDlxeGRlQm5yUXc9PSIsInZhbHVlIjoiY3dYaHNKaHA1Z1ZwM2FnY1l6Q2VyQT09IiwibWFjIjoiNDMwMTg1ZmZkNzU3NmQ2ZWM3ZjU3ZTM5ZWU4MTg2ZmM4MjIyYWEwZjgyMjIzZGZlOGZmMmE4MGM3NTY3YTk0YyIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6IjltQ3BvNkYzTzRFTmhIcHY1ckk2VVE9PSIsInZhbHVlIjoicE8xcWlpRTkvZzdrU1ZUNDRNWkhUdz09IiwibWFjIjoiMzVjYjk5YmE0YjY4OGNjMjkzYjA5NTEwMzQwMjZkM2M2OGNhNWQ2ZjI2NjczNDVjYzE3Yzk5MmFmZWU5NTI4ZSIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IjltQ3BvNkYzTzRFTmhIcHY1ckk2VVE9PSIsInZhbHVlIjoicE8xcWlpRTkvZzdrU1ZUNDRNWkhUdz09IiwibWFjIjoiMzVjYjk5YmE0YjY4OGNjMjkzYjA5NTEwMzQwMjZkM2M2OGNhNWQ2ZjI2NjczNDVjYzE3Yzk5MmFmZWU5NTI4ZSIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -521,7 +502,9 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "detail_v": 2,
+   "pub_year": "2022"
   },
   {
    "id": "58a3b076dd9cd22c",
@@ -539,25 +522,14 @@
    ],
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
    "backfill": true,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "file_date": [
-    "2025-12-01",
-    "day",
-    "file-pdf"
-   ],
-   "text_checked_v": 1
+   "detail_v": 2,
+   "pub_year": "2020",
+   "doi": "https://doi.org/10.4168/aair.2020.12.6.910"
   },
   {
    "id": "59ad6390ef7bf350",
@@ -575,25 +547,14 @@
    ],
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
    "backfill": true,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "file_date": [
-    "2025-12-01",
-    "day",
-    "file-pdf"
-   ],
-   "text_checked_v": 1
+   "detail_v": 2,
+   "pub_year": "2023",
+   "doi": "https://doi.org/10.4168/aair.2023.15.2.145"
   },
   {
    "id": "59f5f6201c935141",
@@ -608,25 +569,11 @@
    "lang": "ko",
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "file_date": [
-    "2025-12-01",
-    "day",
-    "file-pdf"
-   ],
-   "text_checked_v": 1
+   "backfill": true
   },
   {
    "id": "5a97402179930845",
@@ -679,25 +626,14 @@
    ],
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
    "backfill": true,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "file_date": [
-    "2025-12-01",
-    "day",
-    "file-pdf"
-   ],
-   "text_checked_v": 1
+   "detail_v": 2,
+   "pub_year": "2023",
+   "doi": "https://doi.org/10.4168/aair.2023.15.1.19"
   },
   {
    "id": "662650198e7a0d9e",
@@ -744,25 +680,11 @@
    "lang": "ko",
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "file_date": [
-    "2025-12-01",
-    "day",
-    "file-pdf"
-   ],
-   "text_checked_v": 1
+   "backfill": true
   },
   {
    "id": "67503a3a105e61da",
@@ -777,25 +699,11 @@
    "lang": "ko",
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "file_date": [
-    "2025-12-01",
-    "day",
-    "file-pdf"
-   ],
-   "text_checked_v": 1
+   "backfill": true
   },
   {
    "id": "6abaa634625ab94a",
@@ -813,25 +721,11 @@
    ],
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "file_date": [
-    "2025-12-01",
-    "day",
-    "file-pdf"
-   ],
-   "text_checked_v": 1
+   "backfill": true
   },
   {
    "id": "6c5da59a2dbbf430",
@@ -846,25 +740,14 @@
    "lang": "en",
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
    "backfill": true,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "file_date": [
-    "2025-12-01",
-    "day",
-    "file-pdf"
-   ],
-   "text_checked_v": 1
+   "detail_v": 2,
+   "pub_year": "2020",
+   "doi": "https://doi.org/10.4168/aair.2020.12.5.750"
   },
   {
    "id": "6f4d0c6c6928cfc8",
@@ -879,8 +762,8 @@
    "lang": "ko",
    "attachments": [
     {
-     "name": "eyJpdiI6IkFtV252eW1WY0xXazl1amhzU0VFRHc9PSIsInZhbHVlIjoicVdzSDJrWDNmVEFzU09VekMyOS82UT09IiwibWFjIjoiZmFkNTIyYWVkMzZkZWY0MWQxNWMwOWMyZTI2N2VkOTA3MzIxMTA1OTA1ZDNiYzk1ZDY5MWViMWI5NDQwYTBhYiIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IkFtV252eW1WY0xXazl1amhzU0VFRHc9PSIsInZhbHVlIjoicVdzSDJrWDNmVEFzU09VekMyOS82UT09IiwibWFjIjoiZmFkNTIyYWVkMzZkZWY0MWQxNWMwOWMyZTI2N2VkOTA3MzIxMTA1OTA1ZDNiYzk1ZDY5MWViMWI5NDQwYTBhYiIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6IkVkMzQ4ZHpEdElsL0V3RWZEaElkRXc9PSIsInZhbHVlIjoiWGNib2VMbXA4UXZDRTI1VlBEK01nQT09IiwibWFjIjoiYzY0NWY1MTNjNmU3OGRlOTc3MWM5OGFhNDFiZmFmNjUwMDEyNDc5OTU2Y2NjMjUwMWYxZjU5MzU4NGMzMmJkMiIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IkVkMzQ4ZHpEdElsL0V3RWZEaElkRXc9PSIsInZhbHVlIjoiWGNib2VMbXA4UXZDRTI1VlBEK01nQT09IiwibWFjIjoiYzY0NWY1MTNjNmU3OGRlOTc3MWM5OGFhNDFiZmFmNjUwMDEyNDc5OTU2Y2NjMjUwMWYxZjU5MzU4NGMzMmJkMiIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -889,7 +772,9 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "detail_v": 2,
+   "pub_year": "2021"
   },
   {
    "id": "708fd3f0558a614d",
@@ -967,25 +852,14 @@
    ],
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
    "backfill": true,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "file_date": [
-    "2025-12-01",
-    "day",
-    "file-pdf"
-   ],
-   "text_checked_v": 1
+   "detail_v": 2,
+   "pub_year": "2018",
+   "doi": "https://doi.org/10.4168/aard.2018.6.1.14"
   },
   {
    "id": "75934c3ae9adb4fd",
@@ -1000,25 +874,14 @@
    "lang": "ko",
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
    "backfill": true,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "file_date": [
-    "2025-12-01",
-    "day",
-    "file-pdf"
-   ],
-   "text_checked_v": 1
+   "detail_v": 2,
+   "pub_year": "2023",
+   "doi": "https://doi.org/10.4168/aard.2023.11.3.126"
   },
   {
    "id": "75cf4ff03bf3e4b2",
@@ -1033,25 +896,14 @@
    "lang": "ko",
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
    "backfill": true,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "file_date": [
-    "2025-12-01",
-    "day",
-    "file-pdf"
-   ],
-   "text_checked_v": 1
+   "detail_v": 2,
+   "pub_year": "2023",
+   "doi": "https://doi.org/10.4168/aard.2023.11.3.117"
   },
   {
    "id": "77e664469b8ec742",
@@ -1101,25 +953,11 @@
    ],
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "file_date": [
-    "2025-12-01",
-    "day",
-    "file-pdf"
-   ],
-   "text_checked_v": 1
+   "backfill": true
   },
   {
    "id": "86d5d1b04caaafb1",
@@ -1134,25 +972,14 @@
    "lang": "en",
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
    "backfill": true,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "file_date": [
-    "2025-12-01",
-    "day",
-    "file-pdf"
-   ],
-   "text_checked_v": 1
+   "detail_v": 2,
+   "pub_year": "2018",
+   "doi": "https://doi.org/10.4168/aair.2018.10.6.591"
   },
   {
    "id": "8d9eddab6a2b8b00",
@@ -1202,25 +1029,14 @@
    ],
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
    "backfill": true,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "file_date": [
-    "2025-12-01",
-    "day",
-    "file-pdf"
-   ],
-   "text_checked_v": 1
+   "detail_v": 2,
+   "pub_year": "2022",
+   "doi": "https://doi.org/10.4168/aard.2022.10.1.3"
   },
   {
    "id": "9429d93cfbc10d1e",
@@ -1272,17 +1088,14 @@
    ],
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "detail_v": 2,
+   "pub_year": "2022",
+   "doi": "https://doi.org/10.3348/jksr.2022.0024"
   },
   {
    "id": "9c02d8c40f7f3965",
@@ -1300,25 +1113,11 @@
    ],
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "file_date": [
-    "2025-12-01",
-    "day",
-    "file-pdf"
-   ],
-   "text_checked_v": 1
+   "backfill": true
   },
   {
    "id": "a3dbab36b29aa55b",
@@ -1333,25 +1132,11 @@
    "lang": "ko",
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "file_date": [
-    "2025-12-01",
-    "day",
-    "file-pdf"
-   ],
-   "text_checked_v": 1
+   "backfill": true
   },
   {
    "id": "abd049cb749eca7b",
@@ -1369,25 +1154,11 @@
    ],
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "file_date": [
-    "2025-12-01",
-    "day",
-    "file-pdf"
-   ],
-   "text_checked_v": 1
+   "backfill": true
   },
   {
    "id": "acc63b075873150c",
@@ -1405,25 +1176,14 @@
    ],
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
    "backfill": true,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "file_date": [
-    "2025-12-01",
-    "day",
-    "file-pdf"
-   ],
-   "text_checked_v": 1
+   "detail_v": 2,
+   "pub_year": "2021",
+   "doi": "https://doi.org/10.4168/aair.2021.13.4.526"
   },
   {
    "id": "b27f474adfbb2a52",
@@ -1441,25 +1201,14 @@
    ],
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
    "backfill": true,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "file_date": [
-    "2025-12-01",
-    "day",
-    "file-pdf"
-   ],
-   "text_checked_v": 1
+   "detail_v": 2,
+   "pub_year": "2017",
+   "doi": "https://doi.org/10.4168/aard.2017.5.5.239"
   },
   {
    "id": "b78e74c5d6ceacd4",
@@ -1477,25 +1226,13 @@
    ],
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
    "backfill": true,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "file_date": [
-    "2025-12-01",
-    "day",
-    "file-pdf"
-   ],
-   "text_checked_v": 1
+   "detail_v": 2,
+   "pub_year": "2025"
   },
   {
    "id": "c3be8564aba6aa2a",
@@ -1510,25 +1247,14 @@
    "lang": "en",
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
    "backfill": true,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "file_date": [
-    "2025-12-01",
-    "day",
-    "file-pdf"
-   ],
-   "text_checked_v": 1
+   "detail_v": 2,
+   "pub_year": "2023",
+   "doi": "https://doi.org/10.4168/aair.2023.15.6.725"
   },
   {
    "id": "c577160ec1fd6d10",
@@ -1543,8 +1269,8 @@
    "lang": "ko",
    "attachments": [
     {
-     "name": "eyJpdiI6IjhIQ3pKcktZMk1xc2k4R2tSTDZ2S2c9PSIsInZhbHVlIjoiT0J6aDVHQkdqZnExRDErSDJmdHNjZz09IiwibWFjIjoiMTgzMDE3ZTEyNDhiNzI3YzI1ZDU0MzY0NTAxOGJiNDI1ZjBjZTZkNmZhZGQxOWMwZTIyNWM2MTg4Y2I4MGJlNiIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IjhIQ3pKcktZMk1xc2k4R2tSTDZ2S2c9PSIsInZhbHVlIjoiT0J6aDVHQkdqZnExRDErSDJmdHNjZz09IiwibWFjIjoiMTgzMDE3ZTEyNDhiNzI3YzI1ZDU0MzY0NTAxOGJiNDI1ZjBjZTZkNmZhZGQxOWMwZTIyNWM2MTg4Y2I4MGJlNiIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6IklONzBRMFhJZ2I1RlpodDFiSWdQZHc9PSIsInZhbHVlIjoiOHAzUFJqOHpWNGtUZnBhL3NkSnBDUT09IiwibWFjIjoiODZkYzkxNjAxZGI1MDk2MTkzNzc3ZTNhYTE4NWU3YTUzNGM3YzllNTc3MTM2ZDYzOGQxZDk0MDFmNTk2YjFiMCIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IklONzBRMFhJZ2I1RlpodDFiSWdQZHc9PSIsInZhbHVlIjoiOHAzUFJqOHpWNGtUZnBhL3NkSnBDUT09IiwibWFjIjoiODZkYzkxNjAxZGI1MDk2MTkzNzc3ZTNhYTE4NWU3YTUzNGM3YzllNTc3MTM2ZDYzOGQxZDk0MDFmNTk2YjFiMCIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -1560,7 +1286,9 @@
     "2018-07-09",
     "day",
     "file-pdf"
-   ]
+   ],
+   "detail_v": 2,
+   "pub_year": "2018"
   },
   {
    "id": "c78b43dcb86692ef",
@@ -1575,25 +1303,11 @@
    "lang": "ko",
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "file_date": [
-    "2025-12-01",
-    "day",
-    "file-pdf"
-   ],
-   "text_checked_v": 1
+   "backfill": true
   },
   {
    "id": "cad6876c051127a1",
@@ -1608,8 +1322,8 @@
    "lang": "ko",
    "attachments": [
     {
-     "name": "eyJpdiI6Inc3MHNpdHIveHRuOUFIbld5elRLMHc9PSIsInZhbHVlIjoiRnZBVUFPN0x6UVFQMUd3c3VXbWNQZz09IiwibWFjIjoiY2MyNzBhNmRhNDlkMjRjZmZiNDM3NTJkMjA1ODY0ZjMzMThjMTUxZjQ3MjkzYTQ3NTExNDg5YWZkOTQzNmIzNiIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6Inc3MHNpdHIveHRuOUFIbld5elRLMHc9PSIsInZhbHVlIjoiRnZBVUFPN0x6UVFQMUd3c3VXbWNQZz09IiwibWFjIjoiY2MyNzBhNmRhNDlkMjRjZmZiNDM3NTJkMjA1ODY0ZjMzMThjMTUxZjQ3MjkzYTQ3NTExNDg5YWZkOTQzNmIzNiIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6IlFqTThZdko2cUNrZFdQOVp2ZUlTQVE9PSIsInZhbHVlIjoiQlBsVCtVK2U1WXhsNXhvWHNKbTNTUT09IiwibWFjIjoiMTBjMTM2OWYyZTU2ZWE1NTVkMGU0ZTdlYjU2YWI0NTU4ODgwOTNlMDViNWQwNDc5ZWQ2NTkxMDY5YTI1YjM2ZiIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IlFqTThZdko2cUNrZFdQOVp2ZUlTQVE9PSIsInZhbHVlIjoiQlBsVCtVK2U1WXhsNXhvWHNKbTNTUT09IiwibWFjIjoiMTBjMTM2OWYyZTU2ZWE1NTVkMGU0ZTdlYjU2YWI0NTU4ODgwOTNlMDViNWQwNDc5ZWQ2NTkxMDY5YTI1YjM2ZiIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -1625,7 +1339,9 @@
     "2020",
     "year",
     "file-filename"
-   ]
+   ],
+   "detail_v": 2,
+   "pub_year": "2020"
   },
   {
    "id": "d53e9e0cfc5b97e0",
@@ -1640,25 +1356,11 @@
    "lang": "ko",
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "file_date": [
-    "2025-12-01",
-    "day",
-    "file-pdf"
-   ],
-   "text_checked_v": 1
+   "backfill": true
   },
   {
    "id": "d6e1d41e9ace56d1",
@@ -1703,25 +1405,14 @@
    ],
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
    "backfill": true,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "file_date": [
-    "2025-12-01",
-    "day",
-    "file-pdf"
-   ],
-   "text_checked_v": 1
+   "detail_v": 2,
+   "pub_year": "2017",
+   "doi": "https://doi.org/10.4168/aard.2017.5.6.307"
   },
   {
    "id": "e82208b602b7c069",
@@ -1768,25 +1459,14 @@
    "lang": "en",
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
-   "attachments": [
-    {
-     "name": "벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "url": "https://www.allergy.or.kr/assets/file/벤토린 Risk Awareness Dialogue Aid for Healthcare Professionals (Final).pdf",
-     "kind": "pdf"
-    }
-   ],
+   "attachments": [],
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
    "backfill": true,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "file_date": [
-    "2025-12-01",
-    "day",
-    "file-pdf"
-   ],
-   "text_checked_v": 1
+   "detail_v": 2,
+   "pub_year": "2020",
+   "doi": "https://doi.org/10.4168/aair.2020.12.4.563"
   },
   {
    "id": "6a5d72fb001e216b",
