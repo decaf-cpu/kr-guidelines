@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-15T21:50:12+09:00",
- "count": 392,
+ "updated": "2026-11-15T22:49:30+09:00",
+ "count": 408,
  "items": [
   {
    "id": "192455f016c5eadf",
@@ -1509,6 +1509,439 @@
    "detail_v": 2,
    "pub_year": "2020",
    "doi": "https://doi.org/10.4168/aair.2020.12.4.563"
+  },
+  {
+   "id": "10e10df9807c51e9",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kapard",
+   "board": "https://www.kapard.or.kr/community/guide.php",
+   "board_name": "진료지침",
+   "title": "한국천식진료지침",
+   "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkv7ZWc6rWt7LKc7Iud7KeE66OM7KeA7LmoLnBkZg==&filename=7ZWc6rWt7LKc7Iud7KeE66OM7KeA7LmoLnBkZg==",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "다운로드",
+     "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkv7ZWc6rWt7LKc7Iud7KeE66OM7KeA7LmoLnBkZg==&filename=7ZWc6rWt7LKc7Iud7KeE66OM7KeA7LmoLnBkZg==",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "backfill": true,
+   "checked": "2026-11-15",
+   "detail_v": 2,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 4
+  },
+  {
+   "id": "2e5791f53c138267",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kapard",
+   "board": "https://www.kapard.or.kr/community/guide.php",
+   "board_name": "진료지침",
+   "title": "소아 청소년 알레르기비염 진료 가이드라인",
+   "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkv7IaM7JWEIOyyreyGjOuFhCDslYzroIjrpbTquLDruYTsl7wg7KeE66OMIOqwgOydtOuTnOudvOyduC5wZGY=&filename=7IaM7JWEIOyyreyGjOuFhCDslYzroIjrpbTquLDruYTsl7wg7KeE66OMIOqwgOydtOuTnOudvOyduC5wZGY=",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "다운로드",
+     "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkv7IaM7JWEIOyyreyGjOuFhCDslYzroIjrpbTquLDruYTsl7wg7KeE66OMIOqwgOydtOuTnOudvOyduC5wZGY=&filename=7IaM7JWEIOyyreyGjOuFhCDslYzroIjrpbTquLDruYTsl7wg7KeE66OMIOqwgOydtOuTnOudvOyduC5wZGY=",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "backfill": true,
+   "checked": "2026-11-15",
+   "detail_v": 2,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 4
+  },
+  {
+   "id": "3c671983721b2080",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kapard",
+   "board": "https://www.kapard.or.kr/community/guide.php",
+   "board_name": "진료지침",
+   "title": "소아천식 진료 가이드라인",
+   "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkv7IaM7JWE7LKc7IudIOynhOujjCDqsIDsnbTrk5zrnbzsnbgucGRm&filename=7IaM7JWE7LKc7IudIOynhOujjCDqsIDsnbTrk5zrnbzsnbgucGRm",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "다운로드",
+     "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkv7IaM7JWE7LKc7IudIOynhOujjCDqsIDsnbTrk5zrnbzsnbgucGRm&filename=7IaM7JWE7LKc7IudIOynhOujjCDqsIDsnbTrk5zrnbzsnbgucGRm",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "backfill": true,
+   "checked": "2026-11-15",
+   "detail_v": 2,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 4
+  },
+  {
+   "id": "511637c6fb007df9",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kapard",
+   "board": "https://www.kapard.or.kr/community/guide.php",
+   "board_name": "진료지침",
+   "title": "어린이 청소년 천식 바로 알고 바로 치료하자",
+   "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkv7Ja066aw7J20IOyyreyGjOuFhCDsspzsi50g67CU66GcIOyVjOqzoCDrsJTroZwg7LmY66OM7ZWY7J6QLnBkZg==&filename=7Ja066aw7J20IOyyreyGjOuFhCDsspzsi50g67CU66GcIOyVjOqzoCDrsJTroZwg7LmY66OM7ZWY7J6QLnBkZg==",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "다운로드",
+     "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkv7Ja066aw7J20IOyyreyGjOuFhCDsspzsi50g67CU66GcIOyVjOqzoCDrsJTroZwg7LmY66OM7ZWY7J6QLnBkZg==&filename=7Ja066aw7J20IOyyreyGjOuFhCDsspzsi50g67CU66GcIOyVjOqzoCDrsJTroZwg7LmY66OM7ZWY7J6QLnBkZg==",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "backfill": true,
+   "checked": "2026-11-15",
+   "detail_v": 2,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 4
+  },
+  {
+   "id": "7ab0d611928a572d",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kapard",
+   "board": "https://www.kapard.or.kr/community/guide.php",
+   "board_name": "진료지침",
+   "title": "소아 청소년 아토피피부염 진료가이드라인",
+   "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkv7IaM7JWEIOyyreyGjOuFhCDslYTthqDtlLztlLzrtoDsl7wg7KeE66OM6rCA7J2065Oc65287J24LnBkZg==&filename=7IaM7JWEIOyyreyGjOuFhCDslYTthqDtlLztlLzrtoDsl7wg7KeE66OM6rCA7J2065Oc65287J24LnBkZg==",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "다운로드",
+     "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkv7IaM7JWEIOyyreyGjOuFhCDslYTthqDtlLztlLzrtoDsl7wg7KeE66OM6rCA7J2065Oc65287J24LnBkZg==&filename=7IaM7JWEIOyyreyGjOuFhCDslYTthqDtlLztlLzrtoDsl7wg7KeE66OM6rCA7J2065Oc65287J24LnBkZg==",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "backfill": true,
+   "checked": "2026-11-15",
+   "detail_v": 2,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 4
+  },
+  {
+   "id": "a27661e838a70fa3",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kapard",
+   "board": "https://www.kapard.or.kr/community/guide.php",
+   "board_name": "진료지침",
+   "title": "2003 소아천식 진료 가이드라인",
+   "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkvMjAwMyDshozslYTsspzsi50g7KeE66OMIOqwgOydtOuTnOudvOyduC5wZGY=&filename=MjAwMyDshozslYTsspzsi50g7KeE66OMIOqwgOydtOuTnOudvOyduC5wZGY=",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "다운로드",
+     "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkvMjAwMyDshozslYTsspzsi50g7KeE66OMIOqwgOydtOuTnOudvOyduC5wZGY=&filename=MjAwMyDshozslYTsspzsi50g7KeE66OMIOqwgOydtOuTnOudvOyduC5wZGY=",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "backfill": true,
+   "checked": "2026-11-15",
+   "detail_v": 2,
+   "date": "2003",
+   "date_precision": "year",
+   "date_source": "title"
+  },
+  {
+   "id": "a6c32e870e54d7f1",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kapard",
+   "board": "https://www.kapard.or.kr/community/guide.php",
+   "board_name": "진료지침",
+   "title": "마이코플라즈마폐렴지침서",
+   "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkv66eI7J207L2U7ZSM65287KaI66eI7Y+Q66C07KeA7Lmo7IScLnBkZg==&filename=66eI7J207L2U7ZSM65287KaI66eI7Y+Q66C07KeA7Lmo7IScLnBkZg==",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "다운로드",
+     "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkv66eI7J207L2U7ZSM65287KaI66eI7Y+Q66C07KeA7Lmo7IScLnBkZg==&filename=66eI7J207L2U7ZSM65287KaI66eI7Y+Q66C07KeA7Lmo7IScLnBkZg==",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "backfill": true,
+   "checked": "2026-11-15",
+   "detail_v": 2,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 4,
+   "date": "2019-12-24",
+   "date_precision": "day",
+   "date_source": "file-pdf"
+  },
+  {
+   "id": "a8b5ea794190156c",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kapard",
+   "board": "https://www.kapard.or.kr/community/guide.php",
+   "board_name": "진료지침",
+   "title": "한국천식진료지침요약본",
+   "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkv7ZWc6rWt7LKc7Iud7KeE66OM7KeA7Lmo7JqU7JW967O4LnBkZg==&filename=7ZWc6rWt7LKc7Iud7KeE66OM7KeA7Lmo7JqU7JW967O4LnBkZg==",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "요약본"
+   ],
+   "attachments": [
+    {
+     "name": "다운로드",
+     "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkv7ZWc6rWt7LKc7Iud7KeE66OM7KeA7Lmo7JqU7JW967O4LnBkZg==&filename=7ZWc6rWt7LKc7Iud7KeE66OM7KeA7Lmo7JqU7JW967O4LnBkZg==",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "backfill": true,
+   "checked": "2026-11-15",
+   "detail_v": 2,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 4,
+   "date": "2015-04-30",
+   "date_precision": "day",
+   "date_source": "file-pdf"
+  },
+  {
+   "id": "b1b86b4b22a50fce",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kapard",
+   "board": "https://www.kapard.or.kr/community/guide.php",
+   "board_name": "진료지침",
+   "title": "임상의를 위한 진료가이드라인 알레르기비염",
+   "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkv7J6E7IOB7J2Y66W8IOychO2VnCDsp4Tro4zqsIDsnbTrk5zrnbzsnbgg7JWM66CI66W06riw67mE7Je8LnBkZg==&filename=7J6E7IOB7J2Y66W8IOychO2VnCDsp4Tro4zqsIDsnbTrk5zrnbzsnbgg7JWM66CI66W06riw67mE7Je8LnBkZg==",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "다운로드",
+     "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkv7J6E7IOB7J2Y66W8IOychO2VnCDsp4Tro4zqsIDsnbTrk5zrnbzsnbgg7JWM66CI66W06riw67mE7Je8LnBkZg==&filename=7J6E7IOB7J2Y66W8IOychO2VnCDsp4Tro4zqsIDsnbTrk5zrnbzsnbgg7JWM66CI66W06riw67mE7Je8LnBkZg==",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "backfill": true,
+   "checked": "2026-11-15",
+   "detail_v": 2,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 4,
+   "date": "2015-11-25",
+   "date_precision": "day",
+   "date_source": "file-pdf"
+  },
+  {
+   "id": "bf6b66d51b8e4f0d",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kapard",
+   "board": "https://www.kapard.or.kr/community/guide.php",
+   "board_name": "진료지침",
+   "title": "만성기침진료지침",
+   "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkv66eM7ISx6riw7Lmo7KeE66OM7KeA7LmoLnBkZg==&filename=66eM7ISx6riw7Lmo7KeE66OM7KeA7LmoLnBkZg==",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "다운로드",
+     "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkv66eM7ISx6riw7Lmo7KeE66OM7KeA7LmoLnBkZg==&filename=66eM7ISx6riw7Lmo7KeE66OM7KeA7LmoLnBkZg==",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "backfill": true,
+   "checked": "2026-11-15",
+   "detail_v": 2,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 4,
+   "date": "2018-07-09",
+   "date_precision": "day",
+   "date_source": "file-pdf"
+  },
+  {
+   "id": "c66eb9cd2682ca90",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kapard",
+   "board": "https://www.kapard.or.kr/community/guide.php",
+   "board_name": "진료지침",
+   "title": "기관지확장증진료지침(E-book)_small",
+   "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkvZ3VpZGVfMTUucGRm&filename=6riw6rSA7KeA7ZmV7J6l7Kad7KeE66OM7KeA7LmoKEUtYm9vaylfc21hbGwucGRm",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "다운로드",
+     "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkvZ3VpZGVfMTUucGRm&filename=6riw6rSA7KeA7ZmV7J6l7Kad7KeE66OM7KeA7LmoKEUtYm9vaylfc21hbGwucGRm",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "backfill": true,
+   "checked": "2026-11-15",
+   "detail_v": 2,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 4,
+   "date": "2021-05-14",
+   "date_precision": "day",
+   "date_source": "file-pdf"
+  },
+  {
+   "id": "cbbadb4735989062",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kapard",
+   "board": "https://www.kapard.or.kr/community/guide.php",
+   "board_name": "진료지침",
+   "title": "2008 소아 청소년 천식 진료가이드라인",
+   "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkvMjAwOCDshozslYQg7LKt7IaM64WEIOyynOyLnSDsp4Tro4zqsIDsnbTrk5zrnbzsnbgucGRm&filename=MjAwOCDshozslYQg7LKt7IaM64WEIOyynOyLnSDsp4Tro4zqsIDsnbTrk5zrnbzsnbgucGRm",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "다운로드",
+     "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkvMjAwOCDshozslYQg7LKt7IaM64WEIOyynOyLnSDsp4Tro4zqsIDsnbTrk5zrnbzsnbgucGRm&filename=MjAwOCDshozslYQg7LKt7IaM64WEIOyynOyLnSDsp4Tro4zqsIDsnbTrk5zrnbzsnbgucGRm",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "backfill": true,
+   "checked": "2026-11-15",
+   "detail_v": 2,
+   "date": "2008",
+   "date_precision": "year",
+   "date_source": "title"
+  },
+  {
+   "id": "de3b6e4076617344",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kapard",
+   "board": "https://www.kapard.or.kr/community/guide.php",
+   "board_name": "진료지침",
+   "title": "아토피진료지침본문(Epub)",
+   "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkv7JWE7Yag7ZS87KeE66OM7KeA7Lmo67O466y4LUVwdWIucGRm&filename=7JWE7Yag7ZS87KeE66OM7KeA7Lmo67O466y4LUVwdWIucGRm",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "다운로드",
+     "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkv7JWE7Yag7ZS87KeE66OM7KeA7Lmo67O466y4LUVwdWIucGRm&filename=7JWE7Yag7ZS87KeE66OM7KeA7Lmo67O466y4LUVwdWIucGRm",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "backfill": true,
+   "checked": "2026-11-15",
+   "detail_v": 2,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 4,
+   "date": "2023-05-18",
+   "date_precision": "day",
+   "date_source": "file-pdf"
+  },
+  {
+   "id": "f21b006e299ce75a",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kapard",
+   "board": "https://www.kapard.or.kr/community/guide.php",
+   "board_name": "진료지침",
+   "title": "만성기침진료지침요약본",
+   "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkv66eM7ISx6riw7Lmo7KeE66OM7KeA7Lmo7JqU7JW967O4LnBkZg==&filename=66eM7ISx6riw7Lmo7KeE66OM7KeA7Lmo7JqU7JW967O4LnBkZg==",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "요약본"
+   ],
+   "attachments": [
+    {
+     "name": "다운로드",
+     "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkv66eM7ISx6riw7Lmo7KeE66OM7KeA7Lmo7JqU7JW967O4LnBkZg==&filename=66eM7ISx6riw7Lmo7KeE66OM7KeA7Lmo7JqU7JW967O4LnBkZg==",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "backfill": true,
+   "checked": "2026-11-15",
+   "detail_v": 2,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 4,
+   "date": "2018-07-09",
+   "date_precision": "day",
+   "date_source": "file-pdf"
+  },
+  {
+   "id": "f3ecd68ad6173b13",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kapard",
+   "board": "https://www.kapard.or.kr/community/guide.php",
+   "board_name": "진료지침",
+   "title": "즉시형 식품알레르기 치료지침",
+   "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkv7Iud7ZKI7JWM66CI66W06riw7KeA7LmoLUVib29rLnBkZg==&filename=7KaJ7Iuc7ZiVIOyLne2SiOyVjOugiOultOq4sCDsuZjro4zsp4DsuagucGRm",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "다운로드",
+     "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkv7Iud7ZKI7JWM66CI66W06riw7KeA7LmoLUVib29rLnBkZg==&filename=7KaJ7Iuc7ZiVIOyLne2SiOyVjOugiOultOq4sCDsuZjro4zsp4DsuagucGRm",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "backfill": true,
+   "checked": "2026-11-15",
+   "detail_v": 2,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 4,
+   "date": "2025-11-19",
+   "date_precision": "day",
+   "date_source": "file-pdf"
+  },
+  {
+   "id": "fccb2d73dad649fa",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "kapard",
+   "board": "https://www.kapard.or.kr/community/guide.php",
+   "board_name": "진료지침",
+   "title": "2007 부비동염 진료 가이드라인",
+   "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkvMjAwNyDrtoDruYTrj5nsl7wg7KeE66OMIOqwgOydtOuTnOudvOyduC5wZGY=&filename=MjAwNyDrtoDruYTrj5nsl7wg7KeE66OMIOqwgOydtOuTnOudvOyduC5wZGY=",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "다운로드",
+     "url": "https://www.kapard.or.kr/func/download.php?path=L2hvbWUxL3ZpcnR1YWwva2FwYXJkL2h0ZG9jcy8vZmlsZS9jb21tdW5pdHkvMjAwNyDrtoDruYTrj5nsl7wg7KeE66OMIOqwgOydtOuTnOudvOyduC5wZGY=&filename=MjAwNyDrtoDruYTrj5nsl7wg7KeE66OMIOqwgOydtOuTnOudvOyduC5wZGY=",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "backfill": true,
+   "checked": "2026-11-15",
+   "detail_v": 2,
+   "date": "2007",
+   "date_precision": "year",
+   "date_source": "title"
   },
   {
    "id": "6a5d72fb001e216b",

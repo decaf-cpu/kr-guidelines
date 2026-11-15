@@ -327,5 +327,104 @@
   "ok": false,
   "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
   "candidates": []
+ },
+ "ksmfm": {
+  "checked": "2026-11-15",
+  "homepage": "https://www.ksmfm.or.kr",
+  "ok": true,
+  "candidates": [
+   {
+    "url": "https://www.ksmfm.or.kr/bbs/?code=guidelines",
+    "label": "임상진료지침",
+    "score": 5
+   }
+  ]
+ },
+ "ksfp": {
+  "checked": "2026-11-15",
+  "homepage": "https://www.ksfp2013.org",
+  "ok": false,
+  "error": "홈페이지 접속 실패 (해외 접속 차단·주소 오류 가능)",
+  "candidates": []
+ },
+ "kosge": {
+  "checked": "2026-11-15",
+  "homepage": "https://www.kosge.or.kr",
+  "ok": true,
+  "candidates": [
+   {
+    "url": "https://www.kosge.or.kr/journal/journal02.php",
+    "label": "임상지침 2016",
+    "score": 3
+   }
+  ]
+ },
+ "ksgo": {
+  "checked": "2026-11-15",
+  "homepage": "https://www.sgo.or.kr",
+  "ok": false,
+  "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
+  "candidates": []
+ },
+ "kugs": {
+  "checked": "2026-11-15",
+  "homepage": "https://www.1998kugs.org/index.php",
+  "ok": false,
+  "error": "홈페이지 접속 실패 (해외 접속 차단·주소 오류 가능)",
+  "candidates": []
+ },
+ "ksgendo": {
+  "checked": "2026-11-15",
+  "homepage": "https://www.ksgendo.or.kr",
+  "ok": false,
+  "error": "홈페이지 접속 실패 (해외 접속 차단·주소 오류 가능)",
+  "candidates": []
+ },
+ "ksog": {
+  "checked": "2026-11-15",
+  "homepage": "https://www.ksog.org",
+  "ok": true,
+  "candidates": [
+   {
+    "url": "https://www.ksog.org/member/pds.php?sub=1",
+    "label": "Guideline & Position Statement",
+    "score": 2
+   }
+  ]
+ },
+ "kses": {
+  "checked": "2026-11-15",
+  "homepage": "http://endometriosis.or.kr",
+  "ok": false,
+  "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
+  "candidates": []
+ },
+ "ksmenop": {
+  "checked": "2026-11-15",
+  "homepage": "https://www.koreanmenopause.or.kr",
+  "ok": false,
+  "error": "홈페이지 접속 실패 (해외 접속 차단·주소 오류 가능)",
+  "candidates": []
+ },
+ "kspm": {
+  "checked": "2026-11-15",
+  "homepage": "http://perinatol.or.kr",
+  "ok": false,
+  "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
+  "candidates": []
+ },
+ "kscrh": {
+  "checked": "2026-11-15",
+  "homepage": "http://www.kscrh.org",
+  "ok": false,
+  "error": "홈페이지 접속 실패 (해외 접속 차단·주소 오류 가능)",
+  "candidates": []
+ },
+ "kosar": {
+  "checked": "2026-11-15",
+  "homepage": "https://www.kosar.org",
+  "ok": false,
+  "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
+  "candidates": []
  }
 }

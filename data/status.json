@@ -721,38 +721,22 @@
   },
   "kapard": {
    "id": "kapard",
-   "run_at": "2026-11-15T21:50:05+09:00",
+   "run_at": "2026-11-15T22:25:25+09:00",
    "boards": [
     {
      "url": "https://www.kapard.or.kr/community/guide.php",
-     "name": "- 가이드라인",
-     "source": "discovered",
+     "name": "진료지침",
+     "source": "config",
      "pages": 1,
-     "rows": 1,
-     "matched": 1,
-     "new": 0,
-     "members_only": 0,
-     "error": null
-    },
-    {
-     "url": "https://www.kapard.or.kr/member/join/privacy.php",
-     "name": "개인정보 보호 지침",
-     "source": "discovered",
-     "pages": 1,
-     "rows": 0,
-     "matched": 0,
-     "new": 0,
+     "rows": 16,
+     "matched": 16,
+     "new": 16,
      "members_only": 0,
      "error": null
     }
    ],
    "error": null,
-   "discovery": {
-    "checked": "2026-11-15",
-    "ok": true,
-    "error": null
-   },
-   "file_dates": 0,
+   "file_dates": 8,
    "ok": true
   },
   "kspc": {
@@ -818,8 +802,200 @@
    },
    "file_dates": 0,
    "ok": false
+  },
+  "ksmfm": {
+   "id": "ksmfm",
+   "run_at": "2026-11-15T22:25:25+09:00",
+   "boards": [
+    {
+     "url": "https://www.ksmfm.or.kr/bbs/?code=guidelines",
+     "name": "임상진료지침",
+     "source": "discovered",
+     "pages": 0,
+     "rows": 0,
+     "matched": 0,
+     "new": 0,
+     "members_only": 0,
+     "error": "회원 전용 게시판 (로그인 필요)"
+    }
+   ],
+   "error": "게시판은 열렸으나 진료지침 항목 0건 (파서 설정 확인 필요)",
+   "discovery": {
+    "checked": "2026-11-15",
+    "ok": true,
+    "error": null
+   },
+   "file_dates": 0,
+   "ok": false
+  },
+  "ksfp": {
+   "id": "ksfp",
+   "run_at": "2026-11-15T22:25:25+09:00",
+   "boards": [],
+   "error": "홈페이지 접속 실패 (해외 접속 차단·주소 오류 가능)",
+   "discovery": {
+    "checked": "2026-11-15",
+    "ok": false,
+    "error": "홈페이지 접속 실패 (해외 접속 차단·주소 오류 가능)"
+   },
+   "file_dates": 0,
+   "ok": false
+  },
+  "ksgo": {
+   "id": "ksgo",
+   "run_at": "2026-11-15T22:25:25+09:00",
+   "boards": [],
+   "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
+   "discovery": {
+    "checked": "2026-11-15",
+    "ok": false,
+    "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)"
+   },
+   "file_dates": 0,
+   "ok": false
+  },
+  "kugs": {
+   "id": "kugs",
+   "run_at": "2026-11-15T22:25:29+09:00",
+   "boards": [],
+   "error": "홈페이지 접속 실패 (해외 접속 차단·주소 오류 가능)",
+   "discovery": {
+    "checked": "2026-11-15",
+    "ok": false,
+    "error": "홈페이지 접속 실패 (해외 접속 차단·주소 오류 가능)"
+   },
+   "file_dates": 0,
+   "ok": false
+  },
+  "kosge": {
+   "id": "kosge",
+   "run_at": "2026-11-15T22:25:29+09:00",
+   "boards": [
+    {
+     "url": "https://www.kosge.or.kr/journal/journal02.php",
+     "name": "임상지침 2016",
+     "source": "discovered",
+     "pages": 1,
+     "rows": 0,
+     "matched": 0,
+     "new": 0,
+     "members_only": 0,
+     "error": null
+    }
+   ],
+   "error": "게시판은 열렸으나 진료지침 항목 0건 (파서 설정 확인 필요)",
+   "discovery": {
+    "checked": "2026-11-15",
+    "ok": true,
+    "error": null
+   },
+   "file_dates": 0,
+   "ok": false
+  },
+  "ksgendo": {
+   "id": "ksgendo",
+   "run_at": "2026-11-15T22:25:31+09:00",
+   "boards": [],
+   "error": "홈페이지 접속 실패 (해외 접속 차단·주소 오류 가능)",
+   "discovery": {
+    "checked": "2026-11-15",
+    "ok": false,
+    "error": "홈페이지 접속 실패 (해외 접속 차단·주소 오류 가능)"
+   },
+   "file_dates": 0,
+   "ok": false
+  },
+  "kses": {
+   "id": "kses",
+   "run_at": "2026-11-15T22:25:31+09:00",
+   "boards": [],
+   "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
+   "discovery": {
+    "checked": "2026-11-15",
+    "ok": false,
+    "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)"
+   },
+   "file_dates": 0,
+   "ok": false
+  },
+  "ksmenop": {
+   "id": "ksmenop",
+   "run_at": "2026-11-15T22:25:33+09:00",
+   "boards": [],
+   "error": "홈페이지 접속 실패 (해외 접속 차단·주소 오류 가능)",
+   "discovery": {
+    "checked": "2026-11-15",
+    "ok": false,
+    "error": "홈페이지 접속 실패 (해외 접속 차단·주소 오류 가능)"
+   },
+   "file_dates": 0,
+   "ok": false
+  },
+  "ksog": {
+   "id": "ksog",
+   "run_at": "2026-11-15T22:25:25+09:00",
+   "boards": [
+    {
+     "url": "https://www.ksog.org/member/pds.php?sub=1",
+     "name": "Guideline & Position Statement",
+     "source": "discovered",
+     "pages": 0,
+     "rows": 0,
+     "matched": 0,
+     "new": 0,
+     "members_only": 0,
+     "error": "회원 전용 게시판 (로그인 필요)"
+    }
+   ],
+   "error": "게시판은 열렸으나 진료지침 항목 0건 (파서 설정 확인 필요)",
+   "discovery": {
+    "checked": "2026-11-15",
+    "ok": true,
+    "error": null
+   },
+   "file_dates": 0,
+   "ok": false
+  },
+  "kspm": {
+   "id": "kspm",
+   "run_at": "2026-11-15T22:25:32+09:00",
+   "boards": [],
+   "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
+   "discovery": {
+    "checked": "2026-11-15",
+    "ok": false,
+    "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)"
+   },
+   "file_dates": 0,
+   "ok": false
+  },
+  "kscrh": {
+   "id": "kscrh",
+   "run_at": "2026-11-15T22:25:35+09:00",
+   "boards": [],
+   "error": "홈페이지 접속 실패 (해외 접속 차단·주소 오류 가능)",
+   "discovery": {
+    "checked": "2026-11-15",
+    "ok": false,
+    "error": "홈페이지 접속 실패 (해외 접속 차단·주소 오류 가능)"
+   },
+   "file_dates": 0,
+   "ok": false
+  },
+  "kosar": {
+   "id": "kosar",
+   "run_at": "2026-11-15T22:25:25+09:00",
+   "boards": [],
+   "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
+   "discovery": {
+    "checked": "2026-11-15",
+    "ok": false,
+    "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)"
+   },
+   "file_dates": 0,
+   "ok": false
   }
  },
- "updated": "2026-11-15T21:50:12+09:00",
- "requests": 15
+ "updated": "2026-11-15T22:49:30+09:00",
+ "requests": 76
 }
