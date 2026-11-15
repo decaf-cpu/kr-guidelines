@@ -87,7 +87,7 @@ def text_year(fetcher: Fetcher, url: str, verify: bool = True, referer: str | No
         if r is not None:
             r.close()
         return None
-    data = _read(r, limit)
+    data = _read(r, limit, seconds=60)
     if b"%PDF" not in data[:1024]:
         return None
     try:
@@ -151,12 +151,16 @@ def unreliable_file_days(items) -> set[tuple[str, str]]:
     return {k for k, f in fams.items() if len(f) >= 2}
 
 
-def _read(r, limit: int) -> bytes:
+def _read(r, limit: int, seconds: float = 45) -> bytes:
+    """최대 limit 바이트, seconds초까지만 읽는다 (느린 서버에서 큰 파일을 붙잡고 있지 않게)."""
+    import time
+
+    end = time.monotonic() + seconds
     try:
         buf = b""
         for chunk in r.iter_content(65536):
             buf += chunk
-            if len(buf) >= limit:
+            if len(buf) >= limit or time.monotonic() > end:
                 break
         return buf
     finally:
@@ -195,11 +199,14 @@ def file_date(fetcher: Fetcher, url: str, verify: bool = True, referer: str | No
         tail = _read(r, CHUNK)
     else:
         # Range를 무시하고 파일 전체를 보내는 서버: 문서 작성일은 보통 파일 끝에 있으므로 끝까지(최대 8MB) 읽는다
+        import time
+
         tail = b""
+        end = time.monotonic() + 45
         try:
             for chunk in r.iter_content(262144):
                 tail += chunk
-                if b"%PDF" not in tail[:1024] or len(tail) >= FULL_LIMIT:
+                if b"%PDF" not in tail[:1024] or len(tail) >= FULL_LIMIT or time.monotonic() > end:
                     break
         finally:
             r.close()
