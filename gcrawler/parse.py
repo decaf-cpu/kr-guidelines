@@ -324,7 +324,7 @@ def extract_rows(html: str, base_url: str, cfg: dict | None = None) -> list[Row]
 
     if cfg.get("row_selector"):
         rows = [parse_row(el, base_url, cfg) for el in soup.select(cfg["row_selector"])]
-        return _dedupe([r for r in rows if r])
+        return strip_trailing_link_words(_dedupe([r for r in rows if r]))
 
     candidate_sets = {
         "tr": [el for el in soup.find_all("tr") if not _in_nav(el)],
@@ -353,8 +353,8 @@ def extract_rows(html: str, base_url: str, cfg: dict | None = None) -> list[Row]
         if score > best_score:
             best_score, best_rows = score, rows
     if best_rows and best_score >= 2:
-        return best_rows
-    return extract_links_fallback(soup, base_url)
+        return strip_trailing_link_words(best_rows)
+    return strip_trailing_link_words(extract_links_fallback(soup, base_url))
 
 
 GENERIC_LINK = re.compile(
@@ -388,6 +388,18 @@ def _context_title(a: Tag) -> str:
     # 앞쪽 형제 요소의 글자
     prev = a.find_previous(string=lambda x: x and len(x.strip()) >= 6)
     return clean(prev)[:200] if prev else own
+
+
+_TRAIL = re.compile(r"\s*(?:view\s*more\s*\+?|read\s*more|more\s*\+|더\s*보기|자세히\s*보기|바로\s*가기)\s*$", re.I)
+
+
+def strip_trailing_link_words(rows: list[Row]) -> list[Row]:
+    """'... VIEW MORE', '... 자세히보기'처럼 제목 끝에 붙은 버튼 글자를 지운다."""
+    for r in rows:
+        t = _TRAIL.sub("", r.title or "")
+        if len(t) >= 4:
+            r.title = t
+    return rows
 
 
 def extract_links_fallback(soup: BeautifulSoup, base_url: str) -> list[Row]:

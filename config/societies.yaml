@@ -500,6 +500,8 @@
   group: 외과계
   specialty: 산부인과
   division: 산부인과
+  enabled: false
+  note: "진료지침(Guideline & Position Statement) 자료실이 회원 전용(로그인 필요)"
   boards: []
 - id: ksfp
   name: 대한가임력보존학회
@@ -508,6 +510,8 @@
   group: 외과계
   specialty: 산부인과
   division: 산부인과
+  enabled: false
+  note: "해외(수집 서버)에서 접속되지 않음"
   boards: []
 - id: ksmfm
   name: 대한모체태아의학회
@@ -516,7 +520,11 @@
   group: 외과계
   specialty: 산부인과
   division: 산부인과
-  boards: []
+  note: "임상진료지침 게시판은 회원 전용이라 공개된 '임상진료가이드'만 수집"
+  boards:
+    - url: https://www.ksmfm.or.kr/workshop_pds/guide.php
+      name: 임상진료가이드
+      dedicated: true
 - id: kosar
   name: 대한보조생식학회
   short: "보조생식학회"
@@ -524,6 +532,8 @@
   group: 외과계
   specialty: 산부인과
   division: 산부인과
+  enabled: false
+  note: "윤리지침 페이지가 회원 전용(로그인 필요)"
   boards: []
 - id: ksgo
   name: 대한부인종양학회
@@ -532,7 +542,10 @@
   group: 외과계
   specialty: 산부인과
   division: 산부인과
-  boards: []
+  boards:
+    - url: https://www.sgo.or.kr/regular/material/guideline
+      name: 부인암 생활권고안
+      dedicated: true
 - id: kugs
   name: 대한비뇨부인과학회
   short: "비뇨부인과학회"
@@ -540,6 +553,8 @@
   group: 외과계
   specialty: 산부인과
   division: 산부인과
+  enabled: false
+  note: "해외(수집 서버)에서 접속되지 않음"
   boards: []
 - id: kosge
   name: 대한산부인과내분비학회
@@ -548,6 +563,8 @@
   group: 외과계
   specialty: 산부인과
   division: 산부인과
+  enabled: false
+  note: "'임상지침 2016'은 책 소개만 있고 내려받을 파일 없음"
   boards: []
 - id: ksgendo
   name: 대한산부인과내시경학회
@@ -556,6 +573,8 @@
   group: 외과계
   specialty: 산부인과
   division: 산부인과
+  enabled: false
+  note: "해외(수집 서버)에서 접속되지 않음"
   boards: []
 - id: kses
   name: 대한자궁내막증학회
@@ -564,6 +583,8 @@
   group: 외과계
   specialty: 산부인과
   division: 산부인과
+  enabled: false
+  note: "해외(수집 서버)에서 접속되지 않음"
   boards: []
 - id: kspm
   name: 대한주산의학회
@@ -572,6 +593,8 @@
   group: 외과계
   specialty: 산부인과
   division: 산부인과
+  enabled: false
+  note: "진료지침 메뉴 없음"
   boards: []
 - id: ksmenop
   name: 대한폐경학회
@@ -580,6 +603,8 @@
   group: 외과계
   specialty: 산부인과
   division: 산부인과
+  enabled: false
+  note: "해외(수집 서버)에서 접속되지 않음"
   boards: []
 - id: kscrh
   name: 대한피임·생식보건학회
@@ -588,4 +613,6 @@
   group: 외과계
   specialty: 산부인과
   division: 산부인과
+  enabled: false
+  note: "해외(수집 서버)에서 접속되지 않음"
   boards: []

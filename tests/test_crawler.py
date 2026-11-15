@@ -463,3 +463,9 @@ def test_generic_download_link_uses_alt_title():
         for i, t in enumerate(["소아천식 진료 가이드라인", "2007 부비동염 진료 가이드라인"])) + "</ul>"
     rows = extract_rows(html, "https://x.or.kr/community/guide.php", {"dedicated": True})
     assert [r.title for r in rows] == ["소아천식 진료 가이드라인", "2007 부비동염 진료 가이드라인"]
+
+
+def test_trailing_view_more_removed():
+    from gcrawler.parse import Row, strip_trailing_link_words
+    rows = strip_trailing_link_words([Row(title="Fact sheet 임신 중 타이레놀과 자폐증 논란 VIEW MORE", url="u")])
+    assert rows[0].title == "Fact sheet 임신 중 타이레놀과 자폐증 논란"
