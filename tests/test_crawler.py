@@ -361,3 +361,18 @@ def test_title_links_to_board_when_url_is_file():
 def test_foreign_society_names():
     assert not is_guideline("The North American Neuroendocrine Tumor Society Consensus Guidelines for Surveillance", dedicated=True)
     assert is_guideline("한국 췌장암 진료 가이드라인 (2021)", dedicated=True)
+
+
+def test_pdf_date_prefers_document_info_over_embedded():
+    from gcrawler.filedate import _from_pdf_bytes
+    b = (b"%PDF <xmp:CreateDate>2019-03-27T10:00:00</xmp:CreateDate> /CreationDate (D:20190327) "
+         b"... trailer /Info << /CreationDate (D:20230612100000) >>")
+    assert _from_pdf_bytes(b) == ("2023-06-12", "day")
+
+
+def test_repeated_file_dates_are_dropped():
+    from gcrawler.build import fix_dates
+    items = [{"society": "ksid", "title": f"지침 {i}", "date": "2019-03-27", "date_precision": "day", "date_source": "file-pdf"} for i in range(3)]
+    items.append({"society": "ksid", "title": "다른 지침", "date": "2021-05-12", "date_precision": "day", "date_source": "file-pdf"})
+    out = {it["title"]: it for it in fix_dates(items)}
+    assert out["지침 0"]["date"] is None and out["다른 지침"]["date"] == "2021-05-12"

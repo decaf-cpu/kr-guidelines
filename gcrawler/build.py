@@ -42,6 +42,9 @@ def fix_dates(items: list[dict]) -> list[dict]:
         for d, n in c.items()
         if n >= 5 and n >= 0.25 * totals[soc]
     }
+    # 파일에서 얻은 날짜가 한 학회에서 3건 이상 똑같으면 문서 날짜가 아니라 양식·재저장 날짜일 가능성이 높다
+    file_days = Counter((it.get("society"), it.get("date")) for it in items if (it.get("date_source") or "").startswith("file"))
+    bad_file = {k for k, n in file_days.items() if n >= 3}
     out = []
     for it in items:
         it = dict(it)
@@ -51,6 +54,8 @@ def fix_dates(items: list[dict]) -> list[dict]:
                     it.update(date=None, date_precision=None, date_source=None)
             except ValueError:
                 pass
+        if (it.get("date_source") or "").startswith("file") and (it.get("society"), it.get("date")) in bad_file:
+            it.update(date=None, date_precision=None, date_source=None)
         d, prec = it.get("date"), it.get("date_precision")
         ty = year_from_title(it.get("title", ""))
         if d and prec == "day" and (it.get("society"), d) in bulk:

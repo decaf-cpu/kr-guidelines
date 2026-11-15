@@ -168,7 +168,7 @@ def crawl_board(fetcher: Fetcher, soc: dict, board: dict, store: Store, mode: st
     return result
 
 
-FILE_CHECK_VERSION = 3
+FILE_CHECK_VERSION = 4
 
 
 def fill_file_dates(fetcher: Fetcher, soc: dict, store: Store, budget: int = 60) -> int:
@@ -182,8 +182,9 @@ def fill_file_dates(fetcher: Fetcher, soc: dict, store: Store, budget: int = 60)
     for it in mine:
         if budget <= 0:
             break
-        undated = not it.get("date")
-        in_bulk = it.get("date") in bulk and not year_from_title(it.get("title", ""))
+        from_file = (it.get("date_source") or "").startswith("file")
+        undated = not it.get("date") or from_file  # 파일에서 얻은 날짜는 새 규칙으로 다시 확인
+        in_bulk = it.get("date") in bulk and not year_from_title(it.get("title", "")) and not from_file
         if not (undated or in_bulk) or it.get("access") == "members":
             continue
         if it.get("file_checked_v") == FILE_CHECK_VERSION:
@@ -197,6 +198,8 @@ def fill_file_dates(fetcher: Fetcher, soc: dict, store: Store, budget: int = 60)
         it["file_checked"] = today()
         it["file_checked_v"] = FILE_CHECK_VERSION
         got = file_date(fetcher, cands[0], verify=soc.get("verify_ssl", True), referer=it.get("board"))
+        if not got and from_file:
+            it["date"] = it["date_precision"] = it["date_source"] = None
         if got:
             if undated:
                 it["date"], it["date_precision"], it["date_source"] = got[0], got[1], f"file-{got[2]}"

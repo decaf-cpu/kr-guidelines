@@ -31,19 +31,25 @@ def _ok(y: int, m: int = 1, d: int = 1) -> bool:
 
 
 def _from_pdf_bytes(b: bytes) -> tuple[str, str] | None:
-    found = []
-    for pat in _PDF_DATE:
-        for m in pat.finditer(b):
-            y = int(m.group(1))
-            mo = int(m.group(2)) if m.group(2) else None
-            d = int(m.group(3)) if m.group(3) else None
-            if mo and d and _ok(y, mo, d):
-                found.append((f"{y:04d}-{mo:02d}-{d:02d}", "day"))
-            elif mo and _ok(y, mo):
-                found.append((f"{y:04d}-{mo:02d}", "month"))
-            elif _ok(y):
-                found.append((f"{y:04d}", "year"))
-    return min(found) if found else None  # 여러 개면 가장 이른 날짜(최초 작성)
+    """문서 자체의 작성일. 한 파일 안에 날짜가 여럿이면(삽입된 그림·양식의 날짜 등)
+    Info 사전의 /CreationDate 중 파일 뒤쪽(최종 저장 시 기록)의 것을, 없으면 메타데이터 날짜 중 가장 늦은 것."""
+    def conv(m):
+        y = int(m.group(1))
+        mo = int(m.group(2)) if m.group(2) else None
+        d = int(m.group(3)) if m.group(3) else None
+        if mo and d and _ok(y, mo, d):
+            return f"{y:04d}-{mo:02d}-{d:02d}", "day"
+        if mo and _ok(y, mo):
+            return f"{y:04d}-{mo:02d}", "month"
+        if _ok(y):
+            return f"{y:04d}", "year"
+        return None
+
+    info = [c for c in (conv(m) for m in _PDF_DATE[0].finditer(b)) if c]
+    if info:
+        return info[-1]
+    xmp = [c for pat in _PDF_DATE[1:] for c in (conv(m) for m in pat.finditer(b)) if c]
+    return max(xmp) if xmp else None
 
 
 def _read(r, limit: int) -> bytes:
@@ -89,20 +95,15 @@ def file_date(fetcher: Fetcher, url: str, verify: bool = True, referer: str | No
     if ranged:
         tail = _read(r, CHUNK)
     else:
-        # Range를 무시하고 파일 전체를 보내는 서버: 작성일이 나올 때까지 이어서 읽는다
-        tail, got_early = b"", None
+        # Range를 무시하고 파일 전체를 보내는 서버: 문서 작성일은 보통 파일 끝에 있으므로 끝까지(최대 8MB) 읽는다
+        tail = b""
         try:
             for chunk in r.iter_content(262144):
                 tail += chunk
-                if b"%PDF" not in tail[:1024]:
-                    break
-                got_early = _from_pdf_bytes(tail[-(len(chunk) + 4096):]) or got_early
-                if got_early or len(tail) >= FULL_LIMIT:
+                if b"%PDF" not in tail[:1024] or len(tail) >= FULL_LIMIT:
                     break
         finally:
             r.close()
-        if got_early:
-            return got_early[0], got_early[1], "pdf"
     is_pdf = "pdf" in ctype or name.lower().endswith(".pdf") or b"%PDF" in tail[:1024] or b"/Type" in tail
     if is_pdf:
         got = _from_pdf_bytes(tail)
