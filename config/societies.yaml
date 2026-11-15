@@ -378,3 +378,71 @@
   boards: []
   enabled: false
   note: 공개된 진료지침 게시판을 찾지 못함
+
+# ── 소아청소년과 (대한소아청소년과학회와 분과학회) ──
+- id: kps
+  name: 대한소아청소년과학회
+  short: 소아청소년과학회
+  homepage: https://www.pediatrics.or.kr
+  group: 내과계
+  specialty: 소아청소년과
+  division: 소아청소년
+  boards: []
+- id: kapard
+  name: 대한소아알레르기호흡기학회
+  short: 소아알레르기호흡기학회
+  homepage: https://www.kapard.or.kr
+  group: 내과계
+  specialty: 소아청소년과
+  division: 소아청소년
+  boards: []
+- id: kspid
+  name: 대한소아감염학회
+  short: 소아감염학회
+  homepage: https://www.kspid.or.kr
+  group: 내과계
+  specialty: 소아청소년과
+  division: 소아청소년
+  boards: []
+- id: ksneo
+  name: 대한신생아학회
+  short: 신생아학회
+  homepage: https://www.neonatology.or.kr
+  group: 내과계
+  specialty: 소아청소년과
+  division: 소아청소년
+  boards: []
+- id: kspghan
+  name: 대한소아소화기영양학회
+  short: 소아소화기영양학회
+  homepage: https://www.kspghan.or.kr
+  group: 내과계
+  specialty: 소아청소년과
+  division: 소아청소년
+  boards: []
+- id: kspn
+  name: 대한소아신장학회
+  short: 소아신장학회
+  homepage: https://www.kspn.org
+  group: 내과계
+  specialty: 소아청소년과
+  division: 소아청소년
+  boards: []
+- id: kspho
+  name: 대한소아혈액종양학회
+  short: 소아혈액종양학회
+  homepage: https://www.kspho.or.kr
+  group: 내과계
+  specialty: 소아청소년과
+  division: 소아청소년
+  boards: []
+- id: kspe
+  name: 대한소아내분비학회
+  short: 소아내분비학회
+  homepage: https://www.kspe.or.kr
+  group: 내과계
+  specialty: 소아청소년과
+  division: 소아청소년
+  enabled: false
+  note: robots.txt가 사이트 전체 수집을 막고 있어 제외
+  boards: []
