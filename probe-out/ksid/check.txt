@@ -1,0 +1,4 @@
+방화벽 차단 감지, 이번 실행에서 www.ksid.or.kr 요청 중단
+
+== 감염 질환별 가이드라인 https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do
+   접속 실패 (HTTP None)

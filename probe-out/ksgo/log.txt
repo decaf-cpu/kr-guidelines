@@ -1,2 +1,0 @@
-home	https://www.sgo.or.kr	HTTP 200	→ https://www.sgo.or.kr/	text/html; charset=UTF-8	3948B
-board0	https://www.sgo.or.kr/regular/material/guideline	HTTP 200	→ https://www.sgo.or.kr/regular/material/guideline	text/html; charset=UTF-8	110909B
