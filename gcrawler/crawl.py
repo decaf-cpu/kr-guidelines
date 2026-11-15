@@ -3,6 +3,8 @@ from __future__ import annotations
 
 import datetime as dt
 import logging
+import re
+from urllib.parse import unquote
 from concurrent.futures import ThreadPoolExecutor
 
 from . import adapters
@@ -151,6 +153,9 @@ def crawl_board(fetcher: Fetcher, soc: dict, board: dict, store: Store, mode: st
             cur = (it.get("date"), it.get("date_precision"))
             if not cur[0]:
                 y = find_month(row.title) or year_from_title(row.title)
+                if not y and row.url:
+                    # 'https://.../2026_guidelines.pdf'처럼 파일명에 적힌 연도
+                    y = year_from_title(re.sub(r"[_\-.]", " ", unquote(row.url.rsplit("/", 1)[-1])))
                 if y:
                     it["date"], it["date_precision"], it["date_source"] = y[0], y[1], "title"
 

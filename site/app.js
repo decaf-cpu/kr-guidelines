@@ -20,7 +20,7 @@
     return it.first_seen ? it.first_seen.replace(/-/g, ".") : "—";
   };
   const dateNote = (it) => {
-    if (!it.date) return "수집일";
+    if (!it.date) return it.sources.every((s) => s.manual) ? "" : "수집일";
     if (it.date_source === "bulk") return "일괄 등록일";
     if (it.date_precision === "year") {
       const base = it.date_source === "title" ? "제목 연도" : "연도";
@@ -106,7 +106,7 @@
     const main = it.sources[0];
     const isNew = it.first_seen && daysAgo(it.first_seen) <= 14;
     const socs = it.sources
-      .map((s) => `<a class="tag soc" href="${esc(s.url)}" target="_blank" rel="noopener" title="${esc(SOCS[s.society]?.name)}${s.board_name ? " · " + esc(s.board_name) : ""}">${esc(SOCS[s.society]?.short || s.society)}</a>`)
+      .map((s) => `<a class="tag soc" href="${esc(s.url)}" target="_blank" rel="noopener" title="${esc(SOCS[s.society]?.name)}${s.board_name ? " · " + esc(s.board_name) : ""}">${esc(SOCS[s.society]?.short || s.society)}${s.manual ? " ✎" : ""}</a>`)
       .join("");
     const files = it.sources.flatMap((s) => s.attachments || []).slice(0, 4)
       .map((f) => `<a class="file" href="${esc(f.url)}" target="_blank" rel="noopener" title="${esc(f.name)}">${esc(f.kind === "file" ? "첨부" : f.kind)}</a>`)
@@ -183,19 +183,22 @@
       .map((s) => {
         const r = st[s.id];
         let badge = '<span class="st-warn">미수집</span>';
-        if (s.enabled === false) badge = '<span class="st-warn">꺼짐</span>';
+        if (s.enabled === false) badge = s.manual ? '<span class="st-ok">수동 등록</span>' : '<span class="st-warn">제외</span>';
         else if (r?.ok) badge = '<span class="st-ok">정상</span>';
         else if (r) badge = '<span class="st-err">확인 필요</span>';
-        const boards = (r?.boards || [])
+        if (s.enabled === false && !s.manual) badge = '<span class="st-warn">제외</span>';
+        const off = s.enabled === false;
+        const boards = (off ? [] : r?.boards || [])
           .map((b) => `<div class="st-board">${b.source === "discovered" ? "자동탐색 · " : ""}<a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.name || b.url)}</a>${b.error ? " — " + esc(b.error) : ` — ${b.matched ?? 0}건`}</div>`)
           .join("");
-        const err = r?.error ? `<div class="st-board">${esc(r.error)}</div>` : "";
+        const err = !off && r?.error ? `<div class="st-board">${esc(r.error)}</div>` : "";
         return `<tr><td>${esc(s.division)}</td><td><a href="${esc(s.homepage)}" target="_blank" rel="noopener">${esc(s.name)}</a>${s.note ? `<div class="st-board">${esc(s.note)}</div>` : ""}</td>
-          <td>${badge}${err}${boards}</td><td class="num">${count[s.id] || 0}</td><td class="st-board">${esc((r?.run_at || "").replace("T", " ").slice(0, 16))}</td></tr>`;
+          <td>${badge}${err}${boards}</td><td class="num">${count[s.id] || 0}</td><td class="st-board">${off ? "" : esc((r?.run_at || "").replace("T", " ").slice(0, 16))}</td></tr>`;
       })
       .join("");
     $("#status").innerHTML = `<table class="st"><thead><tr><th>분과</th><th>학회</th><th>상태 · 게시판</th><th>건수</th><th>마지막 수집</th></tr></thead><tbody>${rows}</tbody></table>
-      <p class="note">회원 전용으로 판정되어 제외된 게시물: ${(STATUS.hidden_members_only || 0).toLocaleString()}건</p>`;
+      <p class="note">회원 전용으로 판정되어 제외된 게시물: ${(STATUS.hidden_members_only || 0).toLocaleString()}건 · 학회 배지의 ✎ 표시는 자동 수집이 막혀 손으로 등록한 항목입니다.</p>
+      ${(STATUS.manual_errors || []).length ? `<p class="note st-err">수동 등록 오류: ${STATUS.manual_errors.map(esc).join(" / ")}</p>` : ""}`;
   }
 
   // ── 이벤트 ───────────────────────────

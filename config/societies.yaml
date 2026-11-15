@@ -20,7 +20,9 @@
 #       js_link_template  : 제목 링크가 javascript:view(123) 형태일 때 실제 주소 틀
 #                           (예: "/bbs/view.php?idx={0}")
 #   verify_ssl : 인증서 오류가 있는 사이트는 false (기본 true; 오류 시 자동 재시도도 함)
-#   enabled    : false면 수집 제외
+#   enabled    : false면 자동 수집 제외
+#   manual     : true면 config/manual.yaml에 손으로 등록한 지침을 사이트에 표시
+#                (robots.txt·방화벽 등으로 자동 수집이 막힌 학회용)
 #   note       : 메모
 #
 # 대한의학회 회원학회 여부는 KAMS 회원학회 목록과 대조해 두는 것을 권장합니다.
@@ -85,6 +87,7 @@
   division: 소화기
   boards: []
   enabled: false
+  manual: true          # 자동 수집 대신 config/manual.yaml에 손으로 등록
   note: robots.txt가 게시판(/bbs/) 수집을 막고 있어 제외
 - id: kasid
   name: 대한장연구학회
@@ -177,6 +180,7 @@
   division: 순환기
   boards: []
   enabled: false
+  manual: true          # 자동 수집 대신 config/manual.yaml에 손으로 등록
   note: 자동 접속 차단 장치(쿠키 확인 페이지)가 있어 수집하지 않음
 - id: ksola
   name: 한국지질·동맥경화학회
@@ -266,6 +270,7 @@
   division: 내분비·대사
   boards: []
   enabled: false
+  manual: true          # 자동 수집 대신 config/manual.yaml에 손으로 등록
   note: robots.txt가 게시판 수집을 막고 있어 제외
 # ───────────── 신장 ─────────────
 - id: ksn
@@ -324,6 +329,7 @@
       name: KSAT 진료지침
       dedicated: true
   enabled: false
+  manual: true          # 자동 수집 대신 config/manual.yaml에 손으로 등록
   note: 웹 방화벽이 자동 접속을 차단함 (진료지침 페이지 medical/sub01.html)
 
 # ───────────── 류마티스 ─────────────
@@ -336,6 +342,7 @@
   division: 류마티스
   boards: []
   enabled: false
+  manual: true          # 자동 수집 대신 config/manual.yaml에 손으로 등록
   note: robots.txt가 사이트 전체 수집을 막고 있어 제외
 
 # ───────────── 혈액·종양 ─────────────

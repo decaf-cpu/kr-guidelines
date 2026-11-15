@@ -271,3 +271,30 @@ def test_download_icon_titles():
     titles = [r.title for r in rows]
     assert "염증성 장질환에서 thiopurine 사용: 대한장연구학회 합의문 (2015, 한글판)" in titles
     assert len(rows) == 3
+
+
+def test_manual_entries(tmp_path, monkeypatch):
+    from gcrawler import manual as manual_mod
+    (tmp_path / "manual.yaml").write_text("""
+- society: kcr
+  title: 2025 한국 류마티스관절염 진료지침
+  url: https://example.org/ra.pdf
+  date: 2025-10
+  added: 2026-11-15
+  files: [https://example.org/ra.pdf]
+- society: nope
+  title: x
+  url: https://example.org/x
+- society: kcr
+  title: 날짜 오류
+  url: https://example.org/y
+  date: 25년
+""", encoding="utf-8")
+    monkeypatch.setattr(manual_mod, "CONFIG", tmp_path)
+    socs = {"kcr": {"id": "kcr", "enabled": False, "manual": True, "group": "내과계", "division": "류마티스", "short": "류마티스학회"}}
+    items, errors = manual_mod.load_manual(socs)
+    assert len(items) == 2 and len(errors) == 2
+    assert items[0]["date_precision"] == "month" and items[0]["attachments"][0]["kind"] == "pdf"
+    from gcrawler.build import merge_items
+    merged = merge_items(items, socs)
+    assert any(g["title"] == "2025 한국 류마티스관절염 진료지침" and g["sources"][0]["manual"] for g in merged)

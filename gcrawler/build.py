@@ -10,6 +10,7 @@ from xml.sax.saxutils import escape
 
 from collections import Counter
 
+from .manual import load_manual
 from .parse import year_from_title
 from .store import DATA, ROOT, load_json, load_societies, load_taxonomy, save_json
 
@@ -64,7 +65,7 @@ def merge_items(items: list[dict], socs: dict[str, dict]) -> list[dict]:
         if it.get("access") == "members":
             continue
         soc = socs.get(it.get("society"))
-        if soc is None or not soc.get("enabled", True):
+        if soc is None or (not soc.get("enabled", True) and not it.get("manual")):
             continue
         key = norm_title(it["title"])
         src = {
@@ -73,6 +74,7 @@ def merge_items(items: list[dict], socs: dict[str, dict]) -> list[dict]:
             "board_name": it.get("board_name"),
             "attachments": it.get("attachments", [])[:6],
             "link_resolved": it.get("link_resolved", True),
+            "manual": bool(it.get("manual")),
         }
         g = groups.get(key)
         if g is None:
@@ -142,7 +144,10 @@ def build(base_url: str = "./") -> dict:
     socs = {s["id"]: s for s in socs_list}
     doc = load_json(DATA / "guidelines.json", {"items": []})
     status = load_json(DATA / "status.json", {"societies": {}})
-    items = merge_items(doc.get("items", []), socs)
+    manual, manual_errors = load_manual(socs)
+    for m in manual:
+        m["first_seen"] = m["first_seen"] or (doc.get("updated") or "")[:10] or None
+    items = merge_items(doc.get("items", []) + manual, socs)
     hidden = sum(1 for it in doc.get("items", []) if it.get("access") == "members")
 
     if OUT.exists():
@@ -156,12 +161,14 @@ def build(base_url: str = "./") -> dict:
         {
             "taxonomy": load_taxonomy(),
             "societies": [
-                {k: s.get(k) for k in ("id", "name", "short", "homepage", "group", "specialty", "division", "enabled", "note")}
+                {k: s.get(k) for k in ("id", "name", "short", "homepage", "group", "specialty", "division", "enabled", "note", "manual")}
                 for s in socs_list
             ],
         },
     )
-    save_json(OUT / "data" / "status.json", {**status, "hidden_members_only": hidden})
+    save_json(OUT / "data" / "status.json", {**status, "hidden_members_only": hidden, "manual_errors": manual_errors})
     write_feed(items, socs, base_url, OUT / "feed.xml")
     (OUT / ".nojekyll").write_text("")
-    return {"items": len(items), "hidden_members_only": hidden}
+    for err in manual_errors:
+        print("⚠", err)
+    return {"items": len(items), "hidden_members_only": hidden, "manual": len(manual)}
