@@ -119,7 +119,7 @@
   // ── 렌더: 목록 ────────────────────────
   function itemHTML(it) {
     const main = it.sources[0];
-    const isNew = !it.backfill && it.first_seen && daysAgo(it.first_seen) <= 14;
+    const isNew = !it.backfill && it.first_seen && daysAgo(it.first_seen) <= 30;
     const socs = it.sources
       .map((s) => `<a class="tag soc" href="${esc(s.board || SOCS[s.society]?.board || s.url)}" target="_blank" rel="noopener" title="${esc(SOCS[s.society]?.name)} 진료지침 게시판">${esc(SOCS[s.society]?.short || s.society)}${s.manual ? " ✎" : ""}</a>`)
       .join("");
