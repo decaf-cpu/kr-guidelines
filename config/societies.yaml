@@ -542,10 +542,9 @@
   group: 외과계
   specialty: 산부인과
   division: 산부인과
-  boards:
-    - url: https://www.sgo.or.kr/regular/material/guideline
-      name: 부인암 생활권고안
-      dedicated: true
+  enabled: false
+  note: "진료지침 게시판 없음 (환자용 생활권고안 웹페이지만 있음)"
+  boards: []
 - id: kugs
   name: 대한비뇨부인과학회
   short: "비뇨부인과학회"
