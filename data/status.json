@@ -33,7 +33,7 @@
   },
   "kasl": {
    "id": "kasl",
-   "run_at": "2026-11-15T20:06:23+09:00",
+   "run_at": "2026-11-15T20:09:45+09:00",
    "boards": [
     {
      "url": "https://www.kasl.org/bbs/?code=guide",
@@ -52,7 +52,7 @@
   },
   "kasid": {
    "id": "kasid",
-   "run_at": "2026-11-15T20:06:23+09:00",
+   "run_at": "2026-11-15T20:09:45+09:00",
    "boards": [
     {
      "url": "https://www.kasid.org/academic/education/guide/01",
@@ -71,18 +71,18 @@
   },
   "kchugr": {
    "id": "kchugr",
-   "run_at": "2026-11-15T20:06:23+09:00",
+   "run_at": "2026-11-15T20:09:45+09:00",
    "boards": [
     {
      "url": "https://www.hpylori.or.kr/content/education/guide.php",
      "name": "가이드라인",
      "source": "config",
-     "pages": 0,
+     "pages": 1,
      "rows": 0,
      "matched": 0,
      "new": 0,
      "members_only": 0,
-     "error": "목록 접속 실패"
+     "error": null
     }
    ],
    "error": "게시판은 열렸으나 진료지침 항목 0건 (파서 설정 확인 필요)",
@@ -102,7 +102,7 @@
   },
   "ksc": {
    "id": "ksc",
-   "run_at": "2026-11-15T20:06:26+09:00",
+   "run_at": "2026-11-15T20:09:47+09:00",
    "boards": [
     {
      "url": "https://www.circulation.or.kr/bbs/?code=guide",
@@ -133,7 +133,7 @@
   },
   "klcs": {
    "id": "klcs",
-   "run_at": "2026-11-15T20:06:23+09:00",
+   "run_at": "2026-11-15T20:09:45+09:00",
    "boards": [
     {
      "url": "https://www.livercancer.or.kr/html/?pmode=guidelines",
@@ -142,7 +142,7 @@
      "pages": 1,
      "rows": 7,
      "matched": 7,
-     "new": 7,
+     "new": 0,
      "members_only": 0,
      "error": null
     }
@@ -152,7 +152,7 @@
   },
   "khrs": {
    "id": "khrs",
-   "run_at": "2026-11-15T20:06:28+09:00",
+   "run_at": "2026-11-15T20:09:48+09:00",
    "boards": [
     {
      "url": "https://www.k-hrs.org/expert/guide/atrial",
@@ -234,7 +234,7 @@
   },
   "ksola": {
    "id": "ksola",
-   "run_at": "2026-11-15T20:06:29+09:00",
+   "run_at": "2026-11-15T20:09:51+09:00",
    "boards": [
     {
      "url": "https://www.lipid.or.kr/reference/guideline.php",
@@ -253,7 +253,7 @@
   },
   "kta": {
    "id": "kta",
-   "run_at": "2026-11-15T20:06:30+09:00",
+   "run_at": "2026-11-15T20:09:52+09:00",
    "boards": [
     {
      "url": "https://www.thyroid.kr/board/list.html?code=c_guide",
@@ -272,7 +272,7 @@
   },
   "kda": {
    "id": "kda",
-   "run_at": "2026-11-15T20:06:29+09:00",
+   "run_at": "2026-11-15T20:09:51+09:00",
    "boards": [
     {
      "url": "https://www.diabetes.or.kr/bbs/?code=guide",
@@ -370,7 +370,7 @@
   },
   "ksn": {
    "id": "ksn",
-   "run_at": "2026-11-15T20:06:31+09:00",
+   "run_at": "2026-11-15T20:09:54+09:00",
    "boards": [
     {
      "url": "https://ksn.or.kr/bbs/?code=guideline_k",
@@ -389,7 +389,7 @@
   },
   "kattd": {
    "id": "kattd",
-   "run_at": "2026-11-15T20:06:32+09:00",
+   "run_at": "2026-11-15T20:09:54+09:00",
    "boards": [
     {
      "url": "https://new.lungkorea.org/board/guide",
@@ -408,7 +408,7 @@
   },
   "ksh": {
    "id": "ksh",
-   "run_at": "2026-11-15T20:06:26+09:00",
+   "run_at": "2026-11-15T20:09:48+09:00",
    "boards": [
     {
      "url": "https://www.koreanhypertension.org/reference/guide",
@@ -432,7 +432,7 @@
   },
   "ksid": {
    "id": "ksid",
-   "run_at": "2026-11-15T20:06:34+09:00",
+   "run_at": "2026-11-15T20:09:55+09:00",
    "boards": [
     {
      "url": "https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do",
@@ -506,7 +506,7 @@
   },
   "ksmo": {
    "id": "ksmo",
-   "run_at": "2026-11-15T20:06:36+09:00",
+   "run_at": "2026-11-15T20:09:57+09:00",
    "boards": [
     {
      "url": "https://www.ksmo.or.kr/Pages/Publication/publication03.aspx",
@@ -525,7 +525,7 @@
   },
   "kpba": {
    "id": "kpba",
-   "run_at": "2026-11-15T20:06:23+09:00",
+   "run_at": "2026-11-15T20:09:45+09:00",
    "boards": [],
    "error": "홈페이지 접속 실패 (해외 접속 차단·주소 오류 가능)",
    "discovery": {
@@ -537,7 +537,7 @@
   },
   "ksg": {
    "id": "ksg",
-   "run_at": "2026-11-15T20:06:23+09:00",
+   "run_at": "2026-11-15T20:09:45+09:00",
    "boards": [
     {
      "url": "https://gastrokorea.org/bbs2/index.php?code=guide2",
@@ -567,7 +567,7 @@
   },
   "kaaaci": {
    "id": "kaaaci",
-   "run_at": "2026-11-15T20:06:33+09:00",
+   "run_at": "2026-11-15T20:09:54+09:00",
    "boards": [
     {
      "url": "https://www.allergy.or.kr/board/treatment?gubun=1",
@@ -601,6 +601,6 @@
    "ok": true
   }
  },
- "updated": "2026-11-15T20:08:10+09:00",
- "requests": 55
+ "updated": "2026-11-15T20:11:32+09:00",
+ "requests": 52
 }
