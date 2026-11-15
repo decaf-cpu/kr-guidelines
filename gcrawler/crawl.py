@@ -182,12 +182,12 @@ def fill_file_dates(fetcher: Fetcher, soc: dict, store: Store, budget: int = 60)
     for it in mine:
         if budget <= 0:
             break
-        from_file = (it.get("date_source") or "").startswith("file")
-        undated = not it.get("date") or from_file  # 파일에서 얻은 날짜는 새 규칙으로 다시 확인
+        from_file = False  # 파일 날짜는 항목당 한 번만 확인 (같은 파일을 반복해 내려받지 않음)
+        undated = not it.get("date")
         in_bulk = it.get("date") in bulk and not year_from_title(it.get("title", "")) and not from_file
         if not (undated or in_bulk) or it.get("access") == "members":
             continue
-        if it.get("file_checked_v") == FILE_CHECK_VERSION:
+        if it.get("file_checked_v"):
             continue
         cands = [a["url"] for a in it.get("attachments", [])]
         if it.get("url") and it.get("url") not in cands and re.search(r"(\.pdf|\.hwp|download|down\.php|filedown)", it["url"], re.I):

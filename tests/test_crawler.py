@@ -372,7 +372,28 @@ def test_pdf_date_prefers_document_info_over_embedded():
 
 def test_repeated_file_dates_are_dropped():
     from gcrawler.build import fix_dates
-    items = [{"society": "ksid", "title": f"지침 {i}", "date": "2019-03-27", "date_precision": "day", "date_source": "file-pdf"} for i in range(3)]
+    items = [{"society": "ksid", "title": f"지침 {i}", "date": "2019-03-27", "date_precision": "day", "date_source": "file-pdf"} for i in range(2)]
     items.append({"society": "ksid", "title": "다른 지침", "date": "2021-05-12", "date_precision": "day", "date_source": "file-pdf"})
     out = {it["title"]: it for it in fix_dates(items)}
     assert out["지침 0"]["date"] is None and out["다른 지침"]["date"] == "2021-05-12"
+
+
+def test_firewall_block_stops_host():
+    class F(Fetcher):
+        def __init__(self):
+            super().__init__(delay=0, respect_robots=False, retries=0)
+            self.calls = 0
+
+        def _raw_get(self, url, verify, stream=False, headers=None):
+            self.calls += 1
+            r = requests.Response()
+            r.url, r.status_code, r._content_consumed = url, 200, True
+            r._content = b"<br><center><h2>The request / response that are contrary to Web firewall security policies has been blocked.</h2></center>"
+            r.headers["content-type"] = "text/html"
+            r.headers["content-length"] = str(len(r._content))
+            return r
+
+    f = F()
+    assert f.get("https://www.ksid.or.kr/a") is None
+    assert f.get("https://www.ksid.or.kr/b") is None
+    assert f.calls == 1  # 차단 뒤에는 더 요청하지 않음

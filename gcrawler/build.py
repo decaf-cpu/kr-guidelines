@@ -42,9 +42,9 @@ def fix_dates(items: list[dict]) -> list[dict]:
         for d, n in c.items()
         if n >= 5 and n >= 0.25 * totals[soc]
     }
-    # 파일에서 얻은 날짜가 한 학회에서 3건 이상 똑같으면 문서 날짜가 아니라 양식·재저장 날짜일 가능성이 높다
+    # 파일에서 얻은 날짜가 한 학회에서 2건 이상 똑같으면 문서 날짜가 아니라 양식·재저장 날짜일 가능성이 높다
     file_days = Counter((it.get("society"), it.get("date")) for it in items if (it.get("date_source") or "").startswith("file"))
-    bad_file = {k for k, n in file_days.items() if n >= 3}
+    bad_file = {k for k, n in file_days.items() if n >= 2}
     out = []
     for it in items:
         it = dict(it)

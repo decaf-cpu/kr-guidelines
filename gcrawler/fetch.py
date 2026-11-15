@@ -78,6 +78,7 @@ class Fetcher:
         self._last_hit: dict[str, float] = {}
         self._robots: dict[str, urllib.robotparser.RobotFileParser | None] = {}
         self.insecure_hosts: set[str] = set()
+        self.blocked_hosts: set[str] = set()  # 방화벽 차단 페이지를 받은 사이트: 이번 실행 동안 더 요청하지 않음
         self.request_count = 0
 
     # ── 내부 도우미 ──────────────────────────────
@@ -148,6 +149,9 @@ class Fetcher:
 
     # ── 공개 API ─────────────────────────────────
     def get(self, url: str, verify: bool = True, stream: bool = False, headers: dict | None = None) -> requests.Response | None:
+        host = urlparse(url).netloc
+        if host in self.blocked_hosts:
+            return None
         if not self.allowed(url):
             log.info("robots.txt 차단: %s", url)
             return None
@@ -158,6 +162,11 @@ class Fetcher:
                 if r.status_code >= 500 and attempt < self.retries:
                     time.sleep(2 * (attempt + 1))
                     continue
+                if self._is_block_page(r):
+                    log.warning("방화벽 차단 감지, 이번 실행에서 %s 요청 중단", host)
+                    self.blocked_hosts.add(host)
+                    r.close()
+                    return None
                 return r
             except requests.RequestException as e:
                 last_exc = e
@@ -165,6 +174,18 @@ class Fetcher:
                     time.sleep(2 * (attempt + 1))
         log.warning("요청 실패: %s (%s)", url, last_exc)
         return None
+
+    @staticmethod
+    def _is_block_page(r: requests.Response) -> bool:
+        if r.status_code in (403, 406, 429) or "html" in r.headers.get("content-type", "").lower():
+            cl = r.headers.get("content-length")
+            if cl and cl.isdigit() and int(cl) > 5000:
+                return False
+            head = r.content[:3000] if not r.raw or r._content_consumed else b""
+            if not head and cl and cl.isdigit() and int(cl) <= 5000:
+                head = r.content[:3000]
+            return bool(re.search(rb"(web\s*firewall|security polic|access denied|request blocked|too many requests|\xec\xb0\xa8\xeb\x8b\xa8)", head, re.I))
+        return False
 
     def get_html(self, url: str, verify: bool = True) -> tuple[str | None, requests.Response | None]:
         r = self.get(url, verify=verify)

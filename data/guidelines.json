@@ -7928,9 +7928,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2019-03-27",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "0ac2b0332f189a16",
@@ -7958,9 +7958,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2019-03-27",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "15f860c4b30c5785",
@@ -8063,9 +8063,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2016-10-29",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "2f0c624ce15a6a8c",
@@ -8089,9 +8089,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2017-12-29",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "312d4c5f849d9228",
@@ -8119,9 +8119,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2019-03-27",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "43daa00c112df037",
@@ -8226,9 +8226,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2017-08-09",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "6844e886f65e8072",
@@ -8253,9 +8253,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2023-02-01",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "6987ae1d823e5b62",
@@ -8332,9 +8332,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2019-03-27",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "70643090907a70ef",
@@ -8362,9 +8362,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2019-03-27",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "733b174c50ee790c",
@@ -8389,9 +8389,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2019-03-27",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "7691985d0bdb61b1",
@@ -8416,9 +8416,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2018-09-03",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "827d7c1467c2c677",
@@ -8467,9 +8467,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2017-10-18",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "8ff18e62580a91f7",
@@ -8522,9 +8522,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2015-09-30",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "9cfd867010e0ff07",
@@ -8552,9 +8552,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2019-03-27",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "9d2bc818aa700143",
@@ -8578,9 +8578,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2022-06-23",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "9d7bfca1ba58038a",
@@ -8607,9 +8607,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2022-06-23",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "9f992ebd16c28616",
@@ -8634,9 +8634,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2018-04-03",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "ae13a61fbeacabed",
@@ -8660,9 +8660,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2015-12-30",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "aeb7d1b65307a7f9",
@@ -8690,9 +8690,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2020-02-27",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "be13dab08acb05e1",
@@ -8720,9 +8720,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2021-12-01",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "c26d03e84f4e0037",
@@ -8746,9 +8746,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2017-03-10",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "c6dbd1e423720699",
@@ -8776,9 +8776,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2021-05-12",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "c97a8f2fd5678c40",
@@ -8826,9 +8826,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2017-12-26",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "d6319c775d69d139",
@@ -8855,9 +8855,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2017-09-27",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "de7f25a297be3dea",
@@ -8885,9 +8885,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2021-01-19",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "e604671eb25f5e0c",
@@ -8911,9 +8911,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2015-06-29",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "e8492d98c1486fd7",
@@ -8968,9 +8968,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2019-03-27",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "ef85deb8499dd324",
@@ -9025,9 +9025,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2019-03-08",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "f48c93f23de9f8d5",
@@ -9051,9 +9051,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2012-01-25",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "f648c92e2de01310",
@@ -9081,9 +9081,9 @@
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
-   "date": null,
-   "date_precision": null,
-   "date_source": null
+   "date": "2020-03-13",
+   "date_precision": "day",
+   "date_source": "file-pdf"
   },
   {
    "id": "1aaafa1f3dfec041",
