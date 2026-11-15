@@ -454,3 +454,12 @@ def test_pub_year_replaces_bulk_date():
     items[0]["pub_year"] = "2017"
     out = {it["id"]: it for it in fix_dates(items)}
     assert out["0"]["date"] == "2017" and out["0"]["date_source"] == "detail-year" and not out["0"].get("posted")
+
+
+def test_generic_download_link_uses_alt_title():
+    from gcrawler.parse import extract_rows
+    html = "<ul>" + "".join(
+        f'<li><a alt="{t}" href="/func/download.php?path=x{i}&filename=y{i}"><img src="t.jpg"><span>다운로드</span></a></li>'
+        for i, t in enumerate(["소아천식 진료 가이드라인", "2007 부비동염 진료 가이드라인"])) + "</ul>"
+    rows = extract_rows(html, "https://x.or.kr/community/guide.php", {"dedicated": True})
+    assert [r.title for r in rows] == ["소아천식 진료 가이드라인", "2007 부비동염 진료 가이드라인"]

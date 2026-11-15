@@ -406,7 +406,10 @@ def extract_links_fallback(soup: BeautifulSoup, base_url: str) -> list[Row]:
             label = clean(img.get("alt"))
         title = label
         if len(title) < 4 or GENERIC_LINK.match(title):
-            title = _context_title(a)
+            # 링크 글자가 '다운로드'뿐이면 링크·그림에 붙은 alt/title 속성의 이름을 먼저 쓴다
+            attr = [clean(a.get("alt")), clean(a.get("title"))] + [clean(i.get("alt")) for i in a.find_all("img")]
+            attr = [t for t in attr if len(t) >= 4 and not GENERIC_LINK.match(t)]
+            title = attr[0] if attr else _context_title(a)
         if len(title) < 4:
             continue
         u = urljoin(base_url, href)

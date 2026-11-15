@@ -397,7 +397,10 @@
   group: 내과계
   specialty: 소아청소년과
   division: 소아청소년
-  boards: []
+  boards:
+    - url: https://www.kapard.or.kr/community/guide.php
+      name: 진료지침
+      dedicated: true
 - id: kspid
   name: 대한소아감염학회
   short: 소아감염학회
@@ -455,6 +458,8 @@
   specialty: 소아청소년과
   division: 소아청소년
   homepage: https://www.kspendo.or.kr
+  enabled: false
+  note: "해외(수집 서버)에서 접속되지 않음"
   boards: []
 - id: kcns
   name: 대한소아신경학회
@@ -463,6 +468,8 @@
   group: 내과계
   specialty: 소아청소년과
   division: 소아청소년
+  enabled: false
+  note: "진료지침 게시판(/bbs/guideline)이 회원 전용(로그인 필요)"
   boards: []
 - id: kspc
   name: 대한소아심장학회
@@ -471,6 +478,8 @@
   group: 내과계
   specialty: 소아청소년과
   division: 소아청소년
+  enabled: false
+  note: "해외(수집 서버)에서 접속되지 않음"
   boards: []
 - id: kspem
   name: 대한소아응급의학회
@@ -479,4 +488,6 @@
   group: 내과계
   specialty: 소아청소년과
   division: 소아청소년
+  enabled: false
+  note: "진료지침 게시판 없음 (회원자료실만 있음)"
   boards: []
