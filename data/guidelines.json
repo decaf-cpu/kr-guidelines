@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-15T22:49:30+09:00",
- "count": 408,
+ "updated": "2026-11-15T22:57:09+09:00",
+ "count": 413,
  "items": [
   {
    "id": "192455f016c5eadf",
@@ -9267,6 +9267,151 @@
    "date": "2020-03-13",
    "date_precision": "day",
    "date_source": "file-pdf"
+  },
+  {
+   "id": "1ad13031d2dafefc",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksmfm",
+   "board": "https://www.ksmfm.or.kr/workshop_pds/guide.php",
+   "board_name": "임상진료가이드",
+   "title": "Fact sheet 모자의료 insight: 다태임신, 제대로 알고 준비하기",
+   "url": "https://www.ksmfm.or.kr/file/모자의료 인사이트 2026년 2호_260721_중앙모자의료센터 (1).pdf",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "Fact sheet 모자의료 insight: 다태임신, 제대로 알고 준비하기 VIEW MORE",
+     "url": "https://www.ksmfm.or.kr/file/모자의료 인사이트 2026년 2호_260721_중앙모자의료센터 (1).pdf",
+     "kind": "pdf"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "backfill": true,
+   "checked": "2026-11-15",
+   "detail_v": 2,
+   "date": "2026",
+   "date_precision": "year",
+   "date_source": "title"
+  },
+  {
+   "id": "536187d13dbadf76",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksmfm",
+   "board": "https://www.ksmfm.or.kr/workshop_pds/guide.php",
+   "board_name": "임상진료가이드",
+   "title": "Position statement 뇌성마비와 분만진통 중 저산소증: 최신 지견에 대한 분석과 입장",
+   "url": "https://www.ksmfm.or.kr/file/대한모체태아의학회 Position statement.pdf",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "권고·성명"
+   ],
+   "attachments": [
+    {
+     "name": "Position statement 뇌성마비와 분만진통 중 저산소증: 최신 지견에 대한 분석과 입장 VIEW MORE",
+     "url": "https://www.ksmfm.or.kr/file/대한모체태아의학회 Position statement.pdf",
+     "kind": "pdf"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "backfill": true,
+   "checked": "2026-11-15",
+   "detail_v": 2,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 4,
+   "date": "2026-07-21",
+   "date_precision": "day",
+   "date_source": "file-pdf",
+   "text_checked_v": 1
+  },
+  {
+   "id": "96ba98b5477679a9",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksmfm",
+   "board": "https://www.ksmfm.or.kr/workshop_pds/guide.php",
+   "board_name": "임상진료가이드",
+   "title": "Fact sheet 임신 중 타이레놀과 자폐증 논란",
+   "url": "https://www.ksmfm.or.kr/file/임신 중 타이레놀과 자폐증 논란.pdf",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "Fact sheet 임신 중 타이레놀과 자폐증 논란 VIEW MORE",
+     "url": "https://www.ksmfm.or.kr/file/임신 중 타이레놀과 자폐증 논란.pdf",
+     "kind": "pdf"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "backfill": true,
+   "checked": "2026-11-15",
+   "detail_v": 2,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 4,
+   "date": "2026-07-21",
+   "date_precision": "day",
+   "date_source": "file-pdf",
+   "text_checked_v": 1
+  },
+  {
+   "id": "989179e3b471fc9f",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksmfm",
+   "board": "https://www.ksmfm.or.kr/workshop_pds/guide.php",
+   "board_name": "임상진료가이드",
+   "title": "Fact sheet 시험관 아기 시술(IVF)을 통한 다태임신",
+   "url": "https://www.ksmfm.or.kr/file/시험관 아기 시술(IVF)을 통한 다태 임신에 대한 Factsheet.pdf",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "Fact sheet 시험관 아기 시술(IVF)을 통한 다태임신 VIEW MORE",
+     "url": "https://www.ksmfm.or.kr/file/시험관 아기 시술(IVF)을 통한 다태 임신에 대한 Factsheet.pdf",
+     "kind": "pdf"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "backfill": true,
+   "checked": "2026-11-15",
+   "detail_v": 2,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 4,
+   "date": "2026-07-21",
+   "date_precision": "day",
+   "date_source": "file-pdf",
+   "text_checked_v": 1
+  },
+  {
+   "id": "ae16d116411e5ebd",
+   "first_seen": "2026-11-15",
+   "access": "public",
+   "society": "ksmfm",
+   "board": "https://www.ksmfm.or.kr/workshop_pds/guide.php",
+   "board_name": "임상진료가이드",
+   "title": "Fact sheet 자궁근종절제술과 자궁선근증감축술 후 임신 합병증",
+   "url": "https://www.ksmfm.or.kr/file/자궁 수술 후 임신 중 합병증에 대한 Factsheet.pdf",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "Fact sheet 자궁근종절제술과 자궁선근증감축술 후 임신 합병증 VIEW MORE",
+     "url": "https://www.ksmfm.or.kr/file/자궁 수술 후 임신 중 합병증에 대한 Factsheet.pdf",
+     "kind": "pdf"
+    }
+   ],
+   "last_seen": "2026-11-15",
+   "backfill": true,
+   "checked": "2026-11-15",
+   "detail_v": 2,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 4,
+   "date": "2026-07-21",
+   "date_precision": "day",
+   "date_source": "file-pdf",
+   "text_checked_v": 1
   },
   {
    "id": "1aaafa1f3dfec041",
