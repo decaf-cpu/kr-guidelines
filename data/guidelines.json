@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T20:17:46+09:00",
+ "updated": "2026-11-15T20:45:14+09:00",
  "count": 384,
  "items": [
   {
@@ -15,8 +15,8 @@
    "lang": "ko",
    "attachments": [
     {
-     "name": "eyJpdiI6Ik85cEg1dlYyTnhzZUhSQm85OW1vSXc9PSIsInZhbHVlIjoiT2NFdmJPam1US202L3RtcGh5eXI0Zz09IiwibWFjIjoiN2Y4N2MyYTQwMThlYWFkMjQ3N2U4NGZkNWU1Mzc0OGRkZGYxZTQ0YWI1ODRlOWQ0ZGU1YTIzYmJlYjRlYzQ4NSIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6Ik85cEg1dlYyTnhzZUhSQm85OW1vSXc9PSIsInZhbHVlIjoiT2NFdmJPam1US202L3RtcGh5eXI0Zz09IiwibWFjIjoiN2Y4N2MyYTQwMThlYWFkMjQ3N2U4NGZkNWU1Mzc0OGRkZGYxZTQ0YWI1ODRlOWQ0ZGU1YTIzYmJlYjRlYzQ4NSIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6IjNncllkdlgyQlJHZWk1MXJhZGpjbHc9PSIsInZhbHVlIjoieEo0UW1yWE5YM1l3VmtmU3pBV2hOQT09IiwibWFjIjoiMzA4ZTk2MzA1MzAyMDNjMzA1ZGI1ZTVlZWMxNzIzM2IyYzUyMWVkMjc3MzljM2FiMjc1ZGQyM2VkNDY3ODY4ZiIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IjNncllkdlgyQlJHZWk1MXJhZGpjbHc9PSIsInZhbHVlIjoieEo0UW1yWE5YM1l3VmtmU3pBV2hOQT09IiwibWFjIjoiMzA4ZTk2MzA1MzAyMDNjMzA1ZGI1ZTVlZWMxNzIzM2IyYzUyMWVkMjc3MzljM2FiMjc1ZGQyM2VkNDY3ODY4ZiIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -25,7 +25,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-12-19",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "1c4b79310554283c",
@@ -50,7 +57,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2008-10-22",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "20c20eb52c1f20cc",
@@ -78,7 +92,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-02-02",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "21afc3858558c29c",
@@ -103,7 +124,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-02-02",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "2669a9965ea8d580",
@@ -156,7 +184,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-02-02",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "37ef103d10841e39",
@@ -171,8 +206,8 @@
    "lang": "ko",
    "attachments": [
     {
-     "name": "eyJpdiI6IkJoK09RM2RINmc5bFJJdjZwRGdHTFE9PSIsInZhbHVlIjoidHlwMGVtKzFGckxFMEgvY0hyQXhTUT09IiwibWFjIjoiZTAwNjBiMTdjNGI5ZDM4OWRkYWQyOTFlOWE2YTQwNTg3ZjBhY2U0Njc1ZmY5ZDJhMDViNWEzYmIyNGE0YTRmNiIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IkJoK09RM2RINmc5bFJJdjZwRGdHTFE9PSIsInZhbHVlIjoidHlwMGVtKzFGckxFMEgvY0hyQXhTUT09IiwibWFjIjoiZTAwNjBiMTdjNGI5ZDM4OWRkYWQyOTFlOWE2YTQwNTg3ZjBhY2U0Njc1ZmY5ZDJhMDViNWEzYmIyNGE0YTRmNiIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6InU2OVZ4b2QvTHcyVGp4eFNTWS9LTVE9PSIsInZhbHVlIjoidkRlbmpJTlIxWkF5eldDa2dKQm1FZz09IiwibWFjIjoiMTFhNjUzNGZkNGU0NjkyODIzMGZjYTY5MDhmZjg2NDM2YTc4OThiMGEzMDhkNWJmNjYwNGM3ODMzM2NjZDBkYSIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6InU2OVZ4b2QvTHcyVGp4eFNTWS9LTVE9PSIsInZhbHVlIjoidkRlbmpJTlIxWkF5eldDa2dKQm1FZz09IiwibWFjIjoiMTFhNjUzNGZkNGU0NjkyODIzMGZjYTY5MDhmZjg2NDM2YTc4OThiMGEzMDhkNWJmNjYwNGM3ODMzM2NjZDBkYSIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -181,7 +216,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2017-03-21",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "397a35d8658c9fae",
@@ -196,8 +238,8 @@
    "lang": "ko",
    "attachments": [
     {
-     "name": "eyJpdiI6IkVoaFRZZUF3NjhIeU96dDdoa29aUmc9PSIsInZhbHVlIjoiR004eEo4TjR5UEtSRllkdVFnc1pldz09IiwibWFjIjoiYWE4ZGIyNTI4ZjE1NWI1ZmVkMzNiNGRiMGIyZDllZjkxOWU1OWNlMzZiYmYzMWQ5NDQ4ZTY3NzMwYjE4MDJjNyIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IkVoaFRZZUF3NjhIeU96dDdoa29aUmc9PSIsInZhbHVlIjoiR004eEo4TjR5UEtSRllkdVFnc1pldz09IiwibWFjIjoiYWE4ZGIyNTI4ZjE1NWI1ZmVkMzNiNGRiMGIyZDllZjkxOWU1OWNlMzZiYmYzMWQ5NDQ4ZTY3NzMwYjE4MDJjNyIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6InQzc0hCcXoyQXhLNXcraCs5anE0T0E9PSIsInZhbHVlIjoid2FtZjZhR0hhRFYvZUh2K1dqRENZQT09IiwibWFjIjoiZDFiMDBkNTFjMzVhNTZlOTI1MmI1YWRhM2IzMGU0Y2Y2ZWM3YzFkMGQ3ZWVjYjE3MGRlYTI4MmU1YzJhZjk3ZSIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6InQzc0hCcXoyQXhLNXcraCs5anE0T0E9PSIsInZhbHVlIjoid2FtZjZhR0hhRFYvZUh2K1dqRENZQT09IiwibWFjIjoiZDFiMDBkNTFjMzVhNTZlOTI1MmI1YWRhM2IzMGU0Y2Y2ZWM3YzFkMGQ3ZWVjYjE3MGRlYTI4MmU1YzJhZjk3ZSIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -206,7 +248,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-09-15",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "3ba0a08feeb9e942",
@@ -247,8 +296,8 @@
    "lang": "ko",
    "attachments": [
     {
-     "name": "eyJpdiI6Im9GeExhcVBuNzlFQmtMeWdxZTdtL3c9PSIsInZhbHVlIjoicERmWnRrL3RvNlNqNHRJdVBtYzEydz09IiwibWFjIjoiNjZmZWE0MjczNWU4ZjI2MjFiOWQwYjczOTJjYjgzMjhhOTgyMDlkY2JkZTliYWIyZDk2ZWQ1OTg4NTYwZmFiOCIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6Im9GeExhcVBuNzlFQmtMeWdxZTdtL3c9PSIsInZhbHVlIjoicERmWnRrL3RvNlNqNHRJdVBtYzEydz09IiwibWFjIjoiNjZmZWE0MjczNWU4ZjI2MjFiOWQwYjczOTJjYjgzMjhhOTgyMDlkY2JkZTliYWIyZDk2ZWQ1OTg4NTYwZmFiOCIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6Ikh6SXpXM0NWWG4yOVc3ejllc0xpSlE9PSIsInZhbHVlIjoiQ0JJR0d4RkZYNXlKc1lGeGtQaFd0QT09IiwibWFjIjoiMjVlMGJmNTkzM2I1M2NkNmM3MzI2Y2FlNGJlZjJjNGEwYjE5NjYzODc0NTRlYTM5MWJiNGYxNzBjM2FiZWY4MyIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6Ikh6SXpXM0NWWG4yOVc3ejllc0xpSlE9PSIsInZhbHVlIjoiQ0JJR0d4RkZYNXlKc1lGeGtQaFd0QT09IiwibWFjIjoiMjVlMGJmNTkzM2I1M2NkNmM3MzI2Y2FlNGJlZjJjNGEwYjE5NjYzODc0NTRlYTM5MWJiNGYxNzBjM2FiZWY4MyIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -282,7 +331,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2011-04-21",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "3e2731de574d5e9c",
@@ -326,8 +382,8 @@
    ],
    "attachments": [
     {
-     "name": "eyJpdiI6IkZrR1Y0ak9GdFF2cmN4MUVISVNMSFE9PSIsInZhbHVlIjoiYjZKUkJoOVI0QlJKRjI0eHVMMnA2dz09IiwibWFjIjoiN2Q2YTA1NTVhYjU4OTE3MTRiZDZmZjRmNjdjMzI1MjgxYzljZmNjYjI2YmYxMDVhNzgxZmY1YTY5ODcyY2VjZiIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IkZrR1Y0ak9GdFF2cmN4MUVISVNMSFE9PSIsInZhbHVlIjoiYjZKUkJoOVI0QlJKRjI0eHVMMnA2dz09IiwibWFjIjoiN2Q2YTA1NTVhYjU4OTE3MTRiZDZmZjRmNjdjMzI1MjgxYzljZmNjYjI2YmYxMDVhNzgxZmY1YTY5ODcyY2VjZiIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6IkVSS2lqQkUwUlU2cDVwcDR3UU1TL0E9PSIsInZhbHVlIjoiR3NWWHEyZDRpaWVPbnJyaDhBcExYdz09IiwibWFjIjoiZjJmNTAwZWUyZTdkMDBkZTUwZTUwMzg3Y2M1YTAxNmQ0MzdiNTg5ZTY4MDg5MTc4YWQyYzBkOWIxMDM2OTYzYSIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IkVSS2lqQkUwUlU2cDVwcDR3UU1TL0E9PSIsInZhbHVlIjoiR3NWWHEyZDRpaWVPbnJyaDhBcExYdz09IiwibWFjIjoiZjJmNTAwZWUyZTdkMDBkZTUwZTUwMzg3Y2M1YTAxNmQ0MzdiNTg5ZTY4MDg5MTc4YWQyYzBkOWIxMDM2OTYzYSIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -351,8 +407,8 @@
    "lang": "ko",
    "attachments": [
     {
-     "name": "eyJpdiI6ImNVWmliZmd6SnphTHlNK00wYXFxL2c9PSIsInZhbHVlIjoiK0ZmY2cvd2l0Sk1tZkdxNlRCMlh2dz09IiwibWFjIjoiMjA2MWUxNDM4YzEyMmUzYzE4NmI3NThhZjUyMDQxMWQwNGFjNThjMjNjMDJmNTY2MTM5Yzk5ZTM1ODBkZmMxZiIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6ImNVWmliZmd6SnphTHlNK00wYXFxL2c9PSIsInZhbHVlIjoiK0ZmY2cvd2l0Sk1tZkdxNlRCMlh2dz09IiwibWFjIjoiMjA2MWUxNDM4YzEyMmUzYzE4NmI3NThhZjUyMDQxMWQwNGFjNThjMjNjMDJmNTY2MTM5Yzk5ZTM1ODBkZmMxZiIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6Ii9xR1Nnb1VmdHp6cGEwdEI5NUE1TWc9PSIsInZhbHVlIjoiTVVRc2xJSngxWmV4TjNMNGl0ZjREdz09IiwibWFjIjoiZmY3YmQzZjYyNWFmMWM5MTZjMzY0YzMzOTU1ZmZhM2I4NTRmNjgxM2MwMDZhMTM0NjE0YWU0MGJmM2Y0MGYyYSIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6Ii9xR1Nnb1VmdHp6cGEwdEI5NUE1TWc9PSIsInZhbHVlIjoiTVVRc2xJSngxWmV4TjNMNGl0ZjREdz09IiwibWFjIjoiZmY3YmQzZjYyNWFmMWM5MTZjMzY0YzMzOTU1ZmZhM2I4NTRmNjgxM2MwMDZhMTM0NjE0YWU0MGJmM2Y0MGYyYSIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -361,7 +417,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2023-05-10",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "4f54ab07c85d1473",
@@ -386,7 +449,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2011",
+    "year",
+    "file-filename"
+   ]
   },
   {
    "id": "4f5d6850705b7676",
@@ -404,8 +474,8 @@
    ],
    "attachments": [
     {
-     "name": "eyJpdiI6IjZPc0taazVoU2VyV3d5K0tCY3lWK2c9PSIsInZhbHVlIjoiUXVldXNrbFFMdENzYyszQnk4UmJ5Zz09IiwibWFjIjoiZjQ3ODUxYjllNzU3OGFhYjIzZmEwNzc2YjBmYzhmMzNlYmJjMjUwNGI5MDczN2YyN2Y0OGEwMjU1ZDhiOTMyYiIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IjZPc0taazVoU2VyV3d5K0tCY3lWK2c9PSIsInZhbHVlIjoiUXVldXNrbFFMdENzYyszQnk4UmJ5Zz09IiwibWFjIjoiZjQ3ODUxYjllNzU3OGFhYjIzZmEwNzc2YjBmYzhmMzNlYmJjMjUwNGI5MDczN2YyN2Y0OGEwMjU1ZDhiOTMyYiIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6IldwRWVDS2ozb2l5MDgrRC9mYTBvdlE9PSIsInZhbHVlIjoiUklmbUd5YXlXOElBeE1yOXdtVDN5Zz09IiwibWFjIjoiMmU0YTE4ZjQ0MzFjYTNjMTRlYTVjNzkwNzg4ZjdkOWZmY2E5Mzc2MjMxOGJmOGFlNjg4MDIzMDA2NWQ4ZGUyNSIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IldwRWVDS2ozb2l5MDgrRC9mYTBvdlE9PSIsInZhbHVlIjoiUklmbUd5YXlXOElBeE1yOXdtVDN5Zz09IiwibWFjIjoiMmU0YTE4ZjQ0MzFjYTNjMTRlYTVjNzkwNzg4ZjdkOWZmY2E5Mzc2MjMxOGJmOGFlNjg4MDIzMDA2NWQ4ZGUyNSIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -414,7 +484,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2010-12-15",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "51023365b8f6a658",
@@ -429,8 +506,8 @@
    "lang": "ko",
    "attachments": [
     {
-     "name": "eyJpdiI6IitzWDM1RWwvRjdPSExwajF1UkRrWUE9PSIsInZhbHVlIjoiVkZKdU9ZVitXVGIxa21SYkRObE5Cdz09IiwibWFjIjoiOTE0OGJhOGE1OTA4Yjg2ZGJjYmY0MmUzY2FlZTVkOTk2NDM0ZTQ3MDAzMzFiYzcwOGZlYjYyYmJjNjM2ZGM3OSIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IitzWDM1RWwvRjdPSExwajF1UkRrWUE9PSIsInZhbHVlIjoiVkZKdU9ZVitXVGIxa21SYkRObE5Cdz09IiwibWFjIjoiOTE0OGJhOGE1OTA4Yjg2ZGJjYmY0MmUzY2FlZTVkOTk2NDM0ZTQ3MDAzMzFiYzcwOGZlYjYyYmJjNjM2ZGM3OSIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6IitOVWFPTlpoVWo2dVd5NVJ5U251RWc9PSIsInZhbHVlIjoibGVoUFF4Zy9UdGFKWk1kUC80U1hSQT09IiwibWFjIjoiY2Y5M2M5NGYyN2ZhZjliNzExNjAyZmZiZjdmZGM0ODQzNjdhZmM2ZDNkNDEyNDFlYjM3YjcxZjY5M2M3YzVlYiIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IitOVWFPTlpoVWo2dVd5NVJ5U251RWc9PSIsInZhbHVlIjoibGVoUFF4Zy9UdGFKWk1kUC80U1hSQT09IiwibWFjIjoiY2Y5M2M5NGYyN2ZhZjliNzExNjAyZmZiZjdmZGM0ODQzNjdhZmM2ZDNkNDEyNDFlYjM3YjcxZjY5M2M3YzVlYiIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -467,7 +544,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-02-02",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "59ad6390ef7bf350",
@@ -495,7 +579,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-02-02",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "59f5f6201c935141",
@@ -520,7 +611,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-02-02",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "5a97402179930845",
@@ -548,7 +646,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2015-04-30",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "5ac9ee1630efb4f5",
@@ -576,7 +681,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-02-02",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "662650198e7a0d9e",
@@ -601,7 +713,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2014-08-13",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "666119e42a1b134d",
@@ -626,7 +745,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-02-02",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "67503a3a105e61da",
@@ -651,7 +777,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-02-02",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "6abaa634625ab94a",
@@ -679,7 +812,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-02-02",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "6c5da59a2dbbf430",
@@ -704,7 +844,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-02-02",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "6f4d0c6c6928cfc8",
@@ -719,8 +866,8 @@
    "lang": "ko",
    "attachments": [
     {
-     "name": "eyJpdiI6Ii9Oa3lzUExKYmYxemZySGh0WFB5dFE9PSIsInZhbHVlIjoiU04xbkpWdXFyUmJKcTFyTzhCN1pOdz09IiwibWFjIjoiNDJiNDUwZDhhMWJlODg2OWJhOGRmZGNlNTg3ZTgyYWFhZmU2MDVlYjk1YjNjNGE1NzJhZjExYjNhMmJiNTEzOSIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6Ii9Oa3lzUExKYmYxemZySGh0WFB5dFE9PSIsInZhbHVlIjoiU04xbkpWdXFyUmJKcTFyTzhCN1pOdz09IiwibWFjIjoiNDJiNDUwZDhhMWJlODg2OWJhOGRmZGNlNTg3ZTgyYWFhZmU2MDVlYjk1YjNjNGE1NzJhZjExYjNhMmJiNTEzOSIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6InNsd1Y0N2JldmNZTENKejVaUktpSlE9PSIsInZhbHVlIjoiVytPSys0eStjSjVURlpHM3B6ZU9FQT09IiwibWFjIjoiYTI5NjVmYmU2ZWQ0OTZjYWRiM2M0NzZkMzU1MWZjMTNmN2Q0ZWM1MmY3NzRiMjU0MjIwYmIwNTdjZjM4OGI4YyIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6InNsd1Y0N2JldmNZTENKejVaUktpSlE9PSIsInZhbHVlIjoiVytPSys0eStjSjVURlpHM3B6ZU9FQT09IiwibWFjIjoiYTI5NjVmYmU2ZWQ0OTZjYWRiM2M0NzZkMzU1MWZjMTNmN2Q0ZWM1MmY3NzRiMjU0MjIwYmIwNTdjZjM4OGI4YyIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -754,7 +901,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2015",
+    "year",
+    "file-filename"
+   ]
   },
   {
    "id": "73f6fb31acfae742",
@@ -810,7 +964,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-02-02",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "75934c3ae9adb4fd",
@@ -835,7 +996,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-02-02",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "75cf4ff03bf3e4b2",
@@ -860,7 +1028,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-02-02",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "77e664469b8ec742",
@@ -885,7 +1060,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2014-08-13",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "79e2655610df9516",
@@ -913,7 +1095,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-02-02",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "86d5d1b04caaafb1",
@@ -938,7 +1127,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-02-02",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "8d9eddab6a2b8b00",
@@ -963,7 +1159,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2011-11-03",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "9421d635b98c5977",
@@ -991,7 +1194,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-02-02",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "9429d93cfbc10d1e",
@@ -1016,7 +1226,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2015-04-30",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "9aa8653bb4f63344",
@@ -1074,7 +1291,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-02-02",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "a3dbab36b29aa55b",
@@ -1099,7 +1323,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-02-02",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "abd049cb749eca7b",
@@ -1127,7 +1358,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-02-02",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "acc63b075873150c",
@@ -1155,7 +1393,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-02-02",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "b27f474adfbb2a52",
@@ -1183,7 +1428,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-02-02",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "b78e74c5d6ceacd4",
@@ -1197,7 +1449,6 @@
    "link_resolved": true,
    "lang": "ko",
    "tags": [
-    "환자용",
     "합의문"
    ],
    "last_seen": "2026-11-15",
@@ -1212,7 +1463,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-02-02",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "c3be8564aba6aa2a",
@@ -1237,7 +1495,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-02-02",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "c577160ec1fd6d10",
@@ -1252,8 +1517,8 @@
    "lang": "ko",
    "attachments": [
     {
-     "name": "eyJpdiI6ImtjU3ZVcmtpek5aSGRBd21YL3ZZb2c9PSIsInZhbHVlIjoiSVc3NFkzeTVLOFRlUWlQVnZUUDlmQT09IiwibWFjIjoiNDhiODM5NDZmODgyNWVjZGVmMTI2MWRjOTViMzYwMzFjODNlMTE4NTQ0Mjk1NDkyMzJlNzI3OTRkZTBlZDc0MCIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6ImtjU3ZVcmtpek5aSGRBd21YL3ZZb2c9PSIsInZhbHVlIjoiSVc3NFkzeTVLOFRlUWlQVnZUUDlmQT09IiwibWFjIjoiNDhiODM5NDZmODgyNWVjZGVmMTI2MWRjOTViMzYwMzFjODNlMTE4NTQ0Mjk1NDkyMzJlNzI3OTRkZTBlZDc0MCIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6IlpWck95MnpJa0R6ekZpS25kL1ZSOHc9PSIsInZhbHVlIjoiWVJtL3gzWkN2RkppYWw4TlRJQlBjdz09IiwibWFjIjoiZjg1OTA2NTQ2YWVkZGIwMjljNTBiZGI0NzE4MGNiMmJkNWE1NWVjNjU5ZWI0NDhjNjg2Mzc4MDZjYTFlYzlhNyIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IlpWck95MnpJa0R6ekZpS25kL1ZSOHc9PSIsInZhbHVlIjoiWVJtL3gzWkN2RkppYWw4TlRJQlBjdz09IiwibWFjIjoiZjg1OTA2NTQ2YWVkZGIwMjljNTBiZGI0NzE4MGNiMmJkNWE1NWVjNjU5ZWI0NDhjNjg2Mzc4MDZjYTFlYzlhNyIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -1262,7 +1527,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2018-07-09",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "c78b43dcb86692ef",
@@ -1287,7 +1559,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-02-02",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "cad6876c051127a1",
@@ -1302,8 +1581,8 @@
    "lang": "ko",
    "attachments": [
     {
-     "name": "eyJpdiI6IndZVncvZjRBUHN4NHE4eEpjdGZHWXc9PSIsInZhbHVlIjoiWlIvUTFhOU1nSDdpekFqQlhXKzNydz09IiwibWFjIjoiOGQ4NzE4OGIzMjRmMDNiOTE1NDhjNWJiMTExM2M4NTI1YjdjYmU1ZDJmYzMyZDI2OGI1YTlkMDgxOTJiN2NjYSIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IndZVncvZjRBUHN4NHE4eEpjdGZHWXc9PSIsInZhbHVlIjoiWlIvUTFhOU1nSDdpekFqQlhXKzNydz09IiwibWFjIjoiOGQ4NzE4OGIzMjRmMDNiOTE1NDhjNWJiMTExM2M4NTI1YjdjYmU1ZDJmYzMyZDI2OGI1YTlkMDgxOTJiN2NjYSIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6IjJlRC9tc1BLc05EQVY3ZHpQWEdpUXc9PSIsInZhbHVlIjoiaGVobjlySHlNaFF2bjd0K3JQYXRxQT09IiwibWFjIjoiODZlYzYxODM2ZTE4N2M0YTAxZWNmYWRjOTM5ZmU3ZDVjYzFiZDQzYjMxYWViMTMzMmMzYzZiYjBiYjI4ZTQxNyIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IjJlRC9tc1BLc05EQVY3ZHpQWEdpUXc9PSIsInZhbHVlIjoiaGVobjlySHlNaFF2bjd0K3JQYXRxQT09IiwibWFjIjoiODZlYzYxODM2ZTE4N2M0YTAxZWNmYWRjOTM5ZmU3ZDVjYzFiZDQzYjMxYWViMTMzMmMzYzZiYjBiYjI4ZTQxNyIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -1312,7 +1591,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2020",
+    "year",
+    "file-filename"
+   ]
   },
   {
    "id": "d53e9e0cfc5b97e0",
@@ -1337,7 +1623,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-02-02",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "d6e1d41e9ace56d1",
@@ -1362,7 +1655,9 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "e0c10bfb7877445b",
@@ -1390,7 +1685,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-02-02",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "e82208b602b7c069",
@@ -1415,7 +1717,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2012",
+    "year",
+    "file-filename"
+   ]
   },
   {
    "id": "ed7184b3b97a1e26",
@@ -1440,7 +1749,14 @@
    "date": "2020-02-01",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2022-02-02",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "6a5d72fb001e216b",
@@ -1753,7 +2069,14 @@
    "date": "2014-11-18",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2003-08-29",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "2ee3ff7d0bc6a243",
@@ -1893,7 +2216,14 @@
      "kind": "file"
     }
    ],
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2012-08-31",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "537eb065d1141766",
@@ -2028,7 +2358,14 @@
    "date": "2014-11-18",
    "date_precision": "day",
    "date_source": "detail",
-   "backfill": true
+   "backfill": true,
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2,
+   "file_date": [
+    "2007-12-14",
+    "day",
+    "file-pdf"
+   ]
   },
   {
    "id": "9afd8c6acde15d1f",
@@ -2420,7 +2757,7 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IlJwdXUxdnJLWVhFTnlUNGQwR0FoaGc9PSIsInZhbHVlIjoiOGZETTlvZURIUXBmMDRiNTRDcldadz09IiwibWFjIjoiN2NmYTJlODBmOTUxZjIxYTdmMzMyMmMyZTk2NTAxYzQ3ZGZjNDRkMmJjNzI3OGNjOWRmYWMyMTIxYTMxNGQ0OCIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IktlT2pMVjNHT1BESm9INmczdHUwb0E9PSIsInZhbHVlIjoicnNUN0QzL2RGRStnanI2ZWJHdUJWZz09IiwibWFjIjoiNjRiYWYwMDU4OTM3YTgxNzUzMTE2MTRkNmIwODFlMTYyMjFiYTRiZTU2NjgzZWIzMDYzM2UxY2NlM2Q5ZjJjYSIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -2445,7 +2782,7 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IjZQWmFveUhtSnM1NERBWU5kNFN0TkE9PSIsInZhbHVlIjoiQzZESHBYcWNXallQYkRHM2poQWhaQT09IiwibWFjIjoiZTM0MWQyNGUxMzkzYjczOGQ0MzZhZTgzZGVmZTgxZWUyMDRhYTIzNDA2ZmM4ODkyNDE5MzkzMWMyNmRkOGEzYSIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkhUaEhabGFUWnZuWjV2TjE4d3Y3QUE9PSIsInZhbHVlIjoiRUZrb3dRTHQ1YlVvVGtZTGp6aHZ3Zz09IiwibWFjIjoiYWU2NGVhOWUyMTZkM2NlYTFlNjMxYzMxMzk5YTM4OTRmMGExMjIwM2YwYjM1NzcwODE0ZTUzOTUyOWYwY2U4YiIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -2470,7 +2807,7 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6Ik1mRmJqeUh2R0MzMmNRdS9iaUxJVXc9PSIsInZhbHVlIjoiMFhTcks1cEgwMUFrZnRNMnBIWU4rdz09IiwibWFjIjoiMzdkOTk5OTlkNDIzZTgxZTYyNDRjMWQ0M2IyNjliNzJmYjk0YmU1MWEzMjg2YjMxOGUyMTI3ODEwODBiY2E3ZSIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6Ikx3cGhkRnA1NW9WUUFneXZMU3UwR1E9PSIsInZhbHVlIjoiWE5ydWRsTG1SMDdxOFFXSGlJZHhjUT09IiwibWFjIjoiMWQxMTcyZjZmM2JmNDBlYjE4ZjVlYTA0MjQ3YmViNzI4YjAwZmUxZGMyYzJhYjI3MTYxNzc1NTU3NTljNjg2ZCIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -2495,7 +2832,7 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6InNEN2JMTGpZbWtDWFk4bXVNZW5ZMVE9PSIsInZhbHVlIjoiU0EvVjIzMVpSV2VVWXF5V0FSRS9Sdz09IiwibWFjIjoiMjZmMjg1MDQxZWE5NTAzZThmMTg2N2E2ZThjZWRiNzU3MDhlZGUyMmU3ZWJlODVlMzUyZmZkODMyNjQwMTFjMSIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkFsMDRNaGJxb3dTV2ROL0xqcXZqRnc9PSIsInZhbHVlIjoiM1pXeDl0NHlVZmNLSmMrQ3dJVm83QT09IiwibWFjIjoiMmNkZmUzMDY2MWM2NTVlYzVlNGRmNzk4ZGI1ZmZiODMwMWE4NWM1MTAxMzU3NDVkYzI2MjQ0M2JlMmE3ZjliMSIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -2523,7 +2860,7 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkZwY0czMzJjUjNqZ3JRaVNWNHZNUkE9PSIsInZhbHVlIjoiMDV3c1lLa3l4RFBrekEyY2ppNEJrdz09IiwibWFjIjoiYzIwNTQ2NWNjNWVkZWM1MjFmZDRlYTJjODJiZjBlZDU2OGRkYzdkMDI5YmZiMGE4MzFhMjgwOTY2ZWQ0NTUyZCIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6InRkYlJxenlXRzFMbmlweHVNZk9lTmc9PSIsInZhbHVlIjoiMU1uU3NrakF2dHpWNFplMW1YcjFDZz09IiwibWFjIjoiYzA5NDIyZWNlZGEyYTMzMTgxOTAyMzc0YmJmYWRjNzFiNjhkYzc3ZTk1ZGRjYzU0NDE3YmRlZTQ5MzA5N2RlOCIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -2548,7 +2885,7 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6Ik80bUhRQ0ZWdEN4RWYwazdZWGcyQmc9PSIsInZhbHVlIjoiaFBPTmRXZnBRRUpaY3Jac0ZGSDlQUT09IiwibWFjIjoiOWIyODc3NzQwM2Y0YWY1NWE2Mzg4MjJhMmQyYTdlNzIwOWFjMDgzN2Q1MGNkZDU4OTgwNzBmOGU2NzM5YzExZCIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IjRKZC96VnJtcnVWZUhPb0VMUmthT3c9PSIsInZhbHVlIjoiR3FBOHRQNVltdXp6ZW5YcmsrazdIQT09IiwibWFjIjoiMzFhZDgyNGQ5ZjYwNjVmMmZhOTEzYzVjYTc2MjkyMTVlMTI2NzQ4YzNiY2ZjODQ4ZTNiNWY2MzQ0Nzc1NmEzNiIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -2576,7 +2913,7 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImVMbEpCMjdoVCtodTlwWEFHMVlTdGc9PSIsInZhbHVlIjoiSzNvTkZvNEo0MC9LekNNV095NmFWdz09IiwibWFjIjoiM2VhZDNlYTVjNmU1Njc2NGMyNWVjZjUzMGU4NmFjNTViZTM4MWZmNjM1MmE5NGZiNmU3NWYxZDliZjA1NTk1MyIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IlFUV0hiOU9iY0lwaUlsdXN5T3RUR0E9PSIsInZhbHVlIjoieXNkS25kajkybm9NZUFiSFg4VDZXdz09IiwibWFjIjoiZTk1ODVmOWQwODA1M2QyYzczZDgxODE2YTAzOGZlZGUzMGUzOGU4NTA5OGY3MDE0ODgzNjcxMTUxYjBmNmI2NSIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -2601,7 +2938,7 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IlUvWXQ4TUh2WU00eENkRzJNRk9tbHc9PSIsInZhbHVlIjoiemVGWTRvMElNT09iQlhKRUV1T0Uzdz09IiwibWFjIjoiMjgwMmRlYWFjNGZiZTEwOTkxZGM5YjJkNGViMDhlOTc5NjMxNmM3MjA5YWQ5NGNiNTZhMzUwYTdiMDRiZjhkZCIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IlorYmZHSEZJcEQ3L3ZrS1RSQ2Yxbmc9PSIsInZhbHVlIjoiNExVcXBLQTJub2JpWFlYZWIxT0tnQT09IiwibWFjIjoiNzBlYjU3MGJiNWVmMDk0MGI2ODM3MGI5ZGJjOTg3N2IxMDQxODVlOWQ4ZmI0MTZlYTViN2JkYjIyNGNlNzkxNyIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -2651,7 +2988,7 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImRxa1BZS1dpRXJXUmlVejlyV3ZKOUE9PSIsInZhbHVlIjoiYjU3UjEwUDF0RGtWL1JuRTVmMzZMQT09IiwibWFjIjoiYWNmYmY3YjhhMmMzYTk1MTJhNjExZDFiZDY1YjdiODFiOTM2MTZiNTAwMzVmOTc5MmU0ZWVhMTYxMmI5ZTUwZSIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6InBOQ0M4eEV2NlM0cUE3VjdRRmJFM2c9PSIsInZhbHVlIjoiamVaMUdNUHN3bC9sbjErOGoxV0cxdz09IiwibWFjIjoiOTVkMzU1NTkyYzI3NjRmYWUzZDI4MjczMzEzNDgyYmFlOTY0MjI1MmU2OTA2M2MzMDQ5NDZjOGFiNWU0OWQ2NiIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -2679,7 +3016,7 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6Ino4aXpxdzg1djZ2ZUFqdlY1RVc0NHc9PSIsInZhbHVlIjoiNm9TZnpkNUg2b3kwU2c4REVrOVNyQT09IiwibWFjIjoiZWE0NmViYjBkOTZkNmYzYmQyMTZiZmFmODI5Y2VjMWFiMTU4OTFiMGYxODdkOGRiOWM5NzY5NTUzOTU5YWQ0NSIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkIxMjlMMkl3WjJ1cXlVVitnQ2xsT2c9PSIsInZhbHVlIjoiUzhvZUtxR2IyTEdNa1FRYjBqK25Tdz09IiwibWFjIjoiMGY5NmY0ZDU4MjdiZTFmODc2YmRkZTA0OWQzMjUxYWIxZjU5ODc4ZTY0YWY3ZmQ5OWEyZGYzODQxNTY3MzI2NSIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -2765,7 +3102,7 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImVtNGxxSkJoRXdLRGFOZlpoNnpUbHc9PSIsInZhbHVlIjoiL1hUSkdQVUxGS09UZnhZVWNaK2J0dz09IiwibWFjIjoiNzU4OGRkODExMzY0NjM1ZTExOGQxYWRkMjdjMWRkMTdiMTJlZGFmOTkyYWYyOTRhOWZjNzZmYjJjMGJlZGQ3ZCIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkpZOWd5aXZWQTQ2R1VndnNqQUxyRHc9PSIsInZhbHVlIjoiZXFkWXJ4azVQdDNQSXZLOURGM0FnQT09IiwibWFjIjoiZWJjMjRkYThjMjlkNzZiY2RhNDljODQ4Zjc5ZTUyNWFlNjY5NTMxNzgyZjE0ZjhmYzM0Y2RiN2MzOTM4ZTcwNCIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -2793,7 +3130,7 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImI5WW5lbWFPZXU0RzBRTHpLY3Y4SlE9PSIsInZhbHVlIjoicGZLeWRrbzQ1K2IySlJ3azNHeTRZQT09IiwibWFjIjoiZjMyMTdjMzRlN2FjYTlkZWYwOWM1YmEyNjdkYTJmNDUzZjkyMmY1OWJkOTI5MDE1NzYxMDA5NWM5OWZkNzAxZCIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6InpNc3JXb0ZUTHlpMU5PU3pkc2pEVHc9PSIsInZhbHVlIjoiV0JVZEUyVitQR0J6dWIxamV4TjRVUT09IiwibWFjIjoiYTY1ZTBiNDY3MDUyY2Y5ZjQ0ODM0MTFkYWM3N2VjNGMzYTgwYmJjNzhmZmEwN2Q2OGMzYTA0YjgyZDA0MjUwMiIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -2846,7 +3183,7 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkJRb1dmZkVrMG8zaDMzVHE0NUZJQ1E9PSIsInZhbHVlIjoiK1lxS09jVWF5TEhUMmUrcXhxZTZldz09IiwibWFjIjoiMTg2ZTc5OTVkMWEwYjQwYTg5NzY5ZjNkYTdkNmQ5NDljMTljZTNlYWZlOTE3YzVkMTVmYjc5MGM2NmZkYjRmZiIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6Ijh1M0N2QmgzcjhQVkFqcktpa1Jxb1E9PSIsInZhbHVlIjoieVQzbG9kR3Q0R2VHcTRpV2VrWGIxQT09IiwibWFjIjoiNWFlNmUzM2UzYjQ1MmQ0Y2ZiNjk0YTRhNjE1MTU3MmRiOGJkNjg0NGQyMDUwNDA0ODk2ZDdhYTE1OGRlZWFiOSIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -2874,17 +3211,17 @@
    "attachments": [
     {
      "name": "요약본",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IlZjbWlPS3laTkNyUjZuWWhEUnZHbkE9PSIsInZhbHVlIjoiMlVZNUREWUZtTUVsSDhRbmExbExWQT09IiwibWFjIjoiNWM0YjI1MWYxZjQzZTM2NmFlMGQ5ZjMzOWRiYzIwMzNkZjFhYjc4OGEzOTM0NzE2YWM1ZTQwYTUyODZiMDE1YSIsInRhZyI6IiJ9?field=2",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IldzSWZpQmhTcWJIR0NOYkhXcE1sMEE9PSIsInZhbHVlIjoiNW9mZ0gvWlFOZVA4Q1N3aXFGVzdKZz09IiwibWFjIjoiNWJkZDI4YWEzYWQ0NTIxYjUyMmZlMjJkNTc2ODA3MDA0ZTRhMzdhZTZjYjU2ZmY4ZGM0YWVlYzQ2N2JkYTQyNSIsInRhZyI6IiJ9?field=2",
      "kind": "file"
     },
     {
      "name": "교육 슬라이드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkFMZ1VOS2xpNC9aUWMvTE05T1FSTEE9PSIsInZhbHVlIjoiUWNiYTViMTA5am9mcFg2ek85anlwUT09IiwibWFjIjoiOTBiOTIxZDc5YWNlMGRhM2NlNGJmNTM4ZDM5MzI5YTE2YTIzNzgyYzUwZWQ4ZmMyNTE1OWEzMjNiZjBjMDU3YSIsInRhZyI6IiJ9?field=3",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImtSd1VlOTdTSjJLaTljaEcrUXp0UVE9PSIsInZhbHVlIjoiZFhUcG9ZaXBzbjNXemN2ZnpkQlRoUT09IiwibWFjIjoiYzNlMzE3MmE2ODUyODUzYjc3MmIyZmUyY2ExYzgyZjYyNjk4Y2UwZGMyNjJhNzk5Y2EwMmUzMDE0MDY4ZjFiNSIsInRhZyI6IiJ9?field=3",
      "kind": "file"
     },
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IjdybEZiNTNPaHNwYUxaTEhMY2lJM1E9PSIsInZhbHVlIjoiQ2Uva2pNbHQxdTh1T2NWUDd5Z0s0Zz09IiwibWFjIjoiMzNhYTMyMTBhZTQwM2QwZDNmZGU4ZmQ1ZTE3NmIzNmQyNjFlZjI4NDBiMDRkMDFlZDM3OTAwY2FiY2U1NjIxMCIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImdaL1RIcjM2RVpVZWt5WDRKci9Td2c9PSIsInZhbHVlIjoiWUkyYjk0blNXeWRuYlRkcGhxYzMyUT09IiwibWFjIjoiMTA3OTMzMDU1M2RiM2I3ZmQ4YzdhYWQ0OWIwYzFlNmE5YTUyNzA0NzY4ODNmMGYzODYwNGU0OWQ4MTIzNzFjOSIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -2912,7 +3249,7 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IlpINnQ3azNaRS9Dd1IzNGNqRG5YYmc9PSIsInZhbHVlIjoiS1dFUkVLc01nbTJFdlVaUHlxL2VGQT09IiwibWFjIjoiOTYzMmM0ZWYyNWQwZjZjYjkzZGM3NzczMGE3N2Q0NTYwNjUxMmNhNTFmOGM5ODQxZDBmNjcxOGU4MmI2ZWZiMCIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkVDOVFCOVAzNEJXMy9nQnJsSVp3YVE9PSIsInZhbHVlIjoiQTBMREhIVzBYS1VHb1h0aUNkcDk2dz09IiwibWFjIjoiMDcyMGFlYTNkYzU2OGMzMWU1M2NmZWQ2NzRkZTExNzNjY2RjZDkyNGI4Mzc1OTM5YWIzZjA0YmM2NGU1MTVkYSIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -2973,7 +3310,7 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkFqUG5EdE9KU3NZajRNS2hqYmxybkE9PSIsInZhbHVlIjoiY2RkU01mSGR3YWhjNzJKOTBITlRIdz09IiwibWFjIjoiZjFmNWU3NTg0NWJiMzQ3MmU1NzU2YzM4ZDRhNWE1NGM4NjQ3MmFmZDlhNDMxZjJlNmQzMWFjNjgwZDAyMTZjNiIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImZ2OS9Hd2FTNU1memdwdkZodHJkdmc9PSIsInZhbHVlIjoidkpxRW1lTjVSNERveVRYN2l0TlNHdz09IiwibWFjIjoiM2U4Zjc4MzE0ZWY0MGIxNDcyYzU4NzQ3ZmZlY2EyZmI3Y2ZlYzM5NjRmNjNkODQyNGVkOTgyZTk5ZTkxY2FiMCIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
@@ -3318,7 +3655,8 @@
     }
    ],
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "0bd7cdd5cfca9baf",
@@ -3476,7 +3814,8 @@
     }
    ],
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "14830d36d6a1844b",
@@ -3542,7 +3881,8 @@
     }
    ],
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "22476846e683dc7f",
@@ -3609,7 +3949,8 @@
     }
    ],
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "2d5ef0c9e43b933f",
@@ -3675,7 +4016,8 @@
     }
    ],
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "5a35c5fe89ab3ea7",
@@ -3811,7 +4153,8 @@
     }
    ],
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "76d2d9ffb64dd291",
@@ -3929,7 +4272,8 @@
     }
    ],
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "7adc831875b448e6",
@@ -4076,7 +4420,8 @@
     }
    ],
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "8dc765f4b7bf1aab",
@@ -4375,7 +4720,8 @@
     }
    ],
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "fb9d885023d86ce9",
@@ -4403,7 +4749,8 @@
     }
    ],
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "fd12659a3272e18b",
@@ -5205,7 +5552,6 @@
    "link_resolved": true,
    "lang": "ko",
    "tags": [
-    "환자용",
     "권고·성명"
    ],
    "attachments": [
@@ -6182,7 +6528,6 @@
    "link_resolved": true,
    "lang": "en",
    "tags": [
-    "환자용",
     "합의문"
    ],
    "attachments": [
@@ -6261,7 +6606,6 @@
    "link_resolved": true,
    "lang": "en",
    "tags": [
-    "환자용",
     "합의문"
    ],
    "attachments": [
@@ -7363,7 +7707,8 @@
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "0ac2b0332f189a16",
@@ -7389,7 +7734,8 @@
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "15f860c4b30c5785",
@@ -7490,7 +7836,8 @@
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "2f0c624ce15a6a8c",
@@ -7512,7 +7859,8 @@
    ],
    "last_seen": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "312d4c5f849d9228",
@@ -7539,7 +7887,8 @@
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "43daa00c112df037",
@@ -7643,7 +7992,8 @@
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "6844e886f65e8072",
@@ -7666,7 +8016,8 @@
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "6987ae1d823e5b62",
@@ -7689,7 +8040,8 @@
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "6f31a51c377237d6",
@@ -7737,7 +8089,8 @@
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "70643090907a70ef",
@@ -7763,7 +8116,8 @@
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "733b174c50ee790c",
@@ -7786,7 +8140,8 @@
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "7691985d0bdb61b1",
@@ -7809,7 +8164,8 @@
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "827d7c1467c2c677",
@@ -7856,7 +8212,8 @@
    ],
    "last_seen": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "8ff18e62580a91f7",
@@ -7907,7 +8264,8 @@
    ],
    "last_seen": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "9cfd867010e0ff07",
@@ -7933,7 +8291,8 @@
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "9d2bc818aa700143",
@@ -7955,7 +8314,8 @@
    ],
    "last_seen": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "9d7bfca1ba58038a",
@@ -7980,7 +8340,8 @@
    ],
    "last_seen": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "9f992ebd16c28616",
@@ -8003,7 +8364,8 @@
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "ae13a61fbeacabed",
@@ -8025,7 +8387,8 @@
    ],
    "last_seen": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "aeb7d1b65307a7f9",
@@ -8051,7 +8414,8 @@
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "be13dab08acb05e1",
@@ -8077,7 +8441,8 @@
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "c26d03e84f4e0037",
@@ -8099,7 +8464,8 @@
    ],
    "last_seen": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "c6dbd1e423720699",
@@ -8125,7 +8491,8 @@
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "c97a8f2fd5678c40",
@@ -8171,7 +8538,8 @@
    ],
    "last_seen": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "d6319c775d69d139",
@@ -8196,7 +8564,8 @@
    ],
    "last_seen": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "de7f25a297be3dea",
@@ -8222,7 +8591,8 @@
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "e604671eb25f5e0c",
@@ -8244,7 +8614,8 @@
    ],
    "last_seen": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "e8492d98c1486fd7",
@@ -8270,7 +8641,8 @@
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "e877cd3c2b006059",
@@ -8293,7 +8665,8 @@
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "ef85deb8499dd324",
@@ -8319,7 +8692,8 @@
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "efd6c081eb367211",
@@ -8342,7 +8716,8 @@
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "f48c93f23de9f8d5",
@@ -8364,7 +8739,8 @@
    ],
    "last_seen": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "f648c92e2de01310",
@@ -8390,7 +8766,8 @@
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "1aaafa1f3dfec041",
@@ -8493,7 +8870,6 @@
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
    "tags": [
-    "환자용",
     "권고·성명"
    ],
    "backfill": true,
@@ -8523,7 +8899,8 @@
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
    "backfill": true,
-   "file_checked": "2026-11-15"
+   "file_checked": "2026-11-15",
+   "file_checked_v": 2
   },
   {
    "id": "47349712ac372923",
@@ -8631,7 +9008,6 @@
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
    "tags": [
-    "환자용",
     "권고·성명"
    ],
    "backfill": true,
@@ -8661,7 +9037,6 @@
    "last_seen": "2026-11-15",
    "checked": "2026-11-15",
    "tags": [
-    "환자용",
     "권고·성명"
    ],
    "backfill": true,
