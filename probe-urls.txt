@@ -1,4 +1,1 @@
-ksmfm https://www.ksmfm.or.kr/workshop_pds/guide.php
-kosar https://www.kosar.org/society/guidelines
-ksog https://renew.ksog.org/
-ksgo https://www.sgo.or.kr/regular
+ksgo https://www.sgo.or.kr/regular/material/guideline
