@@ -387,6 +387,8 @@
   group: 내과계
   specialty: 소아청소년과
   division: 소아청소년
+  enabled: false
+  note: 진료정보·자료실 게시판이 모두 회원 전용(로그인 필요)
   boards: []
 - id: kapard
   name: 대한소아알레르기호흡기학회
@@ -403,6 +405,8 @@
   group: 내과계
   specialty: 소아청소년과
   division: 소아청소년
+  enabled: false
+  note: 웹 방화벽이 자동 접속을 차단함
   boards: []
 - id: ksneo
   name: 대한신생아학회
@@ -411,6 +415,8 @@
   group: 내과계
   specialty: 소아청소년과
   division: 소아청소년
+  enabled: false
+  note: 웹 방화벽이 자동 접속을 차단함
   boards: []
 - id: kspghan
   name: 대한소아소화기영양학회
@@ -419,6 +425,8 @@
   group: 내과계
   specialty: 소아청소년과
   division: 소아청소년
+  enabled: false
+  note: 웹 방화벽이 자동 접속을 차단함
   boards: []
 - id: kspn
   name: 대한소아신장학회
@@ -427,6 +435,8 @@
   group: 내과계
   specialty: 소아청소년과
   division: 소아청소년
+  enabled: false
+  note: "'임상지침' 메뉴가 회원 전용(로그인 필요)"
   boards: []
 - id: kspho
   name: 대한소아혈액종양학회
@@ -435,14 +445,38 @@
   group: 내과계
   specialty: 소아청소년과
   division: 소아청소년
+  enabled: false
+  note: 웹 방화벽이 자동 접속을 차단함
   boards: []
 - id: kspe
   name: 대한소아내분비학회
   short: 소아내분비학회
-  homepage: https://www.kspe.or.kr
   group: 내과계
   specialty: 소아청소년과
   division: 소아청소년
-  enabled: false
-  note: robots.txt가 사이트 전체 수집을 막고 있어 제외
+  homepage: https://www.kspendo.or.kr
+  boards: []
+- id: kcns
+  name: 대한소아신경학회
+  short: 소아신경학회
+  homepage: https://www.cns.or.kr
+  group: 내과계
+  specialty: 소아청소년과
+  division: 소아청소년
+  boards: []
+- id: kspc
+  name: 대한소아심장학회
+  short: 소아심장학회
+  homepage: https://www.pediheart.or.kr
+  group: 내과계
+  specialty: 소아청소년과
+  division: 소아청소년
+  boards: []
+- id: kspem
+  name: 대한소아응급의학회
+  short: 소아응급의학회
+  homepage: https://www.kspem.org
+  group: 내과계
+  specialty: 소아청소년과
+  division: 소아청소년
   boards: []
