@@ -54,8 +54,8 @@
     cutoff.setFullYear(cutoff.getFullYear() - 1);
     return start >= cutoff;
   };
-  // NEW: 수집한 지 30일 이내 + 발간 1년 이내
-  const isNewItem = (it) => !!it.first_seen && daysAgo(it.first_seen) <= 30 && publishedWithinYear(it);
+  // NEW: 새로 올라온 글(학회를 처음 수집할 때 이미 있던 글 제외) + 수집 30일 이내 + 발간 1년 이내
+  const isNewItem = (it) => !it.backfill && !!it.first_seen && daysAgo(it.first_seen) <= 30 && publishedWithinYear(it);
 
   // ── URL 해시 ↔ 상태 ───────────────────
   function readHash() {
