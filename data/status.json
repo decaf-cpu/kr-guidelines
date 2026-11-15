@@ -595,15 +595,15 @@
   },
   "kaaaci": {
    "id": "kaaaci",
-   "run_at": "2026-11-15T21:25:09+09:00",
+   "run_at": "2026-11-15T21:27:22+09:00",
    "boards": [
     {
      "url": "https://www.allergy.or.kr/board/treatment?gubun=1",
      "name": "진료지침",
      "source": "discovered",
-     "pages": 2,
-     "rows": 30,
-     "matched": 30,
+     "pages": 6,
+     "rows": 49,
+     "matched": 47,
      "new": 0,
      "members_only": 0,
      "error": null
@@ -630,6 +630,6 @@
    "ok": true
   }
  },
- "updated": "2026-11-15T21:25:23+09:00",
- "requests": 10
+ "updated": "2026-11-15T21:27:59+09:00",
+ "requests": 25
 }
