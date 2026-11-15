@@ -9,12 +9,13 @@ from . import adapters
 from .access import check_detail, page_requires_login
 from .discover import discover
 from .fetch import Fetcher
-from .filters import is_guideline, lang_of, tags_for
+from .filters import KOREAN_ORG, is_guideline, lang_of, tags_for
 from .parse import (
     Row,
     canonical_url,
     detect_page_param,
     extract_rows,
+    find_month,
     page_urls,
     year_from_title,
 )
@@ -39,7 +40,7 @@ def _boards_for(fetcher: Fetcher, soc: dict, discovered: dict, rediscover: bool)
         return [dict(b, source="config") for b in soc["boards"]], None
     cache = discovered.get(soc["id"])
     fresh = False
-    if cache and not rediscover:
+    if cache and not rediscover and cache.get("ok") and cache.get("homepage") == soc["homepage"]:
         try:
             age = (dt.date.fromisoformat(today()) - dt.date.fromisoformat(cache["checked"])).days
             fresh = age < REDISCOVER_DAYS
@@ -47,7 +48,7 @@ def _boards_for(fetcher: Fetcher, soc: dict, discovered: dict, rediscover: bool)
             fresh = False
     if not fresh:
         res = discover(fetcher, soc["homepage"], verify=soc.get("verify_ssl", True))
-        cache = {"checked": today(), **res}
+        cache = {"checked": today(), "homepage": soc["homepage"], **res}
         discovered[soc["id"]] = cache
     boards = [
         {"url": c["url"], "name": c["label"], "dedicated": True, "source": "discovered"}
@@ -104,6 +105,8 @@ def crawl_board(fetcher: Fetcher, soc: dict, board: dict, store: Store, mode: st
         for row in rows:
             if not is_guideline(row.title, board.get("dedicated", False)):
                 continue
+            if row.foreign and not KOREAN_ORG.search(row.title):
+                continue
             result["matched"] += 1
             canon = canonical_url(row.url) if row.url else None
             iid = item_id(soc["id"], canon, row.title, board["url"])
@@ -147,7 +150,7 @@ def crawl_board(fetcher: Fetcher, soc: dict, board: dict, store: Store, mode: st
 
             cur = (it.get("date"), it.get("date_precision"))
             if not cur[0]:
-                y = year_from_title(row.title)
+                y = find_month(row.title) or year_from_title(row.title)
                 if y:
                     it["date"], it["date_precision"], it["date_source"] = y[0], y[1], "title"
 

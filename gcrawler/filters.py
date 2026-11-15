@@ -22,6 +22,12 @@ EVENT = re.compile(
 # 행사 공지처럼 보여도 문서 공개를 알리는 제목이면 살린다
 PUBLISH = re.compile(r"(발간|공개|게재|배포|개정판|요약본|전문|다운로드|pdf)", re.I)
 
+FOREIGN = re.compile(
+    r"\b(ESC|ACC|AHA|ACC/AHA|HRS|EHRA|ESH|ISH|ADA|EASD|AACE|ATA|ETA|KDIGO|KDOQI|NICE|WHO|CDC|IDSA|ATS|ERS|GOLD|GINA|"
+    r"EASL|AASLD|APASL|ACG|AGA|ASGE|ESGE|ECCO|ACR|EULAR|ASCO|ESMO|NCCN|ASH|EHA|AGS)\b"
+)
+KOREAN_ORG = re.compile(r"(대한|한국|korea|국내|KSC|KASL|KDA|KSN|KATRD|KSID|KCR|KSMO|KAAACI|KSH|K-)", re.I)
+
 HANGUL = re.compile(r"[가-힣]")
 
 
@@ -31,6 +37,8 @@ def is_guideline(title: str, dedicated: bool = False) -> bool:
         return False
     if EVENT.search(t) and not PUBLISH.search(t):
         return False
+    if FOREIGN.search(t) and not KOREAN_ORG.search(t):
+        return False  # 외국 학회 지침 소개·번역
     if dedicated:
         return True
     return bool(STRONG.search(t))

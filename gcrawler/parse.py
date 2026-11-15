@@ -51,6 +51,14 @@ def find_date(text: str) -> tuple[str, str] | None:
     return None
 
 
+def find_month(text: str) -> tuple[str, str] | None:
+    for m in _MONTH.finditer(text or ""):
+        y, mo = int(m.group(1)), int(m.group(2))
+        if 1 <= mo <= 12 and _valid(y, mo, 1):
+            return f"{y:04d}-{mo:02d}", "month"
+    return None
+
+
 def find_labeled_date(text: str) -> tuple[str, str] | None:
     m = _LABELED.search(text or "")
     return find_date(m.group(2)) if m else None
@@ -182,6 +190,7 @@ class Row:
     date_precision: str | None = None
     attachments: list[dict] = field(default_factory=list)
     notice: bool = False  # 상단 고정 공지
+    foreign: bool = False  # '카테고리' 칸 등에 외국 학회명(ESC·AHA 등)이 적힌 행
 
 
 def _attachments_in(el: Tag, base_url: str) -> list[dict]:
@@ -213,6 +222,8 @@ def parse_row(el: Tag, base_url: str, cfg: dict | None = None) -> Row | None:
         href = (a.get("href") or "").strip()
         if href and not href.lower().startswith(("javascript", "#")) and is_attachment(a, href):
             continue
+        if GENERIC_LINK.match(clean(a.get_text(" ")) or "x"):
+            continue
         t = clean(a.get_text(" ")) or clean(a.get("title"))
         if len(t) < 4 or t.lower() in _NAV_WORDS:
             continue
@@ -222,6 +233,13 @@ def parse_row(el: Tag, base_url: str, cfg: dict | None = None) -> Row | None:
         return None
     a, title = best
     if re.search(r"(회원만|회원\s*전용|로그인\s*후)", (a.get("onclick") or "") + " " + (a.get("href") or "")):
+        return None
+    if re.search(r"[?&](sort|order|orderby)=", a.get("href") or "", re.I) and len(title) < 15:
+        return None  # 표 머리글의 정렬 링크
+    tit = a.find(class_=re.compile(r"^(tit|title|subject|subj|txt_tit|tit_txt|name)$", re.I))
+    if tit is not None and len(clean(tit.get_text(" "))) >= 4:
+        title = clean(tit.get_text(" "))
+    if title.lower().startswith(("http://", "https://", "www.")):
         return None
     # 제목이 잘린 경우(… 처리) title 속성의 전체 제목 사용
     full = clean(a.get("title"))
@@ -233,10 +251,21 @@ def parse_row(el: Tag, base_url: str, cfg: dict | None = None) -> Row | None:
         d_el = el.select_one(cfg["date_selector"])
         date = find_date(d_el.get_text(" ")) if d_el else None
     else:
-        rest = clean(el.get_text(" ")).replace(clean(a.get_text(" ")), " ")
-        date = find_date(rest)
+        rest = clean(el.get_text(" ")).replace(title, " ")
+        date = find_date(rest) or find_month(rest)
+        if date is None:
+            # '년도' 칸처럼 연도만 적힌 셀
+            for cell in el.find_all(["td", "span", "em", "dd", "div"], recursive=True):
+                t = clean(cell.get_text(" "))
+                if re.fullmatch(r"(19[89]\d|20[0-4]\d)", t) and int(t) <= dt.date.today().year:
+                    date = (t, "year")
+                    break
 
     row_text = clean(el.get_text(" "))
+    from .filters import FOREIGN
+    foreign = any(
+        FOREIGN.fullmatch(clean(c.get_text(" "))) for c in el.find_all(["td", "span", "em", "dd"]) if c.find("a") is None
+    )
     notice = bool(re.match(r"^(공지|notice|\[공지\])", row_text, re.I)) or "notice" in " ".join(el.get("class", [])).lower()
     return Row(
         title=title[:300],
@@ -245,6 +274,7 @@ def parse_row(el: Tag, base_url: str, cfg: dict | None = None) -> Row | None:
         date_precision=date[1] if date else None,
         attachments=_attachments_in(el, base_url),
         notice=notice,
+        foreign=foreign,
     )
 
 
@@ -257,6 +287,9 @@ def _dedupe(rows: list[Row]) -> list[Row]:
         seen.add(key)
         out.append(r)
     return out
+
+
+POST_URL = re.compile(r"(mode=view|wr_id=|[?&]num(ber)?=\d|/view[/.?]|view\.(php|html|asp|do)|[?&]idx=\d|document_srl=|[?&]seq=\d|[?&]no=\d|[?&]bbsidx=|[?&]nttId=)", re.I)
 
 
 def _sibling_groups(soup: BeautifulSoup, min_size: int = 3) -> list[list[Tag]]:
@@ -306,7 +339,7 @@ def extract_rows(html: str, base_url: str, cfg: dict | None = None) -> list[Row]
         rows = _dedupe([r for r in (parse_row(el, base_url, cfg) for el in els) if r])
         if not rows:
             continue
-        evidence = sum(1 for r in rows if r.date or r.attachments)
+        evidence = sum(1 for r in rows if r.date or r.attachments or (r.url and POST_URL.search(r.url)))
         score = evidence + 0.05 * len(rows)
         # 근거(날짜·첨부)가 하나도 없는 집합은 메뉴일 가능성이 높아 감점
         if evidence == 0:
@@ -320,7 +353,7 @@ def extract_rows(html: str, base_url: str, cfg: dict | None = None) -> list[Row]
 
 GENERIC_LINK = re.compile(
     r"^\s*(\[?\s*(전문|간략본|요약본|요약|국문|영문|한글|원문|본문|첨부|첨부\s*파일|파일|pdf|hwp|ppt|자료)?\s*"
-    r"(보기|다운로드|다운|download|열기|바로\s*가기|view|link|click)?\s*\]?\s*)+$",
+    r"(보기|다운로드|다운|download|열기|바로\s*가기|view|link|click|icon|아이콘)?\s*\]?\s*)+$",
     re.I,
 )
 

@@ -231,3 +231,43 @@ def test_discovery_img_alt_and_frames():
     assert redirects(fs, "https://www.a.or.kr/") == ["https://www.a.or.kr/main/index.php"]
     mr = '<html><head><meta http-equiv="refresh" content="0; url=/kor/"></head></html>'
     assert redirects(mr, "https://www.a.or.kr/") == ["https://www.a.or.kr/kor/"]
+
+
+def test_card_list_month_dates_and_tit():
+    html_ = """<div class="contents"><ul class="guideline">
+    <li><a href="/bbs/?number=6713&mode=view&code=guide"><span class="thumb"><img src="a.png"></span>
+      <span class="tit">2026 대한간학회 만성 B형간염 진료 가이드라인</span><span class="info">2026년 6월 개정</span></a></li>
+    <li><a href="/bbs/?number=6193&mode=view&code=guide"><span class="tit">2025 대한간학회 대사이상지방간질환 진료 가이드라인</span><span class="info">2025년 5월 개정</span></a></li>
+    <li><a href="/bbs/?number=6192&mode=view&code=guide"><span class="tit">2025 대한간학회 C형간염 진료 가이드라인</span><span class="info">2025년 5월 개정</span></a></li>
+    </ul></div>"""
+    rows = extract_rows(html_, "https://www.kasl.org/bbs/?code=guide")
+    assert len(rows) == 3
+    assert rows[0].title == "2026 대한간학회 만성 B형간염 진료 가이드라인"
+    assert rows[0].date == "2026-06" and rows[0].date_precision == "month"
+
+
+def test_year_column_and_foreign_rows():
+    html_ = """<table><thead><tr><th>번호</th><th>년도</th><th>카테고리</th><th>제목</th></tr></thead><tbody>
+    <tr><td>177</td><td>2026</td><td>ESC</td><td><a href="/bbs/index.php?code=guide&number=100448&mode=view">Fifth Universal Definition of Myocardial Infarction</a></td></tr>
+    <tr><td>176</td><td>2025</td><td>KSC</td><td><a href="/bbs/index.php?code=guide&number=100300&mode=view">2025 대한심장학회 심근경색 진료지침</a></td></tr>
+    <tr><td>175</td><td>2024</td><td>AHA</td><td><a href="/bbs/index.php?code=guide&number=100200&mode=view">2024 AHA Guideline for X</a></td></tr>
+    </tbody></table>"""
+    rows = extract_rows(html_, "https://www.circulation.or.kr/bbs/?code=guide")
+    assert len(rows) == 3
+    assert rows[1].date == "2025" and rows[1].date_precision == "year"
+    assert rows[0].foreign and not rows[1].foreign
+    assert not is_guideline("2024 AHA Guideline for X")
+    assert is_guideline("2025 대한심장학회 심근경색 진료지침")
+
+
+def test_download_icon_titles():
+    html_ = """<div class="guide"><div class="guide-box"><p><span>염증성 장질환에서 thiopurine 사용: 대한장연구학회 합의문 (2015, 한글판)</span></p>
+    <div class="btn-wrap"><a href="/assets/file/g07.pdf">Download <span>icon</span></a></div></div>
+    <div class="guide-box"><p><span>COVID-19 유행 시기의 성인 염증성 장질환 임상 진료지침 (2021)</span></p>
+    <div class="btn-wrap"><a href="/assets/file/g09.pdf">Download <span>icon</span></a></div></div>
+    <div class="guide-box"><p><span>궤양성 대장염 진료 가이드라인 (2022)</span></p>
+    <div class="btn-wrap"><a href="/assets/file/g10.pdf">Download <span>icon</span></a></div></div></div>"""
+    rows = extract_rows(html_, "https://www.kasid.org/academic/education/guide/01")
+    titles = [r.title for r in rows]
+    assert "염증성 장질환에서 thiopurine 사용: 대한장연구학회 합의문 (2015, 한글판)" in titles
+    assert len(rows) == 3

@@ -33,11 +33,9 @@
   group: 내과계
   specialty: 내과
   division: 내과 일반
-  boards:
-    - url: https://www.kaim.or.kr/newguide/?sn=2&sn2=7
-      name: 대한내과학회 개발/참여 진료지침
-      dedicated: true
-  note: "기존 진료지침 메뉴(/guideline/)는 회원 전용. 분과·관련학회 진료지침 모음은 다른 학회 지침이라 제외"
+  boards: []
+  enabled: false
+  note: 진료지침 메뉴(/guideline/, /newguide/)가 모두 회원 전용(로그인 필요)
 # ───────────── 소화기 ─────────────
 - id: ksg
   name: 대한소화기학회
@@ -62,7 +60,10 @@
   group: 내과계
   specialty: 내과
   division: 간
-  boards: []
+  boards:
+    - url: https://www.kasl.org/bbs/?code=guide
+      name: 진료가이드라인
+      dedicated: true
 
 - id: klcs
   name: 대한간암학회
@@ -90,7 +91,10 @@
   group: 내과계
   specialty: 내과
   division: 소화기
-  boards: []
+  boards:
+    - url: https://www.kasid.org/academic/education/guide/01
+      name: KASID 가이드라인
+      dedicated: true
 - id: kchugr
   name: 대한상부위장관·헬리코박터학회
   short: 상부위장관·헬리코박터학회
@@ -130,7 +134,11 @@
   group: 내과계
   specialty: 내과
   division: 순환기
-  boards: []
+  boards:
+    - url: https://www.circulation.or.kr/bbs/?code=guide
+      name: 진료지침
+      dedicated: true
+  note: 진료지침 게시판에 외국 학회 지침(ESC·AHA 등) 소개가 많아 이를 제외하고 수집
 - id: ksh
   name: 대한고혈압학회
   short: 고혈압학회
@@ -220,7 +228,10 @@
   group: 내과계
   specialty: 내과
   division: 내분비·대사
-  boards: []
+  boards:
+    - url: https://www.thyroid.kr/board/list.html?code=c_guide
+      name: 진료지침
+      dedicated: true
 
 - id: ksbmr
   name: 대한골대사학회
@@ -259,7 +270,10 @@
   group: 내과계
   specialty: 내과
   division: 신장
-  boards: []
+  boards:
+    - url: https://ksn.or.kr/bbs/?code=guideline_k
+      name: 진료지침
+      dedicated: true
 # ───────────── 호흡기·알레르기 ─────────────
 - id: kattd
   name: 대한결핵및호흡기학회

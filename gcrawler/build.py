@@ -50,7 +50,7 @@ def fix_dates(items: list[dict]) -> list[dict]:
                 it.update(date=ty[0], date_precision="year", date_source="title")
             else:
                 it["date_source"] = "bulk"
-        elif d and ty and int(d[:4]) - int(ty[0]) >= 2:
+        elif d and ty and abs(int(d[:4]) - int(ty[0])) >= 2:
             it["posted"] = d
             it.update(date=ty[0], date_precision="year", date_source="title")
         out.append(it)
