@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-16T07:49:03+09:00",
- "count": 413,
+ "count": 408,
  "items": [
   {
    "id": "192455f016c5eadf",
@@ -8125,7 +8125,8 @@
    "date": "2015",
    "date_precision": "year",
    "date_source": "title",
-   "backfill": true
+   "backfill": true,
+   "pub_year": "2016"
   },
   {
    "id": "085000c5b6f6c9ee",
@@ -8155,7 +8156,8 @@
    "file_checked_v": 4,
    "date": "2019-03-27",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2025"
   },
   {
    "id": "0ac2b0332f189a16",
@@ -8185,7 +8187,8 @@
    "file_checked_v": 4,
    "date": "2019-03-27",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2022"
   },
   {
    "id": "15f860c4b30c5785",
@@ -8210,7 +8213,8 @@
    "date": "2026",
    "date_precision": "year",
    "date_source": "title",
-   "backfill": true
+   "backfill": true,
+   "pub_year": "2026"
   },
   {
    "id": "1bea55801f535920",
@@ -8235,7 +8239,8 @@
    "date": "2020",
    "date_precision": "year",
    "date_source": "title",
-   "backfill": true
+   "backfill": true,
+   "pub_year": "2020"
   },
   {
    "id": "1d95e26d1fdb65b9",
@@ -8260,7 +8265,8 @@
    "date": "2017",
    "date_precision": "year",
    "date_source": "title",
-   "backfill": true
+   "backfill": true,
+   "pub_year": "2019"
   },
   {
    "id": "2e3078a83e0cd282",
@@ -8290,7 +8296,8 @@
    "file_checked_v": 4,
    "date": "2016-10-29",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2020"
   },
   {
    "id": "2f0c624ce15a6a8c",
@@ -8316,7 +8323,8 @@
    "file_checked_v": 4,
    "date": "2017-12-29",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2017"
   },
   {
    "id": "312d4c5f849d9228",
@@ -8346,7 +8354,8 @@
    "file_checked_v": 4,
    "date": "2019-03-27",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2021"
   },
   {
    "id": "43daa00c112df037",
@@ -8374,7 +8383,8 @@
    "date_source": "list",
    "last_seen": "2026-11-16",
    "checked": "2026-11-15",
-   "backfill": true
+   "backfill": true,
+   "pub_year": "2020"
   },
   {
    "id": "45d08e0a5eb3e886",
@@ -8401,7 +8411,8 @@
    "date": "2015",
    "date_precision": "year",
    "date_source": "title",
-   "backfill": true
+   "backfill": true,
+   "pub_year": "2015"
   },
   {
    "id": "591a4e846d6e59c3",
@@ -8426,7 +8437,8 @@
    "date": "2024",
    "date_precision": "year",
    "date_source": "title",
-   "backfill": true
+   "backfill": true,
+   "pub_year": "2024"
   },
   {
    "id": "60d32a357c15a9b7",
@@ -8453,7 +8465,8 @@
    "file_checked_v": 4,
    "date": "2017-08-09",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2018"
   },
   {
    "id": "6844e886f65e8072",
@@ -8480,7 +8493,8 @@
    "file_checked_v": 4,
    "date": "2023-02-01",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2023"
   },
   {
    "id": "6987ae1d823e5b62",
@@ -8507,7 +8521,8 @@
    "file_checked_v": 4,
    "date": null,
    "date_precision": null,
-   "date_source": null
+   "date_source": null,
+   "pub_year": "2018"
   },
   {
    "id": "6f31a51c377237d6",
@@ -8532,7 +8547,8 @@
    "date": "2019",
    "date_precision": "year",
    "date_source": "title",
-   "backfill": true
+   "backfill": true,
+   "pub_year": "2019"
   },
   {
    "id": "7016373f11216fe7",
@@ -8559,7 +8575,8 @@
    "file_checked_v": 4,
    "date": "2019-03-27",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2023"
   },
   {
    "id": "70643090907a70ef",
@@ -8589,7 +8606,8 @@
    "file_checked_v": 4,
    "date": "2019-03-27",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2024"
   },
   {
    "id": "733b174c50ee790c",
@@ -8616,7 +8634,8 @@
    "file_checked_v": 4,
    "date": "2019-03-27",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2021"
   },
   {
    "id": "7691985d0bdb61b1",
@@ -8643,7 +8662,8 @@
    "file_checked_v": 4,
    "date": "2018-09-03",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2018"
   },
   {
    "id": "827d7c1467c2c677",
@@ -8668,7 +8688,8 @@
    "date": "2017",
    "date_precision": "year",
    "date_source": "title",
-   "backfill": true
+   "backfill": true,
+   "pub_year": "2019"
   },
   {
    "id": "849737764b4457fc",
@@ -8694,7 +8715,8 @@
    "file_checked_v": 4,
    "date": "2017-10-18",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2017"
   },
   {
    "id": "8ff18e62580a91f7",
@@ -8723,7 +8745,8 @@
    "date": "2021",
    "date_precision": "year",
    "date_source": "title",
-   "backfill": true
+   "backfill": true,
+   "pub_year": "2021"
   },
   {
    "id": "9a44d01132823507",
@@ -8749,7 +8772,8 @@
    "file_checked_v": 4,
    "date": "2015-09-30",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2015"
   },
   {
    "id": "9cfd867010e0ff07",
@@ -8779,7 +8803,8 @@
    "file_checked_v": 4,
    "date": "2019-03-27",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2022"
   },
   {
    "id": "9d2bc818aa700143",
@@ -8805,7 +8830,8 @@
    "file_checked_v": 4,
    "date": "2022-06-23",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2017"
   },
   {
    "id": "9d7bfca1ba58038a",
@@ -8834,7 +8860,8 @@
    "file_checked_v": 4,
    "date": "2022-06-23",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2016"
   },
   {
    "id": "9f992ebd16c28616",
@@ -8861,7 +8888,8 @@
    "file_checked_v": 4,
    "date": "2018-04-03",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2018"
   },
   {
    "id": "ae13a61fbeacabed",
@@ -8887,7 +8915,8 @@
    "file_checked_v": 4,
    "date": "2015-12-30",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2015"
   },
   {
    "id": "aeb7d1b65307a7f9",
@@ -8917,7 +8946,8 @@
    "file_checked_v": 4,
    "date": "2020-02-27",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2020"
   },
   {
    "id": "be13dab08acb05e1",
@@ -8947,7 +8977,8 @@
    "file_checked_v": 4,
    "date": "2021-12-01",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2022"
   },
   {
    "id": "c26d03e84f4e0037",
@@ -8973,7 +9004,8 @@
    "file_checked_v": 4,
    "date": "2017-03-10",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2017"
   },
   {
    "id": "c6dbd1e423720699",
@@ -9003,7 +9035,8 @@
    "file_checked_v": 4,
    "date": "2021-05-12",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2021"
   },
   {
    "id": "c97a8f2fd5678c40",
@@ -9027,7 +9060,8 @@
    "date": "2017",
    "date_precision": "year",
    "date_source": "title",
-   "backfill": true
+   "backfill": true,
+   "pub_year": "2017"
   },
   {
    "id": "d49ac8e35e92de49",
@@ -9053,7 +9087,8 @@
    "file_checked_v": 4,
    "date": "2017-12-26",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2017"
   },
   {
    "id": "d6319c775d69d139",
@@ -9082,7 +9117,8 @@
    "file_checked_v": 4,
    "date": "2017-09-27",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2017"
   },
   {
    "id": "de7f25a297be3dea",
@@ -9112,7 +9148,8 @@
    "file_checked_v": 4,
    "date": "2021-01-19",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2021"
   },
   {
    "id": "e604671eb25f5e0c",
@@ -9138,7 +9175,8 @@
    "file_checked_v": 4,
    "date": "2015-06-29",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2015"
   },
   {
    "id": "e8492d98c1486fd7",
@@ -9168,7 +9206,8 @@
    "file_checked_v": 2,
    "date": "2020-02-11",
    "date_precision": "day",
-   "date_source": "title"
+   "date_source": "title",
+   "pub_year": "2020"
   },
   {
    "id": "e877cd3c2b006059",
@@ -9195,7 +9234,8 @@
    "file_checked_v": 4,
    "date": "2019-03-27",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2022"
   },
   {
    "id": "ef85deb8499dd324",
@@ -9225,7 +9265,8 @@
    "file_checked_v": 4,
    "date": null,
    "date_precision": null,
-   "date_source": null
+   "date_source": null,
+   "pub_year": "2024"
   },
   {
    "id": "efd6c081eb367211",
@@ -9252,7 +9293,8 @@
    "file_checked_v": 4,
    "date": "2019-03-08",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2019"
   },
   {
    "id": "f48c93f23de9f8d5",
@@ -9278,7 +9320,8 @@
    "file_checked_v": 4,
    "date": "2012-01-25",
    "date_precision": "day",
-   "date_source": "file-pdf"
+   "date_source": "file-pdf",
+   "pub_year": "2016"
   },
   {
    "id": "f648c92e2de01310",
@@ -9308,152 +9351,8 @@
    "file_checked_v": 4,
    "date": "2020-03-13",
    "date_precision": "day",
-   "date_source": "file-pdf"
-  },
-  {
-   "id": "1ad13031d2dafefc",
-   "first_seen": "2026-11-15",
-   "access": "public",
-   "society": "ksmfm",
-   "board": "https://www.ksmfm.or.kr/workshop_pds/guide.php",
-   "board_name": "임상진료가이드",
-   "title": "Fact sheet 모자의료 insight: 다태임신, 제대로 알고 준비하기",
-   "url": "https://www.ksmfm.or.kr/file/모자의료 인사이트 2026년 2호_260721_중앙모자의료센터 (1).pdf",
-   "link_resolved": true,
-   "lang": "ko",
-   "attachments": [
-    {
-     "name": "Fact sheet 모자의료 insight: 다태임신, 제대로 알고 준비하기 VIEW MORE",
-     "url": "https://www.ksmfm.or.kr/file/모자의료 인사이트 2026년 2호_260721_중앙모자의료센터 (1).pdf",
-     "kind": "pdf"
-    }
-   ],
-   "last_seen": "2026-11-16",
-   "backfill": true,
-   "checked": "2026-11-15",
-   "detail_v": 2,
-   "date": "2026",
-   "date_precision": "year",
-   "date_source": "title"
-  },
-  {
-   "id": "536187d13dbadf76",
-   "first_seen": "2026-11-15",
-   "access": "public",
-   "society": "ksmfm",
-   "board": "https://www.ksmfm.or.kr/workshop_pds/guide.php",
-   "board_name": "임상진료가이드",
-   "title": "Position statement 뇌성마비와 분만진통 중 저산소증: 최신 지견에 대한 분석과 입장",
-   "url": "https://www.ksmfm.or.kr/file/대한모체태아의학회 Position statement.pdf",
-   "link_resolved": true,
-   "lang": "ko",
-   "tags": [
-    "권고·성명"
-   ],
-   "attachments": [
-    {
-     "name": "Position statement 뇌성마비와 분만진통 중 저산소증: 최신 지견에 대한 분석과 입장 VIEW MORE",
-     "url": "https://www.ksmfm.or.kr/file/대한모체태아의학회 Position statement.pdf",
-     "kind": "pdf"
-    }
-   ],
-   "last_seen": "2026-11-16",
-   "backfill": true,
-   "checked": "2026-11-15",
-   "detail_v": 2,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "date": "2026-07-21",
-   "date_precision": "day",
    "date_source": "file-pdf",
-   "text_checked_v": 1
-  },
-  {
-   "id": "96ba98b5477679a9",
-   "first_seen": "2026-11-15",
-   "access": "public",
-   "society": "ksmfm",
-   "board": "https://www.ksmfm.or.kr/workshop_pds/guide.php",
-   "board_name": "임상진료가이드",
-   "title": "Fact sheet 임신 중 타이레놀과 자폐증 논란",
-   "url": "https://www.ksmfm.or.kr/file/임신 중 타이레놀과 자폐증 논란.pdf",
-   "link_resolved": true,
-   "lang": "ko",
-   "attachments": [
-    {
-     "name": "Fact sheet 임신 중 타이레놀과 자폐증 논란 VIEW MORE",
-     "url": "https://www.ksmfm.or.kr/file/임신 중 타이레놀과 자폐증 논란.pdf",
-     "kind": "pdf"
-    }
-   ],
-   "last_seen": "2026-11-16",
-   "backfill": true,
-   "checked": "2026-11-15",
-   "detail_v": 2,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "date": "2026-07-21",
-   "date_precision": "day",
-   "date_source": "file-pdf",
-   "text_checked_v": 1
-  },
-  {
-   "id": "989179e3b471fc9f",
-   "first_seen": "2026-11-15",
-   "access": "public",
-   "society": "ksmfm",
-   "board": "https://www.ksmfm.or.kr/workshop_pds/guide.php",
-   "board_name": "임상진료가이드",
-   "title": "Fact sheet 시험관 아기 시술(IVF)을 통한 다태임신",
-   "url": "https://www.ksmfm.or.kr/file/시험관 아기 시술(IVF)을 통한 다태 임신에 대한 Factsheet.pdf",
-   "link_resolved": true,
-   "lang": "ko",
-   "attachments": [
-    {
-     "name": "Fact sheet 시험관 아기 시술(IVF)을 통한 다태임신 VIEW MORE",
-     "url": "https://www.ksmfm.or.kr/file/시험관 아기 시술(IVF)을 통한 다태 임신에 대한 Factsheet.pdf",
-     "kind": "pdf"
-    }
-   ],
-   "last_seen": "2026-11-16",
-   "backfill": true,
-   "checked": "2026-11-15",
-   "detail_v": 2,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "date": "2026-07-21",
-   "date_precision": "day",
-   "date_source": "file-pdf",
-   "text_checked_v": 1
-  },
-  {
-   "id": "ae16d116411e5ebd",
-   "first_seen": "2026-11-15",
-   "access": "public",
-   "society": "ksmfm",
-   "board": "https://www.ksmfm.or.kr/workshop_pds/guide.php",
-   "board_name": "임상진료가이드",
-   "title": "Fact sheet 자궁근종절제술과 자궁선근증감축술 후 임신 합병증",
-   "url": "https://www.ksmfm.or.kr/file/자궁 수술 후 임신 중 합병증에 대한 Factsheet.pdf",
-   "link_resolved": true,
-   "lang": "ko",
-   "attachments": [
-    {
-     "name": "Fact sheet 자궁근종절제술과 자궁선근증감축술 후 임신 합병증 VIEW MORE",
-     "url": "https://www.ksmfm.or.kr/file/자궁 수술 후 임신 중 합병증에 대한 Factsheet.pdf",
-     "kind": "pdf"
-    }
-   ],
-   "last_seen": "2026-11-16",
-   "backfill": true,
-   "checked": "2026-11-15",
-   "detail_v": 2,
-   "file_checked": "2026-11-15",
-   "file_checked_v": 4,
-   "date": "2026-07-21",
-   "date_precision": "day",
-   "date_source": "file-pdf",
-   "text_checked_v": 1
+   "pub_year": "2020"
   },
   {
    "id": "1aaafa1f3dfec041",

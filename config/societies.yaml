@@ -19,6 +19,8 @@
 #       page_param        : 페이지 번호 쿼리 이름 (자동 감지 실패 시)
 #       js_link_template  : 제목 링크가 javascript:view(123) 형태일 때 실제 주소 틀
 #                           (예: "/bbs/view.php?idx={0}")
+#       drop_params       : 글 주소에서 지울 쿼리 이름 (분류 필터 게시판에서 같은 글이 두 번 잡히지 않게, 예: [category])
+#       label_year        : true면 행의 분류 표시(예: 'COVID-19 진료지침 2024')에 붙은 연도를 학회가 정한 발행연도로 사용
 #   verify_ssl : 인증서 오류가 있는 사이트는 false (기본 true; 오류 시 자동 재시도도 함)
 #   enabled    : false면 자동 수집 제외
 #   manual     : true면 config/manual.yaml에 손으로 등록한 지침을 사이트에 표시
@@ -139,10 +141,11 @@
   specialty: 내과
   division: 순환기
   boards:
-    - url: https://www.circulation.or.kr/bbs/?code=guide
-      name: 진료지침
+    - url: https://www.circulation.or.kr/bbs/index.php?code=guide&category=X
+      name: 진료지침 (국내)
       dedicated: true
-  note: 진료지침 게시판에 외국 학회 지침(ESC·AHA 등) 소개가 많아 이를 제외하고 수집
+      drop_params: [category]   # 글 주소의 분류값은 지워 '전체' 목록에서 모은 기존 항목과 합침
+  note: 진료지침 게시판 중 '국내' 분류만 수집 (ESC·ACC/AHA 분류는 외국 학회 지침 소개)
 - id: ksh
   name: 대한고혈압학회
   short: 고혈압학회
@@ -317,6 +320,7 @@
     - url: https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do
       name: 감염 질환별 가이드라인
       dedicated: true
+      label_year: true   # 분류 표시 'OO 진료지침 2024'의 연도 = 발행연도 (첨부 PDF 날짜는 재저장일이라 부정확)
 - id: ksat
   name: 대한항균요법학회
   short: 항균요법학회
@@ -409,7 +413,8 @@
   specialty: 소아청소년과
   division: 소아청소년
   enabled: false
-  note: 웹 방화벽이 자동 접속을 차단함
+  manual: true          # 자동 수집 대신 config/manual.yaml에 손으로 등록
+  note: 자동 접속이 막혀(robots.txt·웹 방화벽) '지침' 게시판의 국내 분류 지침을 수동 등록
   boards: []
 - id: ksneo
   name: 대한신생아학회
@@ -520,11 +525,9 @@
   group: 외과계
   specialty: 산부인과
   division: 산부인과
-  note: "임상진료지침 게시판은 회원 전용이라 공개된 '임상진료가이드'만 수집"
-  boards:
-    - url: https://www.ksmfm.or.kr/workshop_pds/guide.php
-      name: 임상진료가이드
-      dedicated: true
+  enabled: false
+  note: "임상진료지침 게시판은 회원 전용 (공개 '임상진료가이드'는 Fact sheet·입장문이라 진료지침이 아님 → 제외)"
+  boards: []
 - id: kosar
   name: 대한보조생식학회
   short: "보조생식학회"
@@ -583,7 +586,8 @@
   specialty: 산부인과
   division: 산부인과
   enabled: false
-  note: "해외(수집 서버)에서 접속되지 않음"
+  manual: true          # 자동 수집 대신 config/manual.yaml에 손으로 등록
+  note: "해외(수집 서버)에서 접속되지 않아 진료지침 > 자궁내막증 임상지침서를 수동 등록"
   boards: []
 - id: kspm
   name: 대한주산의학회

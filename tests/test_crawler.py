@@ -469,3 +469,28 @@ def test_trailing_view_more_removed():
     from gcrawler.parse import Row, strip_trailing_link_words
     rows = strip_trailing_link_words([Row(title="Fact sheet 임신 중 타이레놀과 자폐증 논란 VIEW MORE", url="u")])
     assert rows[0].title == "Fact sheet 임신 중 타이레놀과 자폐증 논란"
+
+
+def test_drop_params_keeps_item_id():
+    from gcrawler.crawl import drop_query_params
+    from gcrawler.parse import canonical_url
+
+    old = "https://www.circulation.or.kr/bbs/index.php?code=guide&category=&gubun=&page=3&number=8309&mode=view"
+    new = "https://www.circulation.or.kr/bbs/index.php?code=guide&category=X&gubun=&page=1&number=8309&mode=view&keyfield=&key="
+    assert canonical_url(drop_query_params(new, ["category"])) == canonical_url(old)
+
+
+def test_label_year_from_category_label():
+    from bs4 import BeautifulSoup
+    from gcrawler.parse import parse_row
+
+    html = """<li><a href="#n"><div class="img"><img alt="x"></div><div class="txt">
+      <span class="cate">COVID-19 진료지침 2024</span>
+      <strong class="tit">만성 코로나19 증후군(Long COVID) 임상진료지침 권고안</strong>
+      <p>대한감염학회</p></div></a>
+      <a href="/rang_board/inc/download.php?nocount=1&code=ncov_guide_do&num=6749">다운로드</a></li>"""
+    el = BeautifulSoup(html, "lxml").li
+    base = "https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do"
+    row = parse_row(el, base, {"label_year": True})
+    assert row is not None and row.label_year == "2024"
+    assert parse_row(el, base, {}).label_year is None  # 설정한 게시판에서만

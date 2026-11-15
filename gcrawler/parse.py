@@ -197,6 +197,7 @@ class Row:
     attachments: list[dict] = field(default_factory=list)
     notice: bool = False  # 상단 고정 공지
     foreign: bool = False  # '카테고리' 칸 등에 외국 학회명(ESC·AHA 등)이 적힌 행
+    label_year: str | None = None  # 분류 표시 'COVID-19 진료지침 2024'에 붙은 연도 (board.label_year)
 
 
 def _attachments_in(el: Tag, base_url: str) -> list[dict]:
@@ -272,6 +273,19 @@ def parse_row(el: Tag, base_url: str, cfg: dict | None = None) -> Row | None:
     foreign = any(
         FOREIGN.fullmatch(clean(c.get_text(" "))) for c in el.find_all(["td", "span", "em", "dd"]) if c.find("a") is None
     )
+    label_year = None
+    if cfg.get("label_year"):
+        this_year = dt.date.today().year
+        for c in el.find_all(["span", "em", "div", "p", "td", "dd", "strong", "b"]):
+            if c.find("a") is not None or c.find(["span", "em", "div", "p", "strong", "b"]) is not None:
+                continue
+            t = clean(c.get_text(" "))
+            if t == title or len(t) > 40:
+                continue
+            m = re.fullmatch(r"\D.{0,35}?\s((?:19|20)\d{2})", t)
+            if m and 1990 <= int(m.group(1)) <= this_year:
+                label_year = m.group(1)
+                break
     notice = bool(re.match(r"^(공지|notice|\[공지\])", row_text, re.I)) or "notice" in " ".join(el.get("class", [])).lower()
     return Row(
         title=title[:300],
@@ -281,6 +295,7 @@ def parse_row(el: Tag, base_url: str, cfg: dict | None = None) -> Row | None:
         attachments=_attachments_in(el, base_url),
         notice=notice,
         foreign=foreign,
+        label_year=label_year,
     )
 
 

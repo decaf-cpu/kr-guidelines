@@ -61,6 +61,16 @@ def _boards_for(fetcher: Fetcher, soc: dict, discovered: dict, rediscover: bool)
     return boards, cache
 
 
+def drop_query_params(url: str, names) -> str:
+    """주소에서 지정한 쿼리 파라미터를 지운다 (글 식별에 쓰이지 않는 분류·필터 값)."""
+    from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
+
+    drop = {n.lower() for n in names}
+    p = urlparse(url)
+    q = [(k, v) for k, v in parse_qsl(p.query, keep_blank_values=True) if k.lower() not in drop]
+    return urlunparse(p._replace(query=urlencode(q, doseq=True)))
+
+
 def crawl_board(fetcher: Fetcher, soc: dict, board: dict, store: Store, mode: str, max_pages: int,
                 detail_budget: list[int], adapter) -> dict:
     verify = soc.get("verify_ssl", True)
@@ -115,6 +125,9 @@ def crawl_board(fetcher: Fetcher, soc: dict, board: dict, store: Store, mode: st
 
         new_here = 0
         for row in rows:
+            if row.url and board.get("drop_params"):
+                # 분류 필터 게시판(예: ?category=X)에서 읽은 글 주소를 '전체' 목록의 주소와 같게 맞춘다
+                row.url = drop_query_params(row.url, board["drop_params"])
             if not is_guideline(row.title, board.get("dedicated", False)):
                 continue
             if row.foreign and not KOREAN_ORG.search(row.title):
@@ -139,6 +152,8 @@ def crawl_board(fetcher: Fetcher, soc: dict, board: dict, store: Store, mode: st
             if _better_date(old_date, (row.date, row.date_precision)):
                 fields.update(date=row.date, date_precision=row.date_precision, date_source="list")
             it, is_new = store.upsert(iid, fields)
+            if row.label_year:
+                it["pub_year"] = row.label_year  # 게시판 분류 표시의 연도 = 학회가 정한 발행연도 (build에서 우선 적용)
             if is_new:
                 new_here += 1
                 result["new"] += 1
