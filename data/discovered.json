@@ -230,5 +230,69 @@
     "score": 5
    }
   ]
+ },
+ "ksneo": {
+  "checked": "2026-11-15",
+  "homepage": "https://www.neonatology.or.kr",
+  "ok": false,
+  "error": "홈페이지 접속 실패 (해외 접속 차단·주소 오류 가능)",
+  "candidates": []
+ },
+ "kspid": {
+  "checked": "2026-11-15",
+  "homepage": "https://www.kspid.or.kr",
+  "ok": false,
+  "error": "홈페이지 접속 실패 (해외 접속 차단·주소 오류 가능)",
+  "candidates": []
+ },
+ "kspghan": {
+  "checked": "2026-11-15",
+  "homepage": "https://www.kspghan.or.kr",
+  "ok": false,
+  "error": "홈페이지 접속 실패 (해외 접속 차단·주소 오류 가능)",
+  "candidates": []
+ },
+ "kps": {
+  "checked": "2026-11-15",
+  "homepage": "https://www.pediatrics.or.kr",
+  "ok": false,
+  "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
+  "candidates": []
+ },
+ "kspn": {
+  "checked": "2026-11-15",
+  "homepage": "https://www.kspn.org",
+  "ok": true,
+  "candidates": [
+   {
+    "url": "https://www.kspn.org/board/list.html?code=bbs02",
+    "label": "임상지침",
+    "score": 3
+   }
+  ]
+ },
+ "kapard": {
+  "checked": "2026-11-15",
+  "homepage": "https://www.kapard.or.kr",
+  "ok": true,
+  "candidates": [
+   {
+    "url": "https://www.kapard.or.kr/community/guide.php",
+    "label": "- 가이드라인",
+    "score": 4
+   },
+   {
+    "url": "https://www.kapard.or.kr/member/join/privacy.php",
+    "label": "개인정보 보호 지침",
+    "score": 3
+   }
+  ]
+ },
+ "kspho": {
+  "checked": "2026-11-15",
+  "homepage": "https://www.kspho.or.kr",
+  "ok": false,
+  "error": "홈페이지 접속 실패 (해외 접속 차단·주소 오류 가능)",
+  "candidates": []
  }
 }
