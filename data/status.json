@@ -105,16 +105,16 @@
   },
   "ksc": {
    "id": "ksc",
-   "run_at": "2026-11-16T07:48:30+09:00",
+   "run_at": "2026-11-16T07:58:11+09:00",
    "boards": [
     {
-     "url": "https://www.circulation.or.kr/bbs/?code=guide",
-     "name": "진료지침",
+     "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=X",
+     "name": "진료지침 (국내)",
      "source": "config",
-     "pages": 2,
-     "rows": 30,
-     "matched": 2,
-     "new": 0,
+     "pages": 3,
+     "rows": 22,
+     "matched": 22,
+     "new": 15,
      "members_only": 0,
      "error": null
     }
@@ -444,16 +444,16 @@
   },
   "ksid": {
    "id": "ksid",
-   "run_at": "2026-11-16T07:48:39+09:00",
+   "run_at": "2026-11-16T07:58:11+09:00",
    "boards": [
     {
      "url": "https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do",
      "name": "감염 질환별 가이드라인",
      "source": "config",
-     "pages": 2,
-     "rows": 29,
-     "matched": 29,
-     "new": 0,
+     "pages": 5,
+     "rows": 51,
+     "matched": 51,
+     "new": 7,
      "members_only": 0,
      "error": null
     }
@@ -998,6 +998,6 @@
    "ok": false
   }
  },
- "updated": "2026-11-16T07:49:03+09:00",
- "requests": 84
+ "updated": "2026-11-16T07:59:58+09:00",
+ "requests": 60
 }

@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-16T07:49:03+09:00",
- "count": 408,
+ "updated": "2026-11-16T07:59:58+09:00",
+ "count": 430,
  "items": [
   {
    "id": "192455f016c5eadf",
@@ -6363,16 +6363,16 @@
    "first_seen": "2026-11-15",
    "access": "public",
    "society": "ksc",
-   "board": "https://www.circulation.or.kr/bbs/?code=guide",
-   "board_name": "진료지침",
+   "board": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=X",
+   "board_name": "진료지침 (국내)",
    "title": "2022 고혈압 진료지침",
-   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=&gubun=&page=3&number=8309&mode=view&keyfield=&key=",
+   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&gubun=&page=1&number=8309&mode=view&keyfield=&key=",
    "link_resolved": true,
    "lang": "ko",
    "date": "2022-11-11",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-16",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -6388,10 +6388,10 @@
    "first_seen": "2026-11-15",
    "access": "public",
    "society": "ksc",
-   "board": "https://www.circulation.or.kr/bbs/?code=guide",
-   "board_name": "진료지침",
+   "board": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=X",
+   "board_name": "진료지침 (국내)",
    "title": "금연치료 임상진료지침",
-   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=&gubun=&page=1&number=100276&mode=view&keyfield=&key=",
+   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&gubun=&page=1&number=100276&mode=view&keyfield=&key=",
    "link_resolved": true,
    "lang": "ko",
    "date": "2025-08-18",
@@ -6413,10 +6413,10 @@
    "first_seen": "2026-11-15",
    "access": "public",
    "society": "ksc",
-   "board": "https://www.circulation.or.kr/bbs/?code=guide",
-   "board_name": "진료지침",
+   "board": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=X",
+   "board_name": "진료지침 (국내)",
    "title": "2022 대한부정맥학회_심방세동 환자에서 비타민K비의존성 경구용 항응고제(NOAC) 사...",
-   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=&gubun=&page=2&number=100153&mode=view&keyfield=&key=",
+   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&gubun=&page=1&number=100153&mode=view&keyfield=&key=",
    "link_resolved": true,
    "lang": "ko",
    "tags": [
@@ -6441,16 +6441,16 @@
    "first_seen": "2026-11-15",
    "access": "public",
    "society": "ksc",
-   "board": "https://www.circulation.or.kr/bbs/?code=guide",
-   "board_name": "진료지침",
+   "board": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=X",
+   "board_name": "진료지침 (국내)",
    "title": "대한심부전학회 FACT SHEET 2020",
-   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=&gubun=&page=3&number=8075&mode=view&keyfield=&key=",
+   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&gubun=&page=1&number=8075&mode=view&keyfield=&key=",
    "link_resolved": true,
    "lang": "ko",
    "date": "2021-07-13",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-16",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -6466,10 +6466,10 @@
    "first_seen": "2026-11-15",
    "access": "public",
    "society": "ksc",
-   "board": "https://www.circulation.or.kr/bbs/?code=guide",
-   "board_name": "진료지침",
+   "board": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=X",
+   "board_name": "진료지침 (국내)",
    "title": "급성심근경색증의 재개통술에 대한 전문가 합의문",
-   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=&gubun=&page=3&number=8128&mode=view&keyfield=&key=",
+   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&gubun=&page=1&number=8128&mode=view&keyfield=&key=",
    "link_resolved": true,
    "lang": "ko",
    "tags": [
@@ -6478,7 +6478,7 @@
    "date": "2021-10-19",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-16",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -6494,16 +6494,16 @@
    "first_seen": "2026-11-15",
    "access": "public",
    "society": "ksc",
-   "board": "https://www.circulation.or.kr/bbs/?code=guide",
-   "board_name": "진료지침",
+   "board": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=X",
+   "board_name": "진료지침 (국내)",
    "title": "2021 대한부정맥학회 심방세동 진료지침",
-   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=&gubun=&page=3&number=100152&mode=view&keyfield=&key=",
+   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&gubun=&page=1&number=100152&mode=view&keyfield=&key=",
    "link_resolved": true,
    "lang": "ko",
    "date": "2024-10-30",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-16",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -6519,16 +6519,16 @@
    "first_seen": "2026-11-15",
    "access": "public",
    "society": "ksc",
-   "board": "https://www.circulation.or.kr/bbs/?code=guide",
-   "board_name": "진료지침",
+   "board": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=X",
+   "board_name": "진료지침 (국내)",
    "title": "심부전 진료지침 2022",
-   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=&gubun=&page=3&number=8258&mode=view&keyfield=&key=",
+   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&gubun=&page=1&number=8258&mode=view&keyfield=&key=",
    "link_resolved": true,
    "lang": "ko",
    "date": "2022-07-22",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-16",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -6538,6 +6538,434 @@
     }
    ],
    "backfill": true
+  },
+  {
+   "id": "026bbedaa5bb9c04",
+   "first_seen": "2026-11-16",
+   "access": "public",
+   "society": "ksc",
+   "board": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=X",
+   "board_name": "진료지침 (국내)",
+   "title": "코로나이러스 감염증-19에 대한 대한내과학회 진료 지침",
+   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&gubun=&page=1&number=7865&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "ko",
+   "date": "2020-05-18",
+   "date_precision": "day",
+   "date_source": "detail",
+   "last_seen": "2026-11-16",
+   "backfill": true,
+   "checked": "2026-11-16",
+   "detail_v": 2,
+   "pub_year": "2020",
+   "attachments": [
+    {
+     "name": "대한내과학회 COVID-19 지침.pdf (다운 986회)",
+     "url": "https://www.circulation.or.kr/bbs/skin/guideline/download.php?code=guide&number=2293",
+     "kind": "file"
+    }
+   ]
+  },
+  {
+   "id": "08a82ddcfd106128",
+   "first_seen": "2026-11-16",
+   "access": "public",
+   "society": "ksc",
+   "board": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=X",
+   "board_name": "진료지침 (국내)",
+   "title": "심혈관질환 일차예방의 치료지속성(adherence) 개선에 대한 전문가 합의문",
+   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&gubun=&page=1&number=8057&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "합의문"
+   ],
+   "date": "2021-06-16",
+   "date_precision": "day",
+   "date_source": "detail",
+   "last_seen": "2026-11-16",
+   "backfill": true,
+   "checked": "2026-11-16",
+   "detail_v": 2,
+   "pub_year": "2021",
+   "attachments": [
+    {
+     "name": "심혈관질환 일차예방의 치료지속성(adherence).pdf (다운 4,696회)",
+     "url": "https://www.circulation.or.kr/bbs/skin/guideline/download.php?code=guide&number=2470",
+     "kind": "file"
+    }
+   ]
+  },
+  {
+   "id": "500d6d674fde10a0",
+   "first_seen": "2026-11-16",
+   "access": "public",
+   "society": "ksc",
+   "board": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=X",
+   "board_name": "진료지침 (국내)",
+   "title": "2016 만성 심부전 진료지침",
+   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&gubun=&page=2&number=7762&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "ko",
+   "date": "2019-06-25",
+   "date_precision": "day",
+   "date_source": "detail",
+   "last_seen": "2026-11-16",
+   "backfill": true,
+   "checked": "2026-11-16",
+   "detail_v": 2,
+   "pub_year": "2016",
+   "attachments": [
+    {
+     "name": "1. 심부전학회_만성 심부전 진료지침.pdf (다운 33,042회)",
+     "url": "https://www.circulation.or.kr/bbs/skin/guideline/download.php?code=guide&number=2231",
+     "kind": "file"
+    }
+   ]
+  },
+  {
+   "id": "5d4eef97a002b605",
+   "first_seen": "2026-11-16",
+   "access": "public",
+   "society": "ksc",
+   "board": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=X",
+   "board_name": "진료지침 (국내)",
+   "title": "급성심근경색증의 약물치료에 대한 전문가 합의문",
+   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&gubun=&page=1&number=7917&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "합의문"
+   ],
+   "date": "2020-10-22",
+   "date_precision": "day",
+   "date_source": "detail",
+   "last_seen": "2026-11-16",
+   "backfill": true,
+   "checked": "2026-11-16",
+   "detail_v": 2,
+   "pub_year": "2020",
+   "attachments": [
+    {
+     "name": "급성심근경색증의 약물치료에 대한 전문가 합의문.pdf (다운 5,162회)",
+     "url": "https://www.circulation.or.kr/bbs/skin/guideline/download.php?code=guide&number=2344",
+     "kind": "file"
+    }
+   ]
+  },
+  {
+   "id": "82b17c37c660bca8",
+   "first_seen": "2026-11-16",
+   "access": "public",
+   "society": "ksc",
+   "board": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=X",
+   "board_name": "진료지침 (국내)",
+   "title": "2020년 폐고혈압 진료지침",
+   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&gubun=&page=1&number=7950&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "ko",
+   "date": "2020-11-27",
+   "date_precision": "day",
+   "date_source": "detail",
+   "last_seen": "2026-11-16",
+   "backfill": true,
+   "checked": "2026-11-16",
+   "detail_v": 2,
+   "pub_year": "2020",
+   "attachments": [
+    {
+     "name": "2020 폐고혈압 진료지침-본문 최종.pdf (다운 3,572회)",
+     "url": "https://www.circulation.or.kr/bbs/skin/guideline/download.php?code=guide&number=2390",
+     "kind": "file"
+    }
+   ]
+  },
+  {
+   "id": "8fbb3922ee3b001c",
+   "first_seen": "2026-11-16",
+   "access": "public",
+   "society": "ksc",
+   "board": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=X",
+   "board_name": "진료지침 (국내)",
+   "title": "수술 및 시술 시 항혈전제 사용에 대한 전문가 합의문",
+   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&gubun=&page=1&number=7931&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "합의문"
+   ],
+   "date": "2020-11-16",
+   "date_precision": "day",
+   "date_source": "detail",
+   "last_seen": "2026-11-16",
+   "backfill": true,
+   "checked": "2026-11-16",
+   "detail_v": 2,
+   "pub_year": "2020",
+   "attachments": [
+    {
+     "name": "수술 및 시술 시 항혈전제 사용에 대한 전문가 합의문.pdf (다운 2,971회)",
+     "url": "https://www.circulation.or.kr/bbs/skin/guideline/download.php?code=guide&number=2442",
+     "kind": "file"
+    }
+   ]
+  },
+  {
+   "id": "976ea11ebcc24f59",
+   "first_seen": "2026-11-16",
+   "access": "public",
+   "society": "ksc",
+   "board": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=X",
+   "board_name": "진료지침 (국내)",
+   "title": "2018 고혈압 진료지침",
+   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&gubun=&page=2&number=7760&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "ko",
+   "date": "2019-06-19",
+   "date_precision": "day",
+   "date_source": "detail",
+   "last_seen": "2026-11-16",
+   "backfill": true,
+   "checked": "2026-11-16",
+   "detail_v": 2,
+   "pub_year": "2018",
+   "attachments": [
+    {
+     "name": "2018년 고혈압 진료지침(Kor)_ver2.pdf (다운 50,101회)",
+     "url": "https://www.circulation.or.kr/bbs/skin/guideline/download.php?code=guide&number=2229",
+     "kind": "file"
+    }
+   ]
+  },
+  {
+   "id": "aaa89f86bf0fa542",
+   "first_seen": "2026-11-16",
+   "access": "public",
+   "society": "ksc",
+   "board": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=X",
+   "board_name": "진료지침 (국내)",
+   "title": "급성 심부전 진료지침 2020 업데이트",
+   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&gubun=&page=1&number=7844&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "ko",
+   "date": "2020-03-16",
+   "date_precision": "day",
+   "date_source": "detail",
+   "last_seen": "2026-11-16",
+   "backfill": true,
+   "checked": "2026-11-16",
+   "detail_v": 2,
+   "pub_year": "2020",
+   "attachments": [
+    {
+     "name": "급성 심부전 진료지침 2020 업데이트.pdf (다운 6,073회)",
+     "url": "https://www.circulation.or.kr/bbs/skin/guideline/download.php?code=guide&number=2276",
+     "kind": "file"
+    }
+   ]
+  },
+  {
+   "id": "b099331ea270e3c3",
+   "first_seen": "2026-11-16",
+   "access": "public",
+   "society": "ksc",
+   "board": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=X",
+   "board_name": "진료지침 (국내)",
+   "title": "2018 심방세동 치료 가이드라인",
+   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&gubun=&page=2&number=7751&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "ko",
+   "date": "2019-06-12",
+   "date_precision": "day",
+   "date_source": "detail",
+   "last_seen": "2026-11-16",
+   "backfill": true,
+   "checked": "2026-11-16",
+   "detail_v": 2,
+   "pub_year": "2018",
+   "attachments": [
+    {
+     "name": "2018 심방세동 치료 가이드라인 pdf.pdf (다운 6,006회)",
+     "url": "https://www.circulation.or.kr/bbs/skin/guideline/download.php?code=guide&number=2227",
+     "kind": "file"
+    },
+    {
+     "name": "심방세동 치료 가이드라인-1-200-270.pdf (다운 1,720회)",
+     "url": "https://www.circulation.or.kr/bbs/skin/guideline/download.php?code=guide&number=2228",
+     "kind": "file"
+    }
+   ]
+  },
+  {
+   "id": "b2197c6c0bf52c1f",
+   "first_seen": "2026-11-16",
+   "access": "public",
+   "society": "ksc",
+   "board": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=X",
+   "board_name": "진료지침 (국내)",
+   "title": "2018 만성 심부전 진료지침",
+   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&gubun=&page=1&number=7764&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "ko",
+   "date": "2019-06-25",
+   "date_precision": "day",
+   "date_source": "detail",
+   "last_seen": "2026-11-16",
+   "backfill": true,
+   "checked": "2026-11-16",
+   "detail_v": 2,
+   "pub_year": "2018",
+   "attachments": [
+    {
+     "name": "만성심부전 진료지침_업데이트.pdf (다운 3,673회)",
+     "url": "https://www.circulation.or.kr/bbs/skin/guideline/download.php?code=guide&number=2287",
+     "kind": "file"
+    }
+   ]
+  },
+  {
+   "id": "c0324672691f41a8",
+   "first_seen": "2026-11-16",
+   "access": "public",
+   "society": "ksc",
+   "board": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=X",
+   "board_name": "진료지침 (국내)",
+   "title": "2017 급성 심부전 진료지침",
+   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&gubun=&page=2&number=7763&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "ko",
+   "date": "2019-06-25",
+   "date_precision": "day",
+   "date_source": "detail",
+   "last_seen": "2026-11-16",
+   "backfill": true,
+   "checked": "2026-11-16",
+   "detail_v": 2,
+   "pub_year": "2017",
+   "attachments": [
+    {
+     "name": "2. 심부전학회_급성 심부전 진료지침.pdf (다운 1,481회)",
+     "url": "https://www.circulation.or.kr/bbs/skin/guideline/download.php?code=guide&number=2232",
+     "kind": "file"
+    }
+   ]
+  },
+  {
+   "id": "dde813e4fa8fc31a",
+   "first_seen": "2026-11-16",
+   "access": "public",
+   "society": "ksc",
+   "board": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=X",
+   "board_name": "진료지침 (국내)",
+   "title": "2015 Korean Guidelines for the Management of Dyslipidemia: Executive Summary (...",
+   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&gubun=&page=2&number=7233&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "tags": [
+    "요약본"
+   ],
+   "date": "2016-06-15",
+   "date_precision": "day",
+   "date_source": "detail",
+   "last_seen": "2026-11-16",
+   "backfill": true,
+   "checked": "2026-11-16",
+   "detail_v": 2,
+   "pub_year": "2015",
+   "attachments": [
+    {
+     "name": "http://www.e-kcj.org/Synapse/Data/PDFData/0054KCJ/kcj-46-275.pdf (클릭 367회)",
+     "url": "https://www.circulation.or.kr/bbs/link.html?code=guide&number=7233&url=http%3A%2F%2Fwww.e-kcj.org%2FSynapse%2FData%2FPDFData%2F0054KCJ%2Fkcj-46-275.pdf",
+     "kind": "pdf"
+    },
+    {
+     "name": "kcj-46-275.pdf (다운 1,127회)",
+     "url": "https://www.circulation.or.kr/bbs/skin/guideline/download.php?code=guide&number=1524",
+     "kind": "file"
+    }
+   ]
+  },
+  {
+   "id": "e7866804433379ac",
+   "first_seen": "2026-11-16",
+   "access": "public",
+   "society": "ksc",
+   "board": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=X",
+   "board_name": "진료지침 (국내)",
+   "title": "대한내과학회 COVID-19 백신 접종 권고안",
+   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&gubun=&page=1&number=8023&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "권고·성명"
+   ],
+   "date": "2021-06-01",
+   "date_precision": "day",
+   "date_source": "detail",
+   "last_seen": "2026-11-16",
+   "backfill": true,
+   "checked": "2026-11-16",
+   "detail_v": 2,
+   "pub_year": "2021",
+   "attachments": [
+    {
+     "name": "대한내과학회 COVID_19 백신 접종 권고안.pdf (다운 1,053회)",
+     "url": "https://www.circulation.or.kr/bbs/skin/guideline/download.php?code=guide&number=2461",
+     "kind": "file"
+    }
+   ]
+  },
+  {
+   "id": "f6167f2cebde97bb",
+   "first_seen": "2026-11-16",
+   "access": "public",
+   "society": "ksc",
+   "board": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=X",
+   "board_name": "진료지침 (국내)",
+   "title": "1.2014 Korean Guidelines for Appropriate Utilization of Cardiovascular Magneti...",
+   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&gubun=&page=2&number=6804&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "en",
+   "date": "2014-12-11",
+   "date_precision": "day",
+   "date_source": "detail",
+   "last_seen": "2026-11-16",
+   "backfill": true,
+   "checked": "2026-11-16",
+   "detail_v": 2,
+   "pub_year": "2014",
+   "attachments": [
+    {
+     "name": "http://www.e-kcj.org/Synapse/Data/PDFData/0054KCJ/kcj-44-359.pdf (클릭 482회)",
+     "url": "https://www.circulation.or.kr/bbs/link.html?code=guide&number=6804&url=http%3A%2F%2Fwww.e-kcj.org%2FSynapse%2FData%2FPDFData%2F0054KCJ%2Fkcj-44-359.pdf",
+     "kind": "pdf"
+    },
+    {
+     "name": "kcj-44-359.pdf (다운 2,671회)",
+     "url": "https://www.circulation.or.kr/bbs/skin/guideline/download.php?code=guide&number=1176",
+     "kind": "file"
+    }
+   ]
+  },
+  {
+   "id": "f8dfb37ed22d242a",
+   "first_seen": "2026-11-16",
+   "access": "public",
+   "society": "ksc",
+   "board": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=X",
+   "board_name": "진료지침 (국내)",
+   "title": "2018 이상지질혈증 치료지침",
+   "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&gubun=&page=2&number=7749&mode=view&keyfield=&key=",
+   "link_resolved": true,
+   "lang": "ko",
+   "date": "2019-06-12",
+   "date_precision": "day",
+   "date_source": "detail",
+   "last_seen": "2026-11-16",
+   "backfill": true,
+   "checked": "2026-11-16",
+   "detail_v": 2,
+   "pub_year": "2018"
   },
   {
    "id": "01163f14bdd362e0",
@@ -8106,7 +8534,7 @@
   {
    "id": "05ce7f8b5edf3396",
    "first_seen": "2026-11-15",
-   "access": "unknown",
+   "access": "public",
    "society": "ksid",
    "board": "https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do",
    "board_name": "감염 질환별 가이드라인",
@@ -8121,12 +8549,14 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-16",
    "date": "2015",
    "date_precision": "year",
    "date_source": "title",
    "backfill": true,
-   "pub_year": "2016"
+   "pub_year": "2016",
+   "checked": "2026-11-16",
+   "detail_v": 2
   },
   {
    "id": "085000c5b6f6c9ee",
@@ -8302,7 +8732,7 @@
   {
    "id": "2f0c624ce15a6a8c",
    "first_seen": "2026-11-15",
-   "access": "unknown",
+   "access": "public",
    "society": "ksid",
    "board": "https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do",
    "board_name": "감염 질환별 가이드라인",
@@ -8317,14 +8747,16 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-16",
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
    "date": "2017-12-29",
    "date_precision": "day",
    "date_source": "file-pdf",
-   "pub_year": "2017"
+   "pub_year": "2017",
+   "checked": "2026-11-16",
+   "detail_v": 2
   },
   {
    "id": "312d4c5f849d9228",
@@ -8389,7 +8821,7 @@
   {
    "id": "45d08e0a5eb3e886",
    "first_seen": "2026-11-15",
-   "access": "unknown",
+   "access": "public",
    "society": "ksid",
    "board": "https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do",
    "board_name": "감염 질환별 가이드라인",
@@ -8407,12 +8839,14 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-16",
    "date": "2015",
    "date_precision": "year",
    "date_source": "title",
    "backfill": true,
-   "pub_year": "2015"
+   "pub_year": "2015",
+   "checked": "2026-11-16",
+   "detail_v": 2
   },
   {
    "id": "591a4e846d6e59c3",
@@ -8655,7 +9089,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-16",
    "checked": "2026-11-15",
    "backfill": true,
    "file_checked": "2026-11-15",
@@ -8694,7 +9128,7 @@
   {
    "id": "849737764b4457fc",
    "first_seen": "2026-11-15",
-   "access": "unknown",
+   "access": "public",
    "society": "ksid",
    "board": "https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do",
    "board_name": "감염 질환별 가이드라인",
@@ -8709,14 +9143,16 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-16",
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
    "date": "2017-10-18",
    "date_precision": "day",
    "date_source": "file-pdf",
-   "pub_year": "2017"
+   "pub_year": "2017",
+   "checked": "2026-11-16",
+   "detail_v": 2
   },
   {
    "id": "8ff18e62580a91f7",
@@ -8751,7 +9187,7 @@
   {
    "id": "9a44d01132823507",
    "first_seen": "2026-11-15",
-   "access": "unknown",
+   "access": "public",
    "society": "ksid",
    "board": "https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do",
    "board_name": "감염 질환별 가이드라인",
@@ -8766,14 +9202,16 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-16",
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
    "date": "2015-09-30",
    "date_precision": "day",
    "date_source": "file-pdf",
-   "pub_year": "2015"
+   "pub_year": "2015",
+   "checked": "2026-11-16",
+   "detail_v": 2
   },
   {
    "id": "9cfd867010e0ff07",
@@ -8809,7 +9247,7 @@
   {
    "id": "9d2bc818aa700143",
    "first_seen": "2026-11-15",
-   "access": "unknown",
+   "access": "public",
    "society": "ksid",
    "board": "https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do",
    "board_name": "감염 질환별 가이드라인",
@@ -8824,19 +9262,21 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-16",
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
    "date": "2022-06-23",
    "date_precision": "day",
    "date_source": "file-pdf",
-   "pub_year": "2017"
+   "pub_year": "2017",
+   "checked": "2026-11-16",
+   "detail_v": 2
   },
   {
    "id": "9d7bfca1ba58038a",
    "first_seen": "2026-11-15",
-   "access": "unknown",
+   "access": "public",
    "society": "ksid",
    "board": "https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do",
    "board_name": "감염 질환별 가이드라인",
@@ -8854,14 +9294,16 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-16",
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
    "date": "2022-06-23",
    "date_precision": "day",
    "date_source": "file-pdf",
-   "pub_year": "2016"
+   "pub_year": "2016",
+   "checked": "2026-11-16",
+   "detail_v": 2
   },
   {
    "id": "9f992ebd16c28616",
@@ -8894,7 +9336,7 @@
   {
    "id": "ae13a61fbeacabed",
    "first_seen": "2026-11-15",
-   "access": "unknown",
+   "access": "public",
    "society": "ksid",
    "board": "https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do",
    "board_name": "감염 질환별 가이드라인",
@@ -8909,14 +9351,16 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-16",
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
    "date": "2015-12-30",
    "date_precision": "day",
    "date_source": "file-pdf",
-   "pub_year": "2015"
+   "pub_year": "2015",
+   "checked": "2026-11-16",
+   "detail_v": 2
   },
   {
    "id": "aeb7d1b65307a7f9",
@@ -8983,7 +9427,7 @@
   {
    "id": "c26d03e84f4e0037",
    "first_seen": "2026-11-15",
-   "access": "unknown",
+   "access": "public",
    "society": "ksid",
    "board": "https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do",
    "board_name": "감염 질환별 가이드라인",
@@ -8998,14 +9442,16 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-16",
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
    "date": "2017-03-10",
    "date_precision": "day",
    "date_source": "file-pdf",
-   "pub_year": "2017"
+   "pub_year": "2017",
+   "checked": "2026-11-16",
+   "detail_v": 2
   },
   {
    "id": "c6dbd1e423720699",
@@ -9041,7 +9487,7 @@
   {
    "id": "c97a8f2fd5678c40",
    "first_seen": "2026-11-15",
-   "access": "unknown",
+   "access": "public",
    "society": "ksid",
    "board": "https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do",
    "board_name": "감염 질환별 가이드라인",
@@ -9056,17 +9502,19 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-16",
    "date": "2017",
    "date_precision": "year",
    "date_source": "title",
    "backfill": true,
-   "pub_year": "2017"
+   "pub_year": "2017",
+   "checked": "2026-11-16",
+   "detail_v": 2
   },
   {
    "id": "d49ac8e35e92de49",
    "first_seen": "2026-11-15",
-   "access": "unknown",
+   "access": "public",
    "society": "ksid",
    "board": "https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do",
    "board_name": "감염 질환별 가이드라인",
@@ -9081,19 +9529,21 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-16",
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
    "date": "2017-12-26",
    "date_precision": "day",
    "date_source": "file-pdf",
-   "pub_year": "2017"
+   "pub_year": "2017",
+   "checked": "2026-11-16",
+   "detail_v": 2
   },
   {
    "id": "d6319c775d69d139",
    "first_seen": "2026-11-15",
-   "access": "unknown",
+   "access": "public",
    "society": "ksid",
    "board": "https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do",
    "board_name": "감염 질환별 가이드라인",
@@ -9111,14 +9561,16 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-16",
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
    "date": "2017-09-27",
    "date_precision": "day",
    "date_source": "file-pdf",
-   "pub_year": "2017"
+   "pub_year": "2017",
+   "checked": "2026-11-16",
+   "detail_v": 2
   },
   {
    "id": "de7f25a297be3dea",
@@ -9154,7 +9606,7 @@
   {
    "id": "e604671eb25f5e0c",
    "first_seen": "2026-11-15",
-   "access": "unknown",
+   "access": "public",
    "society": "ksid",
    "board": "https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do",
    "board_name": "감염 질환별 가이드라인",
@@ -9169,14 +9621,16 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-16",
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
    "date": "2015-06-29",
    "date_precision": "day",
    "date_source": "file-pdf",
-   "pub_year": "2015"
+   "pub_year": "2015",
+   "checked": "2026-11-16",
+   "detail_v": 2
   },
   {
    "id": "e8492d98c1486fd7",
@@ -9299,7 +9753,7 @@
   {
    "id": "f48c93f23de9f8d5",
    "first_seen": "2026-11-15",
-   "access": "unknown",
+   "access": "public",
    "society": "ksid",
    "board": "https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do",
    "board_name": "감염 질환별 가이드라인",
@@ -9314,14 +9768,16 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-16",
    "backfill": true,
    "file_checked": "2026-11-15",
    "file_checked_v": 4,
    "date": "2012-01-25",
    "date_precision": "day",
    "date_source": "file-pdf",
-   "pub_year": "2016"
+   "pub_year": "2016",
+   "checked": "2026-11-16",
+   "detail_v": 2
   },
   {
    "id": "f648c92e2de01310",
@@ -9353,6 +9809,185 @@
    "date_precision": "day",
    "date_source": "file-pdf",
    "pub_year": "2020"
+  },
+  {
+   "id": "09abb64cba40727d",
+   "first_seen": "2026-11-16",
+   "access": "public",
+   "society": "ksid",
+   "board": "https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do",
+   "board_name": "감염 질환별 가이드라인",
+   "title": "심혈관계 감염 진료지침 권고안",
+   "url": "https://www.ksid.or.kr/rang_board/inc/download.php?nocount=1&code=ncov_guide_do&num=6234",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "권고·성명"
+   ],
+   "attachments": [
+    {
+     "name": "다운로드",
+     "url": "https://www.ksid.or.kr/rang_board/inc/download.php?nocount=1&code=ncov_guide_do&num=6234",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-16",
+   "backfill": false,
+   "checked": "2026-11-16",
+   "detail_v": 2
+  },
+  {
+   "id": "4590506c216dfee7",
+   "first_seen": "2026-11-16",
+   "access": "public",
+   "society": "ksid",
+   "board": "https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do",
+   "board_name": "감염 질환별 가이드라인",
+   "title": "계절 인플루엔자의 항바이러스제 사용 지침",
+   "url": "https://www.ksid.or.kr/rang_board/inc/download.php?nocount=1&code=ncov_guide_do&num=6264",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "다운로드",
+     "url": "https://www.ksid.or.kr/rang_board/inc/download.php?nocount=1&code=ncov_guide_do&num=6264",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-16",
+   "backfill": false,
+   "checked": "2026-11-16",
+   "detail_v": 2
+  },
+  {
+   "id": "80f7efcad578ace1",
+   "first_seen": "2026-11-16",
+   "access": "public",
+   "society": "ksid",
+   "board": "https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do",
+   "board_name": "감염 질환별 가이드라인",
+   "title": "국내자료를 근거로 한 호중구감소성 발열 환자의 경험적 치료 지침",
+   "url": "https://www.ksid.or.kr/rang_board/inc/download.php?nocount=1&code=ncov_guide_do&num=6238",
+   "link_resolved": true,
+   "lang": "ko",
+   "attachments": [
+    {
+     "name": "다운로드",
+     "url": "https://www.ksid.or.kr/rang_board/inc/download.php?nocount=1&code=ncov_guide_do&num=6238",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-16",
+   "backfill": false,
+   "checked": "2026-11-16",
+   "detail_v": 2
+  },
+  {
+   "id": "938d79c3ed011ef9",
+   "first_seen": "2026-11-16",
+   "access": "public",
+   "society": "ksid",
+   "board": "https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do",
+   "board_name": "감염 질환별 가이드라인",
+   "title": "2014년 대한감염학회 권장 성인예방접종 개정안",
+   "url": "https://www.ksid.or.kr/rang_board/inc/download.php?nocount=1&code=ncov_guide_do&num=6242",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "개정"
+   ],
+   "attachments": [
+    {
+     "name": "다운로드",
+     "url": "https://www.ksid.or.kr/rang_board/inc/download.php?nocount=1&code=ncov_guide_do&num=6242",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-16",
+   "backfill": false,
+   "checked": "2026-11-16",
+   "detail_v": 2,
+   "date": "2014",
+   "date_precision": "year",
+   "date_source": "title"
+  },
+  {
+   "id": "97800acae1a5e3f7",
+   "first_seen": "2026-11-16",
+   "access": "public",
+   "society": "ksid",
+   "board": "https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do",
+   "board_name": "감염 질환별 가이드라인",
+   "title": "국내 골관절감염 항균요법 권고안",
+   "url": "https://www.ksid.or.kr/rang_board/inc/download.php?nocount=1&code=ncov_guide_do&num=6232",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "권고·성명"
+   ],
+   "attachments": [
+    {
+     "name": "다운로드",
+     "url": "https://www.ksid.or.kr/rang_board/inc/download.php?nocount=1&code=ncov_guide_do&num=6232",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-16",
+   "backfill": false,
+   "checked": "2026-11-16",
+   "detail_v": 2
+  },
+  {
+   "id": "b0b9264e2d56fda1",
+   "first_seen": "2026-11-16",
+   "access": "public",
+   "society": "ksid",
+   "board": "https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do",
+   "board_name": "감염 질환별 가이드라인",
+   "title": "국내 성인 세균성 수막염의 임상진료지침 권고안",
+   "url": "https://www.ksid.or.kr/rang_board/inc/download.php?nocount=1&code=ncov_guide_do&num=6236",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "권고·성명"
+   ],
+   "attachments": [
+    {
+     "name": "다운로드",
+     "url": "https://www.ksid.or.kr/rang_board/inc/download.php?nocount=1&code=ncov_guide_do&num=6236",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-16",
+   "backfill": false,
+   "checked": "2026-11-16",
+   "detail_v": 2
+  },
+  {
+   "id": "d0a7ca90f29ca170",
+   "first_seen": "2026-11-16",
+   "access": "public",
+   "society": "ksid",
+   "board": "https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do",
+   "board_name": "감염 질환별 가이드라인",
+   "title": "국내 HIV 감염인의 기회감염증 치료와 예방에 관한 임상진료지침 권고안",
+   "url": "https://www.ksid.or.kr/rang_board/inc/download.php?nocount=1&code=ncov_guide_do&num=6252",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "권고·성명"
+   ],
+   "attachments": [
+    {
+     "name": "다운로드",
+     "url": "https://www.ksid.or.kr/rang_board/inc/download.php?nocount=1&code=ncov_guide_do&num=6252",
+     "kind": "file"
+    }
+   ],
+   "last_seen": "2026-11-16",
+   "backfill": false,
+   "checked": "2026-11-16",
+   "detail_v": 2
   },
   {
    "id": "1aaafa1f3dfec041",
