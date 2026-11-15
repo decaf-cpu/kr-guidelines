@@ -125,12 +125,11 @@
 - id: kpba
   name: 대한췌장담도학회
   short: 췌장담도학회
-  homepage: https://www.kpba.or.kr
+  homepage: https://www.kpba.kr
   group: 내과계
   specialty: 내과
   division: 소화기
   boards: []
-  note: GitHub 서버(해외)에서 접속되지 않음 — 해외 접속 차단 또는 주소 확인 필요
 # ───────────── 순환기 ─────────────
 - id: ksc
   name: 대한심장학회
