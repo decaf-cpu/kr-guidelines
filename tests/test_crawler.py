@@ -298,3 +298,27 @@ def test_manual_entries(tmp_path, monkeypatch):
     from gcrawler.build import merge_items
     merged = merge_items(items, socs)
     assert any(g["title"] == "2025 한국 류마티스관절염 진료지침" and g["sources"][0]["manual"] for g in merged)
+
+
+def test_pdf_creation_date():
+    from gcrawler.filedate import _from_pdf_bytes
+    b = b"%PDF-1.6 ... /CreationDate (D:20200211093000+09'00') /ModDate (D:20210101) ..."
+    assert _from_pdf_bytes(b) == ("2020-02-11", "day")
+    assert _from_pdf_bytes(b"<xmp:CreateDate>2019-05-03T10:00:00</xmp:CreateDate>") == ("2019-05-03", "day")
+    assert _from_pdf_bytes(b"no dates here") is None
+
+
+def test_backfill_then_new(tmp_data):
+    base = "https://gastrokorea.org/bbs2/index.php"
+    routes = {route_key(base + "?code=guide2"): (200, fx("ksg_guide2_p2.html"))}
+    socs = [{"id": "ksg", "name": "대한소화기학회", "short": "소화기학회", "homepage": "https://gastrokorea.org",
+             "group": "내과계", "specialty": "내과", "division": "소화기", "enabled": True, "verify_ssl": True,
+             "boards": [{"url": base + "?code=guide2", "name": "진료지침", "dedicated": True}]}]
+    crawl_mod.run(mode="incremental", max_pages=1, fetcher=FakeFetcher(routes), societies=socs, detail_per_society=0)
+    doc = json.loads((tmp_data / "guidelines.json").read_text(encoding="utf-8"))
+    assert all(it["backfill"] for it in doc["items"])  # 처음 수집한 게시판의 기존 글은 NEW 아님
+    routes[route_key(base + "?code=guide2")] = (200, fx("ksg_guide2.html"))
+    crawl_mod.run(mode="incremental", max_pages=1, fetcher=FakeFetcher(routes), societies=socs, detail_per_society=0)
+    doc = json.loads((tmp_data / "guidelines.json").read_text(encoding="utf-8"))
+    fresh = [it for it in doc["items"] if not it["backfill"]]
+    assert len(fresh) == 4  # 이후 새로 올라온 글만 NEW 대상

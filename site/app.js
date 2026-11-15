@@ -22,6 +22,10 @@
   const dateNote = (it) => {
     if (!it.date) return it.sources.every((s) => s.manual) ? "" : "수집일";
     if (it.date_source === "bulk") return "일괄 등록일";
+    if ((it.date_source || "").startsWith("file")) {
+      const k = { "file-pdf": "PDF 작성일", "file-filename": "파일명 연도", "file-lastmod": "파일 등록일" }[it.date_source] || "파일 날짜";
+      return it.date_precision === "day" ? k : `${k}`;
+    }
     if (it.date_precision === "year") {
       const base = it.date_source === "title" ? "제목 연도" : "연도";
       return it.posted ? `${base} · 게시 ${it.posted.replace(/-/g, ".")}` : base;
@@ -67,7 +71,7 @@
       const y = parseInt(effDate(it).slice(0, 4), 10);
       if (!y || y < new Date().getFullYear() - parseInt(state.period, 10) + 1) return false;
     }
-    if (state.newOnly && !(it.first_seen && daysAgo(it.first_seen) <= 30)) return false;
+    if (state.newOnly && !(!it.backfill && it.first_seen && daysAgo(it.first_seen) <= 183)) return false;
     if (state.koOnly && it.lang !== "ko") return false;
     if (state.q) {
       const hay = (it.title + " " + it.societies.map((s) => (SOCS[s]?.name || "") + " " + (SOCS[s]?.short || "")).join(" ") + " " + it.divisions.join(" ") + " " + effDate(it)).toLowerCase();
@@ -104,7 +108,7 @@
   // ── 렌더: 목록 ────────────────────────
   function itemHTML(it) {
     const main = it.sources[0];
-    const isNew = it.first_seen && daysAgo(it.first_seen) <= 14;
+    const isNew = !it.backfill && it.first_seen && daysAgo(it.first_seen) <= 14;
     const socs = it.sources
       .map((s) => `<a class="tag soc" href="${esc(s.url)}" target="_blank" rel="noopener" title="${esc(SOCS[s.society]?.name)}${s.board_name ? " · " + esc(s.board_name) : ""}">${esc(SOCS[s.society]?.short || s.society)}${s.manual ? " ✎" : ""}</a>`)
       .join("");

@@ -10,6 +10,7 @@ from concurrent.futures import ThreadPoolExecutor
 from . import adapters
 from .access import check_detail, page_requires_login
 from .discover import discover
+from .filedate import file_date
 from .fetch import Fetcher
 from .filters import KOREAN_ORG, is_guideline, lang_of, tags_for
 from .parse import (
@@ -81,6 +82,8 @@ def crawl_board(fetcher: Fetcher, soc: dict, board: dict, store: Store, mode: st
         page2 = detect_page_param(first_html, resp.url, board.get("page_param"))
         urls = page_urls(resp.url, page2, max_pages)
 
+    # 이 게시판을 처음 수집하는 경우: 이미 올라와 있던 글은 '초기 수집'으로 표시(NEW 아님)
+    first_time = not any(it.get("board") == board["url"] for it in store.items.values())
     prev_titles: set[str] | None = None
     for idx, url in enumerate(urls):
         if idx == 0:
@@ -132,6 +135,7 @@ def crawl_board(fetcher: Fetcher, soc: dict, board: dict, store: Store, mode: st
             if is_new:
                 new_here += 1
                 result["new"] += 1
+                it["backfill"] = first_time
 
             # 상세 확인: 새 글이거나 아직 공개 여부를 모르는 글만, 학회당 횟수 제한
             if row.url and it.get("access") == "unknown" and detail_budget[0] > 0:
@@ -162,6 +166,28 @@ def crawl_board(fetcher: Fetcher, soc: dict, board: dict, store: Store, mode: st
         if mode == "incremental" and idx >= 1 and new_here == 0:
             break
     return result
+
+
+def fill_file_dates(fetcher: Fetcher, soc: dict, store: Store, budget: int = 40) -> int:
+    """목록·상세·제목 어디에도 날짜가 없는 항목은 첨부 파일에서 날짜를 추정."""
+    n = 0
+    for it in list(store.items.values()):
+        if budget <= 0:
+            break
+        if it.get("society") != soc["id"] or it.get("date") or it.get("file_checked") or it.get("access") == "members":
+            continue
+        cands = [a["url"] for a in it.get("attachments", [])]
+        if it.get("url") and it.get("url") not in cands and re.search(r"(\.pdf|\.hwp|download|down\.php|filedown)", it["url"], re.I):
+            cands.insert(0, it["url"])
+        if not cands:
+            continue
+        budget -= 1
+        it["file_checked"] = today()
+        got = file_date(fetcher, cands[0], verify=soc.get("verify_ssl", True))
+        if got:
+            it["date"], it["date_precision"], it["date_source"] = got[0], got[1], f"file-{got[2]}"
+            n += 1
+    return n
 
 
 def run(society_ids: list[str] | None = None, mode: str = "incremental", max_pages: int | None = None,
@@ -197,6 +223,10 @@ def run(society_ids: list[str] | None = None, mode: str = "incremental", max_pag
                 except Exception as e:  # 한 게시판 오류가 전체를 멈추지 않게
                     log.exception("게시판 오류 %s", b["url"])
                     rec["boards"].append({"url": b["url"], "error": f"{type(e).__name__}: {e}"})
+            try:
+                rec["file_dates"] = fill_file_dates(fetcher, soc, store)
+            except Exception:
+                log.exception("파일 날짜 추정 오류 %s", soc["id"])
         except Exception as e:
             log.exception("학회 오류 %s", soc["id"])
             rec["error"] = f"{type(e).__name__}: {e}"

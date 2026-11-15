@@ -62,6 +62,7 @@ def load_manual(societies: dict[str, dict]) -> tuple[list[dict], list[str]]:
                 "attachments": files,
                 "link_resolved": True,
                 "manual": True,
+                "backfill": added is None,
             }
         )
     return items, errors

@@ -68,6 +68,8 @@ class Store:
         doc = load_json(self.path, {"items": []})
         self.items: dict[str, dict] = {}
         for it in doc.get("items", []):
+            # backfill 표시가 생기기 전(2026-11-15 이전 수집분)은 모두 초기 수집
+            it.setdefault("backfill", True)
             self._absorb(it)
         self.new_ids: set[str] = set()
         self._lock = threading.Lock()

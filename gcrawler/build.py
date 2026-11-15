@@ -10,8 +10,9 @@ from xml.sax.saxutils import escape
 
 from collections import Counter
 
+from .filters import is_guideline
 from .manual import load_manual
-from .parse import year_from_title
+from .parse import GENERIC_LINK, year_from_title
 from .store import DATA, ROOT, load_json, load_societies, load_taxonomy, save_json
 
 SITE_SRC = ROOT / "site"
@@ -32,7 +33,7 @@ def fix_dates(items: list[dict]) -> list[dict]:
     totals: Counter = Counter()
     for it in items:
         totals[it.get("society")] += 1
-        if it.get("date_precision") == "day":
+        if it.get("date_precision") == "day" and it.get("date"):
             by_soc.setdefault(it.get("society"), Counter())[it["date"]] += 1
     bulk = {
         (soc, d)
@@ -64,6 +65,9 @@ def merge_items(items: list[dict], socs: dict[str, dict]) -> list[dict]:
     for it in items:
         if it.get("access") == "members":
             continue
+        # 예전 규칙으로 들어온 항목도 현재 규칙으로 다시 거른다
+        if not it.get("manual") and (not is_guideline(it.get("title", ""), dedicated=True) or GENERIC_LINK.match(it.get("title", ""))):
+            continue
         soc = socs.get(it.get("society"))
         if soc is None or (not soc.get("enabled", True) and not it.get("manual")):
             continue
@@ -86,6 +90,7 @@ def merge_items(items: list[dict], socs: dict[str, dict]) -> list[dict]:
                 "date_source": it.get("date_source"),
                 "posted": it.get("posted"),
                 "first_seen": it.get("first_seen"),
+                "backfill": bool(it.get("backfill", True)),
                 "lang": it.get("lang"),
                 "tags": list(it.get("tags", [])),
                 "access": it.get("access"),
@@ -100,6 +105,7 @@ def merge_items(items: list[dict], socs: dict[str, dict]) -> list[dict]:
             g.update(date=it.get("date"), date_precision=it.get("date_precision"), date_source=it.get("date_source"))
         if (it.get("first_seen") or "9999") < (g.get("first_seen") or "9999"):
             g["first_seen"] = it["first_seen"]
+        g["backfill"] = g["backfill"] and bool(it.get("backfill", True))
         g["tags"] = sorted(set(g["tags"]) | set(it.get("tags", [])))
     out = list(groups.values())
     for g in out:
@@ -112,7 +118,7 @@ def merge_items(items: list[dict], socs: dict[str, dict]) -> list[dict]:
 
 
 def write_feed(items: list[dict], socs: dict[str, dict], base_url: str, path: Path) -> None:
-    latest = sorted(items, key=lambda g: g.get("first_seen") or "", reverse=True)[:60]
+    latest = sorted((g for g in items if not g.get("backfill")), key=lambda g: g.get("first_seen") or "", reverse=True)[:60]
     parts = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<rss version="2.0"><channel>',

@@ -352,7 +352,7 @@ def extract_rows(html: str, base_url: str, cfg: dict | None = None) -> list[Row]
 
 
 GENERIC_LINK = re.compile(
-    r"^\s*(\[?\s*(전문|간략본|요약본|요약|국문|영문|한글|원문|본문|첨부|첨부\s*파일|파일|pdf|hwp|ppt|자료)?\s*"
+    r"^\s*(\[?\s*(전문|간략본|요약본|요약|국문|영문|한글|원문|본문|첨부|첨부\s*파일|파일|pdf|hwp|ppt|자료|자세히|상세|더|원문\s*링크|doi)?\s*"
     r"(보기|다운로드|다운|download|열기|바로\s*가기|view|link|click|icon|아이콘)?\s*\]?\s*)+$",
     re.I,
 )

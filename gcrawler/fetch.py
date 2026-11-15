@@ -110,13 +110,13 @@ class Fetcher:
                 wait = self.delay - (now - last)
             time.sleep(wait)
 
-    def _raw_get(self, url: str, verify: bool, stream: bool = False) -> requests.Response:
+    def _raw_get(self, url: str, verify: bool, stream: bool = False, headers: dict | None = None) -> requests.Response:
         host = urlparse(url).netloc
         if host in self.insecure_hosts:
             verify = False
         self._wait(host)
         try:
-            return self.session.get(url, timeout=self.timeout, verify=verify, stream=stream, allow_redirects=True)
+            return self.session.get(url, timeout=self.timeout, verify=verify, stream=stream, allow_redirects=True, headers=headers)
         except requests.exceptions.SSLError:
             if not verify:
                 raise
@@ -125,7 +125,7 @@ class Fetcher:
             urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
             self.insecure_hosts.add(host)
             self._wait(host)
-            return self.session.get(url, timeout=self.timeout, verify=False, stream=stream, allow_redirects=True)
+            return self.session.get(url, timeout=self.timeout, verify=False, stream=stream, allow_redirects=True, headers=headers)
 
     def allowed(self, url: str) -> bool:
         if not self.respect_robots:
@@ -147,14 +147,14 @@ class Fetcher:
         return True if rp is None else rp.can_fetch(self.user_agent, url)
 
     # ── 공개 API ─────────────────────────────────
-    def get(self, url: str, verify: bool = True, stream: bool = False) -> requests.Response | None:
+    def get(self, url: str, verify: bool = True, stream: bool = False, headers: dict | None = None) -> requests.Response | None:
         if not self.allowed(url):
             log.info("robots.txt 차단: %s", url)
             return None
         last_exc = None
         for attempt in range(self.retries + 1):
             try:
-                r = self._raw_get(url, verify=verify, stream=stream)
+                r = self._raw_get(url, verify=verify, stream=stream, headers=headers) if headers else self._raw_get(url, verify=verify, stream=stream)
                 if r.status_code >= 500 and attempt < self.retries:
                     time.sleep(2 * (attempt + 1))
                     continue

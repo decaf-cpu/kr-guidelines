@@ -15,7 +15,7 @@ EVENT = re.compile(
     r"(학술\s*대회|연수\s*강좌|심포지(엄|움)|워크\s*숍|워크샵|세미나|설명회|공청회|"
     r"사전\s*등록|등록\s*안내|초록\s*(접수|모집)|모집|채용|선거|총회|이사회|회비|부고|"
     r"개최\s*안내|일정\s*안내|설문|투표|후원|광고|교육\s*과정|강의|웨비나|webinar|"
-    r"symposium|congress|workshop|meeting|구입|판매|구매|주문)",
+    r"symposium|congress|workshop|meeting|구입|판매|구매|주문|개발\s*규정|개발\s*매뉴얼|위원회\s*규정|양식)",
     re.I,
 )
 
