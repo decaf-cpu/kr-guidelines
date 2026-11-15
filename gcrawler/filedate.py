@@ -118,7 +118,8 @@ def file_date(fetcher: Fetcher, url: str, verify: bool = True, referer: str | No
     if last_mod:
         try:
             d = parsedate_to_datetime(last_mod).date()
-            if _ok(d.year, d.month, d.day):
+            # 요청할 때마다 파일을 새로 만드는 다운로드 주소는 수정일이 '오늘'로 나오므로 버린다
+            if _ok(d.year, d.month, d.day) and (dt.date.today() - d).days > 3:
                 return d.isoformat(), "day", "lastmod"
         except (TypeError, ValueError):
             pass

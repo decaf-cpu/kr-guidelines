@@ -45,6 +45,12 @@ def fix_dates(items: list[dict]) -> list[dict]:
     out = []
     for it in items:
         it = dict(it)
+        if it.get("date_source") == "file-lastmod" and it.get("date") and it.get("file_checked"):
+            try:
+                if (dt.date.fromisoformat(it["file_checked"]) - dt.date.fromisoformat(it["date"])).days <= 3:
+                    it.update(date=None, date_precision=None, date_source=None)
+            except ValueError:
+                pass
         d, prec = it.get("date"), it.get("date_precision")
         ty = year_from_title(it.get("title", ""))
         if d and prec == "day" and (it.get("society"), d) in bulk:
@@ -57,8 +63,11 @@ def fix_dates(items: list[dict]) -> list[dict]:
             else:
                 it["date_source"] = "bulk"
         elif d and ty and abs(int(d[:4]) - int(ty[0][:4])) >= 2:
-            it["posted"] = d
+            if int(d[:4]) > int(ty[0][:4]):
+                it["posted"] = d  # 옛 지침을 나중에 올린 경우만 게시일 표시 (지침보다 이른 게시일은 잘못된 날짜)
             it.update(date=ty[0], date_precision=ty[1], date_source="title")
+        if it.get("posted") and it.get("date") and it["posted"][:4] < it["date"][:4]:
+            it.pop("posted")  # 지침 연도보다 이른 게시일은 사이트 이전 등으로 생긴 잘못된 날짜
         out.append(it)
     return out
 

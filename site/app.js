@@ -31,10 +31,11 @@
     }
     return "";
   };
-  // 발행 시점이 최근 n개월 이내인지 (연·월 단위 날짜는 그 기간의 마지막 날 기준)
+  // 발행 시점이 최근 n개월 이내인지. 월 단위는 그 달 마지막 날 기준,
+  // 연도만 아는 항목은 1월인지 12월인지 알 수 없어 제외
   const withinMonths = (it, n) => {
     const d = it.date;
-    if (!d) return false;
+    if (!d || d.length === 4) return false;
     const [y, m, dd] = d.split("-").map(Number);
     const end = dd ? new Date(y, m - 1, dd) : m ? new Date(y, m, 0) : new Date(y, 11, 31);
     const cutoff = new Date();
