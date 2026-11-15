@@ -168,13 +168,25 @@ def crawl_board(fetcher: Fetcher, soc: dict, board: dict, store: Store, mode: st
     return result
 
 
-def fill_file_dates(fetcher: Fetcher, soc: dict, store: Store, budget: int = 40) -> int:
-    """목록·상세·제목 어디에도 날짜가 없는 항목은 첨부 파일에서 날짜를 추정."""
+FILE_CHECK_VERSION = 2
+
+
+def fill_file_dates(fetcher: Fetcher, soc: dict, store: Store, budget: int = 60) -> int:
+    """날짜가 없거나 일괄 등록일(사이트 이전 등으로 한꺼번에 찍힌 날짜)뿐인 항목은 첨부 파일에서 날짜를 추정."""
+    from collections import Counter
+
+    mine = [it for it in store.items.values() if it.get("society") == soc["id"]]
+    days = Counter(it["date"] for it in mine if it.get("date_precision") == "day" and it.get("date"))
+    bulk = {d for d, c in days.items() if c >= 5 and c >= 0.25 * len(mine)}
     n = 0
-    for it in list(store.items.values()):
+    for it in mine:
         if budget <= 0:
             break
-        if it.get("society") != soc["id"] or it.get("date") or it.get("file_checked") or it.get("access") == "members":
+        undated = not it.get("date")
+        in_bulk = it.get("date") in bulk and not year_from_title(it.get("title", ""))
+        if not (undated or in_bulk) or it.get("access") == "members":
+            continue
+        if it.get("file_checked_v") == FILE_CHECK_VERSION:
             continue
         cands = [a["url"] for a in it.get("attachments", [])]
         if it.get("url") and it.get("url") not in cands and re.search(r"(\.pdf|\.hwp|download|down\.php|filedown)", it["url"], re.I):
@@ -183,9 +195,13 @@ def fill_file_dates(fetcher: Fetcher, soc: dict, store: Store, budget: int = 40)
             continue
         budget -= 1
         it["file_checked"] = today()
+        it["file_checked_v"] = FILE_CHECK_VERSION
         got = file_date(fetcher, cands[0], verify=soc.get("verify_ssl", True))
         if got:
-            it["date"], it["date_precision"], it["date_source"] = got[0], got[1], f"file-{got[2]}"
+            if undated:
+                it["date"], it["date_precision"], it["date_source"] = got[0], got[1], f"file-{got[2]}"
+            else:
+                it["file_date"] = [got[0], got[1], f"file-{got[2]}"]  # 일괄 등록일 대신 쓸 날짜
             n += 1
     return n
 

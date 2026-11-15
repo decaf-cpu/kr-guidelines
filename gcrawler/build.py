@@ -48,8 +48,11 @@ def fix_dates(items: list[dict]) -> list[dict]:
         ty = year_from_title(it.get("title", ""))
         if d and prec == "day" and (it.get("society"), d) in bulk:
             it["posted"] = d
+            fd = it.get("file_date")
             if ty:
                 it.update(date=ty[0], date_precision="year", date_source="title")
+            elif fd and fd[0] != d:
+                it.update(date=fd[0], date_precision=fd[1], date_source=fd[2])
             else:
                 it["date_source"] = "bulk"
         elif d and ty and abs(int(d[:4]) - int(ty[0])) >= 2:

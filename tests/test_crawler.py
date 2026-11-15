@@ -322,3 +322,24 @@ def test_backfill_then_new(tmp_data):
     doc = json.loads((tmp_data / "guidelines.json").read_text(encoding="utf-8"))
     fresh = [it for it in doc["items"] if not it["backfill"]]
     assert len(fresh) == 4  # 이후 새로 올라온 글만 NEW 대상
+
+
+def test_filedate_without_range_support():
+    from gcrawler.filedate import file_date
+    pdf = b"%PDF-1.4\n" + b"x" * 700000 + b"\n/Info << /CreationDate (D:20190305120000) >>\n%%EOF"
+
+    class F(Fetcher):
+        def __init__(self):
+            super().__init__(delay=0, respect_robots=False, retries=0)
+
+        def _raw_get(self, url, verify, stream=False, headers=None):
+            r = requests.Response()
+            r.url, r.status_code, r._content, r._content_consumed = url, 200, pdf, True
+            r.headers["content-type"] = "application/octet-stream"
+            return r
+
+    assert file_date(F(), "https://x.or.kr/download.php?num=1") == ("2019-03-05", "day", "pdf")
+
+
+def test_admin_titles_excluded():
+    assert not is_guideline("개발 규정 부록 다운로드", dedicated=True)

@@ -19,6 +19,7 @@ _PDF_DATE = [
     re.compile(rb"xmp:CreateDate=\"((?:19|20)\d{2})-(\d{2})-(\d{2})"),
 ]
 CHUNK = 262144
+FULL_LIMIT = 8 * 1024 * 1024  # Range를 무시하는 서버: 작성일을 찾을 때까지 최대 8MB
 
 
 def _ok(y: int, m: int = 1, d: int = 1) -> bool:
@@ -61,11 +62,12 @@ def _filename(r, url: str) -> str:
     cd = r.headers.get("content-disposition", "") if r is not None else ""
     m = re.search(r"filename\*?=(?:UTF-8'')?\"?([^\";]+)", cd, re.I)
     name = m.group(1) if m else url.rsplit("/", 1)[-1]
-    try:
-        name = unquote(name)
-        name = name.encode("latin-1").decode("utf-8")
-    except (UnicodeDecodeError, UnicodeEncodeError):
-        pass
+    name = unquote(name)
+    for enc in ("utf-8", "cp949"):
+        try:
+            return name.encode("latin-1").decode(enc)
+        except (UnicodeDecodeError, UnicodeEncodeError):
+            continue
     return name
 
 
@@ -83,7 +85,23 @@ def file_date(fetcher: Fetcher, url: str, verify: bool = True) -> tuple[str, str
     name = _filename(r, url)
     last_mod = r.headers.get("last-modified")
     ranged = r.status_code == 206
-    tail = _read(r, CHUNK)
+    if ranged:
+        tail = _read(r, CHUNK)
+    else:
+        # Range를 무시하고 파일 전체를 보내는 서버: 작성일이 나올 때까지 이어서 읽는다
+        tail, got_early = b"", None
+        try:
+            for chunk in r.iter_content(262144):
+                tail += chunk
+                if b"%PDF" not in tail[:1024]:
+                    break
+                got_early = _from_pdf_bytes(tail[-(len(chunk) + 4096):]) or got_early
+                if got_early or len(tail) >= FULL_LIMIT:
+                    break
+        finally:
+            r.close()
+        if got_early:
+            return got_early[0], got_early[1], "pdf"
     is_pdf = "pdf" in ctype or name.lower().endswith(".pdf") or b"%PDF" in tail[:1024] or b"/Type" in tail
     if is_pdf:
         got = _from_pdf_bytes(tail)

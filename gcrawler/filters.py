@@ -31,9 +31,12 @@ KOREAN_ORG = re.compile(r"(대한|한국|korea|국내|KSC|KASL|KDA|KSN|KATRD|KSI
 HANGUL = re.compile(r"[가-힣]")
 
 
+ADMIN = re.compile(r"(개발\s*규정|개발\s*매뉴얼|위원회\s*규정|규정\s*및\s*양식|신청서|서식)")
+
+
 def is_guideline(title: str, dedicated: bool = False) -> bool:
     t = title or ""
-    if len(t.strip()) < 4:
+    if len(t.strip()) < 4 or ADMIN.search(t):
         return False
     if EVENT.search(t) and not PUBLISH.search(t):
         return False
@@ -51,7 +54,7 @@ def tags_for(title: str) -> list[str]:
         tags.append("개정")
     if re.search(r"(요약|summary|synopsis|pocket|포켓)", t, re.I):
         tags.append("요약본")
-    if re.search(r"(환자|일반인|국민|patient)", t, re.I):
+    if re.search(r"(환자용|일반인|국민|for\s+patients|patient\s+version|환자\s*안내)", t, re.I):
         tags.append("환자용")
     if re.search(r"(합의|consensus|전문가\s*의견|expert\s*opinion)", t, re.I):
         tags.append("합의문")

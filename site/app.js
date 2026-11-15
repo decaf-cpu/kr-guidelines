@@ -23,8 +23,7 @@
     if (!it.date) return it.sources.every((s) => s.manual) ? "" : "수집일";
     if (it.date_source === "bulk") return "일괄 등록일";
     if ((it.date_source || "").startsWith("file")) {
-      const k = { "file-pdf": "PDF 작성일", "file-filename": "파일명 연도", "file-lastmod": "파일 등록일" }[it.date_source] || "파일 날짜";
-      return it.date_precision === "day" ? k : `${k}`;
+      return { "file-pdf": "PDF 작성일", "file-filename": "파일명 연도", "file-lastmod": "파일 등록일" }[it.date_source] || "파일 날짜";
     }
     if (it.date_precision === "year") {
       const base = it.date_source === "title" ? "제목 연도" : "연도";
