@@ -321,6 +321,8 @@
     - url: https://www.ksat.or.kr/medical/sub01.html
       name: KSAT 진료지침
       dedicated: true
+  enabled: false
+  note: 웹 방화벽이 자동 접속을 차단함 (진료지침 페이지 medical/sub01.html)
 
 # ───────────── 류마티스 ─────────────
 - id: kcr
