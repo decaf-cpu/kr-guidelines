@@ -4,13 +4,14 @@ from __future__ import annotations
 import datetime as dt
 import logging
 import re
+from urllib.parse import urlparse
 from urllib.parse import unquote
 from concurrent.futures import ThreadPoolExecutor
 
 from . import adapters
 from .access import check_detail, page_requires_login
 from .discover import discover
-from .filedate import file_date
+from .filedate import file_date, file_value, text_year, unreliable_file_days
 from .fetch import Fetcher
 from .filters import KOREAN_ORG, is_guideline, lang_of, tags_for
 from .parse import (
@@ -175,6 +176,8 @@ def fill_file_dates(fetcher: Fetcher, soc: dict, store: Store, budget: int = 60)
     """날짜가 없거나 일괄 등록일(사이트 이전 등으로 한꺼번에 찍힌 날짜)뿐인 항목은 첨부 파일에서 날짜를 추정."""
     from collections import Counter
 
+    if soc.get("fetch_files") is False:
+        return 0
     mine = [it for it in store.items.values() if it.get("society") == soc["id"]]
     days = Counter(it["date"] for it in mine if it.get("date_precision") == "day" and it.get("date"))
     bulk = {d for d, c in days.items() if c >= 5 and c >= 0.25 * len(mine)}
@@ -205,6 +208,34 @@ def fill_file_dates(fetcher: Fetcher, soc: dict, store: Store, budget: int = 60)
                 it["date"], it["date_precision"], it["date_source"] = got[0], got[1], f"file-{got[2]}"
             else:
                 it["file_date"] = [got[0], got[1], f"file-{got[2]}"]  # 일괄 등록일 대신 쓸 날짜
+            n += 1
+    return n + fill_text_years(fetcher, soc, store, mine)
+
+
+TEXT_CHECK_VERSION = 1
+
+
+def fill_text_years(fetcher: Fetcher, soc: dict, store: Store, mine: list[dict], budget: int = 40) -> int:
+    """파일 날짜가 다른 지침과 겹쳐 믿을 수 없는 항목만, PDF를 한 번 내려받아 본문의 학술지 발행연도를 읽는다."""
+    bad = unreliable_file_days(mine)
+    n = 0
+    for it in mine:
+        if budget <= 0:
+            break
+        if it.get("text_checked_v") or (it.get("society"), file_value(it)) not in bad:
+            continue
+        cands = [a["url"] for a in it.get("attachments", []) if (a.get("kind") or "pdf") == "pdf"]
+        if it.get("url") and it["url"] not in cands and re.search(r"(\.pdf|download|down\.php|filedown)", it["url"], re.I):
+            cands.insert(0, it["url"])
+        if not cands or urlparse(cands[0]).netloc in fetcher.blocked_hosts:
+            continue  # 방화벽에 막힌 사이트에는 더 요청하지 않는다 (다음 실행에 다시 시도)
+        budget -= 1
+        y = text_year(fetcher, cands[0], verify=soc.get("verify_ssl", True), referer=it.get("board"))
+        if urlparse(cands[0]).netloc in fetcher.blocked_hosts:
+            continue
+        it["text_checked_v"] = TEXT_CHECK_VERSION  # 같은 파일을 반복해 내려받지 않음
+        if y:
+            it["text_year"] = y
             n += 1
     return n
 

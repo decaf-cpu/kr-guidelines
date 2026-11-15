@@ -10,6 +10,7 @@ from xml.sax.saxutils import escape
 
 from collections import Counter
 
+from .filedate import file_value, unreliable_file_days
 from .filters import is_guideline
 from .manual import load_manual
 from .parse import GENERIC_LINK, year_from_title
@@ -42,9 +43,8 @@ def fix_dates(items: list[dict]) -> list[dict]:
         for d, n in c.items()
         if n >= 5 and n >= 0.25 * totals[soc]
     }
-    # 파일에서 얻은 날짜가 한 학회에서 2건 이상 똑같으면 문서 날짜가 아니라 양식·재저장 날짜일 가능성이 높다
-    file_days = Counter((it.get("society"), it.get("date")) for it in items if (it.get("date_source") or "").startswith("file"))
-    bad_file = {k for k, n in file_days.items() if n >= 2}
+    # 서로 다른 지침이 같은 파일 날짜를 가지면 문서 날짜가 아니라 양식·재저장 날짜 → 버리고 PDF 본문의 발행연도를 쓴다
+    bad_file = unreliable_file_days(items)
     out = []
     for it in items:
         it = dict(it)
@@ -54,8 +54,13 @@ def fix_dates(items: list[dict]) -> list[dict]:
                     it.update(date=None, date_precision=None, date_source=None)
             except ValueError:
                 pass
-        if (it.get("date_source") or "").startswith("file") and (it.get("society"), it.get("date")) in bad_file:
-            it.update(date=None, date_precision=None, date_source=None)
+        file_bad = (it.get("society"), file_value(it)) in bad_file
+        if file_bad:
+            it.pop("file_date", None)
+            if (it.get("date_source") or "").startswith("file"):
+                it.update(date=None, date_precision=None, date_source=None)
+        if not it.get("date") and it.get("text_year"):
+            it.update(date=it["text_year"], date_precision="year", date_source="file-text")
         d, prec = it.get("date"), it.get("date_precision")
         ty = year_from_title(it.get("title", ""))
         if d and prec == "day" and (it.get("society"), d) in bulk:
@@ -63,6 +68,8 @@ def fix_dates(items: list[dict]) -> list[dict]:
             fd = it.get("file_date")
             if ty:
                 it.update(date=ty[0], date_precision=ty[1], date_source="title")
+            elif it.get("text_year"):
+                it.update(date=it["text_year"], date_precision="year", date_source="file-text")
             elif fd and fd[0] != d:
                 it.update(date=fd[0], date_precision=fd[1], date_source=fd[2])
             else:
@@ -77,8 +84,29 @@ def fix_dates(items: list[dict]) -> list[dict]:
     return out
 
 
-def merge_items(items: list[dict], socs: dict[str, dict]) -> list[dict]:
-    items = fix_dates(items)
+def load_overrides() -> list[dict]:
+    import yaml
+
+    p = ROOT / "config" / "overrides.yaml"
+    return (yaml.safe_load(p.read_text(encoding="utf-8")) or []) if p.exists() else []
+
+
+def apply_overrides(items: list[dict], overrides: list[dict]) -> list[dict]:
+    """문헌으로 확인한 발행연도(config/overrides.yaml)를 덮어쓴다."""
+    out = []
+    for it in items:
+        for o in overrides:
+            if o.get("society") == it.get("society") and str(o.get("title", "")) in (it.get("title") or ""):
+                d = str(o["date"])
+                it = dict(it, date=d, date_precision={4: "year", 7: "month"}.get(len(d), "day"), date_source="lookup", date_ref=o.get("source"))
+                it.pop("posted", None)
+                break
+        out.append(it)
+    return out
+
+
+def merge_items(items: list[dict], socs: dict[str, dict], overrides: list[dict] | None = None) -> list[dict]:
+    items = apply_overrides(fix_dates(items), overrides or [])
     groups: dict[str, dict] = {}
     for it in items:
         if it.get("access") == "members":
@@ -113,6 +141,7 @@ def merge_items(items: list[dict], socs: dict[str, dict]) -> list[dict]:
                 "date": it.get("date"),
                 "date_precision": it.get("date_precision"),
                 "date_source": it.get("date_source"),
+                "date_ref": it.get("date_ref"),
                 "posted": it.get("posted"),
                 "first_seen": it.get("first_seen"),
                 "backfill": bool(it.get("backfill", True)),
@@ -135,9 +164,10 @@ def merge_items(items: list[dict], socs: dict[str, dict]) -> list[dict]:
     out = list(groups.values())
     for g in out:
         ss = [socs[s["society"]] for s in g["sources"]]
+        ss = list({s["id"]: s for s in ss}.values())
         g["groups"] = sorted({s["group"] for s in ss})
         g["divisions"] = sorted({s["division"] for s in ss})
-        g["societies"] = [s["id"] for s in ss]
+        g["societies"] = list(dict.fromkeys(s["id"] for s in ss))
     out.sort(key=lambda g: ((g.get("date") or g.get("first_seen") or ""), g["title"]), reverse=True)
     return out
 
@@ -178,7 +208,7 @@ def build(base_url: str = "./") -> dict:
     manual, manual_errors = load_manual(socs)
     for m in manual:
         m["first_seen"] = m["first_seen"] or (doc.get("updated") or "")[:10] or None
-    items = merge_items(doc.get("items", []) + manual, socs)
+    items = merge_items(doc.get("items", []) + manual, socs, load_overrides())
     hidden = sum(1 for it in doc.get("items", []) if it.get("access") == "members")
 
     if OUT.exists():

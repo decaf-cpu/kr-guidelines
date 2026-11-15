@@ -312,6 +312,7 @@
   group: 내과계
   specialty: 내과
   division: 감염
+  fetch_files: false  # 파일을 반복해 받으면 방화벽이 접속을 막음 → 첨부 파일은 내려받지 않음
   boards:
     - url: https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do
       name: 감염 질환별 가이드라인

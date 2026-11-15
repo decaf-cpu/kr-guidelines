@@ -22,8 +22,9 @@
   const dateNote = (it) => {
     if (!it.date) return it.sources.every((s) => s.manual) ? "" : "수집일";
     if (it.date_source === "bulk") return "일괄 등록일";
+    if (it.date_source === "lookup") return "문헌 확인";
     if ((it.date_source || "").startsWith("file")) {
-      return { "file-pdf": "PDF 작성일", "file-filename": "파일명 연도", "file-lastmod": "파일 등록일" }[it.date_source] || "파일 날짜";
+      return { "file-text": "PDF 본문 발행연도", "file-pdf": "PDF 작성일", "file-filename": "파일명 연도", "file-lastmod": "파일 등록일" }[it.date_source] || "파일 날짜";
     }
     if (it.date_precision === "year") {
       const base = it.date_source === "title" ? "제목 연도" : "연도";
@@ -129,7 +130,7 @@
     const divs = it.divisions.map((d) => `<span class="tag div">${esc(d)}</span>`).join("");
     const note = dateNote(it);
     return `<div class="item">
-      <div class="date">${esc(fmtDate(it))}${note ? `<span class="src">${esc(note)}</span>` : ""}</div>
+      <div class="date">${esc(fmtDate(it))}${note ? `<span class="src"${it.date_ref ? ` title="${esc(it.date_ref)}"` : ""}>${esc(note)}</span>` : ""}</div>
       <div>
         ${isNew ? '<span class="badge-new">NEW</span>' : ""}<a class="title" href="${esc(main.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>
         <div class="meta">${socs}${divs}${tags}${files}</div>

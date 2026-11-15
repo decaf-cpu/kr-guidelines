@@ -1,0 +1,26 @@
+# 게시판·파일 어디에도 믿을 만한 날짜가 없어 문헌으로 발행연도를 확인한 항목.
+# society + title(제목에 포함된 문구)로 찾아 date를 덮어쓴다. source에 근거를 남긴다.
+- society: ksid
+  title: Guidelines for Infection Control and Burnout Prevention
+  date: "2023"
+  source: Infect Chemother 2023;55(1):150-165 https://pubmed.ncbi.nlm.nih.gov/37021430/
+- society: ksid
+  title: Diagnosis of Pneumocystis jirovecii Pneumonia in Non-HI
+  date: "2025"
+  source: Infect Chemother 2025;57(1):45-62 https://pubmed.ncbi.nlm.nih.gov/39918228/
+- society: ksid
+  title: COVID-19 환자에서의 수술 지침
+  date: "2020"
+  source: Infect Chemother 2020;52(3):453-459 https://pubmed.ncbi.nlm.nih.gov/32869560/
+- society: ksid
+  title: Autoimmune Inflammatory Rheumatic Diseases 환자에서 COVID-1
+  date: "2021"
+  source: J Korean Med Sci 2021;36(12):e95 https://pubmed.ncbi.nlm.nih.gov/33783147/
+- society: ksid
+  title: 진료지침 예비 권고안
+  date: "2022"
+  source: Infect Chemother 2022;54(3):566-597 https://pubmed.ncbi.nlm.nih.gov/36196612/
+- society: ksid
+  title: 가임기 여성 및 임신부 지카바이러스 감염 진료 가이드라인
+  date: "2016"
+  source: 질병관리본부·대한산부인과학회 공동 배포 (2016년 2월), 대한산부인과학회 소식지 2016년 3월호

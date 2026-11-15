@@ -397,3 +397,34 @@ def test_firewall_block_stops_host():
     assert f.get("https://www.ksid.or.kr/a") is None
     assert f.get("https://www.ksid.or.kr/b") is None
     assert f.calls == 1  # 차단 뒤에는 더 요청하지 않음
+
+
+def test_shared_file_date_across_different_guidelines_is_dropped():
+    from gcrawler.build import fix_dates
+    base = {"society": "s", "date": "2020-02-01", "date_precision": "day", "date_source": "detail"}
+    items = [dict(base, id=str(i), title=f"지침 {chr(65 + i)}", file_date=["2025-12-01", "day", "file-pdf"]) for i in range(6)]
+    items[0]["text_year"] = "2018"
+    # 같은 지침의 요약본·전체본은 같은 날 만들 수 있다
+    items += [
+        dict(base, id="p1", title="만성기침 진료지침", file_date=["2018-07-09", "day", "file-pdf"]),
+        dict(base, id="p2", title="만성기침 진료지침 요약본", file_date=["2018-07-09", "day", "file-pdf"]),
+    ]
+    out = {it["id"]: it for it in fix_dates(items)}
+    assert out["0"]["date"] == "2018" and out["0"]["date_source"] == "file-text"
+    assert out["1"]["date_source"] == "bulk"
+    assert out["p1"]["date"] == "2018-07-09" and out["p2"]["date"] == "2018-07-09"
+
+
+def test_year_from_pdf_text():
+    from gcrawler.filedate import year_from_pdf_text
+    assert year_from_pdf_text("Allergy Asthma Respir Dis 2018;6:1-10 Copyright © 2017") == "2018"
+    assert year_from_pdf_text("Allergy Asthma Immunol Res. 2020 Nov;12(6):1000") == "2020"
+    assert year_from_pdf_text("Copyright ⓒ 2015 대한천식알레르기학회") == "2015"
+    assert year_from_pdf_text("no year here") is None
+
+
+def test_override_sets_lookup_date():
+    from gcrawler.build import apply_overrides
+    items = [{"society": "s", "title": "Guidelines for X in Korea", "date": None}]
+    out = apply_overrides(items, [{"society": "s", "title": "Guidelines for X", "date": "2023", "source": "PMID 1"}])
+    assert out[0]["date"] == "2023" and out[0]["date_precision"] == "year" and out[0]["date_source"] == "lookup"
