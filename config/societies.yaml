@@ -109,11 +109,10 @@
   group: 내과계
   specialty: 내과
   division: 소화기
-  boards:
-    - url: https://www.hpylori.or.kr/content/education/guide.php
-      name: 가이드라인
-      dedicated: true
-  note: 가이드라인 목록을 스크립트로 불러와 맞춤 파서 필요, 진료지침레터는 회원 전용
+  boards: []
+  enabled: false
+  manual: true          # 자동 수집 대신 config/manual.yaml에 손으로 등록
+  note: "'가이드라인' 메뉴는 국내외 지침 외부 링크 모음(제목 없음)이라 학회 자체 지침만 수동 등록, 진료지침레터는 회원 전용"
 - id: ksnm
   name: 대한소화기기능성질환·운동학회
   short: 소화기기능성질환·운동학회

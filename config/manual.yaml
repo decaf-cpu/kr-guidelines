@@ -7,7 +7,7 @@
 #   kges  대한소화기내시경학회      kcr   대한류마티스학회
 #   ksso  대한비만학회              ksat  대한항균요법학회
 #   kscvi 대한심혈관중재학회         kspid 대한소아감염학회
-#   kses  대한자궁내막증학회
+#   kses  대한자궁내막증학회         kchugr 대한상부위장관·헬리코박터학회
 #
 # 항목 형식
 #   - society: kcr                       # 학회 id (필수)
@@ -219,3 +219,15 @@
   title: "자궁내막증 진료지침서"
   url: http://www.kse2014.or.kr/file/pds2/2024_doc.pdf
   date: "2024"
+
+# ── 대한상부위장관·헬리코박터학회 (kchugr) — 교육공간 > 가이드라인(https://www.hpylori.or.kr/content/education/guide.php) 중 학회 자체 지침 ──
+- society: kchugr
+  title: "위염 임상진료지침"
+  url: https://www.helicojournal.org/journal/view.php?number=838
+  date: "2024-06"   # Korean J Helicobacter Up Gastrointest Res 2024;24(2):143-156 (영문 원본 J Korean Med Sci 2023;38(13):e115)
+  files:
+    - {url: "https://jkms.org/search.php?where=aview&id=10.3346/jkms.2023.38.e115&code=0063JKMS&vmode=FULL", name: "영문 (J Korean Med Sci 2023)"}
+- society: kchugr
+  title: "한국인 헬리코박터 파일로리 감염 치료 근거 기반 임상진료지침 개정안 2020"
+  url: https://doi.org/10.7704/kjhugr.2020.0045
+  date: "2020-12"   # Korean J Helicobacter Up Gastrointest Res 2020;20(4):261-287
