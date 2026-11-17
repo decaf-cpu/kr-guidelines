@@ -33,7 +33,7 @@
   },
   "kasl": {
    "id": "kasl",
-   "run_at": "2026-11-16T07:48:28+09:00",
+   "run_at": "2026-11-17T10:51:49+09:00",
    "boards": [
     {
      "url": "https://www.kasl.org/bbs/?code=guide",
@@ -53,7 +53,7 @@
   },
   "kasid": {
    "id": "kasid",
-   "run_at": "2026-11-16T07:48:28+09:00",
+   "run_at": "2026-11-17T10:51:49+09:00",
    "boards": [
     {
      "url": "https://www.kasid.org/academic/education/guide/01",
@@ -105,16 +105,16 @@
   },
   "ksc": {
    "id": "ksc",
-   "run_at": "2026-11-16T07:58:11+09:00",
+   "run_at": "2026-11-17T10:51:49+09:00",
    "boards": [
     {
      "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=X",
      "name": "진료지침 (국내)",
      "source": "config",
-     "pages": 3,
+     "pages": 2,
      "rows": 22,
      "matched": 22,
-     "new": 15,
+     "new": 0,
      "members_only": 0,
      "error": null
     }
@@ -137,7 +137,7 @@
   },
   "klcs": {
    "id": "klcs",
-   "run_at": "2026-11-16T07:48:28+09:00",
+   "run_at": "2026-11-17T10:51:49+09:00",
    "boards": [
     {
      "url": "https://www.livercancer.or.kr/html/?pmode=guidelines",
@@ -157,7 +157,7 @@
   },
   "khrs": {
    "id": "khrs",
-   "run_at": "2026-11-16T07:48:31+09:00",
+   "run_at": "2026-11-17T10:51:53+09:00",
    "boards": [
     {
      "url": "https://www.k-hrs.org/expert/guide/atrial",
@@ -240,7 +240,7 @@
   },
   "ksola": {
    "id": "ksola",
-   "run_at": "2026-11-16T07:48:32+09:00",
+   "run_at": "2026-11-17T10:51:55+09:00",
    "boards": [
     {
      "url": "https://www.lipid.or.kr/reference/guideline.php",
@@ -260,7 +260,7 @@
   },
   "kta": {
    "id": "kta",
-   "run_at": "2026-11-16T07:48:34+09:00",
+   "run_at": "2026-11-17T10:51:56+09:00",
    "boards": [
     {
      "url": "https://www.thyroid.kr/board/list.html?code=c_guide",
@@ -280,7 +280,7 @@
   },
   "kda": {
    "id": "kda",
-   "run_at": "2026-11-16T07:48:34+09:00",
+   "run_at": "2026-11-17T10:51:56+09:00",
    "boards": [
     {
      "url": "https://www.diabetes.or.kr/bbs/?code=guide",
@@ -379,7 +379,7 @@
   },
   "ksn": {
    "id": "ksn",
-   "run_at": "2026-11-16T07:48:35+09:00",
+   "run_at": "2026-11-17T10:51:56+09:00",
    "boards": [
     {
      "url": "https://ksn.or.kr/bbs/?code=guideline_k",
@@ -399,7 +399,7 @@
   },
   "kattd": {
    "id": "kattd",
-   "run_at": "2026-11-16T07:48:35+09:00",
+   "run_at": "2026-11-17T10:51:57+09:00",
    "boards": [
     {
      "url": "https://new.lungkorea.org/board/guide",
@@ -419,7 +419,7 @@
   },
   "ksh": {
    "id": "ksh",
-   "run_at": "2026-11-16T07:48:31+09:00",
+   "run_at": "2026-11-17T10:51:52+09:00",
    "boards": [
     {
      "url": "https://www.koreanhypertension.org/reference/guide",
@@ -444,16 +444,16 @@
   },
   "ksid": {
    "id": "ksid",
-   "run_at": "2026-11-16T07:58:11+09:00",
+   "run_at": "2026-11-17T10:51:58+09:00",
    "boards": [
     {
      "url": "https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do",
      "name": "감염 질환별 가이드라인",
      "source": "config",
-     "pages": 5,
-     "rows": 51,
-     "matched": 51,
-     "new": 7,
+     "pages": 2,
+     "rows": 29,
+     "matched": 29,
+     "new": 0,
      "members_only": 0,
      "error": null
     }
@@ -519,7 +519,7 @@
   },
   "ksmo": {
    "id": "ksmo",
-   "run_at": "2026-11-16T07:48:39+09:00",
+   "run_at": "2026-11-17T10:52:00+09:00",
    "boards": [
     {
      "url": "https://www.ksmo.or.kr/Pages/Publication/publication03.aspx",
@@ -539,7 +539,7 @@
   },
   "kpba": {
    "id": "kpba",
-   "run_at": "2026-11-16T07:48:28+09:00",
+   "run_at": "2026-11-17T10:51:49+09:00",
    "boards": [
     {
      "url": "https://www.kpba.kr/html/?pmode=guideline",
@@ -564,7 +564,7 @@
   },
   "ksg": {
    "id": "ksg",
-   "run_at": "2026-11-16T07:48:28+09:00",
+   "run_at": "2026-11-17T10:51:49+09:00",
    "boards": [
     {
      "url": "https://gastrokorea.org/bbs2/index.php?code=guide2",
@@ -595,7 +595,7 @@
   },
   "kaaaci": {
    "id": "kaaaci",
-   "run_at": "2026-11-16T07:48:37+09:00",
+   "run_at": "2026-11-17T10:51:58+09:00",
    "boards": [
     {
      "url": "https://www.allergy.or.kr/board/treatment?gubun=1",
@@ -721,7 +721,7 @@
   },
   "kapard": {
    "id": "kapard",
-   "run_at": "2026-11-16T07:48:41+09:00",
+   "run_at": "2026-11-17T10:52:01+09:00",
    "boards": [
     {
      "url": "https://www.kapard.or.kr/community/guide.php",
@@ -998,6 +998,6 @@
    "ok": false
   }
  },
- "updated": "2026-11-16T07:59:58+09:00",
- "requests": 60
+ "updated": "2026-11-17T10:52:09+09:00",
+ "requests": 52
 }
