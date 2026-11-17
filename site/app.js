@@ -6,6 +6,9 @@
 
   const state = { q: "", group: "", divs: new Set(), society: "", period: "", view: "timeline", sort: "date", newOnly: false, koOnly: false, shown: PAGE };
   let DATA = [], SOCS = {}, TAX = {}, STATUS = {}, UPDATED = null;
+  const REPO = "decaf-cpu/kr-guidelines";
+  const RECHECK_LABEL = "수동등록-재확인";
+  const RECHECK_URL = `https://github.com/${REPO}/issues/new?template=manual-recheck.yml`;
 
   // ── 날짜 ─────────────────────────────
   const effDate = (it) => it.date || it.first_seen || "";
@@ -223,9 +226,51 @@
           <td>${badge}${err}${boards}</td><td class="num">${count[s.id] || 0}</td><td class="st-board">${off ? "" : esc((r?.run_at || "").replace("T", " ").slice(0, 16))}</td></tr>`;
       })
       .join("");
-    $("#status").innerHTML = `<table class="st"><thead><tr><th>분과</th><th>학회</th><th>상태 · 게시판</th><th>건수</th><th>마지막 수집</th></tr></thead><tbody>${rows}</tbody></table>
+    $("#status").innerHTML = renderManual() + `<h2>학회별 수집 현황</h2><table class="st"><thead><tr><th>분과</th><th>학회</th><th>상태 · 게시판</th><th>건수</th><th>마지막 수집</th></tr></thead><tbody>${rows}</tbody></table>
       <p class="note">회원 전용으로 판정되어 제외된 게시물: ${(STATUS.hidden_members_only || 0).toLocaleString()}건 · 학회 배지의 ✎ 표시는 자동 수집이 막혀 손으로 등록한 항목입니다.</p>
       ${(STATUS.manual_errors || []).length ? `<p class="note st-err">수동 등록 오류: ${STATUS.manual_errors.map(esc).join(" / ")}</p>` : ""}`;
+    recheckLoaded = false;
+    loadRecheckRequests();
+  }
+
+  // ── 수동 등록 재확인 요청 ─────────────
+  // 자동 수집이 막힌 학회는 관리자가 페이지를 직접 열어 확인한다. 방문자는 GitHub 이슈로 재확인을 요청한다.
+  function renderManual() {
+    const count = {};
+    for (const it of DATA) for (const src of it.sources || []) if (src.manual) count[src.society] = (count[src.society] || 0) + 1;
+    const today = new Date();
+    const rows = Object.values(SOCS)
+      .filter((s) => s.manual)
+      .sort((a, b) => (a.manual_checked || "").localeCompare(b.manual_checked || "") || a.name.localeCompare(b.name, "ko"))
+      .map((s) => {
+        const d = s.manual_checked;
+        const days = d ? Math.floor((today - new Date(d + "T00:00:00+09:00")) / 864e5) : null;
+        const when = d ? `${d.replace(/-/g, ".")}${days > 90 ? ' <span class="st-warn">· 오래됨</span>' : ""}` : '<span class="st-warn">아직 등록 전</span>';
+        return `<tr><td><a href="${esc(s.board || s.homepage)}" target="_blank" rel="noopener">${esc(s.name)}</a></td><td class="num">${count[s.id] || 0}</td><td class="st-board">${when}</td></tr>`;
+      })
+      .join("");
+    return `<div class="recheck">
+      <h2>수동 등록 학회</h2>
+      <p class="note">아래 학회는 robots.txt·웹 방화벽·해외 접속 차단 때문에 자동으로 모으지 않고, 관리자가 학회 페이지를 직접 열어 확인한 지침만 올립니다.
+        새 지침이 빠진 것 같으면 재확인을 요청해 주세요. 관리자가 확인해 반영합니다 (GitHub 로그인 필요).</p>
+      <table class="st"><thead><tr><th>학회</th><th>건수</th><th>마지막 확인</th></tr></thead><tbody>${rows}</tbody></table>
+      <div class="recheck-act"><a class="btn" href="${RECHECK_URL}" target="_blank" rel="noopener">수동등록 재확인 요청</a><span id="recheck-open" class="st-board"></span></div>
+    </div>`;
+  }
+
+  let recheckLoaded = false;
+  async function loadRecheckRequests() {
+    if (recheckLoaded) return;
+    recheckLoaded = true;
+    const el = $("#recheck-open");
+    try {
+      const r = await fetch(`https://api.github.com/repos/${REPO}/issues?state=open&per_page=5&labels=${encodeURIComponent(RECHECK_LABEL)}`);
+      if (!r.ok) return;
+      const open = (await r.json()).filter((x) => !x.pull_request);
+      if (el && open.length)
+        el.innerHTML = `접수된 요청 ${open.length}건 처리 대기 중: ` +
+          open.map((x) => `<a href="${esc(x.html_url)}" target="_blank" rel="noopener">#${x.number} (${esc(x.created_at.slice(0, 10).replace(/-/g, "."))})</a>`).join(", ");
+    } catch (e) { /* 요청 현황은 보조 정보라 실패해도 무시 */ }
   }
 
   // ── 이벤트 ───────────────────────────
@@ -256,6 +301,11 @@
         if (b.dataset.tab === "status") renderStatus();
       });
     window.addEventListener("hashchange", () => { readHash(); render(); });
+    $("#foot-recheck").addEventListener("click", (e) => {
+      e.preventDefault();
+      document.querySelector('.tabs button[data-tab="status"]').click();
+      $("#status .recheck")?.scrollIntoView({ behavior: "smooth" });
+    });
   }
 
   // ── 시작 ─────────────────────────────

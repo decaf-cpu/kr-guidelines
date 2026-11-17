@@ -1,0 +1,33 @@
+name: 수동등록 재확인 요청
+description: 자동 수집이 막혀 손으로 등록한 학회의 진료지침 목록을 다시 확인해 달라고 요청합니다.
+title: "수동등록 재확인 요청"
+labels: ["수동등록-재확인"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        자동 수집이 막힌 학회(robots.txt·웹 방화벽·해외 접속 차단)는 관리자가 학회 페이지를 직접 열어 확인한 뒤 등록합니다.
+        요청이 접수되면 관리자가 확인하고, 반영되면 이 이슈를 닫습니다.
+  - type: dropdown
+    id: societies
+    attributes:
+      label: 확인할 학회
+      description: 여러 곳을 고를 수 있습니다. 모르면 '전체'를 고르세요.
+      multiple: true
+      options:
+        - 전체
+        - 대한소화기내시경학회
+        - 대한상부위장관·헬리코박터학회
+        - 대한심혈관중재학회
+        - 대한비만학회
+        - 대한항균요법학회
+        - 대한류마티스학회
+        - 대한소아감염학회
+        - 대한자궁내막증학회
+    validations:
+      required: true
+  - type: textarea
+    id: memo
+    attributes:
+      label: 메모 (선택)
+      description: 새로 올라온 지침 제목이나 주소를 알고 있으면 적어 주세요.

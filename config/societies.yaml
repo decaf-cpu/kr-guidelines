@@ -25,6 +25,7 @@
 #   enabled    : false면 자동 수집 제외
 #   manual     : true면 config/manual.yaml에 손으로 등록한 지침을 사이트에 표시
 #                (robots.txt·방화벽 등으로 자동 수집이 막힌 학회용)
+#   manual_checked : 수동 등록 학회의 지침 목록을 마지막으로 확인한 날 (사이트 '재확인 요청'에 표시)
 #   note       : 메모
 #
 # 대한의학회 회원학회 여부는 KAMS 회원학회 목록과 대조해 두는 것을 권장합니다.
@@ -112,6 +113,7 @@
   boards: []
   enabled: false
   manual: true          # 자동 수집 대신 config/manual.yaml에 손으로 등록
+  manual_checked: "2026-11-16"   # 수동 등록 목록을 마지막으로 확인한 날
   note: "'가이드라인' 메뉴는 국내외 지침 외부 링크 모음(제목 없음)이라 학회 자체 지침만 수동 등록, 진료지침레터는 회원 전용"
 - id: ksnm
   name: 대한소화기기능성질환·운동학회
@@ -333,6 +335,7 @@
       dedicated: true
   enabled: false
   manual: true          # 자동 수집 대신 config/manual.yaml에 손으로 등록
+  manual_checked: "2026-11-16"   # 수동 등록 목록을 마지막으로 확인한 날
   note: 웹 방화벽이 자동 접속을 차단함 (진료지침 페이지 medical/sub01.html)
 
 # ───────────── 류마티스 ─────────────
@@ -413,6 +416,7 @@
   division: 소아청소년
   enabled: false
   manual: true          # 자동 수집 대신 config/manual.yaml에 손으로 등록
+  manual_checked: "2026-11-16"   # 수동 등록 목록을 마지막으로 확인한 날
   note: 자동 접속이 막혀(robots.txt·웹 방화벽) '지침' 게시판의 국내 분류 지침을 수동 등록
   boards: []
 - id: ksneo
@@ -586,6 +590,7 @@
   division: 산부인과
   enabled: false
   manual: true          # 자동 수집 대신 config/manual.yaml에 손으로 등록
+  manual_checked: "2026-11-16"   # 수동 등록 목록을 마지막으로 확인한 날
   note: "해외(수집 서버)에서 접속되지 않아 자궁내막증 진료지침서(kse2014.or.kr)를 수동 등록"
   boards: []
 - id: kspm
