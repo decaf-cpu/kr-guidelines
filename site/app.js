@@ -216,14 +216,14 @@
         if (s.enabled === false) badge = s.manual ? '<span class="st-ok">수동 등록</span>' : '<span class="st-warn">제외</span>';
         else if (r?.ok) badge = '<span class="st-ok">정상</span>';
         else if (r) badge = '<span class="st-err">확인 필요</span>';
-        if (s.enabled === false && !s.manual) badge = '<span class="st-warn">제외</span>';
+        if (s.enabled === false && !s.manual) badge = s.excluded ? `<span class="st-warn">수집 불가</span><div class="st-board">${esc(s.excluded)}</div>` : '<span class="st-warn">제외</span>';
         const off = s.enabled === false;
         const boards = (off ? [] : r?.boards || [])
           .map((b) => `<div class="st-board">${b.source === "discovered" ? "자동탐색 · " : ""}<a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.name || b.url)}</a>${b.error ? " — " + esc(b.error) : ` — ${b.matched ?? 0}건`}</div>`)
           .join("");
         const err = !off && r?.error ? `<div class="st-board">${esc(r.error)}</div>` : "";
         return `<tr><td>${esc(s.division)}</td><td><a href="${esc(s.board || s.homepage)}" target="_blank" rel="noopener">${esc(s.name)}</a>${s.note ? `<div class="st-board">${esc(s.note)}</div>` : ""}</td>
-          <td>${badge}${err}${boards}</td><td class="num">${count[s.id] || 0}</td><td class="st-board">${off ? "" : esc((r?.run_at || "").replace("T", " ").slice(0, 16))}</td></tr>`;
+          <td>${badge}${err}${boards}</td><td class="num">${s.excluded ? "—" : count[s.id] || 0}</td><td class="st-board">${off ? "" : esc((r?.run_at || "").replace("T", " ").slice(0, 16))}</td></tr>`;
       })
       .join("");
     $("#status").innerHTML = renderManual() + `<h2>학회별 수집 현황</h2><table class="st"><thead><tr><th>분과</th><th>학회</th><th>상태 · 게시판</th><th>건수</th><th>마지막 수집</th></tr></thead><tbody>${rows}</tbody></table>

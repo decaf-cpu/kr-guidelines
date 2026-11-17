@@ -26,6 +26,7 @@
 #   manual     : true면 config/manual.yaml에 손으로 등록한 지침을 사이트에 표시
 #                (robots.txt·방화벽 등으로 자동 수집이 막힌 학회용)
 #   manual_checked : 수동 등록 학회의 지침 목록을 마지막으로 확인한 날 (사이트 '재확인 요청'에 표시)
+#   excluded   : 수집도 수동 등록도 할 수 없는 이유 (예: 회원 전용, 공개 지침 없음) — 사이트에 건수 대신 '수집 불가'로 표시
 #   note       : 메모
 #
 # 대한의학회 회원학회 여부는 KAMS 회원학회 목록과 대조해 두는 것을 권장합니다.
@@ -90,7 +91,8 @@
   division: 소화기
   boards: []
   enabled: false
-  note: robots.txt가 게시판(/bbs/) 수집을 막고 있어 제외. 학회 공개 진료지침이 없음 (사용자 확인)
+  excluded: 공개 지침 없음
+  note: 학회 공개 진료지침이 없음 (2026-11-17 사용자 확인). 게시판(/bbs/)은 robots.txt가 수집을 막음
 - id: kasid
   name: 대한장연구학회
   short: 장연구학회
@@ -182,7 +184,8 @@
   division: 순환기
   boards: []
   enabled: false
-  note: 자동 접속 차단 장치(쿠키 확인 페이지)가 있어 수집하지 않음. 진료지침은 로그인 필요 (사용자 확인)
+  excluded: 회원 전용
+  note: 진료지침이 로그인해야 열림 (2026-11-17 사용자 확인). 자동 접속 차단 장치(쿠키 확인 페이지)도 있음
 - id: ksola
   name: 한국지질·동맥경화학회
   short: 지질·동맥경화학회
@@ -347,7 +350,8 @@
   division: 류마티스
   boards: []
   enabled: false
-  note: robots.txt가 사이트 전체 수집을 막고 있어 제외. 진료지침은 로그인 필요 (사용자 확인)
+  excluded: 회원 전용
+  note: 진료지침이 로그인해야 열림 (2026-11-17 사용자 확인). robots.txt도 사이트 전체 수집을 막음
 
 # ───────────── 혈액·종양 ─────────────
 - id: ksh-hema
