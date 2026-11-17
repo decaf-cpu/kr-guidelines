@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-17T10:52:09+09:00",
- "count": 380,
+ "updated": "2026-11-17T18:19:16+09:00",
+ "count": 384,
  "items": [
   {
    "id": "192455f016c5eadf",
@@ -9921,6 +9921,137 @@
     }
    ],
    "backfill": true
+  },
+  {
+   "id": "04ff063c6210949e",
+   "first_seen": "2026-11-17",
+   "access": "public",
+   "society": "ksso",
+   "board": "https://www.kosso.or.kr/popup/obesity_cpg.html",
+   "board_name": "비만 진료지침",
+   "title": "비만진료지침 2024 개정 9판",
+   "url": "https://www.kosso.or.kr/inc/download_obesity.php?fno=1&num=11",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "개정"
+   ],
+   "attachments": [
+    {
+     "name": "전문",
+     "url": "https://www.kosso.or.kr/inc/download_obesity.php?fno=1&num=11",
+     "kind": "pdf"
+    }
+   ],
+   "date": "2024",
+   "date_precision": "year",
+   "date_source": "list",
+   "last_seen": "2026-11-17",
+   "backfill": true,
+   "checked": "2026-11-17",
+   "detail_v": 2
+  },
+  {
+   "id": "a3d8733a19ea8c42",
+   "first_seen": "2026-11-17",
+   "access": "public",
+   "society": "ksso",
+   "board": "https://www.kosso.or.kr/popup/obesity_cpg.html",
+   "board_name": "비만 진료지침",
+   "title": "비만진료지침 2022 개정 8판",
+   "url": "https://www.kosso.or.kr/inc/download_obesity.php?fno=1&num=9",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "개정"
+   ],
+   "attachments": [
+    {
+     "name": "JOMES",
+     "url": "https://www.kosso.or.kr/inc/download_obesity.php?fno=1&num=9",
+     "kind": "pdf"
+    },
+    {
+     "name": "요약본",
+     "url": "https://www.kosso.or.kr/inc/download_obesity.php?fno=1&num=10",
+     "kind": "pdf"
+    }
+   ],
+   "date": "2022",
+   "date_precision": "year",
+   "date_source": "list",
+   "last_seen": "2026-11-17",
+   "backfill": true,
+   "checked": "2026-11-17",
+   "detail_v": 2
+  },
+  {
+   "id": "b495feb3f97d10c4",
+   "first_seen": "2026-11-17",
+   "access": "public",
+   "society": "ksso",
+   "board": "https://www.kosso.or.kr/popup/obesity_cpg.html",
+   "board_name": "비만 진료지침",
+   "title": "비만진료지침 2018 개정 6판",
+   "url": "https://www.kosso.or.kr/inc/download_obesity.php?fno=1&num=5",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "개정"
+   ],
+   "attachments": [
+    {
+     "name": "JOMES",
+     "url": "https://www.kosso.or.kr/inc/download_obesity.php?fno=1&num=5",
+     "kind": "pdf"
+    },
+    {
+     "name": "요약본",
+     "url": "https://www.kosso.or.kr/inc/download_obesity.php?fno=1&num=6",
+     "kind": "pdf"
+    }
+   ],
+   "date": "2018",
+   "date_precision": "year",
+   "date_source": "list",
+   "last_seen": "2026-11-17",
+   "backfill": true,
+   "checked": "2026-11-17",
+   "detail_v": 2
+  },
+  {
+   "id": "b5c91a8b12e7a0e4",
+   "first_seen": "2026-11-17",
+   "access": "public",
+   "society": "ksso",
+   "board": "https://www.kosso.or.kr/popup/obesity_cpg.html",
+   "board_name": "비만 진료지침",
+   "title": "비만진료지침 2020 개정 7판",
+   "url": "https://www.kosso.or.kr/inc/download_obesity.php?fno=1&num=7",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "개정"
+   ],
+   "attachments": [
+    {
+     "name": "JOMES",
+     "url": "https://www.kosso.or.kr/inc/download_obesity.php?fno=1&num=7",
+     "kind": "pdf"
+    },
+    {
+     "name": "요약본",
+     "url": "https://www.kosso.or.kr/inc/download_obesity.php?fno=1&num=8",
+     "kind": "pdf"
+    }
+   ],
+   "date": "2020",
+   "date_precision": "year",
+   "date_source": "list",
+   "last_seen": "2026-11-17",
+   "backfill": true,
+   "checked": "2026-11-17",
+   "detail_v": 2
   },
   {
    "id": "1d42ca5b4cfd7206",

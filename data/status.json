@@ -367,15 +367,23 @@
   },
   "ksso": {
    "id": "ksso",
-   "run_at": "2026-11-15T19:14:56+09:00",
-   "boards": [],
-   "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)",
-   "discovery": {
-    "checked": "2026-11-15",
-    "ok": false,
-    "error": "메뉴에서 진료지침 링크를 찾지 못함 (수동 설정 필요)"
-   },
-   "ok": false
+   "run_at": "2026-11-17T18:19:07+09:00",
+   "boards": [
+    {
+     "url": "https://www.kosso.or.kr/popup/obesity_cpg.html",
+     "name": "비만 진료지침",
+     "source": "config",
+     "pages": 1,
+     "rows": 4,
+     "matched": 4,
+     "new": 4,
+     "members_only": 0,
+     "error": null
+    }
+   ],
+   "error": null,
+   "file_dates": 0,
+   "ok": true
   },
   "ksn": {
    "id": "ksn",
@@ -998,6 +1006,6 @@
    "ok": false
   }
  },
- "updated": "2026-11-17T10:52:09+09:00",
- "requests": 52
+ "updated": "2026-11-17T18:19:16+09:00",
+ "requests": 6
 }
