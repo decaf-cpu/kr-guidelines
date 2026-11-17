@@ -102,3 +102,4 @@ table.st td.num { text-align: right; font-variant-numeric: tabular-nums; }
 .btn { display: inline-block; background: var(--ink); color: var(--bg); text-decoration: none; font-weight: 600; font-size: 14px; padding: 8px 14px; border-radius: 8px; }
 .btn:hover { opacity: .88; }
 .recheck .st th { white-space: nowrap; }
+.nowrap { white-space: nowrap; }
