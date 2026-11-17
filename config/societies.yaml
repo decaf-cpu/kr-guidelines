@@ -274,7 +274,8 @@
   boards: []
   enabled: false
   manual: true          # 자동 수집 대신 config/manual.yaml에 손으로 등록
-  note: robots.txt가 게시판 수집을 막고 있어 제외
+  manual_checked: "2026-11-17"   # 수동 등록 목록을 마지막으로 확인한 날
+  note: robots.txt가 게시판 수집을 막고 있어 '비만 진료지침' 창(popup/obesity_cpg.html)의 지침을 수동 등록
 # ───────────── 신장 ─────────────
 - id: ksn
   name: 대한신장학회

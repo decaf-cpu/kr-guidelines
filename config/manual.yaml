@@ -231,3 +231,33 @@
   title: "한국인 헬리코박터 파일로리 감염 치료 근거 기반 임상진료지침 개정안 2020"
   url: https://doi.org/10.7704/kjhugr.2020.0045
   date: "2020-12"   # Korean J Helicobacter Up Gastrointest Res 2020;20(4):261-287
+
+# ── 대한비만학회 (ksso) — 전문가 홈페이지 '비만 진료지침' 창 https://www.kosso.or.kr/popup/obesity_cpg.html, 2026-11-17 확인 ──
+#    같은 판의 JOMES 게재본·요약본은 한 항목에 파일로 함께 적음. '학회간행물 & 자료실'은 로그인 필요라 제외
+- society: ksso
+  title: "비만진료지침 2024 (개정 9판)"
+  url: https://www.kosso.or.kr/popup/obesity_cpg.html
+  date: "2024"
+  files:
+    - {url: "https://www.kosso.or.kr/inc/download_obesity.php?fno=1&num=11", name: "전문"}
+- society: ksso
+  title: "비만진료지침 2022 (개정 8판)"
+  url: https://www.kosso.or.kr/popup/obesity_cpg.html
+  date: "2022"
+  files:
+    - {url: "https://www.kosso.or.kr/inc/download_obesity.php?fno=1&num=9", name: "JOMES 게재본"}
+    - {url: "https://www.kosso.or.kr/inc/download_obesity.php?fno=1&num=10", name: "요약본"}
+- society: ksso
+  title: "비만진료지침 2020 (개정 7판)"
+  url: https://www.kosso.or.kr/popup/obesity_cpg.html
+  date: "2020"
+  files:
+    - {url: "https://www.kosso.or.kr/inc/download_obesity.php?fno=1&num=7", name: "JOMES 게재본"}
+    - {url: "https://www.kosso.or.kr/inc/download_obesity.php?fno=1&num=8", name: "요약본"}
+- society: ksso
+  title: "비만진료지침 2018 (개정 6판)"
+  url: https://www.kosso.or.kr/popup/obesity_cpg.html
+  date: "2018"
+  files:
+    - {url: "https://www.kosso.or.kr/inc/download_obesity.php?fno=1&num=5", name: "JOMES 게재본"}
+    - {url: "https://www.kosso.or.kr/inc/download_obesity.php?fno=1&num=6", name: "요약본"}
