@@ -245,7 +245,7 @@
       .map((s) => {
         const d = s.manual_checked;
         const days = d ? Math.floor((today - new Date(d + "T00:00:00+09:00")) / 864e5) : null;
-        const when = d ? `${d.replace(/-/g, ".")}${days > 90 ? ' <span class="st-warn">· 오래됨</span>' : ""}` : '<span class="st-warn">아직 등록 전</span>';
+        const when = d ? `${d.replace(/-/g, ".")}${s.manual_none ? ` · ${esc(s.manual_none)}` : days > 90 ? ' <span class="st-warn">· 오래됨</span>' : ""}` : '<span class="st-warn">아직 등록 전</span>';
         return `<tr><td><a href="${esc(s.board || s.homepage)}" target="_blank" rel="noopener">${esc(s.name)}</a></td><td class="num">${count[s.id] || 0}</td><td class="st-board">${when}</td></tr>`;
       })
       .join("");

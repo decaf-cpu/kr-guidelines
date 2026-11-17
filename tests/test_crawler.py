@@ -543,3 +543,24 @@ def test_published_within_year():
     assert p({"date": "2026-01-07"}, t) and p({"date": "2026"}, t) and p({"date": "2025-12"}, t)
     assert not p({"date": "2025"}, t)  # 2025년 1월일 수도 있음
     assert not p({"date": "2025-10-30"}, t) and not p({"date": None}, t)
+
+
+def test_ksso_cpg_popup_groups_editions():
+    from gcrawler.adapters import load
+    html = (Path(__file__).parent / "fixtures" / "ksso_cpg.html").read_text(encoding="utf-8")
+    rows = load("ksso").parse_list(html, "https://www.kosso.or.kr/popup/obesity_cpg.html", {})
+    assert [(r.title, r.date) for r in rows] == [("비만진료지침 2024 개정 9판", "2024"), ("비만진료지침 2022 개정 8판", "2022")]
+    assert rows[0].url == "https://www.kosso.or.kr/inc/download_obesity.php?fno=1&num=11"
+    assert [a["name"] for a in rows[1].attachments] == ["JOMES", "요약본"]
+    assert rows[1].url.endswith("num=9")
+
+
+def test_detail_check_skips_file_download():
+    from gcrawler.access import is_file_response
+    r = requests.Response()
+    r.headers["content-type"] = "application/octet-stream"
+    assert is_file_response(r)
+    r.headers["content-type"] = "text/html; charset=utf-8"
+    assert not is_file_response(r)
+    r.headers["content-disposition"] = 'attachment; filename="a.pdf"'
+    assert is_file_response(r)

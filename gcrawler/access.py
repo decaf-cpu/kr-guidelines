@@ -51,17 +51,30 @@ def page_requires_login(html: str) -> bool:
     return _html_says_login(head)
 
 
+def is_file_response(r) -> bool:
+    """HTML이 아니라 파일을 돌려주는 응답 (application/* 또는 Content-Disposition: attachment)."""
+    ctype = r.headers.get("content-type", "").lower()
+    return "attachment" in r.headers.get("content-disposition", "").lower() or (
+        ctype.startswith("application/") and "xhtml" not in ctype and "json" not in ctype)
+
+
 def check_detail(fetcher: Fetcher, url: str, verify: bool = True, check_file: bool = True) -> dict:
     """상세 페이지를 열어 공개 여부·날짜·첨부를 확인."""
-    r = fetcher.get(url, verify=verify)
+    r = fetcher.get(url, verify=verify, stream=True)
     if r is None:
         return {"access": "unknown"}
     if r.status_code in (401, 403):
+        r.close()
         return {"access": "members"}
     if r.status_code >= 400:
+        r.close()
         return {"access": "unknown", "http": r.status_code}
     if LOGIN_URL.search(r.url) and not LOGIN_URL.search(url):
+        r.close()
         return {"access": "members"}
+    if is_file_response(r):
+        r.close()  # 글 주소가 곧 파일(다운로드 주소)인 경우: 받지 않고 공개로 판단
+        return {"access": "public", "attachments": []}
     html = decode(r)
     if page_requires_login(html):
         return {"access": "members"}
