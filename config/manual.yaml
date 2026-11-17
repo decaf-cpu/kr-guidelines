@@ -4,10 +4,8 @@
 # 사이트에 함께 표시됩니다 (학회 배지에 ✎ 표시). GitHub 웹에서 이 파일을 바로 고쳐도 됩니다.
 #
 # 대상 학회 (config/societies.yaml에서 manual: true)
-#   kges  대한소화기내시경학회      kcr   대한류마티스학회
-#   ksat  대한항균요법학회
-#   kscvi 대한심혈관중재학회         kspid 대한소아감염학회
-#   kses  대한자궁내막증학회         kchugr 대한상부위장관·헬리코박터학회
+#   kchugr 대한상부위장관·헬리코박터학회   ksat  대한항균요법학회
+#   kspid  대한소아감염학회             kses  대한자궁내막증학회
 #
 # 항목 형식
 #   - society: kcr                       # 학회 id (필수)

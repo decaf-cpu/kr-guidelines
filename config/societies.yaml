@@ -26,7 +26,6 @@
 #   manual     : true면 config/manual.yaml에 손으로 등록한 지침을 사이트에 표시
 #                (robots.txt·방화벽 등으로 자동 수집이 막힌 학회용)
 #   manual_checked : 수동 등록 학회의 지침 목록을 마지막으로 확인한 날 (사이트 '재확인 요청'에 표시)
-#   manual_none    : 등록할 공개 지침이 없는 이유 (예: 회원 전용, 공개 지침 없음)
 #   note       : 메모
 #
 # 대한의학회 회원학회 여부는 KAMS 회원학회 목록과 대조해 두는 것을 권장합니다.
@@ -91,9 +90,6 @@
   division: 소화기
   boards: []
   enabled: false
-  manual: true          # 자동 수집 대신 config/manual.yaml에 손으로 등록
-  manual_checked: "2026-11-17"   # 수동 등록 목록을 마지막으로 확인한 날
-  manual_none: 공개 지침 없음
   note: robots.txt가 게시판(/bbs/) 수집을 막고 있어 제외. 학회 공개 진료지침이 없음 (사용자 확인)
 - id: kasid
   name: 대한장연구학회
@@ -186,9 +182,6 @@
   division: 순환기
   boards: []
   enabled: false
-  manual: true          # 자동 수집 대신 config/manual.yaml에 손으로 등록
-  manual_checked: "2026-11-17"   # 수동 등록 목록을 마지막으로 확인한 날
-  manual_none: 회원 전용
   note: 자동 접속 차단 장치(쿠키 확인 페이지)가 있어 수집하지 않음. 진료지침은 로그인 필요 (사용자 확인)
 - id: ksola
   name: 한국지질·동맥경화학회
@@ -354,9 +347,6 @@
   division: 류마티스
   boards: []
   enabled: false
-  manual: true          # 자동 수집 대신 config/manual.yaml에 손으로 등록
-  manual_checked: "2026-11-17"   # 수동 등록 목록을 마지막으로 확인한 날
-  manual_none: 회원 전용
   note: robots.txt가 사이트 전체 수집을 막고 있어 제외. 진료지침은 로그인 필요 (사용자 확인)
 
 # ───────────── 혈액·종양 ─────────────

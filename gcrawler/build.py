@@ -399,7 +399,7 @@ def build(base_url: str = "./") -> dict:
         {
             "taxonomy": load_taxonomy(),
             "societies": [
-                {**{k: s.get(k) for k in ("id", "name", "short", "homepage", "group", "specialty", "division", "enabled", "note", "manual", "manual_checked", "manual_none")},
+                {**{k: s.get(k) for k in ("id", "name", "short", "homepage", "group", "specialty", "division", "enabled", "note", "manual", "manual_checked")},
                  "board": boards.get(s["id"]) if s.get("enabled", True) or s.get("manual") else s.get("homepage")}
                 for s in socs_list
             ],

@@ -241,15 +241,15 @@
     const today = new Date();
     const rows = Object.values(SOCS)
       .filter((s) => s.manual)
-      // 지침이 등록된 학회 → 아직 등록 전 → 등록할 공개 지침이 없는 학회(회원 전용 등) 순
+      // 지침이 등록된 학회 → 아직 등록 전 순
       .sort((a, b) => {
-        const g = (s) => (s.manual_none ? 2 : count[s.id] ? 0 : 1);
+        const g = (s) => (count[s.id] ? 0 : 1);
         return g(a) - g(b) || a.name.localeCompare(b.name, "ko");
       })
       .map((s) => {
         const d = s.manual_checked;
         const days = d ? Math.floor((today - new Date(d + "T00:00:00+09:00")) / 864e5) : null;
-        const when = d ? `${d.replace(/-/g, ".")}${s.manual_none ? ` <span class="nowrap">· ${esc(s.manual_none)}</span>` : days > 90 ? ' <span class="st-warn">· 오래됨</span>' : ""}` : '<span class="st-warn">아직 등록 전</span>';
+        const when = d ? `${d.replace(/-/g, ".")}${days > 90 ? ' <span class="st-warn">· 오래됨</span>' : ""}` : '<span class="st-warn">아직 등록 전</span>';
         return `<tr><td><a href="${esc(s.board || s.homepage)}" target="_blank" rel="noopener">${esc(s.name)}</a></td><td class="num">${count[s.id] || 0}</td><td class="st-board">${when}</td></tr>`;
       })
       .join("");
