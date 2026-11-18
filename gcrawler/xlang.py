@@ -94,6 +94,7 @@ TERMS: list[tuple[str, str, str]] = [
     ("hemolytic", r"용혈", r"hemolytic"),
     ("vte", r"정맥\s*혈전", r"venous thromboembolism"),
     ("axspa", r"척추\s*관절염|강직\s*척추염", r"spondyloarthritis|ankylosing"),
+    ("rheumatic", r"류마티스|자가\s*면역", r"rheumat|autoimmune"),
     ("gout", r"통풍", r"\bgout\b"),
     ("pneumococcal", r"폐렴\s*구균", r"pneumococc"),
     ("rsv", r"RSV|호흡기\s*세포\s*융합", r"respiratory syncytial|\brsv\b"),

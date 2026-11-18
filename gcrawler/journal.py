@@ -43,7 +43,7 @@ NOISE = re.compile(
     r"(^\s*(corrigendum|erratum|correction|retraction|reply|response|contemporary|current|recent|highlights?|redefining|revisiting)\b|"
     r"review of (the )?(recent|current|international|existing|global)|systematic review|narrative review|\bsurvey\b|questionnaire|"
     r"adherence|awareness|implementation of|agreement (on|with|between)|compliance|appraisal|\bAGREE\b|"
-    r"current status|trends in|comparison|comparative|commentary|perspectives? on|lessons from|key updates|"
+    r"current status|trends in|comparison|comparative|commentary|perspectives? on|lessons from|key updates|quality indicators?|developing|"
     r"differences (from|between)|a focus on|insights|achievement of|effects of|implications of|\bassociations? (with|between)|\bvs\.?\s|versus)",
     re.I,
 )
@@ -57,7 +57,7 @@ KOREA = re.compile(r"\bkorea", re.I)
 
 
 def issns(journal: dict) -> list[str]:
-    v = journal["issn"]
+    v = journal.get("issn") or []
     return [str(x) for x in (v if isinstance(v, list) else [v])]
 
 
@@ -67,8 +67,15 @@ def _issn_q(issn) -> str:
     return f"({q})" if len(vals) > 1 else q
 
 
+def _base_q(journal) -> str:
+    """학회지(ISSN) 또는 학회 이름 검색식(query: 다른 학술지에 실린 학회 지침까지)."""
+    if isinstance(journal, dict):
+        return f"({journal['query']})" if journal.get("query") else _issn_q(journal["issn"])
+    return _issn_q(journal)
+
+
 def search_url(issn, cursor: str = "*", page_size: int = 100) -> str:
-    q = f"{_issn_q(issn)} AND {TITLE_TERMS}"
+    q = f"{_base_q(issn)} AND {TITLE_TERMS}"
     return API + "?" + urlencode(
         {"query": q, "format": "json", "resultType": "lite", "pageSize": page_size,
          "sort": "P_PDATE_D desc", "cursorMark": cursor},
@@ -77,7 +84,7 @@ def search_url(issn, cursor: str = "*", page_size: int = 100) -> str:
 
 
 def browse_url(issn) -> str:
-    return "https://europepmc.org/search?query=" + quote(f"{_issn_q(issn)} AND {TITLE_TERMS}")
+    return "https://europepmc.org/search?query=" + quote(f"{_base_q(issn)} AND {TITLE_TERMS}")
 
 
 def clean_title(t: str) -> str:
@@ -141,7 +148,7 @@ def to_fields(r: dict, soc: dict, journal: dict, board: str) -> dict:
     return {
         "society": soc["id"],
         "board": board,
-        "board_name": journal.get("name") or f"ISSN {issns(journal)[0]}",
+        "board_name": journal.get("name") or f"ISSN {(issns(journal) or ['?'])[0]}",
         "title": title,
         "url": url,
         "link_resolved": True,
@@ -159,9 +166,9 @@ def to_fields(r: dict, soc: dict, journal: dict, board: str) -> dict:
 
 def crawl_journal(fetcher, soc: dict, journal: dict, store: Store, mode: str = "incremental",
                   societies: list[dict] | None = None) -> dict:
-    issn = issns(journal)
-    board = journal.get("url") or browse_url(issn)
-    result = {"url": board, "name": journal.get("name") or f"ISSN {issn[0]}", "source": "journal",
+    q = journal if journal.get("query") else issns(journal)
+    board = journal.get("url") or browse_url(q)
+    result = {"url": board, "name": journal.get("name") or f"ISSN {issns(journal)[0]}", "source": "journal",
               "pages": 0, "rows": 0, "matched": 0, "new": 0, "members_only": 0, "error": None, "routed": {}}
     names = {s["id"]: ([s["name_en"]] if isinstance(s.get("name_en"), str) else list(s.get("name_en") or []))
              for s in (societies or [soc])}
@@ -171,7 +178,7 @@ def crawl_journal(fetcher, soc: dict, journal: dict, store: Store, mode: str = "
     first_time = not any(it.get("board") == board for it in store.items.values())
     cursor, pages = "*", (10 if mode == "full" else 1)
     for _ in range(pages):
-        r = fetcher.get(search_url(issn, cursor))
+        r = fetcher.get(search_url(q, cursor))
         if r is None or r.status_code >= 400:
             code = getattr(r, "status_code", None)
             result["error"] = f"Europe PMC 접속 실패 (HTTP {code})" if code else "Europe PMC 접속 실패"
@@ -187,9 +194,11 @@ def crawl_journal(fetcher, soc: dict, journal: dict, store: Store, mode: str = "
         for row in rows:
             if not keep(row, korean_only):
                 continue
-            result["matched"] += 1
             sid = owner_society(row, soc["id"], names)
+            if journal.get("query") and sid != soc["id"]:
+                continue  # 학회 이름 검색은 그 학회 지침만 (다른 학회 지침은 그 학회 학회지에서)
             target = by_id.get(sid, soc)
+            result["matched"] += 1
             if target["id"] != soc["id"]:
                 result["routed"][target["id"]] = result["routed"].get(target["id"], 0) + 1
             fields = to_fields(row, target, journal, board)

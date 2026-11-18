@@ -739,3 +739,23 @@ def test_xlang_part_and_year_guard():
     en = {"title": "Korean Thyroid Association Guidelines on the Management of Differentiated Thyroid Cancers, Part II: Follow-up 2024", "societies": ["kta"]}
     assert not xlang.same_guideline(ko, en, _year_of)  # 편 번호가 다르면 다른 지침
     assert xlang.concepts("갑상선분화암의 추적") == {"dtc", "followup"}
+
+
+def test_society_name_query_source(tmp_data):
+    """학회 이름 검색(query): 다른 학술지에 실린 류마티스학회 지침도, 다른 학회 지침은 제외."""
+    from gcrawler import journal
+    from gcrawler.build import merge_items
+
+    q = {"query": 'AUTH:"Korean College of Rheumatology"', "name": "다른 학술지 게재 류마티스 지침"}
+    soc = {"id": "kcr", "name": "대한류마티스학회", "short": "류마티스학회", "homepage": "https://x", "group": "내과계",
+           "specialty": "내과", "division": "류마티스", "enabled": False, "verify_ssl": True, "boards": [],
+           "name_en": "Korean College of Rheumatology", "journals": [q]}
+    ksc = {**soc, "id": "ksc", "name_en": "Korean Society of Cardiology", "journals": []}
+    routes = {route_key(journal.search_url(q)): (200, fx("europepmc_kcr_query.json"))}
+    crawl_mod.run(mode="incremental", fetcher=FakeFetcher(routes), societies=[soc, ksc])
+    items = json.loads((tmp_data / "guidelines.json").read_text(encoding="utf-8"))["items"]
+    assert {i["society"] for i in items} == {"kcr"}  # 폐고혈압(심장학회) 지침은 넘기지 않고 버림
+    titles = {i["title"] for i in items}
+    assert "The Practice Guideline for Vaccinating Korean Patients with Autoimmune Inflammatory Rheumatic Disease" in titles
+    assert not any("Quality Indicators" in t or "Self-care" in t for t in titles)
+    assert len(merge_items(items, {"kcr": soc})) == 7

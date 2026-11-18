@@ -39,8 +39,8 @@ def cmd_check(args) -> int:
     for j in soc.get("journals") or []:
         import json as _json
         from .journal import issns, keep, search_url
-        r = f.get(search_url(issns(j)))
-        print(f"\n== 학회지 {j.get('name') or ''} (ISSN {j['issn']}) — Europe PMC")
+        r = f.get(search_url(j if j.get("query") else issns(j)))
+        print(f"\n== 학회지 {j.get('name') or ''} ({j.get('query') or 'ISSN ' + str(j.get('issn'))}) — Europe PMC")
         if r is None or r.status_code >= 400:
             print(f"   접속 실패 (HTTP {getattr(r, 'status_code', None)})")
             continue
