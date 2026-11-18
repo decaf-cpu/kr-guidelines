@@ -4,6 +4,7 @@ from __future__ import annotations
 import datetime as dt
 import logging
 import re
+import time
 from urllib.parse import urlparse
 from urllib.parse import unquote
 from concurrent.futures import ThreadPoolExecutor
@@ -13,6 +14,7 @@ from .access import check_detail, page_requires_login
 from .discover import discover
 from .filedate import drop_shared_links, file_date, file_value, text_year, unreliable_file_days
 from .fetch import Fetcher
+from .journal import crawl_journal
 from .filters import KOREAN_ORG, is_guideline, lang_of, tags_for
 from .parse import (
     Row,
@@ -29,6 +31,7 @@ log = logging.getLogger(__name__)
 
 PRECISION_RANK = {"day": 3, "month": 2, "year": 1, None: 0}
 REDISCOVER_DAYS = 7
+RETRY_WAIT = 30  # 목록 접속 실패 시 다시 시도하기 전 대기(초)
 
 
 def _better_date(old: tuple | None, new: tuple | None) -> bool:
@@ -291,35 +294,61 @@ def run(society_ids: list[str] | None = None, mode: str = "incremental", max_pag
     def one(soc: dict) -> None:
         log.info("▶ %s (%s)", soc["name"], soc["id"])
         rec = {"id": soc["id"], "run_at": now_iso(), "boards": [], "error": None}
+        board_crawl = soc.get("enabled", True)  # 꺼진 학회도 학회지(journals)는 수집
         try:
-            boards, disc = _boards_for(fetcher, soc, discovered, rediscover)
+            boards, disc = _boards_for(fetcher, soc, discovered, rediscover) if board_crawl else ([], None)
             if disc is not None:
                 rec["discovery"] = {k: disc.get(k) for k in ("checked", "ok", "error")}
-            if not boards:
+            if not boards and board_crawl:
                 rec["error"] = (disc or {}).get("error") or "게시판 없음"
             adapter = adapters.load(soc["id"])
             budget = [detail_per_society]
             for b in boards:
                 try:
-                    rec["boards"].append(crawl_board(fetcher, soc, b, store, mode, max_pages, budget, adapter))
+                    res = crawl_board(fetcher, soc, b, store, mode, max_pages, budget, adapter)
+                    if (res.get("error") or "").startswith("목록 접속 실패"):
+                        # 학회 서버가 잠깐 응답하지 않는 경우가 잦다 (2026-11-18 갑상선·비만·감염학회 동시 실패) → 잠시 뒤 한 번 더
+                        time.sleep(RETRY_WAIT)
+                        res = crawl_board(fetcher, soc, b, store, mode, max_pages, budget, adapter)
+                    rec["boards"].append(res)
                 except Exception as e:  # 한 게시판 오류가 전체를 멈추지 않게
                     log.exception("게시판 오류 %s", b["url"])
                     rec["boards"].append({"url": b["url"], "error": f"{type(e).__name__}: {e}"})
-            try:
-                rec["file_dates"] = fill_file_dates(fetcher, soc, store)
-            except Exception:
-                log.exception("파일 날짜 추정 오류 %s", soc["id"])
+            for j in soc.get("journals") or []:
+                try:
+                    rec["boards"].append(crawl_journal(fetcher, soc, j, store, mode))
+                except Exception as e:
+                    log.exception("학회지 오류 %s", j)
+                    rec["boards"].append({"url": str(j.get("issn")), "name": j.get("name"), "source": "journal",
+                                          "error": f"{type(e).__name__}: {e}"})
+            if board_crawl:
+                try:
+                    rec["file_dates"] = fill_file_dates(fetcher, soc, store)
+                except Exception:
+                    log.exception("파일 날짜 추정 오류 %s", soc["id"])
         except Exception as e:
             log.exception("학회 오류 %s", soc["id"])
             rec["error"] = f"{type(e).__name__}: {e}"
         matched = sum(b.get("matched", 0) for b in rec["boards"])
         rec["ok"] = rec["error"] is None and matched > 0 and not all(b.get("error") for b in rec["boards"])
         if rec["error"] is None and matched == 0 and rec["boards"]:
-            rec["error"] = "게시판은 열렸으나 진료지침 항목 0건 (파서 설정 확인 필요)"
+            if all(b.get("error") for b in rec["boards"]):
+                rec["error"] = "게시판 접속 실패 (일시적일 수 있음, 다음 수집 때 다시 시도)"
+            else:
+                rec["error"] = "게시판은 열렸으나 진료지침 항목 0건 (파서 설정 확인 필요)"
+        if not board_crawl:
+            rec["journal_only"] = True
+        # 마지막으로 정상 수집한 시각: 이번에 일시적으로 실패해도 사이트에서 '확인 필요'로 바로 바꾸지 않는다
+        prev = status["societies"].get(soc["id"]) or {}
+        if rec["ok"]:
+            rec["last_ok"] = rec["run_at"]
+        else:
+            seen = max((it.get("last_seen") or "" for it in store.items.values() if it.get("society") == soc["id"]), default="")
+            rec["last_ok"] = prev.get("last_ok") or (prev.get("run_at") if prev.get("ok") else None) or seen or None
         status["societies"][soc["id"]] = rec
         log.info("  %s → 일치 %d건, 신규 %d건", soc["id"], matched, sum(b.get("new", 0) for b in rec["boards"]))
 
-    targets = [s for s in socs if s.get("enabled", True)]
+    targets = [s for s in socs if s.get("enabled", True) or s.get("journals")]
     # 학회마다 사이트가 다르므로 여러 학회를 동시에 수집 (같은 사이트 간격은 Fetcher가 보장)
     with ThreadPoolExecutor(max_workers=max(1, workers)) as ex:
         list(ex.map(one, targets))

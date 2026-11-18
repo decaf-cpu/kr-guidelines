@@ -37,7 +37,7 @@ data/                   수집 결과
 
 ## 수집 원칙
 
-- 각 사이트의 `robots.txt`를 따르며, 같은 사이트에는 최소 1.5초 간격으로 요청합니다. 자동 접속 차단 장치는 우회하지 않습니다.
+- 각 사이트의 `robots.txt`를 따르며, 같은 사이트에는 최소 1.5초(robots.txt에 Crawl-delay가 있으면 그 값) 간격으로 요청합니다. 자동 접속 차단 장치는 우회하지 않습니다.
 - 상세 페이지는 새 게시물만, 학회당 하루 정해진 횟수 안에서 확인합니다.
 - 진료지침의 저작권은 각 학회에 있습니다. 이 사이트는 원문으로 안내하는 색인이며, 내용은 반드시 원문으로 확인해 주세요.
 - 학회에서 수집 제외를 요청하면 바로 반영합니다. Issue로 알려 주세요.
@@ -59,6 +59,17 @@ data/                   수집 결과
     - url: https://www.example.or.kr/bbs/list.php?code=guide
       name: 진료지침
       dedicated: true         # 진료지침 전용 게시판이면 true
+```
+
+학회 게시판이 회원 전용이거나 막혀 있어도 학회지(open access)에 같은 지침을 싣는 학회는 `journals`에 학회지 ISSN을 적으면
+[Europe PMC](https://europepmc.org/RestfulWebService) 공개 API로 제목에 guideline·recommendation·consensus 등이 들어간 논문을 찾아 올립니다
+(정정문·지침 리뷰·설문 연구·외국 학회 지침 소개는 제외, `gcrawler/journal.py`). 게시판 수집을 끈 학회(`enabled: false`)도 학회지는 수집합니다.
+
+```yaml
+  journals:
+    - issn: 2233-4718                       # 전자판 ISSN
+      name: Journal of Rheumatic Diseases
+      url: https://www.jrd.or.kr            # 학회 배지 링크
 ```
 
 robots.txt나 웹 방화벽 때문에 자동 수집이 막힌 학회(`manual: true`)는 `config/manual.yaml`에 공개 진료지침을 직접 적어 등록합니다.

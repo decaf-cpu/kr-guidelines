@@ -351,7 +351,11 @@
   boards: []
   enabled: false
   excluded: 회원 전용
-  note: 진료지침이 로그인해야 열림 (2026-11-17 사용자 확인). robots.txt도 사이트 전체 수집을 막음
+  note: 진료지침이 로그인해야 열림 (2026-11-17 사용자 확인). robots.txt도 사이트 전체 수집을 막음. 학회지(JRD)에 실린 지침·권고문만 수집
+  journals:   # 학회지 게재 지침 (Europe PMC에서 ISSN으로 검색, gcrawler/journal.py)
+    - issn: 2233-4718
+      name: Journal of Rheumatic Diseases
+      url: https://www.jrd.or.kr
 
 # ───────────── 혈액·종양 ─────────────
 - id: ksh-hema

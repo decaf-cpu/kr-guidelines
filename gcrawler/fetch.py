@@ -76,6 +76,7 @@ class Fetcher:
         self.user_agent = user_agent
         self.retries = retries
         self._last_hit: dict[str, float] = {}
+        self.host_delay: dict[str, float] = {}  # robots.txt의 Crawl-delay (기본 간격보다 길면 그 값)
         self._robots: dict[str, urllib.robotparser.RobotFileParser | None] = {}
         self.insecure_hosts: set[str] = set()
         self.blocked_hosts: set[str] = set()  # 방화벽 차단 페이지를 받은 사이트: 이번 실행 동안 더 요청하지 않음
@@ -104,11 +105,12 @@ class Fetcher:
             with self._lock:
                 last = self._last_hit.get(host)
                 now = time.monotonic()
-                if last is None or now - last >= self.delay:
+                delay = max(self.delay, self.host_delay.get(host, 0))
+                if last is None or now - last >= delay:
                     self._last_hit[host] = now
                     self.request_count += 1
                     return
-                wait = self.delay - (now - last)
+                wait = delay - (now - last)
             time.sleep(wait)
 
     def _raw_get(self, url: str, verify: bool, stream: bool = False, headers: dict | None = None) -> requests.Response:
@@ -140,6 +142,9 @@ class Fetcher:
                 if r.status_code == 200 and "text/html" not in r.headers.get("content-type", ""):
                     rp.parse(decode(r).splitlines())
                     self._robots[base] = rp
+                    cd = rp.crawl_delay(self.user_agent)
+                    if cd:
+                        self.host_delay[p.netloc] = min(float(cd), 30.0)
                 else:
                     self._robots[base] = None  # robots.txt 없음 → 허용
             except requests.RequestException:

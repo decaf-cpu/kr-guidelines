@@ -36,6 +36,20 @@ def cmd_check(args) -> int:
             print(f"   점수 {c['score']}  {c['label']}  {c['url']}")
         boards = [{"url": c["url"], "name": c["label"], "dedicated": True} for c in res.get("candidates", [])]
     adapter = adapters.load(soc["id"])
+    for j in soc.get("journals") or []:
+        import json as _json
+        from .journal import keep, search_url
+        r = f.get(search_url(str(j["issn"])))
+        print(f"\n== 학회지 {j.get('name') or ''} (ISSN {j['issn']}) — Europe PMC")
+        if r is None or r.status_code >= 400:
+            print(f"   접속 실패 (HTTP {getattr(r, 'status_code', None)})")
+            continue
+        rows = (_json.loads(r.content).get("resultList") or {}).get("result") or []
+        print(f"   검색 결과 {len(rows)}건")
+        for row in rows[: args.limit]:
+            print(f"   {'✔' if keep(row) else '·'} {row.get('firstPublicationDate') or row.get('pubYear') or '----------'}  {row.get('title', '')[:70]}")
+    if soc.get("enabled") is False:
+        boards = []  # 꺼진 학회는 학회지만 확인
     for b in boards:
         html, r = f.get_html(b["url"], verify=soc.get("verify_ssl", True))
         print(f"\n== {b.get('name') or ''} {b['url']}")

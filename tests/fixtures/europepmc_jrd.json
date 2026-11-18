@@ -1,0 +1,107 @@
+{
+ "version": "6.9",
+ "hitCount": 7,
+ "nextCursorMark": "AoJ",
+ "resultList": {
+  "result": [
+   {
+    "id": "42812279",
+    "source": "MED",
+    "pmid": "42812279",
+    "pmcid": "PMC13619551",
+    "doi": "10.4078/jrd.2026.0126",
+    "title": "Korean College of Rheumatology treatment recommendations for patients with axial spondyloarthritis: 2026 update.",
+    "journalTitle": "J Rheum Dis",
+    "pubYear": "2026",
+    "pubType": "other; journal article",
+    "isOpenAccess": "Y",
+    "inPMC": "Y",
+    "firstPublicationDate": "2026-10-01"
+   },
+   {
+    "id": "41409813",
+    "source": "MED",
+    "pmid": "41409813",
+    "pmcid": "PMC12706436",
+    "doi": "10.4078/jrd.2025.0077",
+    "title": "Defining early axial spondyloarthritis: insights and applications of the Assessment of Spondyloarthritis International Society international consensus.",
+    "journalTitle": "J Rheum Dis",
+    "pubYear": "2026",
+    "pubType": "review-article; review; journal article",
+    "isOpenAccess": "Y",
+    "inPMC": "Y",
+    "firstPublicationDate": "2025-08-19"
+   },
+   {
+    "id": "38164191",
+    "source": "MED",
+    "pmid": "38164191",
+    "pmcid": "PMC10730801",
+    "doi": "10.4078/jrd.2023.0025c",
+    "title": "Corrigendum: Korean treatment recommendations for patients with axial spondyloarthritis.",
+    "journalTitle": "J Rheum Dis",
+    "pubYear": "2024",
+    "pubType": "published erratum; correction",
+    "isOpenAccess": "Y",
+    "inPMC": "Y",
+    "firstPublicationDate": "2024-01-01"
+   },
+   {
+    "id": "37476677",
+    "source": "MED",
+    "pmid": "37476677",
+    "pmcid": "PMC10351368",
+    "doi": "10.4078/jrd.2023.0029",
+    "title": "Korean guidelines for the management of gout.",
+    "journalTitle": "J Rheum Dis",
+    "pubYear": "2023",
+    "pubType": "review-article; review; journal article",
+    "isOpenAccess": "Y",
+    "inPMC": "Y",
+    "firstPublicationDate": "2023-07-01"
+   },
+   {
+    "id": "37476674",
+    "source": "MED",
+    "pmid": "37476674",
+    "pmcid": "PMC10351367",
+    "doi": "10.4078/jrd.2023.0025",
+    "title": "Korean treatment recommendations for patients with axial spondyloarthritis.",
+    "journalTitle": "J Rheum Dis",
+    "pubYear": "2023",
+    "pubType": "review-article; review; journal article",
+    "isOpenAccess": "Y",
+    "inPMC": "Y",
+    "firstPublicationDate": "2023-07-01"
+   },
+   {
+    "id": "37483479",
+    "source": "MED",
+    "pmid": "37483479",
+    "pmcid": "PMC10324935",
+    "doi": "10.4078/jrd.2022.0002",
+    "title": "Management of antineutrophil cytoplasmic antibody-associated vasculitis: a review of recent guidelines.",
+    "journalTitle": "J Rheum Dis",
+    "pubYear": "2023",
+    "pubType": "review-article; review; journal article",
+    "isOpenAccess": "Y",
+    "inPMC": "Y",
+    "firstPublicationDate": "2023-03-17"
+   },
+   {
+    "id": "37476523",
+    "source": "MED",
+    "pmid": "37476523",
+    "pmcid": "PMC10351355",
+    "doi": "10.4078/jrd.22.0012",
+    "title": "Physicians' Agreement on and Implementation of the 2019 European Alliance of Associations for Rheumatology Vaccination Guideline: An International Survey.",
+    "journalTitle": "J Rheum Dis",
+    "pubYear": "2023",
+    "pubType": "research-article; journal article",
+    "isOpenAccess": "Y",
+    "inPMC": "Y",
+    "firstPublicationDate": "2022-10-31"
+   }
+  ]
+ }
+}

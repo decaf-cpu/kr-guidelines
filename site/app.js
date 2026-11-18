@@ -3,6 +3,7 @@
   const $ = (s) => document.querySelector(s);
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const PAGE = 120;
+  const RECENT_OK_DAYS = 3; // 이 기간 안에 정상 수집된 학회는 한 번의 접속 실패로 "확인 필요"가 되지 않음
 
   const state = { q: "", group: "", divs: new Set(), society: "", period: "", view: "timeline", sort: "date", newOnly: false, koOnly: false, shown: PAGE };
   let DATA = [], SOCS = {}, TAX = {}, STATUS = {}, UPDATED = null;
@@ -136,7 +137,7 @@
     const main = it.sources[0];
     const isNew = isNewItem(it);
     const socs = it.sources
-      .map((s) => `<a class="tag soc" href="${esc(s.board || SOCS[s.society]?.board || s.url)}" target="_blank" rel="noopener" title="${esc(SOCS[s.society]?.name)} 진료지침 게시판">${esc(SOCS[s.society]?.short || s.society)}${s.manual ? " ✎" : ""}</a>`)
+      .map((s) => `<a class="tag soc" href="${esc(s.board || SOCS[s.society]?.board || s.url)}" target="_blank" rel="noopener" title="${esc(SOCS[s.society]?.name)} ${s.journal ? "학회지 " + esc(s.board_name || "") : "진료지침 게시판"}">${esc(SOCS[s.society]?.short || s.society)}${s.manual ? " ✎" : ""}${s.journal ? " · 학회지" : ""}</a>`)
       .join("");
     const files = it.sources.flatMap((s) => s.attachments || []).slice(0, 4)
       .map((f) => `<a class="file" href="${esc(f.url)}" target="_blank" rel="noopener" title="${esc(f.name)}">${esc(f.kind === "file" ? "첨부" : f.kind)}</a>`)
@@ -212,18 +213,24 @@
       .sort((a, b) => rank(gOrder, a.group) - rank(gOrder, b.group) || rank(dOrder, a.division) - rank(dOrder, b.division) || a.name.localeCompare(b.name, "ko"))
       .map((s) => {
         const r = st[s.id];
+        const journalOnly = s.enabled === false && (s.journals || []).length > 0;
+        // 이번 수집만 접속에 실패하고 최근(RECENT_OK_DAYS일 안)에 정상 수집된 학회는 '정상'으로 두고 사유만 적는다
+        const lastOk = r?.last_ok ? new Date(r.last_ok.length === 10 ? r.last_ok + "T00:00:00+09:00" : r.last_ok) : null;
+        const blip = r && !r.ok && lastOk && (Date.now() - lastOk) / 864e5 <= RECENT_OK_DAYS && count[s.id] > 0;
         let badge = '<span class="st-warn">미수집</span>';
         if (s.enabled === false) badge = s.manual ? '<span class="st-ok">수동 등록</span>' : '<span class="st-warn">제외</span>';
         else if (r?.ok) badge = '<span class="st-ok">정상</span>';
+        else if (blip) badge = `<span class="st-ok">정상</span><div class="st-board">이번 수집은 접속 실패 · 마지막 정상 수집 ${esc(r.last_ok.slice(0, 10).replace(/-/g, "."))}</div>`;
         else if (r) badge = '<span class="st-err">확인 필요</span>';
         if (s.enabled === false && !s.manual) badge = s.excluded ? `<span class="st-warn">수집 불가</span><div class="st-board">${esc(s.excluded)}</div>` : '<span class="st-warn">제외</span>';
-        const off = s.enabled === false;
-        const boards = (off ? [] : r?.boards || [])
-          .map((b) => `<div class="st-board">${b.source === "discovered" ? "자동탐색 · " : ""}<a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.name || b.url)}</a>${b.error ? " — " + esc(b.error) : ` — ${b.matched ?? 0}건`}</div>`)
+        if (journalOnly) badge = `<span class="${r?.ok || blip ? "st-ok" : r ? "st-err" : "st-warn"}">학회지만 수집</span><div class="st-board">게시판: ${esc(s.excluded || "제외")}</div>`;
+        const off = s.enabled === false && !journalOnly;
+        const boards = (off ? [] : (r?.boards || []).filter((b) => !(blip && b.error)))
+          .map((b) => `<div class="st-board">${b.source === "discovered" ? "자동탐색 · " : b.source === "journal" ? "학회지 · " : ""}<a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.name || b.url)}</a>${b.error ? " — " + esc(b.error) : ` — ${b.matched ?? 0}건`}</div>`)
           .join("");
-        const err = !off && r?.error ? `<div class="st-board">${esc(r.error)}</div>` : "";
+        const err = !off && !blip && r?.error ? `<div class="st-board">${esc(r.error)}</div>` : "";
         return `<tr><td>${esc(s.division)}</td><td><a href="${esc(s.board || s.homepage)}" target="_blank" rel="noopener">${esc(s.name)}</a>${s.note ? `<div class="st-board">${esc(s.note)}</div>` : ""}</td>
-          <td>${badge}${err}${boards}</td><td class="num">${s.excluded ? "—" : count[s.id] || 0}</td><td class="st-board">${off ? "" : esc((r?.run_at || "").replace("T", " ").slice(0, 16))}</td></tr>`;
+          <td>${badge}${err}${boards}</td><td class="num">${s.excluded && !journalOnly ? "—" : count[s.id] || 0}</td><td class="st-board">${off ? "" : esc((r?.run_at || "").replace("T", " ").slice(0, 16))}</td></tr>`;
       })
       .join("");
     $("#status").innerHTML = renderManual() + `<h2>학회별 수집 현황</h2><table class="st"><thead><tr><th>분과</th><th>학회</th><th>상태 · 게시판</th><th>건수</th><th>마지막 수집</th></tr></thead><tbody>${rows}</tbody></table>

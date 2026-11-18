@@ -564,3 +564,85 @@ def test_detail_check_skips_file_download():
     assert not is_file_response(r)
     r.headers["content-disposition"] = 'attachment; filename="a.pdf"'
     assert is_file_response(r)
+
+
+# ── 학회지(Europe PMC) ─────────────────────────
+def test_journal_filter_and_fields():
+    from gcrawler import journal
+
+    rows = json.loads(fx("europepmc_jrd.json"))["resultList"]["result"]
+    kept = [r["title"] for r in rows if journal.keep(r)]
+    assert kept == [
+        "Korean College of Rheumatology treatment recommendations for patients with axial spondyloarthritis: 2026 update.",
+        "Korean guidelines for the management of gout.",
+        "Korean treatment recommendations for patients with axial spondyloarthritis.",
+    ]  # 정정문·외국 학회 합의 소개·지침 리뷰·설문 연구는 제외
+    soc = {"id": "kcr"}
+    j = {"issn": "2233-4718", "name": "Journal of Rheumatic Diseases", "url": "https://www.jrd.or.kr"}
+    f = journal.to_fields(rows[0], soc, j, j["url"])
+    assert f["title"].endswith("2026 update") and f["url"] == "https://pmc.ncbi.nlm.nih.gov/articles/PMC13619551/"
+    assert f["date"] == "2026-10-01" and f["date_precision"] == "day" and f["journal"]
+    assert f["doi"] == "https://doi.org/10.4078/jrd.2026.0126" and f["attachments"][0]["kind"] == "PubMed"
+    assert journal.clean_title("[Korean guideline for X].") == "Korean guideline for X"
+
+
+def test_journal_only_society_end_to_end(tmp_data):
+    from gcrawler import journal
+    from gcrawler.build import merge_items
+
+    routes = {route_key(journal.search_url("2233-4718")): (200, fx("europepmc_jrd.json"))}
+    soc = {"id": "kcr", "name": "대한류마티스학회", "short": "류마티스학회", "homepage": "https://www.rheum.or.kr",
+           "group": "내과계", "specialty": "내과", "division": "류마티스", "enabled": False, "verify_ssl": True,
+           "boards": [], "excluded": "회원 전용",
+           "journals": [{"issn": "2233-4718", "name": "Journal of Rheumatic Diseases", "url": "https://www.jrd.or.kr"}]}
+    res = crawl_mod.run(mode="incremental", fetcher=FakeFetcher(routes), societies=[soc])
+    assert res["new"] == 3
+    status = json.loads((tmp_data / "status.json").read_text(encoding="utf-8"))["societies"]["kcr"]
+    assert status["ok"] and status["journal_only"] and status["last_ok"] == status["run_at"]
+    items = json.loads((tmp_data / "guidelines.json").read_text(encoding="utf-8"))["items"]
+    assert all(it["access"] == "public" and it["backfill"] for it in items)
+    merged = merge_items(items, {"kcr": soc})
+    assert len(merged) == 3 and all(g["sources"][0]["journal"] for g in merged)
+    # 재실행: 같은 글을 새 글로 세지 않는다
+    assert crawl_mod.run(mode="incremental", fetcher=FakeFetcher(routes), societies=[soc])["new"] == 0
+
+
+def test_transient_board_failure_keeps_last_ok(tmp_data, monkeypatch):
+    monkeypatch.setattr(crawl_mod, "RETRY_WAIT", 0)
+    base = "https://gastrokorea.org/bbs2/index.php"
+    soc = {"id": "ksg", "name": "대한소화기학회", "short": "소화기학회", "homepage": "https://gastrokorea.org",
+           "group": "내과계", "specialty": "내과", "division": "소화기", "enabled": True, "verify_ssl": True,
+           "boards": [{"url": base + "?code=guide2", "name": "진료지침", "dedicated": True}]}
+    ok_routes = {route_key(base + "?code=guide2"): (200, fx("ksg_guide2.html"))}
+    crawl_mod.run(mode="incremental", max_pages=1, detail_per_society=0, fetcher=FakeFetcher(ok_routes), societies=[soc])
+    first = json.loads((tmp_data / "status.json").read_text(encoding="utf-8"))["societies"]["ksg"]
+    assert first["ok"]
+
+    class Down(FakeFetcher):
+        calls = 0
+
+        def _raw_get(self, url, verify, stream=False):
+            Down.calls += 1
+            raise requests.ConnectionError("timeout")
+
+    crawl_mod.run(mode="incremental", max_pages=1, fetcher=Down({}), societies=[soc])
+    rec = json.loads((tmp_data / "status.json").read_text(encoding="utf-8"))["societies"]["ksg"]
+    assert not rec["ok"] and rec["last_ok"] == first["run_at"]
+    assert "파서" not in rec["error"] and "접속 실패" in rec["error"]
+    assert Down.calls == 2  # 목록 접속 실패 → 한 번 더 시도
+
+
+def test_robots_crawl_delay_sets_host_delay():
+    class R(FakeFetcher):
+        def __init__(self):
+            super().__init__({route_key("https://api.example.org/robots.txt"): (200, b"User-agent: *\nCrawl-delay: 10\n")})
+            self.respect_robots = True
+
+        def _raw_get(self, url, verify, stream=False):
+            r = super()._raw_get(url, verify, stream)
+            r.headers["content-type"] = "text/plain"
+            return r
+
+    f = R()
+    assert f.allowed("https://api.example.org/rest/search?q=1")
+    assert f.host_delay["api.example.org"] == 10.0

@@ -267,7 +267,7 @@ def merge_items(items: list[dict], socs: dict[str, dict], overrides: list[dict] 
         if not it.get("manual") and (not is_guideline(it.get("title", ""), dedicated=True) or GENERIC_LINK.match(it.get("title", ""))):
             continue
         soc = socs.get(it.get("society"))
-        if soc is None or (not soc.get("enabled", True) and not it.get("manual")):
+        if soc is None or (not soc.get("enabled", True) and not it.get("manual") and not it.get("journal")):
             continue
         key = norm_title(it["title"])
         url = it.get("url")
@@ -291,6 +291,7 @@ def merge_items(items: list[dict], socs: dict[str, dict], overrides: list[dict] 
             "attachments": files[:6],
             "link_resolved": it.get("link_resolved", True),
             "manual": bool(it.get("manual")),
+            "journal": bool(it.get("journal")),
         }
         g = groups.get(key)
         if g is None:
@@ -399,7 +400,7 @@ def build(base_url: str = "./") -> dict:
         {
             "taxonomy": load_taxonomy(),
             "societies": [
-                {**{k: s.get(k) for k in ("id", "name", "short", "homepage", "group", "specialty", "division", "enabled", "note", "manual", "manual_checked", "excluded")},
+                {**{k: s.get(k) for k in ("id", "name", "short", "homepage", "group", "specialty", "division", "enabled", "note", "manual", "manual_checked", "excluded", "journals")},
                  "board": boards.get(s["id"]) if s.get("enabled", True) or s.get("manual") else s.get("homepage")}
                 for s in socs_list
             ],
