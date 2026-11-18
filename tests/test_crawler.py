@@ -646,3 +646,49 @@ def test_robots_crawl_delay_sets_host_delay():
     f = R()
     assert f.allowed("https://api.example.org/rest/search?q=1")
     assert f.host_delay["api.example.org"] == 10.0
+
+
+def test_journal_routing_to_named_society():
+    """내분비학회지(EnM)에 실린 갑상선학회·비만학회 지침은 그 학회로, 해설·리뷰·연구는 제외."""
+    from gcrawler import journal
+
+    rows = json.loads(fx("europepmc_enm.json"))["resultList"]["result"]
+    names = {"kes": ["Korean Endocrine Society"], "kta": ["Korean Thyroid Association"],
+             "ksso": ["Korean Society for the Study of Obesity"], "kda": ["Korean Diabetes Association"],
+             "kspe": ["Korean Society of Pediatric Endocrinology"]}
+    got = {r["pmid"]: journal.owner_society(r, "kes", names) for r in rows if journal.keep(r)}
+    assert got == {"2": "kta", "5": "kes", "6": "kes", "8": "kta", "11": "kes", "13": "kes",
+                   "17": "kes", "18": "kes", "20": "ksso"}
+
+
+def test_journal_korean_only_off_for_society_journal():
+    from gcrawler import journal
+
+    rows = json.loads(fx("europepmc_jbm.json"))["resultList"]["result"]
+    kept = sorted(r["pmid"] for r in rows if journal.keep(r, korean_only=False))
+    assert kept == ["31", "32", "34", "36", "40"]  # 학회 입장문·지침만 (외국 연구·체계적 리뷰·순응도 연구 제외)
+    assert journal.search_url(["2287-6375", "2287-7029"]).count("ISSN") == 2
+
+
+def test_journal_routed_items_end_to_end(tmp_data):
+    from gcrawler import journal
+    from gcrawler.build import merge_items
+
+    j = {"issn": ["2093-596X", "2093-5978"], "name": "Endocrinology and Metabolism", "url": "https://www.e-enm.org"}
+    base = {"group": "내과계", "specialty": "내과", "division": "내분비·대사", "verify_ssl": True, "boards": []}
+    socs = [
+        {**base, "id": "kes", "name": "대한내분비학회", "short": "내분비학회", "homepage": "https://x", "enabled": False,
+         "name_en": "Korean Endocrine Society", "journals": [j]},
+        {**base, "id": "kta", "name": "대한갑상선학회", "short": "갑상선학회", "homepage": "https://y", "enabled": False,
+         "name_en": "Korean Thyroid Association"},
+        {**base, "id": "ksso", "name": "대한비만학회", "short": "비만학회", "homepage": "https://z", "enabled": False,
+         "name_en": "Korean Society for the Study of Obesity"},
+    ]
+    routes = {route_key(journal.search_url(j["issn"])): (200, fx("europepmc_enm.json"))}
+    res = crawl_mod.run(mode="incremental", fetcher=FakeFetcher(routes), societies=socs)
+    assert res["new"] == 9
+    st = json.loads((tmp_data / "status.json").read_text(encoding="utf-8"))["societies"]
+    assert st["kes"]["boards"][0]["routed"] == {"kta": 2, "ksso": 1} and "kta" not in st  # kta는 게시판 수집 안 함
+    items = json.loads((tmp_data / "guidelines.json").read_text(encoding="utf-8"))["items"]
+    merged = merge_items(items, {s["id"]: s for s in socs})
+    assert {g["societies"][0] for g in merged} == {"kes", "kta", "ksso"}

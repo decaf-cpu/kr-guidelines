@@ -35,6 +35,7 @@
 - id: kaim
   name: 대한내과학회
   short: 내과학회
+  name_en: Korean Association of Internal Medicine
   homepage: https://www.kaim.or.kr/index.php
   group: 내과계
   specialty: 내과
@@ -46,6 +47,7 @@
 - id: ksg
   name: 대한소화기학회
   short: 소화기학회
+  name_en: Korean Society of Gastroenterology
   homepage: https://gastrokorea.org
   group: 내과계
   specialty: 내과
@@ -62,6 +64,7 @@
 - id: kasl
   name: 대한간학회
   short: 간학회
+  name_en: Korean Association for the Study of the Liver
   homepage: https://www.kasl.org
   group: 내과계
   specialty: 내과
@@ -85,6 +88,7 @@
 - id: kges
   name: 대한소화기내시경학회
   short: 소화기내시경학회
+  name_en: Korean Society of Gastrointestinal Endoscopy
   homepage: https://gie.or.kr/index.php
   group: 내과계
   specialty: 내과
@@ -93,9 +97,14 @@
   enabled: false
   excluded: 공개 지침 없음
   note: 학회 공개 진료지침이 없음 (2026-11-17 사용자 확인). 게시판(/bbs/)은 robots.txt가 수집을 막음
+  journals:   # 학회지 게재 지침 (Europe PMC, gcrawler/journal.py)
+    - issn: [2234-2400, 2234-2443]
+      name: Clinical Endoscopy
+      url: https://www.e-ce.org
 - id: kasid
   name: 대한장연구학회
   short: 장연구학회
+  name_en: Korean Association for the Study of Intestinal Diseases
   homepage: https://www.kasid.org/index
   group: 내과계
   specialty: 내과
@@ -119,6 +128,7 @@
 - id: ksnm
   name: 대한소화기기능성질환·운동학회
   short: 소화기기능성질환·운동학회
+  name_en: Korean Society of Neurogastroenterology and Motility
   homepage: https://www.ksnm.kr
   group: 내과계
   specialty: 내과
@@ -126,6 +136,10 @@
   boards: []
   enabled: false
   note: 진료지침 자료실(resource/guideline)이 회원 전용(권한 필요)
+  journals:   # 학회지 게재 지침 (Europe PMC, gcrawler/journal.py)
+    - issn: [2093-0879, 2093-0887]
+      name: Journal of Neurogastroenterology and Motility
+      url: https://www.jnmjournal.org
 - id: kpba
   name: 대한췌장담도학회
   short: 췌장담도학회
@@ -138,6 +152,7 @@
 - id: ksc
   name: 대한심장학회
   short: 심장학회
+  name_en: Korean Society of Cardiology
   homepage: https://www.circulation.or.kr/index.php
   group: 내과계
   specialty: 내과
@@ -151,6 +166,7 @@
 - id: ksh
   name: 대한고혈압학회
   short: 고혈압학회
+  name_en: Korean Society of Hypertension
   homepage: https://www.koreanhypertension.org
   group: 내과계
   specialty: 내과
@@ -160,6 +176,7 @@
 - id: kshf
   name: 대한심부전학회
   short: 심부전학회
+  name_en: Korean Society of Heart Failure
   homepage: https://www.kshf.or.kr/main.php
   group: 내과계
   specialty: 내과
@@ -167,9 +184,14 @@
   boards: []
   enabled: false
   note: 공개된 진료지침 게시판을 찾지 못함
+  journals:   # 학회지 게재 지침 (Europe PMC, gcrawler/journal.py)
+    - issn: [2636-154X, 2636-1558]
+      name: International Journal of Heart Failure
+      url: https://www.e-heartfailure.org
 - id: khrs
   name: 대한부정맥학회
   short: 부정맥학회
+  name_en: Korean Heart Rhythm Society
   homepage: https://www.k-hrs.org/main
   group: 내과계
   specialty: 내과
@@ -189,6 +211,7 @@
 - id: ksola
   name: 한국지질·동맥경화학회
   short: 지질·동맥경화학회
+  name_en: Korean Society of Lipid and Atherosclerosis
   homepage: https://www.lipid.or.kr
   group: 내과계
   specialty: 내과
@@ -201,6 +224,7 @@
 - id: kda
   name: 대한당뇨병학회
   short: 당뇨병학회
+  name_en: Korean Diabetes Association
   homepage: https://www.diabetes.or.kr
   group: 내과계
   specialty: 내과
@@ -227,6 +251,7 @@
 - id: kes
   name: 대한내분비학회
   short: 내분비학회
+  name_en: Korean Endocrine Society
   homepage: https://www.endocrinology.or.kr
   group: 내과계
   specialty: 내과
@@ -234,9 +259,14 @@
   boards: []
   enabled: false
   note: 진료지침 자료실(guide_pds)이 로그인 필요(회원 전용)
+  journals:   # 학회지 게재 지침 (Europe PMC, gcrawler/journal.py)
+    - issn: [2093-596X, 2093-5978]
+      name: Endocrinology and Metabolism
+      url: https://www.e-enm.org
 - id: kta
   name: 대한갑상선학회
   short: 갑상선학회
+  name_en: Korean Thyroid Association
   homepage: https://www.thyroid.kr
   group: 내과계
   specialty: 내과
@@ -249,6 +279,7 @@
 - id: ksbmr
   name: 대한골대사학회
   short: 골대사학회
+  name_en: Korean Society for Bone and Mineral Research
   homepage: https://www.ksbmr.org/index.php
   group: 내과계
   specialty: 내과
@@ -265,9 +296,15 @@
       dedicated: true
   enabled: false
   note: 진료지침 전문 다운로드가 회원 전용
+  journals:   # 학회지 게재 지침 (Europe PMC, gcrawler/journal.py)
+    - issn: [2287-6375, 2287-7029]
+      name: Journal of Bone Metabolism
+      url: https://e-jbm.org
+      korean_only: false  # 학회 입장문 제목에 Korea가 없는 경우가 많음
 - id: ksso
   name: 대한비만학회
   short: 비만학회
+  name_en: Korean Society for the Study of Obesity
   homepage: https://www.kosso.or.kr/main.html
   group: 내과계
   specialty: 내과
@@ -281,6 +318,7 @@
 - id: ksn
   name: 대한신장학회
   short: 신장학회
+  name_en: Korean Society of Nephrology
   homepage: https://ksn.or.kr/main.php
   group: 내과계
   specialty: 내과
@@ -293,6 +331,7 @@
 - id: kattd
   name: 대한결핵및호흡기학회
   short: 결핵및호흡기학회
+  name_en: Korean Academy of Tuberculosis and Respiratory Diseases
   homepage: https://new.lungkorea.org/kr
   group: 내과계
   specialty: 내과
@@ -304,6 +343,7 @@
 - id: kaaaci
   name: 대한천식알레르기학회
   short: 천식알레르기학회
+  name_en: Korean Academy of Asthma, Allergy and Clinical Immunology
   homepage: https://www.allergy.or.kr
   group: 내과계
   specialty: 내과
@@ -314,6 +354,7 @@
 - id: ksid
   name: 대한감염학회
   short: 감염학회
+  name_en: Korean Society of Infectious Diseases
   homepage: https://www.ksid.or.kr/main/main.html
   group: 내과계
   specialty: 내과
@@ -327,6 +368,7 @@
 - id: ksat
   name: 대한항균요법학회
   short: 항균요법학회
+  name_en: Korean Society for Antimicrobial Therapy
   homepage: https://www.ksat.or.kr
   group: 내과계
   specialty: 내과
@@ -344,6 +386,7 @@
 - id: kcr
   name: 대한류마티스학회
   short: 류마티스학회
+  name_en: Korean College of Rheumatology
   homepage: https://www.rheum.or.kr
   group: 내과계
   specialty: 내과
@@ -361,6 +404,7 @@
 - id: ksh-hema
   name: 대한혈액학회
   short: 혈액학회
+  name_en: Korean Society of Hematology
   homepage: https://www.hematology.or.kr/main/main.html
   group: 내과계
   specialty: 내과
@@ -368,9 +412,14 @@
   boards: []
   enabled: false
   note: 진료지침이 회원 전용
+  journals:   # 학회지 게재 지침 (Europe PMC, gcrawler/journal.py)
+    - issn: [2287-979X, 2288-0011]
+      name: Blood Research
+      url: https://www.bloodresearch.or.kr
 - id: ksmo
   name: 대한종양내과학회
   short: 종양내과학회
+  name_en: Korean Society for Medical Oncology
   homepage: https://www.ksmo.or.kr
   group: 내과계
   specialty: 내과
@@ -383,6 +432,7 @@
 - id: kgs
   name: 대한노인병학회
   short: 노인병학회
+  name_en: Korean Geriatrics Society
   homepage: https://www.geriatrics.or.kr/index.php
   group: 내과계
   specialty: 내과
@@ -390,11 +440,16 @@
   boards: []
   enabled: false
   note: 공개된 진료지침 게시판을 찾지 못함
+  journals:   # 학회지 게재 지침 (Europe PMC, gcrawler/journal.py)
+    - issn: [2508-4798, 2508-4909]
+      name: Annals of Geriatric Medicine and Research
+      url: https://www.e-agmr.org
 
 # ── 소아청소년과 (대한소아청소년과학회와 분과학회) ──
 - id: kps
   name: 대한소아청소년과학회
   short: 소아청소년과학회
+  name_en: Korean Pediatric Society
   homepage: https://www.pediatrics.or.kr
   group: 내과계
   specialty: 소아청소년과
@@ -402,6 +457,10 @@
   enabled: false
   note: 진료정보·자료실 게시판이 모두 회원 전용(로그인 필요)
   boards: []
+  journals:   # 학회지 게재 지침 (Europe PMC, gcrawler/journal.py)
+    - issn: [2713-4148, 1738-1061, 2092-7258]
+      name: Clinical and Experimental Pediatrics (구 Korean J Pediatr)
+      url: https://www.e-cep.org
 - id: kapard
   name: 대한소아알레르기호흡기학회
   short: 소아알레르기호흡기학회
@@ -416,6 +475,7 @@
 - id: kspid
   name: 대한소아감염학회
   short: 소아감염학회
+  name_en: Korean Society of Pediatric Infectious Diseases
   homepage: https://www.kspid.or.kr
   group: 내과계
   specialty: 소아청소년과
@@ -438,6 +498,7 @@
 - id: kspghan
   name: 대한소아소화기영양학회
   short: 소아소화기영양학회
+  name_en: Korean Society of Pediatric Gastroenterology, Hepatology and Nutrition
   homepage: https://www.kspghan.or.kr
   group: 내과계
   specialty: 소아청소년과
@@ -445,6 +506,10 @@
   enabled: false
   note: 웹 방화벽이 자동 접속을 차단함
   boards: []
+  journals:   # 학회지 게재 지침 (Europe PMC, gcrawler/journal.py)
+    - issn: [2234-8646, 2234-8840]
+      name: Pediatric Gastroenterology, Hepatology & Nutrition
+      url: https://www.pghn.org
 - id: kspn
   name: 대한소아신장학회
   short: 소아신장학회
@@ -468,6 +533,7 @@
 - id: kspe
   name: 대한소아내분비학회
   short: 소아내분비학회
+  name_en: Korean Society of Pediatric Endocrinology
   group: 내과계
   specialty: 소아청소년과
   division: 소아청소년
@@ -475,9 +541,14 @@
   enabled: false
   note: "해외(수집 서버)에서 접속되지 않음"
   boards: []
+  journals:   # 학회지 게재 지침 (Europe PMC, gcrawler/journal.py)
+    - issn: [2287-1012, 2287-1292]
+      name: Annals of Pediatric Endocrinology & Metabolism
+      url: https://www.e-apem.org
 - id: kcns
   name: 대한소아신경학회
   short: 소아신경학회
+  name_en: Korean Child Neurology Society
   homepage: https://www.cns.or.kr
   group: 내과계
   specialty: 소아청소년과
@@ -485,6 +556,10 @@
   enabled: false
   note: "진료지침 게시판(/bbs/guideline)이 회원 전용(로그인 필요)"
   boards: []
+  journals:   # 학회지 게재 지침 (Europe PMC, gcrawler/journal.py)
+    - issn: [2635-909X, 2635-9103]
+      name: Annals of Child Neurology
+      url: https://www.annchildneurol.org
 - id: kspc
   name: 대한소아심장학회
   short: 소아심장학회
@@ -510,6 +585,7 @@
 - id: ksog
   name: 대한산부인과학회
   short: "산부인과학회"
+  name_en: Korean Society of Obstetrics and Gynecology
   homepage: https://www.ksog.org
   group: 외과계
   specialty: 산부인과
@@ -517,6 +593,10 @@
   enabled: false
   note: "진료지침(Guideline & Position Statement) 자료실이 회원 전용(로그인 필요)"
   boards: []
+  journals:   # 학회지 게재 지침 (Europe PMC, gcrawler/journal.py)
+    - issn: [2287-8572, 2287-8580]
+      name: Obstetrics & Gynecology Science
+      url: https://www.ogscience.org
 - id: ksfp
   name: 대한가임력보존학회
   short: "가임력보존학회"
@@ -540,6 +620,7 @@
 - id: kosar
   name: 대한보조생식학회
   short: "보조생식학회"
+  name_en: Korean Society for Assisted Reproduction
   homepage: https://www.kosar.org
   group: 외과계
   specialty: 산부인과
@@ -547,9 +628,14 @@
   enabled: false
   note: "윤리지침 페이지가 회원 전용(로그인 필요)"
   boards: []
+  journals:   # 학회지 게재 지침 (Europe PMC, gcrawler/journal.py)
+    - issn: [2233-8233, 2233-8241]
+      name: Clinical and Experimental Reproductive Medicine
+      url: https://www.eCERM.org
 - id: ksgo
   name: 대한부인종양학회
   short: "부인종양학회"
+  name_en: Korean Society of Gynecologic Oncology
   homepage: https://www.sgo.or.kr
   group: 외과계
   specialty: 산부인과
@@ -557,6 +643,10 @@
   enabled: false
   note: "진료지침 게시판 없음 (환자용 생활권고안 웹페이지만 있음)"
   boards: []
+  journals:   # 학회지 게재 지침 (Europe PMC, gcrawler/journal.py)
+    - issn: [2005-0380, 2005-0399]
+      name: Journal of Gynecologic Oncology
+      url: https://www.ejgo.org
 - id: kugs
   name: 대한비뇨부인과학회
   short: "비뇨부인과학회"
@@ -612,6 +702,7 @@
 - id: ksmenop
   name: 대한폐경학회
   short: "폐경학회"
+  name_en: Korean Society of Menopause
   homepage: https://www.koreanmenopause.or.kr
   group: 외과계
   specialty: 산부인과
@@ -619,6 +710,10 @@
   enabled: false
   note: "해외(수집 서버)에서 접속되지 않음"
   boards: []
+  journals:   # 학회지 게재 지침 (Europe PMC, gcrawler/journal.py)
+    - issn: [2288-6478, 2288-6761]
+      name: Journal of Menopausal Medicine
+      url: https://www.e-jmm.org
 - id: kscrh
   name: 대한피임·생식보건학회
   short: "피임·생식보건학회"

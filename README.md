@@ -63,13 +63,15 @@ data/                   수집 결과
 
 학회 게시판이 회원 전용이거나 막혀 있어도 학회지(open access)에 같은 지침을 싣는 학회는 `journals`에 학회지 ISSN을 적으면
 [Europe PMC](https://europepmc.org/RestfulWebService) 공개 API로 제목에 guideline·recommendation·consensus 등이 들어간 논문을 찾아 올립니다
-(정정문·지침 리뷰·설문 연구·외국 학회 지침 소개는 제외, `gcrawler/journal.py`). 게시판 수집을 끈 학회(`enabled: false`)도 학회지는 수집합니다.
+(정정문·사설·지침 리뷰·설문 연구·외국 학회 지침 소개는 제외, `gcrawler/journal.py`). 게시판 수집을 끈 학회(`enabled: false`)도 학회지는 수집합니다.
+학회지에 다른 학회의 지침이 실리면(예: 내분비학회지 EnM의 갑상선학회 지침) 제목·저자 단체명에 적힌 영문 학회명(`name_en`)을 보고 그 학회의 지침으로 올립니다.
 
 ```yaml
   journals:
-    - issn: 2233-4718                       # 전자판 ISSN
-      name: Journal of Rheumatic Diseases
-      url: https://www.jrd.or.kr            # 학회 배지 링크
+    - issn: [2093-596X, 2093-5978]          # 인쇄판·전자판 ISSN
+      name: Endocrinology and Metabolism
+      url: https://www.e-enm.org            # 학회 배지 링크
+      korean_only: true                     # 기본값: 제목·저자 단체명에 Korea가 없는 글 제외
 ```
 
 robots.txt나 웹 방화벽 때문에 자동 수집이 막힌 학회(`manual: true`)는 `config/manual.yaml`에 공개 진료지침을 직접 적어 등록합니다.

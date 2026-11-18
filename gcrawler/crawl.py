@@ -281,6 +281,7 @@ def run(society_ids: list[str] | None = None, mode: str = "incremental", max_pag
     from .store import load_societies
 
     socs = societies if societies is not None else load_societies()
+    socs_all = list(socs)  # 학회지 글을 다른 학회로 넘길 때 쓰는 전체 목록 (--society로 일부만 수집해도)
     if society_ids:
         socs = [s for s in socs if s["id"] in society_ids]
     fetcher = fetcher or Fetcher()
@@ -316,7 +317,7 @@ def run(society_ids: list[str] | None = None, mode: str = "incremental", max_pag
                     rec["boards"].append({"url": b["url"], "error": f"{type(e).__name__}: {e}"})
             for j in soc.get("journals") or []:
                 try:
-                    rec["boards"].append(crawl_journal(fetcher, soc, j, store, mode))
+                    rec["boards"].append(crawl_journal(fetcher, soc, j, store, mode, socs_all))
                 except Exception as e:
                     log.exception("학회지 오류 %s", j)
                     rec["boards"].append({"url": str(j.get("issn")), "name": j.get("name"), "source": "journal",

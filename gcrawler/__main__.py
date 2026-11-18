@@ -38,8 +38,8 @@ def cmd_check(args) -> int:
     adapter = adapters.load(soc["id"])
     for j in soc.get("journals") or []:
         import json as _json
-        from .journal import keep, search_url
-        r = f.get(search_url(str(j["issn"])))
+        from .journal import issns, keep, search_url
+        r = f.get(search_url(issns(j)))
         print(f"\n== 학회지 {j.get('name') or ''} (ISSN {j['issn']}) — Europe PMC")
         if r is None or r.status_code >= 400:
             print(f"   접속 실패 (HTTP {getattr(r, 'status_code', None)})")
@@ -47,7 +47,7 @@ def cmd_check(args) -> int:
         rows = (_json.loads(r.content).get("resultList") or {}).get("result") or []
         print(f"   검색 결과 {len(rows)}건")
         for row in rows[: args.limit]:
-            print(f"   {'✔' if keep(row) else '·'} {row.get('firstPublicationDate') or row.get('pubYear') or '----------'}  {row.get('title', '')[:70]}")
+            print(f"   {'✔' if keep(row, j.get('korean_only', True)) else '·'} {row.get('firstPublicationDate') or row.get('pubYear') or '----------'}  {row.get('title', '')[:70]}")
     if soc.get("enabled") is False:
         boards = []  # 꺼진 학회는 학회지만 확인
     for b in boards:

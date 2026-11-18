@@ -1,0 +1,137 @@
+{
+ "hitCount": 10,
+ "nextCursorMark": "*",
+ "resultList": {
+  "result": [
+   {
+    "id": "31",
+    "source": "MED",
+    "pmid": "31",
+    "pmcid": "PMC31",
+    "doi": "10.0/31",
+    "title": "Position Statement: Postmenopausal Osteoporosis Treatment Strategies in Korea.",
+    "authorString": "X Y.",
+    "pubType": "review-article; journal article",
+    "isOpenAccess": "Y",
+    "pubYear": "2025",
+    "firstPublicationDate": "2025-01-01"
+   },
+   {
+    "id": "32",
+    "source": "MED",
+    "pmid": "32",
+    "doi": "10.0/32",
+    "title": "Position Statement: Exercise Guidelines for Osteoporosis Management and Fall Prevention in Osteoporosis Patients.",
+    "authorString": "X Y.",
+    "pubType": "journal article",
+    "isOpenAccess": "N",
+    "pubYear": "2025",
+    "firstPublicationDate": "2025-01-01"
+   },
+   {
+    "id": "33",
+    "source": "MED",
+    "pmid": "33",
+    "pmcid": "PMC33",
+    "doi": "10.0/33",
+    "title": "Best Laboratory Screening in Diagnosing Secondary Osteoporosis and Fracture Risk Assessment Tool and the National Osteoporosis Guideline Group Performance in Determining Clinical Risk: A Cross-Sectional Evaluation of the Bone Health in Postmenopausal Brazilian Women.",
+    "authorString": "X Y.",
+    "pubType": "research-article; journal article",
+    "isOpenAccess": "Y",
+    "pubYear": "2025",
+    "firstPublicationDate": "2025-01-01"
+   },
+   {
+    "id": "34",
+    "source": "MED",
+    "pmid": "34",
+    "pmcid": "PMC34",
+    "doi": "10.0/34",
+    "title": "Position Statement: Vitamin D Intake to Prevent Osteoporosis and Fracture in Adults.",
+    "authorString": "X Y.",
+    "pubType": "review-article; journal article",
+    "isOpenAccess": "Y",
+    "pubYear": "2025",
+    "firstPublicationDate": "2025-01-01"
+   },
+   {
+    "id": "35",
+    "source": "MED",
+    "pmid": "35",
+    "pmcid": "PMC35",
+    "doi": "10.0/35",
+    "title": "Effects of the Revised Reimbursement Guideline for Anti-Osteoporosis Medication in South Korea.",
+    "authorString": "X Y.",
+    "pubType": "research-article; journal article",
+    "isOpenAccess": "Y",
+    "pubYear": "2025",
+    "firstPublicationDate": "2025-01-01"
+   },
+   {
+    "id": "36",
+    "source": "MED",
+    "pmid": "36",
+    "pmcid": "PMC36",
+    "doi": "10.0/36",
+    "title": "Medication Related Osteonecrosis of the Jaw: 2021 Position Statement of the Korean Society for Bone and Mineral Research and the Korean Association of Oral and Maxillofacial Surgeons.",
+    "authorString": "X Y.",
+    "pubType": "review-article; journal article",
+    "isOpenAccess": "Y",
+    "pubYear": "2025",
+    "firstPublicationDate": "2025-01-01"
+   },
+   {
+    "id": "37",
+    "source": "MED",
+    "pmid": "37",
+    "pmcid": "PMC37",
+    "doi": "10.0/37",
+    "title": "Intervention Thresholds for Treatment in Patients with Glucocorticoid-Induced Osteoporosis: Systematic Review of Guidelines.",
+    "authorString": "X Y.",
+    "pubType": "review-article; journal article",
+    "isOpenAccess": "Y",
+    "pubYear": "2025",
+    "firstPublicationDate": "2025-01-01"
+   },
+   {
+    "id": "38",
+    "source": "MED",
+    "pmid": "38",
+    "pmcid": "PMC38",
+    "doi": "10.0/38",
+    "title": "Agreement between the Turkey Guidelines and the Fracture Risk Assessment Tool®-based Intervention Threshold.",
+    "authorString": "X Y.",
+    "pubType": "research-article; journal article",
+    "isOpenAccess": "Y",
+    "pubYear": "2025",
+    "firstPublicationDate": "2025-01-01"
+   },
+   {
+    "id": "39",
+    "source": "MED",
+    "pmid": "39",
+    "pmcid": "PMC39",
+    "doi": "10.0/39",
+    "title": "Comparison in Adherence to Osteoporosis Guidelines according to Bone Health Status in Korean Adult.",
+    "authorString": "X Y.",
+    "pubType": "research-article; journal article",
+    "isOpenAccess": "Y",
+    "pubYear": "2025",
+    "firstPublicationDate": "2025-01-01"
+   },
+   {
+    "id": "40",
+    "source": "MED",
+    "pmid": "40",
+    "pmcid": "PMC40",
+    "doi": "10.0/40",
+    "title": "Korean Guideline for the Prevention and Treatment of Glucocorticoid-induced Osteoporosis.",
+    "authorString": "X Y.",
+    "pubType": "review-article; review; journal article",
+    "isOpenAccess": "Y",
+    "pubYear": "2025",
+    "firstPublicationDate": "2025-01-01"
+   }
+  ]
+ }
+}

@@ -9,9 +9,13 @@ Crawl-delay 10초를 요구 → Fetcher가 그 간격을 지킨다.)
 설정 (config/societies.yaml):
 
     journals:
-      - issn: 2233-4718
-        name: Journal of Rheumatic Diseases
-        url: https://www.jrd.or.kr      # 학회 배지 링크 (생략하면 Europe PMC 검색 화면)
+      - issn: [2093-596X, 2093-5978]   # 인쇄판·전자판 (하나만 적어도 됨)
+        name: Endocrinology and Metabolism
+        url: https://www.e-enm.org      # 학회 배지 링크 (생략하면 Europe PMC 검색 화면)
+        korean_only: true               # 기본값. 제목·저자(단체명)에 Korea가 없는 글은 제외 (외국 지침 리뷰 등)
+
+학회지에는 다른 학회의 지침도 실린다 (예: 내분비학회지 EnM에 갑상선학회 지침). 제목이나 저자 단체명에
+societies.yaml의 name_en(영문 학회명)이 있으면 그 학회의 지침으로 올린다. 없으면 학회지를 내는 학회.
 """
 from __future__ import annotations
 
@@ -31,20 +35,40 @@ TITLE_TERMS = (
     '(TITLE:guideline* OR TITLE:recommendation* OR TITLE:consensus OR TITLE:"position statement" '
     'OR TITLE:"expert opinion" OR TITLE:지침 OR TITLE:권고)'
 )
-# 정정·논평 등 지침 본문이 아닌 글
+# 정정·논평 등 지침 본문이 아닌 글 (단, 'consensus statement'·'practice guideline'으로 분류된 글은 살림)
 SKIP_PUBTYPE = re.compile(r"(erratum|correction|retraction|comment|letter|editorial)", re.I)
-# 지침을 다룬 연구·리뷰 (지침 자체가 아님)
+DOC_PUBTYPE = re.compile(r"(consensus statement|practice guideline|guideline)", re.I)
+# 지침을 다룬 연구·리뷰·해설 (지침 자체가 아님)
 NOISE = re.compile(
-    r"(^\s*(corrigendum|erratum|correction|retraction|reply|response)\b|"
-    r"review of (the )?(recent|current|international|existing|global)|\bsurvey\b|questionnaire|"
-    r"adherence|awareness|implementation of|agreement (on|with)|compliance|appraisal|\bAGREE\b|"
-    r"current status|trends in|comparison of|comparative|commentary|perspectives? on)",
+    r"(^\s*(corrigendum|erratum|correction|retraction|reply|response|contemporary|current|recent|highlights?|redefining|revisiting)\b|"
+    r"review of (the )?(recent|current|international|existing|global)|systematic review|narrative review|\bsurvey\b|questionnaire|"
+    r"adherence|awareness|implementation of|agreement (on|with|between)|compliance|appraisal|\bAGREE\b|"
+    r"current status|trends in|comparison|comparative|commentary|perspectives? on|lessons from|key updates|"
+    r"differences (from|between)|a focus on|insights|achievement of|effects of|\bvs\.?\s|versus)",
     re.I,
 )
+# 연구 논문(research-article)은 제목이 지침 문서 형식일 때만
+DOC_TITLE = re.compile(
+    r"(position statement|consensus (guidelines?|statement|report|recommendations?)|"
+    r"(clinical )?(practice )?guidelines? (for|on)|recommendations? (for|on))",
+    re.I,
+)
+KOREA = re.compile(r"\bkorea", re.I)
 
 
-def search_url(issn: str, cursor: str = "*", page_size: int = 100) -> str:
-    q = f'ISSN:"{issn}" AND {TITLE_TERMS}'
+def issns(journal: dict) -> list[str]:
+    v = journal["issn"]
+    return [str(x) for x in (v if isinstance(v, list) else [v])]
+
+
+def _issn_q(issn) -> str:
+    vals = issn if isinstance(issn, list) else [issn]
+    q = " OR ".join(f'ISSN:"{x}"' for x in vals)
+    return f"({q})" if len(vals) > 1 else q
+
+
+def search_url(issn, cursor: str = "*", page_size: int = 100) -> str:
+    q = f"{_issn_q(issn)} AND {TITLE_TERMS}"
     return API + "?" + urlencode(
         {"query": q, "format": "json", "resultType": "lite", "pageSize": page_size,
          "sort": "P_PDATE_D desc", "cursorMark": cursor},
@@ -52,8 +76,8 @@ def search_url(issn: str, cursor: str = "*", page_size: int = 100) -> str:
     )
 
 
-def browse_url(issn: str) -> str:
-    return "https://europepmc.org/search?query=" + quote(f'ISSN:"{issn}" AND {TITLE_TERMS}')
+def browse_url(issn) -> str:
+    return "https://europepmc.org/search?query=" + quote(f"{_issn_q(issn)} AND {TITLE_TERMS}")
 
 
 def clean_title(t: str) -> str:
@@ -63,11 +87,35 @@ def clean_title(t: str) -> str:
     return t.rstrip(".").strip()
 
 
-def keep(r: dict) -> bool:
+def keep(r: dict, korean_only: bool = True) -> bool:
     title = clean_title(r.get("title", ""))
-    if not title or SKIP_PUBTYPE.search(r.get("pubType") or "") or NOISE.search(title):
+    pt = r.get("pubType") or ""
+    if not title or NOISE.search(title):
+        return False
+    if SKIP_PUBTYPE.search(pt) and not DOC_PUBTYPE.search(pt):
+        return False
+    if "research" in pt.lower() and not DOC_PUBTYPE.search(pt) and not DOC_TITLE.search(title):
+        return False
+    if korean_only and not (KOREA.search(title) or KOREA.search(r.get("authorString") or "")):
         return False
     return is_guideline(title)  # 외국 학회 지침 소개 등은 여기서 걸러진다
+
+
+def _name_re(name: str) -> re.Pattern:
+    words = [re.escape(w) for w in re.split(r"\s+", name.strip()) if w.lower() != "the"]
+    return re.compile(r"\b" + r"\s+(?:the\s+)?".join(words) + r"\b", re.I)
+
+
+def owner_society(r: dict, owner: str, names: dict[str, list[str]]) -> str:
+    """제목 → 저자 단체명 순으로 영문 학회명을 찾아 그 학회 id. 학회지를 내는 학회가 언급되면 그 학회 우선."""
+    for text in (clean_title(r.get("title", "")), r.get("authorString") or ""):
+        hits = [sid for sid, ns in names.items() if any(_name_re(n).search(text) for n in ns)]
+        if owner in hits:
+            return owner
+        if hits:
+            # 여러 학회가 나오면 글에서 먼저 나온 학회
+            return min(hits, key=lambda sid: min(m.start() for n in names[sid] if (m := _name_re(n).search(text))))
+    return owner
 
 
 def to_fields(r: dict, soc: dict, journal: dict, board: str) -> dict:
@@ -85,7 +133,7 @@ def to_fields(r: dict, soc: dict, journal: dict, board: str) -> dict:
     return {
         "society": soc["id"],
         "board": board,
-        "board_name": journal.get("name") or f"ISSN {journal['issn']}",
+        "board_name": journal.get("name") or f"ISSN {issns(journal)[0]}",
         "title": title,
         "url": url,
         "link_resolved": True,
@@ -101,11 +149,17 @@ def to_fields(r: dict, soc: dict, journal: dict, board: str) -> dict:
     }
 
 
-def crawl_journal(fetcher, soc: dict, journal: dict, store: Store, mode: str = "incremental") -> dict:
-    issn = str(journal["issn"])
+def crawl_journal(fetcher, soc: dict, journal: dict, store: Store, mode: str = "incremental",
+                  societies: list[dict] | None = None) -> dict:
+    issn = issns(journal)
     board = journal.get("url") or browse_url(issn)
-    result = {"url": board, "name": journal.get("name") or f"ISSN {issn}", "source": "journal",
-              "pages": 0, "rows": 0, "matched": 0, "new": 0, "members_only": 0, "error": None}
+    result = {"url": board, "name": journal.get("name") or f"ISSN {issn[0]}", "source": "journal",
+              "pages": 0, "rows": 0, "matched": 0, "new": 0, "members_only": 0, "error": None, "routed": {}}
+    names = {s["id"]: ([s["name_en"]] if isinstance(s.get("name_en"), str) else list(s.get("name_en") or []))
+             for s in (societies or [soc])}
+    names = {k: v for k, v in names.items() if v}
+    by_id = {s["id"]: s for s in (societies or [soc])}
+    korean_only = journal.get("korean_only", True)
     first_time = not any(it.get("board") == board for it in store.items.values())
     cursor, pages = "*", (10 if mode == "full" else 1)
     for _ in range(pages):
@@ -123,11 +177,16 @@ def crawl_journal(fetcher, soc: dict, journal: dict, store: Store, mode: str = "
         result["pages"] += 1
         result["rows"] += len(rows)
         for row in rows:
-            if not keep(row):
+            if not keep(row, korean_only):
                 continue
             result["matched"] += 1
-            fields = to_fields(row, soc, journal, board)
-            iid = item_id(soc["id"], canonical_url(fields["url"]), fields["title"], board)  # Store가 읽을 때 다시 계산하는 id와 같게
+            sid = owner_society(row, soc["id"], names)
+            target = by_id.get(sid, soc)
+            if target["id"] != soc["id"]:
+                result["routed"][target["id"]] = result["routed"].get(target["id"], 0) + 1
+            fields = to_fields(row, target, journal, board)
+            fields["journal_of"] = soc["id"]
+            iid = item_id(target["id"], canonical_url(fields["url"]), fields["title"], board)  # Store가 읽을 때 다시 계산하는 id와 같게
             it, is_new = store.upsert(iid, fields)
             it["access"] = "public" if row.get("isOpenAccess") == "Y" or row.get("pmcid") else it.get("access", "unknown")
             it["checked"] = today()

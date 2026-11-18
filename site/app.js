@@ -226,7 +226,7 @@
         if (journalOnly) badge = `<span class="${r?.ok || blip ? "st-ok" : r ? "st-err" : "st-warn"}">학회지만 수집</span><div class="st-board">게시판: ${esc(s.excluded || "제외")}</div>`;
         const off = s.enabled === false && !journalOnly;
         const boards = (off ? [] : (r?.boards || []).filter((b) => !(blip && b.error)))
-          .map((b) => `<div class="st-board">${b.source === "discovered" ? "자동탐색 · " : b.source === "journal" ? "학회지 · " : ""}<a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.name || b.url)}</a>${b.error ? " — " + esc(b.error) : ` — ${b.matched ?? 0}건`}</div>`)
+          .map((b) => `<div class="st-board">${b.source === "discovered" ? "자동탐색 · " : b.source === "journal" ? "학회지 · " : ""}<a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.name || b.url)}</a>${b.error ? " — " + esc(b.error) : ` — ${b.matched ?? 0}건`}${routedNote(b)}</div>`)
           .join("");
         const err = !off && !blip && r?.error ? `<div class="st-board">${esc(r.error)}</div>` : "";
         return `<tr><td>${esc(s.division)}</td><td><a href="${esc(s.board || s.homepage)}" target="_blank" rel="noopener">${esc(s.name)}</a>${s.note ? `<div class="st-board">${esc(s.note)}</div>` : ""}</td>
@@ -238,6 +238,12 @@
       ${(STATUS.manual_errors || []).length ? `<p class="note st-err">수동 등록 오류: ${STATUS.manual_errors.map(esc).join(" / ")}</p>` : ""}`;
     recheckLoaded = false;
     loadRecheckRequests();
+  }
+
+  // 학회지에 실린 다른 학회 지침은 그 학회로 넘긴다 (예: 내분비학회지의 갑상선학회 지침)
+  function routedNote(b) {
+    const r = Object.entries(b.routed || {});
+    return r.length ? ` (그중 ${r.map(([id, n]) => `${esc(SOCS[id]?.short || id)} ${n}건`).join(", ")}은 해당 학회로)` : "";
   }
 
   // ── 수동 등록 재확인 요청 ─────────────
