@@ -404,7 +404,7 @@
       name: Journal of Rheumatic Diseases
       url: https://www.jrd.or.kr
     # 류마티스학회 지침은 대한내과학회지(KJIM)·Infect Chemother 등에도 실린다 → 학회 이름·류마티스 질환 제목으로 검색
-    - query: 'AUTH:"Korean College of Rheumatology" OR (TITLE:korea* AND (TITLE:rheumat* OR TITLE:lupus OR TITLE:arthritis OR TITLE:gout OR TITLE:spondyloarthritis OR TITLE:vasculitis OR TITLE:sjogren* OR TITLE:"systemic sclerosis" OR TITLE:myositis OR TITLE:behcet*))'
+    - query: '"Korean College of Rheumatology" OR (TITLE:korea* AND (TITLE:rheumat* OR TITLE:lupus OR TITLE:arthritis OR TITLE:gout OR TITLE:spondyloarthritis OR TITLE:vasculitis OR TITLE:sjogren* OR TITLE:"systemic sclerosis" OR TITLE:myositis OR TITLE:behcet*))'
       name: 다른 학술지 게재 류마티스 지침
 
 # ───────────── 혈액·종양 ─────────────

@@ -746,7 +746,7 @@ def test_society_name_query_source(tmp_data):
     from gcrawler import journal
     from gcrawler.build import merge_items
 
-    q = {"query": 'AUTH:"Korean College of Rheumatology"', "name": "다른 학술지 게재 류마티스 지침"}
+    q = {"query": '"Korean College of Rheumatology"', "name": "다른 학술지 게재 류마티스 지침"}
     soc = {"id": "kcr", "name": "대한류마티스학회", "short": "류마티스학회", "homepage": "https://x", "group": "내과계",
            "specialty": "내과", "division": "류마티스", "enabled": False, "verify_ssl": True, "boards": [],
            "name_en": "Korean College of Rheumatology", "journals": [q]}
