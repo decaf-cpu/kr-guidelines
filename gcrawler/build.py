@@ -13,6 +13,7 @@ from collections import Counter
 
 from .filedate import drop_shared_links, file_value, unreliable_file_days
 from .filters import is_guideline
+from . import xlang
 from .manual import load_manual
 from .parse import GENERIC_LINK, year_from_title
 from .store import DATA, ROOT, load_json, load_societies, load_taxonomy, save_json
@@ -37,11 +38,20 @@ _SOC_NAME = re.compile(r"(대한|한국)[가-힣·\s]{1,20}?(학회|의사회|�
 _COVID = re.compile(r"(covid\s*-?\s*19|코로나\s*19|코로나\s*바?이러스\s*감염증\s*-?\s*19|신종\s*코로나\s*바이러스\s*감염증)", re.I)
 _EDITION = re.compile(r"(제\s*\d+\s*판|\d+\s*판|\(?\d+(st|nd|rd|th)\s*ed(ition)?\.?\)?|개정판)", re.I)
 _TRUNC = re.compile(r"(\.\.\.|…)\s*$")
+_HANGUL = re.compile(r"[가-힣]")
+
+
+# 영문 제목 끝의 학술지 인용 꼬리 'Korean J Gastroenterol 2023; 82(3): 107-121'
+_CITATION = re.compile(r"\.\s+[A-Z][A-Za-z&\s]{2,60}?\s(19|20)\d{2}\s*;\s*\d+.*$")
+_ACRONYM = re.compile(r"\s*\(([A-Z][A-Za-z\-]{1,9})\)")  # '(EUS)', '(KSGE)'
+_PLURAL = re.compile(r"\b(guideline|recommendation|statement)s\b", re.I)
 
 
 def fuzzy_key(t: str) -> str:
     """연도·학회명·판수·표기 차이를 지운 제목 열쇠 (연도는 따로 비교)."""
     t = unicodedata.normalize("NFC", t or "")
+    if not _HANGUL.search(t):
+        t = _PLURAL.sub(r"\1", _ACRONYM.sub(" ", _CITATION.sub("", t)))
     if _TRUNC.search(t):
         t = re.sub(r"\S*$", "", _TRUNC.sub("", t))  # 잘린 제목은 끝의 잘린 낱말까지 버림
     t = _COVID.sub(" covid19 ", t)
@@ -53,13 +63,18 @@ def fuzzy_key(t: str) -> str:
 
 
 def _year_of(g: dict) -> str | None:
-    ty = year_from_title(g.get("title", ""))
+    ty = year_from_title(_CITATION.sub("", g.get("title", "")))  # 인용 꼬리의 게재연도는 지침 연도가 아님
     if ty:
         return ty[0][:4]
     return (g.get("date") or "")[:4] or None
 
 
 def _same_guideline(a: dict, b: dict) -> bool:
+    ka_ko, kb_ko = (bool(_HANGUL.search(unicodedata.normalize("NFC", g["title"]))) for g in (a, b))
+    if ka_ko != kb_ko:
+        # 국문 게시판 지침 ↔ 영문 학회지 논문: 주제어 사전으로 비교 (gcrawler/xlang.py)
+        ko, en = (a, b) if ka_ko else (b, a)
+        return xlang.same_guideline(ko, en, _year_of)
     if set(a["societies"]) & set(b["societies"]):
         return False  # 한 학회 안의 비슷한 제목은 판·요약본 등 서로 다른 문서일 수 있음
     ya, yb = _year_of(a), _year_of(b)
@@ -76,8 +91,8 @@ def _same_guideline(a: dict, b: dict) -> bool:
 
 
 def _display_title(titles: list[str]) -> str:
-    # 내용이 가장 긴 제목, 같으면 잘리지 않은 쪽, 그다음 군더더기(학회명·판수)가 적은 짧은 쪽
-    return max(titles, key=lambda t: (len(fuzzy_key(t)), not _TRUNC.search(t), -len(t)))
+    # 국문 제목 우선, 그다음 내용이 가장 긴 제목, 같으면 잘리지 않은 쪽, 그다음 군더더기(학회명·판수·인용)가 적은 짧은 쪽
+    return max(titles, key=lambda t: (bool(_HANGUL.search(unicodedata.normalize("NFC", t))), not _CITATION.search(t), len(fuzzy_key(t)), not _TRUNC.search(t), -len(t)))
 
 
 def _absorb_group(target: dict, g: dict) -> None:
@@ -86,6 +101,8 @@ def _absorb_group(target: dict, g: dict) -> None:
             target["sources"].append(s)
     target["_titles"] = target["_titles"] + g["_titles"]
     target["title"] = _display_title(target["_titles"])
+    if g.get("lang") == "ko":
+        target["lang"] = "ko"  # 국문본이 하나라도 있으면 '국문만 보기'에도 보이게
     rank = {"day": 3, "month": 2, "year": 1}
     if rank.get(g.get("date_precision"), 0) > rank.get(target.get("date_precision"), 0):
         target.update({k: g.get(k) for k in ("date", "date_precision", "date_source", "date_ref", "posted")})
@@ -129,7 +146,9 @@ def merge_across_societies(groups: list[dict], same_as: list[list[dict]] | None 
                     if all(o is not f for f in found):
                         found.append(o)
                     break
-        keep = found[0]["title"] if found else None  # 수동 묶음은 처음 적은 학회의 제목을 쓴다
+        # 수동 묶음은 처음 적은 항목의 제목을 쓴다
+        first = str(bundle[0].get("title", "")) if bundle else ""
+        keep = next((t for t in found[0]["_titles"] if first in t), found[0]["title"]) if found else None
         for o in found[1:]:
             _absorb_group(found[0], o)
             out = [x for x in out if x is not o]
@@ -270,6 +289,11 @@ def merge_items(items: list[dict], socs: dict[str, dict], overrides: list[dict] 
         if soc is None or (not soc.get("enabled", True) and not it.get("manual") and not it.get("journal")):
             continue
         key = norm_title(it["title"])
+        if it.get("journal"):
+            # 학회지는 개정판도 같은 제목으로 싣는다 (예: 자궁체부암 진료지침 2016·2024) → 발행연도가 2년 이상 다르면 다른 지침
+            y = (it.get("date") or "")[:4]
+            while key in groups and y and (gy := (groups[key].get("date") or "")[:4]) and abs(int(gy) - int(y)) > 1:
+                key += "|" + y
         url = it.get("url")
         files = list(it.get("attachments", []))
         if it.get("doi") and all(f.get("url") != it["doi"] for f in files):

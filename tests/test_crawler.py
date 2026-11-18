@@ -692,3 +692,50 @@ def test_journal_routed_items_end_to_end(tmp_data):
     items = json.loads((tmp_data / "guidelines.json").read_text(encoding="utf-8"))["items"]
     merged = merge_items(items, {s["id"]: s for s in socs})
     assert {g["societies"][0] for g in merged} == {"kes", "kta", "ksso"}
+
+
+def test_korean_board_and_english_journal_merge():
+    """국문 게시판 지침과 영문 학회지 논문(같은 지침)을 한 항목으로, 제목은 국문."""
+    from gcrawler.build import merge_items
+
+    socs = {"kta": {"id": "kta", "group": "내과계", "division": "내분비·대사", "short": "갑상선학회"},
+            "ksg": {"id": "ksg", "group": "내과계", "division": "소화기", "short": "소화기학회"},
+            "kges": {"id": "kges", "group": "내과계", "division": "소화기", "short": "내시경학회"},
+            "ksgo": {"id": "ksgo", "group": "산부인과", "division": "부인종양", "short": "부인종양학회"}}
+
+    def it(i, soc, title, date, journal=False):
+        d = {"id": i, "society": soc, "title": title, "url": f"https://x/{i}", "date": date, "access": "public",
+             "date_precision": "year" if len(date) == 4 else "day", "lang": "ko" if any("가" <= c <= "힣" for c in title) else "en"}
+        return dict(d, journal=True) if journal else d
+
+    items = [
+        it("a", "kta", "2023 대한갑상선학회 임신 중 및 산후 갑상선질환의 진단 및 치료 권고안 개정안.pdf", "2023"),
+        it("b", "kta", "Diagnosis and Management of Thyroid Disease during Pregnancy and Postpartum: 2023 Revised Korean Thyroid Association Guidelines", "2023-06-09", True),
+        it("c", "kta", "대한갑상선학회 갑상선분화암 진료권고안; Part II. 갑상선분화암의 추적 2026", "2026"),
+        it("d", "kta", "Korean Thyroid Association Guidelines on the Management of Differentiated Thyroid Cancers, Part II: Follow-up Surveillance after Initial Treatment 2026", "2026-08-31", True),
+        it("e", "kta", "대한갑상선학회 갑상선분화암 진료권고안; Part I. 갑상선분화암의 초기치료 - 제6장 갑상선분화암의 갑상선절제술 후 방사성요오드 치료 2024", "2024"),
+        # 인용 꼬리만 다른 같은 논문 (소화기학회 게시판 = 내시경학회지)
+        it("f", "ksg", "2021 Korean Society of Gastrointestinal Endoscopy Clinical Practice Guidelines for Endoscopic Sedation. Korean J Gastroenterol 2022; 79(4): 141-155", "2022"),
+        it("g", "kges", "2021 Korean Society of Gastrointestinal Endoscopy Clinical Practice Guidelines for Endoscopic Sedation", "2022-02-22", True),
+        # 같은 제목의 개정판은 다른 지침
+        it("h", "ksgo", "Practice guidelines for management of uterine corpus cancer in Korea: a Korean Society of Gynecologic Oncology consensus statement", "2024-01-05", True),
+        it("i", "ksgo", "Practice guidelines for management of uterine corpus cancer in Korea: a Korean Society of Gynecologic Oncology consensus statement", "2016-10-27", True),
+    ]
+    merged = merge_items(items, socs)
+    titles = {g["title"]: g for g in merged}
+    assert len(merged) == 6
+    preg = titles["2023 대한갑상선학회 임신 중 및 산후 갑상선질환의 진단 및 치료 권고안 개정안.pdf"]
+    assert len(preg["sources"]) == 2 and preg["lang"] == "ko"
+    assert len(titles["대한갑상선학회 갑상선분화암 진료권고안; Part II. 갑상선분화암의 추적 2026"]["sources"]) == 2
+    sed = next(g for g in merged if "Sedation" in g["title"])
+    assert set(sed["societies"]) == {"ksg", "kges"} and "Korean J" not in sed["title"]
+
+
+def test_xlang_part_and_year_guard():
+    from gcrawler import xlang
+    from gcrawler.build import _year_of
+
+    ko = {"title": "대한갑상선학회 갑상선분화암 진료권고안; Part I. 갑상선분화암의 초기치료 2024", "societies": ["kta"]}
+    en = {"title": "Korean Thyroid Association Guidelines on the Management of Differentiated Thyroid Cancers, Part II: Follow-up 2024", "societies": ["kta"]}
+    assert not xlang.same_guideline(ko, en, _year_of)  # 편 번호가 다르면 다른 지침
+    assert xlang.concepts("갑상선분화암의 추적") == {"dtc", "followup"}

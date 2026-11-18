@@ -39,3 +39,28 @@
 # 2019 소아 마크로라이드 불응성 중증 마이코플라즈마 폐렴 치료 지침 (소아감염학회·소아알레르기호흡기학회 공동)
 - - {society: kspid, title: 2019년 소아 마크로라이드 불응성 중증 마이코플라즈마 폐렴 치료 지침}
   - {society: kapard, title: 마이코플라즈마폐렴지침서}
+
+# ── 국문 게시판 ↔ 영문 학회지 (주제어 하나뿐이거나 학회가 달라 자동으로 못 묶는 것) ──
+# 대한자궁내막증학회 2024 진료지침: 국문 지침서(수동 등록) = Obstet Gynecol Sci 게재본
+- - {society: kses, title: 자궁내막증 진료지침서}
+  - {society: kses, title: "endometriosis: 2024 guideline for Korean patients"}
+
+# RSV 지속성 단클론항체(nirsevimab) 사용 권고 2025: 소아감염학회 게시판 = 소아청소년과학회 Clin Exp Pediatr 게재본
+- - {society: kspid, title: RSV 예방을 위한 지속성 단클론항체}
+  - {society: kps, title: long-acting monoclonal antibody to prevent respiratory syncytial virus}
+
+# 2022 심부전 진료지침(대한심부전학회): 심장학회 게시판 국문본 = Int J Heart Fail 2023 영문 4편
+- - {society: ksc, title: 심부전 진료지침 2022}
+  - {society: kshf, title: "Management of Heart Failure: Definition and Diagnosis"}
+  - {society: kshf, title: "Management of Heart Failure: Treatment"}
+  - {society: kshf, title: "Management of Heart Failure: Advanced and Acute Heart Failure"}
+  - {society: kshf, title: "Management of Heart Failure: Management of the Underlying Etiologies"}
+
+# ── 같은 지침을 두 학회지에 동시 게재 ──
+# 고위험 HPV 검사 진료지침 2026 (J Gynecol Oncol = Obstet Gynecol Sci)
+- - {society: ksgo, title: "Clinical practice guideline for high-risk human papillomavirus testing in cervical cancer screening"}
+  - {society: ksgo, title: Consensus-based guideline of the Korean Society of Gynecologic Oncology for high-risk human papillomavirus}
+
+# 2012 용종절제술 후 대장내시경 감시 지침 (Clin Endosc = Korean J Gastroenterol; colonoscopy/colonoscopic 표기 차이)
+- - {society: kges, title: Korean guidelines for postpolypectomy colonoscopy surveillance}
+  - {society: ksg, title: Korean Guidelines for Post-polypectomy Colonoscopic Surveillance. Korean J Gastroenterol 2012}
