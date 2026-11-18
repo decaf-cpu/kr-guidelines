@@ -44,7 +44,7 @@ NOISE = re.compile(
     r"review of (the )?(recent|current|international|existing|global)|systematic review|narrative review|\bsurvey\b|questionnaire|"
     r"adherence|awareness|implementation of|agreement (on|with|between)|compliance|appraisal|\bAGREE\b|"
     r"current status|trends in|comparison|comparative|commentary|perspectives? on|lessons from|key updates|"
-    r"differences (from|between)|a focus on|insights|achievement of|effects of|\bvs\.?\s|versus)",
+    r"differences (from|between)|a focus on|insights|achievement of|effects of|implications of|\bassociations? (with|between)|\bvs\.?\s|versus)",
     re.I,
 )
 # 연구 논문(research-article)은 제목이 지침 문서 형식일 때만
@@ -101,20 +101,28 @@ def keep(r: dict, korean_only: bool = True) -> bool:
     return is_guideline(title)  # 외국 학회 지침 소개 등은 여기서 걸러진다
 
 
-def _name_re(name: str) -> re.Pattern:
-    words = [re.escape(w) for w in re.split(r"\s+", name.strip()) if w.lower() != "the"]
-    return re.compile(r"\b" + r"\s+(?:the\s+)?".join(words) + r"\b", re.I)
+_STOP = {"the", "and", "of", "for", "on", "in"}
+
+
+def _tokens(text: str) -> str:
+    """학회명 표기 차이(쉼표·of/for·단복수·대소문자)를 무시하고 비교하려고 단어만 남긴다."""
+    ws = [w for w in re.findall(r"[a-z0-9]+", (text or "").lower()) if w not in _STOP]
+    return " " + " ".join(w[:-1] if len(w) > 3 and w.endswith("s") else w for w in ws) + " "
+
+
+def _find(name: str, text: str) -> int:
+    return _tokens(text).find(_tokens(name))
 
 
 def owner_society(r: dict, owner: str, names: dict[str, list[str]]) -> str:
     """제목 → 저자 단체명 순으로 영문 학회명을 찾아 그 학회 id. 학회지를 내는 학회가 언급되면 그 학회 우선."""
     for text in (clean_title(r.get("title", "")), r.get("authorString") or ""):
-        hits = [sid for sid, ns in names.items() if any(_name_re(n).search(text) for n in ns)]
-        if owner in hits:
+        pos = {sid: min(i for n in ns if (i := _find(n, text)) >= 0) for sid, ns in names.items()
+               if any(_find(n, text) >= 0 for n in ns)}
+        if owner in pos:
             return owner
-        if hits:
-            # 여러 학회가 나오면 글에서 먼저 나온 학회
-            return min(hits, key=lambda sid: min(m.start() for n in names[sid] if (m := _name_re(n).search(text))))
+        if pos:
+            return min(pos, key=pos.get)  # 여러 학회가 나오면 글에서 먼저 나온 학회
     return owner
 
 

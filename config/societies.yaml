@@ -77,6 +77,7 @@
 - id: klcs
   name: 대한간암학회
   short: 간암학회
+  name_en: Korean Liver Cancer Association
   homepage: https://www.livercancer.or.kr
   group: 내과계
   specialty: 내과
@@ -116,6 +117,7 @@
 - id: kchugr
   name: 대한상부위장관·헬리코박터학회
   short: 상부위장관·헬리코박터학회
+  name_en: Korean College of Helicobacter and Upper Gastrointestinal Research
   homepage: https://www.hpylori.or.kr
   group: 내과계
   specialty: 내과
@@ -143,6 +145,7 @@
 - id: kpba
   name: 대한췌장담도학회
   short: 췌장담도학회
+  name_en: Korean Pancreatobiliary Association
   homepage: https://www.kpba.kr
   group: 내과계
   specialty: 내과
@@ -200,6 +203,7 @@
 - id: kscvi
   name: 대한심혈관중재학회
   short: 심혈관중재학회
+  name_en: Korean Society of Cardiovascular Interventions
   homepage: https://www.kscvi.org
   group: 내과계
   specialty: 내과
@@ -488,6 +492,7 @@
 - id: ksneo
   name: 대한신생아학회
   short: 신생아학회
+  name_en: Korean Society of Neonatology
   homepage: https://www.neonatology.or.kr
   group: 내과계
   specialty: 소아청소년과
@@ -513,6 +518,7 @@
 - id: kspn
   name: 대한소아신장학회
   short: 소아신장학회
+  name_en: Korean Society of Pediatric Nephrology
   homepage: https://www.kspn.org
   group: 내과계
   specialty: 소아청소년과
@@ -523,6 +529,7 @@
 - id: kspho
   name: 대한소아혈액종양학회
   short: 소아혈액종양학회
+  name_en: Korean Society of Pediatric Hematology Oncology
   homepage: https://www.kspho.or.kr
   group: 내과계
   specialty: 소아청소년과
@@ -556,13 +563,10 @@
   enabled: false
   note: "진료지침 게시판(/bbs/guideline)이 회원 전용(로그인 필요)"
   boards: []
-  journals:   # 학회지 게재 지침 (Europe PMC, gcrawler/journal.py)
-    - issn: [2635-909X, 2635-9103]
-      name: Annals of Child Neurology
-      url: https://www.annchildneurol.org
 - id: kspc
   name: 대한소아심장학회
   short: 소아심장학회
+  name_en: Korean Society of Pediatric Cardiology
   homepage: https://www.pediheart.or.kr
   group: 내과계
   specialty: 소아청소년과
@@ -573,6 +577,7 @@
 - id: kspem
   name: 대한소아응급의학회
   short: 소아응급의학회
+  name_en: Korean Society of Pediatric Emergency Medicine
   homepage: https://www.kspem.org
   group: 내과계
   specialty: 소아청소년과
@@ -600,6 +605,7 @@
 - id: ksfp
   name: 대한가임력보존학회
   short: "가임력보존학회"
+  name_en: Korean Society for Fertility Preservation
   homepage: https://www.ksfp2013.org
   group: 외과계
   specialty: 산부인과
@@ -610,6 +616,7 @@
 - id: ksmfm
   name: 대한모체태아의학회
   short: "모체태아의학회"
+  name_en: Korean Society of Maternal Fetal Medicine
   homepage: https://www.ksmfm.or.kr
   group: 외과계
   specialty: 산부인과
@@ -650,6 +657,7 @@
 - id: kugs
   name: 대한비뇨부인과학회
   short: "비뇨부인과학회"
+  name_en: Korean Urogynecologic Society
   homepage: https://www.1998kugs.org/index.php
   group: 외과계
   specialty: 산부인과
@@ -660,6 +668,7 @@
 - id: kosge
   name: 대한산부인과내분비학회
   short: "산부인과내분비학회"
+  name_en: Korean Society of Gynecologic Endocrinology
   homepage: https://www.kosge.or.kr
   group: 외과계
   specialty: 산부인과
@@ -670,6 +679,7 @@
 - id: ksgendo
   name: 대한산부인과내시경학회
   short: "산부인과내시경학회"
+  name_en: Korean Society of Gynecologic Endoscopy
   homepage: https://www.ksgendo.or.kr
   group: 외과계
   specialty: 산부인과
@@ -680,6 +690,7 @@
 - id: kses
   name: 대한자궁내막증학회
   short: "자궁내막증학회"
+  name_en: Korean Society of Endometriosis
   homepage: http://endometriosis.or.kr
   group: 외과계
   specialty: 산부인과
@@ -692,6 +703,7 @@
 - id: kspm
   name: 대한주산의학회
   short: "주산의학회"
+  name_en: Korean Society of Perinatology
   homepage: http://perinatol.or.kr
   group: 외과계
   specialty: 산부인과
@@ -717,6 +729,7 @@
 - id: kscrh
   name: 대한피임·생식보건학회
   short: "피임·생식보건학회"
+  name_en: Korean Society of Contraception and Reproductive Health
   homepage: http://www.kscrh.org
   group: 외과계
   specialty: 산부인과

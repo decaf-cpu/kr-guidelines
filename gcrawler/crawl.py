@@ -344,7 +344,8 @@ def run(society_ids: list[str] | None = None, mode: str = "incremental", max_pag
         if rec["ok"]:
             rec["last_ok"] = rec["run_at"]
         else:
-            seen = max((it.get("last_seen") or "" for it in store.items.values() if it.get("society") == soc["id"]), default="")
+            seen = max((it.get("last_seen") or "" for it in store.items.values()
+                        if it.get("society") == soc["id"] and not it.get("journal")), default="")  # 학회지 항목 제외 (게시판 기준)
             rec["last_ok"] = prev.get("last_ok") or (prev.get("run_at") if prev.get("ok") else None) or seen or None
         status["societies"][soc["id"]] = rec
         log.info("  %s → 일치 %d건, 신규 %d건", soc["id"], matched, sum(b.get("new", 0) for b in rec["boards"]))
