@@ -350,3 +350,12 @@
   }
   main();
 })();
+
+// 고정 헤더 높이에 맞춰 그룹 제목(sticky) 위치 조정 — 글자 크기·화면 폭이 바뀌어도 겹치지 않게
+(() => {
+  const top = document.querySelector(".top");
+  if (!top) return;
+  const set = () => document.documentElement.style.setProperty("--top-h", `${top.offsetHeight}px`);
+  set();
+  if ("ResizeObserver" in window) new ResizeObserver(set).observe(top);
+})();
