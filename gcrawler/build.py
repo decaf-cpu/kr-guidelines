@@ -303,6 +303,10 @@ def merge_items(items: list[dict], socs: dict[str, dict], overrides: list[dict] 
             if all(f.get("url") != url for f in files):
                 files.insert(0, {"name": it["title"], "url": url, "kind": (re.search(r"\.(pdf|hwp|hwpx|docx?|pptx?)", url, re.I) or [None, "file"])[1].lower()})
             url = it["board"]
+        kinds = it.get("file_kinds") or {}
+        if kinds:
+            # 주소만으로 형식을 몰랐던 첨부는 수집 때 파일 앞부분으로 확인한 형식으로 (fill_file_kinds)
+            files = [dict(f, kind=kinds[f["url"]]) if f.get("kind") == "file" and kinds.get(f.get("url")) else f for f in files]
         main = boards.get(it["society"])
         ib = it.get("board")
         # 학회명 링크: 그 지침이 실린 진료지침 게시판 (같은 게시판의 분류·쪽 주소면 게시판 첫 화면)

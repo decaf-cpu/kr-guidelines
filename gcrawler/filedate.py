@@ -231,3 +231,60 @@ def file_date(fetcher: Fetcher, url: str, verify: bool = True, referer: str | No
         except (TypeError, ValueError):
             pass
     return None
+
+
+# ── 첨부 파일 형식 ─────────────────────────────
+# 다운로드 주소만으로 형식을 알 수 없는 첨부(download.php?number=… 등)는 파일 앞부분만 받아
+# Content-Disposition 파일명 → Content-Type → 파일 서명 순으로 형식을 정한다.
+_EXT = re.compile(r"\.(pdf|hwpx?|docx?|pptx?|xlsx?|zip)$", re.I)
+_CTYPE = [
+    ("pdf", "pdf"), ("hwp+zip", "hwpx"), ("hwpx", "hwpx"), ("hwp", "hwp"), ("haansoft", "hwp"),
+    ("wordprocessingml", "docx"), ("msword", "doc"), ("presentationml", "pptx"), ("ms-powerpoint", "ppt"),
+    ("spreadsheetml", "xlsx"), ("ms-excel", "xls"), ("zip", "zip"),
+]
+SNIFF = 65536
+
+
+def kind_from_bytes(head: bytes) -> str:
+    if head.startswith(b"%PDF") or b"%PDF-" in head[:1024]:
+        return "pdf"
+    if head.startswith(b"PK\x03\x04"):
+        if b"application/hwp+zip" in head[:200]:
+            return "hwpx"
+        for mark, k in ((b"word/", "docx"), (b"ppt/", "pptx"), (b"xl/", "xlsx"), (b"Contents/section", "hwpx")):
+            if mark in head:
+                return k
+        return "zip"
+    if head.startswith(b"\xd0\xcf\x11\xe0\xa1\xb1\x1a\xe1"):  # MS 복합 문서 (한글 97~, 옛 워드·파워포인트)
+        if b"HWP Document File" in head or "BodyText".encode("utf-16-le") in head:
+            return "hwp"
+        if "WordDocument".encode("utf-16-le") in head:
+            return "doc"
+        if "PowerPoint".encode("utf-16-le") in head:
+            return "ppt"
+    return ""
+
+
+def file_kind(fetcher: Fetcher, url: str, verify: bool = True, referer: str | None = None) -> str | None:
+    """첨부 형식(pdf, hwp, …). 알 수 없으면 "", 요청이 실패하면 None (다음 수집 때 다시 시도)."""
+    base = {"Referer": referer} if referer else {}
+    r = fetcher.get(url, verify=verify, stream=True, headers={**base, "Range": f"bytes=0-{SNIFF - 1}"})
+    if r is None:
+        return None
+    if r.status_code >= 400:
+        r.close()
+        return None if r.status_code >= 500 or r.status_code == 429 else ""
+    ctype = r.headers.get("content-type", "").lower()
+    disp = r.headers.get("content-disposition", "").lower()
+    if "html" in ctype and "attachment" not in disp:
+        r.close()
+        return ""  # 파일이 아니라 안내·로그인 페이지
+    m = _EXT.search(_filename(r, url).strip().strip('"'))
+    if m:
+        r.close()
+        return m.group(1).lower()
+    for key, k in _CTYPE:
+        if key in ctype:
+            r.close()
+            return k
+    return kind_from_bytes(_read(r, SNIFF))

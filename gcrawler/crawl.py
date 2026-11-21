@@ -12,7 +12,7 @@ from concurrent.futures import ThreadPoolExecutor
 from . import adapters
 from .access import check_detail, page_requires_login
 from .discover import discover
-from .filedate import drop_shared_links, file_date, file_value, text_year, unreliable_file_days
+from .filedate import drop_shared_links, file_date, file_kind, file_value, text_year, unreliable_file_days
 from .fetch import Fetcher
 from .journal import crawl_journal
 from .filters import KOREAN_ORG, is_guideline, lang_of, tags_for
@@ -247,6 +247,39 @@ def fill_file_dates(fetcher: Fetcher, soc: dict, store: Store, budget: int = 60)
     return n + fill_text_years(fetcher, soc, store, mine)
 
 
+_FILE_URL_HINT = re.compile(r"(download|filedown|file_down|fileDownload|down\.php|getfile)", re.I)
+
+
+def fill_file_kinds(fetcher: Fetcher, soc: dict, store: Store, budget: int = 60) -> int:
+    """주소만으로 형식을 모르는 첨부('file')의 형식을 파일 앞부분으로 확인해 항목의 file_kinds에 적어 둔다.
+    게시판을 다시 읽으면 첨부 목록이 새로 덮이므로 결과는 주소별로 따로 보관하고, build에서 반영한다."""
+    if soc.get("fetch_files") is False:
+        return 0
+    n = 0
+    for it in store.items.values():
+        if budget <= 0:
+            break
+        if it.get("society") != soc["id"] or it.get("manual") or it.get("access") == "members":
+            continue
+        known = it.setdefault("file_kinds", {})
+        urls = [a["url"] for a in it.get("attachments") or [] if (a.get("kind") or "file") == "file"]
+        if it.get("url") and _FILE_URL_HINT.search(it["url"]) and not re.search(r"\.(pdf|hwpx?|docx?|pptx?|xlsx?|zip)(?:$|[?#&])", it["url"], re.I):
+            urls.append(it["url"])  # 제목 링크가 곧 파일인 경우 (build에서 첨부로 옮김)
+        for u in urls:
+            if budget <= 0 or u in known:
+                continue
+            if urlparse(u).netloc in fetcher.blocked_hosts:
+                break
+            budget -= 1
+            k = file_kind(fetcher, u, verify=soc.get("verify_ssl", True), referer=it.get("board"))
+            if k is not None:
+                known[u] = k
+                n += bool(k)
+        if not known:
+            it.pop("file_kinds", None)
+    return n
+
+
 TEXT_CHECK_VERSION = 1
 
 
@@ -327,6 +360,10 @@ def run(society_ids: list[str] | None = None, mode: str = "incremental", max_pag
                     rec["file_dates"] = fill_file_dates(fetcher, soc, store)
                 except Exception:
                     log.exception("파일 날짜 추정 오류 %s", soc["id"])
+                try:
+                    rec["file_kinds"] = fill_file_kinds(fetcher, soc, store)
+                except Exception:
+                    log.exception("첨부 형식 확인 오류 %s", soc["id"])
         except Exception as e:
             log.exception("학회 오류 %s", soc["id"])
             rec["error"] = f"{type(e).__name__}: {e}"

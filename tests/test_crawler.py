@@ -759,3 +759,63 @@ def test_society_name_query_source(tmp_data):
     assert "The Practice Guideline for Vaccinating Korean Patients with Autoimmune Inflammatory Rheumatic Disease" in titles
     assert not any("Quality Indicators" in t or "Self-care" in t for t in titles)
     assert len(merge_items(items, {"kcr": soc})) == 7
+
+
+def test_file_kind_from_headers_and_bytes():
+    from gcrawler.filedate import file_kind, kind_from_bytes
+
+    def fetcher(body, headers, code=200):
+        class F(Fetcher):
+            def __init__(self):
+                super().__init__(delay=0, respect_robots=False, retries=0)
+
+            def _raw_get(self, url, verify, stream=False, headers_=None, **kw):
+                r = requests.Response()
+                r.url, r.status_code, r._content, r._content_consumed = url, code, body, True
+                r.headers.update(headers)
+                return r
+        return F()
+
+    u = "https://gastrokorea.org/bbs2/skin/guide/download.php?code=guide2&number=6247"
+    # 1) Content-Disposition 파일명 (한글 파일명이 latin-1로 깨져 와도 확장자는 읽힘)
+    cd = 'attachment; filename="2025 \xea\xb0\x80\xec\x9d\xb4\xeb\x93\x9c.hwp"'
+    assert file_kind(fetcher(b"\xd0\xcf\x11\xe0", {"content-type": "application/octet-stream", "content-disposition": cd}), u) == "hwp"
+    # 2) Content-Type
+    assert file_kind(fetcher(b"", {"content-type": "application/pdf"}), u) == "pdf"
+    # 3) 파일 서명 (octet-stream, 파일명 없음)
+    assert file_kind(fetcher(b"%PDF-1.7\n...", {"content-type": "application/octet-stream"}), u) == "pdf"
+    # 4) HTML 안내·로그인 페이지는 형식 없음
+    assert file_kind(fetcher(b"<html>login</html>" + b" " * 6000, {"content-type": "text/html", "content-length": "6100"}), u) == ""
+    # 5) 서버 오류는 다음에 다시 시도 (None)
+    assert file_kind(fetcher(b"", {"content-type": "text/plain"}, code=503), u) is None
+    assert kind_from_bytes(b"PK\x03\x04....mimetypeapplication/hwp+zip") == "hwpx"
+    assert kind_from_bytes(b"PK\x03\x04.....[Content_Types].xml....word/document.xml") == "docx"
+    assert kind_from_bytes(b"\xd0\xcf\x11\xe0\xa1\xb1\x1a\xe1" + b"\x00" * 100 + b"HWP Document File") == "hwp"
+    assert kind_from_bytes(b"random") == ""
+
+
+def test_fill_file_kinds_keeps_result_by_url():
+    from gcrawler.crawl import fill_file_kinds
+
+    class F(Fetcher):
+        def __init__(self):
+            super().__init__(delay=0, respect_robots=False, retries=0)
+            self.calls = 0
+
+        def _raw_get(self, url, verify, stream=False, **kw):
+            self.calls += 1
+            r = requests.Response()
+            r.url, r.status_code, r._content, r._content_consumed = url, 200, b"%PDF-1.4", True
+            r.headers["content-type"] = "application/octet-stream"
+            return r
+
+    class S:
+        items = {"a": {"society": "kasl", "access": "public", "board": "https://x.or.kr/b",
+                       "attachments": [{"name": "다운로드", "url": "https://x.or.kr/download.php?n=1", "kind": "file"},
+                                       {"name": "a.pdf", "url": "https://x.or.kr/a.pdf", "kind": "pdf"}]}}
+
+    f, s = F(), S()
+    assert fill_file_kinds(f, {"id": "kasl"}, s) == 1
+    assert s.items["a"]["file_kinds"] == {"https://x.or.kr/download.php?n=1": "pdf"}
+    fill_file_kinds(f, {"id": "kasl"}, s)
+    assert f.calls == 1  # 이미 확인한 주소는 다시 받지 않음
