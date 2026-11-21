@@ -7,6 +7,14 @@
 <meta name="description" content="대한의학회 회원학회 게시판의 공개 진료지침을 자동으로 모아 날짜·분과별로 보여줍니다.">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-gov-dynamic-subset.min.css">
 <link rel="stylesheet" href="style.css">
+<script>
+  // 저장된 화면 설정을 그리기 전에 적용 (깜빡임 방지) — KRDS 화면 크기·화면 모드
+  try {
+    var s = JSON.parse(localStorage.getItem("view-settings") || "{}");
+    document.documentElement.dataset.mode = s.mode || "theme";
+    if (s.scale) document.documentElement.style.fontSize = (62.5 * s.scale) + "%";
+  } catch (e) { document.documentElement.dataset.mode = "theme"; }
+</script>
 <link rel="alternate" type="application/rss+xml" title="신규 진료지침" href="feed.xml">
 </head>
 <body>
@@ -17,12 +25,38 @@
       <h1>국내 학회 진료지침 모음</h1>
       <p class="sub" id="sub">불러오는 중…</p>
     </div>
+    <div class="utility">
+      <a class="rss" href="feed.xml">RSS<span class="sr-only"> 새 진료지침 구독</span></a>
+      <div class="drop" id="settings">
+        <button type="button" class="util-btn" aria-expanded="false" aria-controls="settings-menu">화면 설정<i class="ico ico-arrow" aria-hidden="true"></i></button>
+        <div class="drop-menu" id="settings-menu" hidden>
+          <fieldset>
+            <legend>글자 크기</legend>
+            <div class="opts">
+              <label><input type="radio" name="scale" value="0.9"> 작게</label>
+              <label><input type="radio" name="scale" value="1" checked> 보통</label>
+              <label><input type="radio" name="scale" value="1.1"> 조금 크게</label>
+              <label><input type="radio" name="scale" value="1.3"> 크게</label>
+              <label><input type="radio" name="scale" value="1.5"> 가장 크게</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>화면 모드</legend>
+            <div class="opts">
+              <label><input type="radio" name="mode" value="theme" checked> 기기 설정 따름</label>
+              <label><input type="radio" name="mode" value="light"> 기본</label>
+              <label><input type="radio" name="mode" value="high-contrast"> 선명한 화면</label>
+            </div>
+          </fieldset>
+          <button type="button" class="text-btn" id="settings-reset"><i class="ico ico-reset" aria-hidden="true"></i>초기화</button>
+        </div>
+      </div>
+    </div>
     <nav class="tabs" aria-label="화면 전환">
       <div role="tablist">
         <button type="button" role="tab" id="t-list" aria-controls="tab-list" data-tab="list" aria-selected="true">진료지침</button>
         <button type="button" role="tab" id="t-status" aria-controls="tab-status" data-tab="status" aria-selected="false" tabindex="-1">수집 현황</button>
       </div>
-      <a class="rss" href="feed.xml">RSS<span class="sr-only"> 새 진료지침 구독</span></a>
     </nav>
   </div>
 </header>
@@ -77,7 +111,22 @@
 
     <!-- 결과 수 · 보기 · 정렬 (정렬 컨트롤은 목록 오른쪽 위) -->
     <div class="result-bar">
-      <p class="total" id="count" aria-live="polite" aria-atomic="true"></p>
+      <div class="total-wrap">
+        <p class="total" id="count" aria-live="polite" aria-atomic="true"></p>
+        <div class="help" id="help">
+          <button type="button" class="help-btn" aria-expanded="false" aria-controls="help-pop"><i class="ico ico-help" aria-hidden="true"></i><span class="sr-only">목록 표시 도움말</span></button>
+          <div class="help-pop" id="help-pop" role="dialog" aria-labelledby="help-h" hidden>
+            <h3 id="help-h">목록 읽는 법</h3>
+            <ul>
+              <li><b class="badge-new">NEW</b> 최근 30일 안에 새로 올라왔고 발간 1년 이내인 지침입니다. 학회를 처음 수집할 때 이미 있던 글은 제외합니다.</li>
+              <li><b>날짜</b> 발행일입니다. 날짜 아래 작은 글씨(예: 수집일, PDF 본문 발행연도)는 발행일을 어디서 확인했는지 알려 줍니다.</li>
+              <li><b>✎</b> 자동 수집이 막혀 관리자가 직접 확인해 등록한 학회입니다.</li>
+              <li><b>학회지</b> 학회 게시판이 아니라 학회지(open access)에 실린 지침입니다.</li>
+            </ul>
+            <button type="button" class="ico-btn help-close"><i class="ico ico-delete" aria-hidden="true"></i><span class="sr-only">도움말 닫기</span></button>
+          </div>
+        </div>
+      </div>
       <div class="result-ctrl">
         <div class="seg" id="views" role="group" aria-label="묶어 보기">
           <button type="button" data-view="timeline" aria-pressed="true">날짜별</button>
@@ -90,7 +139,7 @@
         </select></label>
       </div>
     </div>
-    <div id="results"></div>
+    <div id="results"><div class="loading" role="status"><span class="spinner" aria-hidden="true"></span>진료지침을 불러오는 중입니다.</div></div>
   </section>
 
   <section id="tab-status" role="tabpanel" aria-labelledby="t-status" hidden>
@@ -108,6 +157,7 @@
     회원 전용 게시물은 수집하지 않습니다. 제목·첨부 링크는 모두 새 창으로 열립니다.</p>
   <p>자동 수집이 막혀 손으로 등록하는 학회(✎)에 새 지침이 빠졌다면 <a href="#" id="foot-recheck">수동등록 재확인 요청</a>을 남겨 주세요.</p>
 </footer>
+<button type="button" class="go-top" id="go-top" hidden><i class="ico ico-top" aria-hidden="true"></i><span class="sr-only">맨 위로</span></button>
 <script src="app.js"></script>
 </body>
 </html>

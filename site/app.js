@@ -176,6 +176,13 @@
     const re = new RegExp(`(${ts.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")})`, "gi");
     return String(text).split(re).map((part, i) => (i % 2 ? `<mark>${esc(part)}</mark>` : esc(part))).join("");
   }
+  // 제목: 학술지 제목에 섞여 온 기울임·위첨자 태그(<i>, &lt;i&gt;)는 서식으로 살리고 나머지 태그는 지운다
+  const unent = (t) => String(t).replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&amp;/g, "&");
+  function titleHTML(t) {
+    return unent(t).split(/(<\/?(?:i|em|sup|sub)>)/i)
+      .map((p, i) => (i % 2 ? p.toLowerCase() : hl(p.replace(/<\/?[a-z][^>]*>/gi, ""))))
+      .join("");
+  }
   const EXT = /\.(pdf|hwpx?|docx?|pptx?|xlsx?|zip)(?:$|[?#&])/i;
   function fileInfo(f) {
     const k = (f.kind || "").toLowerCase();
@@ -192,14 +199,16 @@
   function itemHTML(it) {
     const main = it.sources[0];
     const isNew = isNewItem(it);
+    const seen = new Set();
     const socs = it.sources
+      .filter((s) => { const k = `${s.society}|${s.journal ? 1 : 0}`; return seen.has(k) ? false : seen.add(k); })
       .map((s) => {
         const name = SOCS[s.society]?.name || s.society;
         const where = s.journal ? `학회지 ${s.board_name || ""}`.trim() : "진료지침 게시판";
         return `<a class="tag-link" href="${esc(s.board || SOCS[s.society]?.board || s.url)}" target="_blank" rel="noopener" title="${esc(name)} ${esc(where)}">${hl(SOCS[s.society]?.short || s.society)}${s.manual ? ' ✎<span class="sr-only">(수동 등록)</span>' : ""}${s.journal ? " · 학회지" : ""}<span class="sr-only"> ${esc(where)}로 이동</span>${NW}</a>`;
       })
       .join("");
-    const files = it.sources.flatMap((s) => s.attachments || []).slice(0, 4)
+    const files = it.sources.flatMap((s) => s.attachments || []).filter((f, i, a) => a.findIndex((g) => g.url === f.url) === i).slice(0, 4)
       .map((f) => {
         const x = fileInfo(f);
         return `<a class="file" href="${esc(f.url)}" target="_blank" rel="noopener" title="${esc(f.name)}"><i class="ico ${x.link ? "ico-external" : "ico-download"}" aria-hidden="true"></i>${esc(x.label)}<span class="sr-only">${x.link ? " 보기" : " 내려받기"}</span>${NW}</a>`;
@@ -212,7 +221,7 @@
     return `<li class="item">
       <div class="date"><time${dt ? ` datetime="${esc(dt)}"` : ""}>${esc(fmtDate(it))}</time>${note ? `<span class="src"${it.date_ref ? ` title="${esc(it.date_ref)}"` : ""}>${esc(note)}</span>` : ""}</div>
       <div>
-        ${isNew ? '<span class="badge-new">NEW<span class="sr-only"> 새 지침</span></span>' : ""}<a class="title" href="${esc(main.url)}" target="_blank" rel="noopener">${hl(it.title)}${NW}</a>
+        ${isNew ? '<span class="badge-new">NEW<span class="sr-only"> 새 지침</span></span>' : ""}<a class="title" href="${esc(main.url)}" target="_blank" rel="noopener">${titleHTML(it.title)}${NW}</a>
         <div class="meta">${socs}${divs}${tags}${files ? `<span class="files">${files}</span>` : ""}</div>
       </div>
     </li>`;
@@ -482,4 +491,55 @@
   const set = () => document.documentElement.style.setProperty("--top-h", `${top.offsetHeight}px`);
   set();
   if ("ResizeObserver" in window) new ResizeObserver(set).observe(top);
+})();
+
+// ── 화면 설정: 글자 크기 · 화면 모드 (KRDS 화면 크기 조절 · 선명한 화면 모드) ──
+(() => {
+  const root = document.documentElement;
+  const load = () => { try { return JSON.parse(localStorage.getItem("view-settings") || "{}"); } catch (e) { return {}; } };
+  const save = (v) => { try { localStorage.setItem("view-settings", JSON.stringify(v)); } catch (e) { /* 저장이 막힌 브라우저는 이번 방문에만 적용 */ } };
+  let cur = Object.assign({ scale: 1, mode: "theme" }, load());
+  const apply = () => {
+    root.dataset.mode = cur.mode;
+    root.style.fontSize = cur.scale === 1 ? "" : `${62.5 * cur.scale}%`;
+    for (const r of document.querySelectorAll('#settings-menu input[name="scale"]')) r.checked = Number(r.value) === Number(cur.scale);
+    for (const r of document.querySelectorAll('#settings-menu input[name="mode"]')) r.checked = r.value === cur.mode;
+  };
+  apply();
+  document.querySelector("#settings-menu")?.addEventListener("change", (e) => {
+    if (e.target.name === "scale") cur.scale = Number(e.target.value);
+    if (e.target.name === "mode") cur.mode = e.target.value;
+    apply(); save(cur);
+  });
+  document.querySelector("#settings-reset")?.addEventListener("click", () => { cur = { scale: 1, mode: "theme" }; apply(); save(cur); });
+})();
+
+// ── 펼침 메뉴 공통: 화면 설정 · 도움말 (Esc·바깥 클릭으로 닫고 초점은 버튼으로) ──
+(() => {
+  const pairs = [["#settings", ".util-btn", "#settings-menu"], ["#help", ".help-btn", "#help-pop"]]
+    .map(([w, b, m]) => ({ wrap: document.querySelector(w), btn: document.querySelector(`${w} ${b}`), menu: document.querySelector(m) }))
+    .filter((p) => p.wrap && p.btn && p.menu);
+  const close = (p, refocus) => { if (p.menu.hidden) return; p.menu.hidden = true; p.btn.setAttribute("aria-expanded", "false"); if (refocus) p.btn.focus(); };
+  for (const p of pairs) {
+    p.btn.addEventListener("click", () => {
+      const open = p.menu.hidden;
+      for (const q of pairs) close(q, false);
+      if (open) { p.menu.hidden = false; p.btn.setAttribute("aria-expanded", "true"); p.menu.querySelector("input:checked, button, a")?.focus(); }
+    });
+    p.menu.querySelector(".help-close")?.addEventListener("click", () => close(p, true));
+  }
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") for (const p of pairs) if (!p.menu.hidden && p.wrap.contains(document.activeElement)) close(p, true); });
+  document.addEventListener("click", (e) => { for (const p of pairs) if (!p.wrap.contains(e.target)) close(p, false); });
+  // 메뉴 밖으로 Tab이 나가면 닫기
+  document.addEventListener("focusin", (e) => { for (const p of pairs) if (!p.wrap.contains(e.target)) close(p, false); });
+})();
+
+// ── 맨 위로: 한 화면 이상 내려가면 표시, 누르면 위로 이동하고 초점은 본문 시작으로 ──
+(() => {
+  const btn = document.querySelector("#go-top");
+  if (!btn) return;
+  const onScroll = () => { btn.hidden = window.scrollY < window.innerHeight; };
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+  btn.addEventListener("click", () => { window.scrollTo({ top: 0 }); document.querySelector("#main")?.focus({ preventScroll: true }); });
 })();
