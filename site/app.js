@@ -108,11 +108,12 @@
   }
 
   // ── 렌더: 컨트롤 ──────────────────────
+  const pressed = (on) => `aria-pressed="${on ? "true" : "false"}"`;
   function renderControls() {
     const groups = (TAX.groups || []).filter((g) => DATA.some((it) => it.groups.includes(g)));
     const gCount = (g) => DATA.filter((it) => (!g || it.groups.includes(g)) && matches(it, "group")).length;
     $("#groups").innerHTML = [["", "전체"], ...groups.map((g) => [g, g])]
-      .map(([v, label]) => `<button data-group="${esc(v)}" class="${state.group === v ? "on" : ""}">${esc(label)}<span class="n">${gCount(v)}</span></button>`)
+      .map(([v, label]) => `<button type="button" class="chip" data-group="${esc(v)}" ${pressed(state.group === v)}>${esc(label)}<span class="n">${gCount(v)}</span></button>`)
       .join("");
 
     const order = state.group ? TAX.divisions?.[state.group] || [] : Object.values(TAX.divisions || {}).flat();
@@ -120,38 +121,101 @@
     const divs = [...order.filter((d) => present.has(d)), ...[...present].filter((d) => !order.includes(d)).sort()];
     const base = DATA.filter((it) => matches(it, "div"));
     $("#divisions").innerHTML = divs
-      .map((d) => `<button class="chip ${state.divs.has(d) ? "on" : ""}" data-div="${esc(d)}">${esc(d)}<span class="n">${base.filter((it) => it.divisions.includes(d)).length}</span></button>`)
+      .map((d) => `<button type="button" class="chip" data-div="${esc(d)}" ${pressed(state.divs.has(d))}>${esc(d)}<span class="n">${base.filter((it) => it.divisions.includes(d)).length}</span></button>`)
       .join("");
 
-    for (const b of document.querySelectorAll("#views button")) b.classList.toggle("on", b.dataset.view === state.view);
-    $("#q").value = state.q;
+    for (const b of document.querySelectorAll("#views button")) b.setAttribute("aria-pressed", b.dataset.view === state.view);
+    if (document.activeElement !== $("#q")) $("#q").value = state.q;
+    $("#q-clear").hidden = !$("#q").value;
     $("#period").value = state.period;
     $("#sort").value = state.sort;
     $("#society").value = state.society;
     $("#newOnly").checked = state.newOnly;
     $("#koOnly").checked = state.koOnly;
+    renderApplied();
+  }
+
+  // 적용된 조건: 조건마다 삭제 버튼 + 전체 초기화 (KRDS 필터링·정렬)
+  function appliedList() {
+    const a = [];
+    if (state.group) a.push(["group", "", `계열: ${state.group}`]);
+    for (const d of state.divs) a.push(["div", d, `분과: ${d}`]);
+    if (state.society) a.push(["society", "", `학회: ${SOCS[state.society]?.short || SOCS[state.society]?.name || state.society}`]);
+    if (state.period) a.push(["period", "", `최근 ${state.period}년`]);
+    if (state.newOnly) a.push(["newOnly", "", "최근 6개월 이내"]);
+    if (state.koOnly) a.push(["koOnly", "", "국문 제목만"]);
+    return a;
+  }
+  function renderApplied() {
+    const a = appliedList();
+    const el = $("#applied");
+    $("#filter-n").textContent = a.length ? a.length : "";
+    el.hidden = !a.length && !state.q;
+    if (el.hidden) { el.innerHTML = ""; return; }
+    el.innerHTML = `<span class="applied-h">적용된 조건 ${a.length + (state.q ? 1 : 0)}개</span>` +
+      (state.q ? `<button type="button" class="applied-tag" data-rm="q">검색어: ${esc(state.q)}<i class="ico ico-delete" aria-hidden="true"></i><span class="sr-only"> 조건 삭제</span></button>` : "") +
+      a.map(([k, v, label]) => `<button type="button" class="applied-tag" data-rm="${k}" data-v="${esc(v)}">${esc(label)}<i class="ico ico-delete" aria-hidden="true"></i><span class="sr-only"> 조건 삭제</span></button>`).join("") +
+      `<button type="button" class="text-btn" data-rm="all"><i class="ico ico-reset" aria-hidden="true"></i>전체 초기화</button>`;
+  }
+  function removeCondition(k, v) {
+    if (k === "all") { state.q = ""; state.group = ""; state.divs.clear(); state.society = ""; state.period = ""; state.newOnly = false; state.koOnly = false; $("#q").value = ""; }
+    else if (k === "q") { state.q = ""; $("#q").value = ""; }
+    else if (k === "div") state.divs.delete(v);
+    else if (k === "newOnly" || k === "koOnly") state[k] = false;
+    else state[k] = "";
+    state.shown = PAGE;
   }
 
   // ── 렌더: 목록 ────────────────────────
+  const NW = '<span class="sr-only"> (새 창)</span>';
+  const terms = () => state.q.split(/\s+/).filter(Boolean);
+  // 검색어 강조: 원문을 검색어 기준으로 나눈 뒤 조각마다 이스케이프
+  function hl(text) {
+    const ts = terms();
+    if (!ts.length) return esc(text);
+    const re = new RegExp(`(${ts.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")})`, "gi");
+    return String(text).split(re).map((part, i) => (i % 2 ? `<mark>${esc(part)}</mark>` : esc(part))).join("");
+  }
+  const EXT = /\.(pdf|hwpx?|docx?|pptx?|xlsx?|zip)(?:$|[?#&])/i;
+  function fileInfo(f) {
+    const k = (f.kind || "").toLowerCase();
+    if (k === "원문" || k === "pubmed") return { link: true, label: f.kind === "원문" ? "원문" : "PubMed" };
+    let ext = k !== "file" ? k : "";
+    if (!ext) {
+      let raw = f.name + " " + f.url;
+      try { const m = /filename=([^&]+)/.exec(f.url); if (m) raw += " " + atob(decodeURIComponent(m[1])); } catch (e) { /* 파일명 해석 실패는 무시 */ }
+      const m = EXT.exec(raw.split(/\s+/).find((w) => EXT.test(w)) || "");
+      ext = m ? m[1].toLowerCase() : "";
+    }
+    return { link: false, label: ext ? ext.toUpperCase() : "첨부" };
+  }
   function itemHTML(it) {
     const main = it.sources[0];
     const isNew = isNewItem(it);
     const socs = it.sources
-      .map((s) => `<a class="tag soc" href="${esc(s.board || SOCS[s.society]?.board || s.url)}" target="_blank" rel="noopener" title="${esc(SOCS[s.society]?.name)} ${s.journal ? "학회지 " + esc(s.board_name || "") : "진료지침 게시판"}">${esc(SOCS[s.society]?.short || s.society)}${s.manual ? " ✎" : ""}${s.journal ? " · 학회지" : ""}</a>`)
+      .map((s) => {
+        const name = SOCS[s.society]?.name || s.society;
+        const where = s.journal ? `학회지 ${s.board_name || ""}`.trim() : "진료지침 게시판";
+        return `<a class="tag-link" href="${esc(s.board || SOCS[s.society]?.board || s.url)}" target="_blank" rel="noopener" title="${esc(name)} ${esc(where)}">${hl(SOCS[s.society]?.short || s.society)}${s.manual ? ' ✎<span class="sr-only">(수동 등록)</span>' : ""}${s.journal ? " · 학회지" : ""}<span class="sr-only"> ${esc(where)}로 이동</span>${NW}</a>`;
+      })
       .join("");
     const files = it.sources.flatMap((s) => s.attachments || []).slice(0, 4)
-      .map((f) => `<a class="file" href="${esc(f.url)}" target="_blank" rel="noopener" title="${esc(f.name)}">${esc(f.kind === "file" ? "첨부" : f.kind)}</a>`)
+      .map((f) => {
+        const x = fileInfo(f);
+        return `<a class="file" href="${esc(f.url)}" target="_blank" rel="noopener" title="${esc(f.name)}"><i class="ico ${x.link ? "ico-external" : "ico-download"}" aria-hidden="true"></i>${esc(x.label)}<span class="sr-only">${x.link ? " 보기" : " 내려받기"}</span>${NW}</a>`;
+      })
       .join("");
-    const tags = (it.tags || []).map((t) => `<span class="tag">${esc(t)}</span>`).join("");
-    const divs = it.divisions.map((d) => `<span class="tag div">${esc(d)}</span>`).join("");
+    const tags = (it.tags || []).map((t) => `<span class="badge type">${esc(t)}</span>`).join("");
+    const divs = it.divisions.map((d) => `<span class="badge">${hl(d)}</span>`).join("");
     const note = dateNote(it);
-    return `<div class="item">
-      <div class="date">${esc(fmtDate(it))}${note ? `<span class="src"${it.date_ref ? ` title="${esc(it.date_ref)}"` : ""}>${esc(note)}</span>` : ""}</div>
+    const dt = it.date || it.first_seen || "";
+    return `<li class="item">
+      <div class="date"><time${dt ? ` datetime="${esc(dt)}"` : ""}>${esc(fmtDate(it))}</time>${note ? `<span class="src"${it.date_ref ? ` title="${esc(it.date_ref)}"` : ""}>${esc(note)}</span>` : ""}</div>
       <div>
-        ${isNew ? '<span class="badge-new">NEW</span>' : ""}<a class="title" href="${esc(main.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>
-        <div class="meta">${socs}${divs}${tags}${files}</div>
+        ${isNew ? '<span class="badge-new">NEW<span class="sr-only"> 새 지침</span></span>' : ""}<a class="title" href="${esc(main.url)}" target="_blank" rel="noopener">${hl(it.title)}${NW}</a>
+        <div class="meta">${socs}${divs}${tags}${files ? `<span class="files">${files}</span>` : ""}</div>
       </div>
-    </div>`;
+    </li>`;
   }
 
   function groupBy(list) {
@@ -176,9 +240,20 @@
 
   function renderList() {
     const list = DATA.filter((it) => matches(it)).sort((a, b) => sortKey(b).localeCompare(sortKey(a)));
-    $("#count").textContent = `${list.length.toLocaleString()}건`;
+    // 결과 수는 필수 표시 + 바뀔 때 화면낭독기가 읽도록 aria-live (KRDS 검색 결과 확인)
+    $("#count").innerHTML = (state.q ? `<span class="q">‘${esc(state.q)}’ 검색 결과 </span>` : "") + `총 <em>${list.length.toLocaleString()}</em>건`;
     if (!list.length) {
-      $("#results").innerHTML = `<div class="empty">조건에 맞는 진료지침이 없습니다.</div>`;
+      const hasCond = appliedList().length > 0;
+      $("#results").innerHTML = `<div class="empty">
+        <h3>조건에 맞는 진료지침이 없습니다.</h3>
+        ${state.q ? `<p>검색어의 철자를 확인하거나, 더 짧은 단어(예: ‘심부전’)로 다시 검색해 보세요.</p>` : ""}
+        ${hasCond ? `<p>선택한 조건을 줄이면 더 많은 결과를 볼 수 있습니다.</p>` : ""}
+        <p>학회 게시판의 회원 전용 지침은 수집하지 않습니다.</p>
+        <div class="acts">
+          ${state.q ? '<button type="button" class="btn-2" data-rm="q"><i class="ico ico-delete" aria-hidden="true"></i>검색어 지우기</button>' : ""}
+          ${hasCond ? '<button type="button" class="btn-2" data-rm="all"><i class="ico ico-reset" aria-hidden="true"></i>조건 모두 초기화</button>' : ""}
+        </div>
+      </div>`;
       return;
     }
     let budget = state.shown;
@@ -187,18 +262,32 @@
       if (budget <= 0) break;
       const part = items.slice(0, budget);
       budget -= part.length;
-      html.push(`<div class="group-h">${esc(k)}<span class="n">${items.length}건</span></div><div class="list">${part.map(itemHTML).join("")}</div>`);
+      html.push(`<h3 class="group-h">${esc(k)}<span class="n">${items.length}건</span></h3><ul class="list">${part.map(itemHTML).join("")}</ul>`);
     }
     const total = state.view === "timeline" ? list.length : groupBy(list).reduce((n, [, v]) => n + v.length, 0);
-    if (state.shown < total) html.push(`<button class="more" id="more">더 보기 (${(total - state.shown).toLocaleString()}건 남음)</button>`);
+    if (state.shown < total) html.push(`<button type="button" class="more" id="more">더 보기 (${(total - state.shown).toLocaleString()}건 남음)</button>`);
     $("#results").innerHTML = html.join("");
-    $("#more")?.addEventListener("click", () => { state.shown += PAGE * 2; renderList(); });
+    $("#more")?.addEventListener("click", () => {
+      // 더 보기 후에는 새로 나온 첫 항목으로 초점을 옮겨 이어 읽을 수 있게
+      const before = document.querySelectorAll("#results .item").length;
+      state.shown += PAGE * 2;
+      renderList();
+      document.querySelectorAll("#results .item .title")[before]?.focus();
+    });
   }
 
+  // 다시 그린 뒤에도 키보드 초점을 누른 컨트롤에 그대로 둔다 (KRDS: 초점을 예측할 수 없는 곳으로 옮기지 않음)
+  function focusKey(el) {
+    if (!el || !el.dataset) return null;
+    for (const k of ["group", "div", "view"]) if (el.dataset[k] !== undefined) return `[data-${k}="${CSS.escape(el.dataset[k])}"]`;
+    return null;
+  }
   function render() {
+    const key = focusKey(document.activeElement);
     renderControls();
     renderList();
     writeHash();
+    if (key) document.querySelector(`.controls ${key}, .result-bar ${key}`)?.focus();
   }
 
   // ── 수집 현황 ─────────────────────────
@@ -226,14 +315,14 @@
         if (journalOnly) badge = `<span class="${r?.ok || blip ? "st-ok" : r ? "st-err" : "st-warn"}">학회지만 수집</span><div class="st-board">게시판: ${esc(s.excluded || "제외")}</div>`;
         const off = s.enabled === false && !journalOnly;
         const boards = (off ? [] : (r?.boards || []).filter((b) => !(blip && b.error)))
-          .map((b) => `<div class="st-board">${b.source === "discovered" ? "자동탐색 · " : b.source === "journal" ? "학회지 · " : ""}<a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.name || b.url)}</a>${b.error ? " — " + esc(b.error) : ` — ${b.matched ?? 0}건`}${routedNote(b)}</div>`)
+          .map((b) => `<div class="st-board">${b.source === "discovered" ? "자동탐색 · " : b.source === "journal" ? "학회지 · " : ""}<a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.name || b.url)}${NW}</a>${b.error ? " — " + esc(b.error) : ` — ${b.matched ?? 0}건`}${routedNote(b)}</div>`)
           .join("");
         const err = !off && !blip && r?.error ? `<div class="st-board">${esc(r.error)}</div>` : "";
-        return `<tr><td>${esc(s.division)}</td><td><a href="${esc(s.board || s.homepage)}" target="_blank" rel="noopener">${esc(s.name)}</a>${s.note ? `<div class="st-board">${esc(s.note)}</div>` : ""}</td>
+        return `<tr><td>${esc(s.division)}</td><td><a href="${esc(s.board || s.homepage)}" target="_blank" rel="noopener">${esc(s.name)}${NW}</a>${s.note ? `<div class="st-board">${esc(s.note)}</div>` : ""}</td>
           <td>${badge}${err}${boards}</td><td class="num">${s.excluded && !journalOnly ? "—" : count[s.id] || 0}</td><td class="st-board">${off ? "" : esc((r?.run_at || "").replace("T", " ").slice(0, 16))}</td></tr>`;
       })
       .join("");
-    $("#status").innerHTML = renderManual() + `<h2>학회별 수집 현황</h2><table class="st"><thead><tr><th>분과</th><th>학회</th><th>상태 · 게시판</th><th>건수</th><th>마지막 수집</th></tr></thead><tbody>${rows}</tbody></table>
+    $("#status").innerHTML = renderManual() + `<h2>학회별 수집 현황</h2><div class="tbl-wrap"><table class="st"><caption class="sr-only">학회별 수집 현황: 분과, 학회, 상태와 게시판, 건수, 마지막 수집 시각</caption><thead><tr><th scope="col">분과</th><th scope="col">학회</th><th scope="col">상태 · 게시판</th><th scope="col" class="num">건수</th><th scope="col">마지막 수집</th></tr></thead><tbody>${rows}</tbody></table></div>
       <p class="note">회원 전용으로 판정되어 제외된 게시물: ${(STATUS.hidden_members_only || 0).toLocaleString()}건 · 학회 배지의 ✎ 표시는 자동 수집이 막혀 손으로 등록한 항목입니다.</p>
       ${(STATUS.manual_errors || []).length ? `<p class="note st-err">수동 등록 오류: ${STATUS.manual_errors.map(esc).join(" / ")}</p>` : ""}`;
     recheckLoaded = false;
@@ -263,15 +352,15 @@
         const d = s.manual_checked;
         const days = d ? Math.floor((today - new Date(d + "T00:00:00+09:00")) / 864e5) : null;
         const when = d ? `${d.replace(/-/g, ".")}${days > 90 ? ' <span class="st-warn">· 오래됨</span>' : ""}` : '<span class="st-warn">아직 등록 전</span>';
-        return `<tr><td><a href="${esc(s.board || s.homepage)}" target="_blank" rel="noopener">${esc(s.name)}</a></td><td class="num">${count[s.id] || 0}</td><td class="st-board">${when}</td></tr>`;
+        return `<tr><td><a href="${esc(s.board || s.homepage)}" target="_blank" rel="noopener">${esc(s.name)}${NW}</a></td><td class="num">${count[s.id] || 0}</td><td class="st-board">${when}</td></tr>`;
       })
       .join("");
     return `<div class="recheck">
       <h2>수동 등록 학회</h2>
       <p class="note">아래 학회는 robots.txt·웹 방화벽·해외 접속 차단 때문에 자동으로 모으지 않고, 관리자가 학회 페이지를 직접 열어 확인한 지침만 올립니다.
         새 지침이 빠진 것 같으면 재확인을 요청해 주세요. 관리자가 확인해 반영합니다 (GitHub 로그인 필요).</p>
-      <table class="st"><thead><tr><th>학회</th><th>건수</th><th>마지막 확인</th></tr></thead><tbody>${rows}</tbody></table>
-      <div class="recheck-act"><a class="btn" href="${RECHECK_URL}" target="_blank" rel="noopener">수동등록 재확인 요청</a><span id="recheck-open" class="st-board"></span></div>
+      <div class="tbl-wrap"><table class="st"><caption class="sr-only">수동 등록 학회: 학회, 건수, 마지막 확인일</caption><thead><tr><th scope="col">학회</th><th scope="col" class="num">건수</th><th scope="col">마지막 확인</th></tr></thead><tbody>${rows}</tbody></table></div>
+      <div class="recheck-act"><a class="btn" href="${RECHECK_URL}" target="_blank" rel="noopener"><i class="ico ico-external" aria-hidden="true"></i>수동등록 재확인 요청${NW}</a><span id="recheck-open" class="st-board"></span></div>
     </div>`;
   }
 
@@ -293,7 +382,33 @@
   // ── 이벤트 ───────────────────────────
   function bind() {
     let t;
-    $("#q").addEventListener("input", (e) => { clearTimeout(t); t = setTimeout(() => { state.q = e.target.value.trim(); state.shown = PAGE; render(); }, 150); });
+    const applyQ = () => { clearTimeout(t); state.q = $("#q").value.trim(); state.shown = PAGE; render(); };
+    $("#q").addEventListener("input", (e) => { $("#q-clear").hidden = !e.target.value; clearTimeout(t); t = setTimeout(applyQ, 150); });
+    // 검색 버튼·Enter: 바로 적용하고 초점은 검색창에 둔다 (모바일 키보드는 닫힘)
+    $("#search-form").addEventListener("submit", (e) => { e.preventDefault(); applyQ(); if (matchMedia("(max-width: 767px)").matches) $("#q").blur(); });
+    $("#q-clear").addEventListener("click", () => { $("#q").value = ""; applyQ(); $("#q").focus(); });
+    $("#q").addEventListener("keydown", (e) => { if (e.key === "Escape" && $("#q").value) { e.preventDefault(); $("#q").value = ""; applyQ(); } });
+    // 좁은 화면에서는 검색창 안내 문구가 잘리지 않게 짧은 문구로 (KRDS: 검색어 입력 필드는 말줄임 없이)
+    const q = $("#q"), longPh = q.placeholder, mq = matchMedia("(max-width: 767px)");
+    const setPh = () => { q.placeholder = mq.matches ? q.dataset.short : longPh; };
+    setPh(); mq.addEventListener?.("change", setPh);
+    // 모바일: 필터 접기/펴기
+    $("#filter-toggle").addEventListener("click", (e) => {
+      const open = e.currentTarget.getAttribute("aria-expanded") !== "true";
+      e.currentTarget.setAttribute("aria-expanded", open);
+      $(".controls").classList.toggle("open", open);
+    });
+    // 적용된 조건 삭제 · 결과 없음 화면의 초기화 버튼
+    document.addEventListener("click", (e) => {
+      const b = e.target.closest("#applied [data-rm], .empty [data-rm]"); if (!b) return;
+      const tags = [...document.querySelectorAll("#applied [data-rm]")];
+      const idx = tags.indexOf(b);
+      removeCondition(b.dataset.rm, b.dataset.v || "");
+      render();
+      // 지운 조건 다음 버튼으로 초점 이동, 남은 조건이 없으면 검색창으로
+      const next = [...document.querySelectorAll("#applied [data-rm]")];
+      (idx >= 0 && next[Math.min(idx, next.length - 2)]) ? next[Math.min(idx, next.length - 2)].focus() : $("#q").focus();
+    });
     $("#groups").addEventListener("click", (e) => {
       const b = e.target.closest("button"); if (!b) return;
       state.group = b.dataset.group; state.divs.clear(); state.shown = PAGE; render();
@@ -310,9 +425,18 @@
       $(id).addEventListener("change", (e) => { state[key] = e.target.value; state.shown = PAGE; render(); });
     for (const [id, key] of [["#newOnly", "newOnly"], ["#koOnly", "koOnly"]])
       $(id).addEventListener("change", (e) => { state[key] = e.target.checked; state.shown = PAGE; render(); });
-    for (const b of document.querySelectorAll(".tabs button"))
+    // 탭: 선택 탭만 Tab 순서에 두고 ←/→로 이동 (WAI-ARIA 탭 패턴)
+    const tabBtns = [...document.querySelectorAll(".tabs [role=tab]")];
+    $(".tabs [role=tablist]").addEventListener("keydown", (e) => {
+      const i = tabBtns.indexOf(document.activeElement);
+      if (i < 0 || !["ArrowLeft", "ArrowRight", "Home", "End"].includes(e.key)) return;
+      e.preventDefault();
+      const n = e.key === "Home" ? 0 : e.key === "End" ? tabBtns.length - 1 : (i + (e.key === "ArrowRight" ? 1 : -1) + tabBtns.length) % tabBtns.length;
+      tabBtns[n].focus(); tabBtns[n].click();
+    });
+    for (const b of tabBtns)
       b.addEventListener("click", () => {
-        for (const x of document.querySelectorAll(".tabs button")) x.setAttribute("aria-selected", x === b);
+        for (const x of tabBtns) { x.setAttribute("aria-selected", x === b); x.tabIndex = x === b ? 0 : -1; }
         $("#tab-list").hidden = b.dataset.tab !== "list";
         $("#tab-status").hidden = b.dataset.tab !== "status";
         if (b.dataset.tab === "status") renderStatus();
