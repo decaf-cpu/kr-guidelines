@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23T08:39:49+09:00",
- "count": 517,
+ "updated": "2026-11-24T13:00:23+09:00",
+ "count": 519,
  "items": [
   {
    "id": "192455f016c5eadf",
@@ -15,12 +15,12 @@
    "lang": "ko",
    "attachments": [
     {
-     "name": "eyJpdiI6ImpPVVBuVFgwc1c0UHVZSzdMNnc1MFE9PSIsInZhbHVlIjoidzdlOUJVMXpOYzB6K3p2cXZqMklCdz09IiwibWFjIjoiZDYxNTA3M2E2MTRhZGNhOWU3NTA5YjZkYTMxZTc1NzNiNjY2NDNmNzUxYWZkNDdmZWNkMmExM2QxNWVmYWUzYSIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6ImpPVVBuVFgwc1c0UHVZSzdMNnc1MFE9PSIsInZhbHVlIjoidzdlOUJVMXpOYzB6K3p2cXZqMklCdz09IiwibWFjIjoiZDYxNTA3M2E2MTRhZGNhOWU3NTA5YjZkYTMxZTc1NzNiNjY2NDNmNzUxYWZkNDdmZWNkMmExM2QxNWVmYWUzYSIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6Ik1uZ2FWWUhDQ1hTa2Y0NnBzbmx5enc9PSIsInZhbHVlIjoiajNTRXI5dG1pNXJiUmFGZnMzcjBQUT09IiwibWFjIjoiNmI4M2I2NzMyYjBjNGMyMmNjMmFmMzNmZWJiODIwNmQ2MzQ0ZGYzZjAwNmM0Y2VkOWUwYjcwZWZjN2YyMzcwZiIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6Ik1uZ2FWWUhDQ1hTa2Y0NnBzbmx5enc9PSIsInZhbHVlIjoiajNTRXI5dG1pNXJiUmFGZnMzcjBQUT09IiwibWFjIjoiNmI4M2I2NzMyYjBjNGMyMmNjMmFmMzNmZWJiODIwNmQ2MzQ0ZGYzZjAwNmM0Y2VkOWUwYjcwZWZjN2YyMzcwZiIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2020-02-01",
    "date_precision": "day",
@@ -37,7 +37,8 @@
    "pub_year": "2022",
    "file_kinds": {
     "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IkZrQ0NGblNzd1YwZEgwc1pWSExuVmc9PSIsInZhbHVlIjoiSHRFV2JWOUxvZEhNaTh1MllCVkNtdz09IiwibWFjIjoiZWRjNTdkZjAyODczM2JiNDkwZDBiYzQ0NTFkZjU1YjAzNzU5YWEzNzIxMTEzOTNkZTQ4OTQ0NGVkOGFlM2I4YSIsInRhZyI6IiJ9?field=1": "pdf",
-    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6ImpPVVBuVFgwc1c0UHVZSzdMNnc1MFE9PSIsInZhbHVlIjoidzdlOUJVMXpOYzB6K3p2cXZqMklCdz09IiwibWFjIjoiZDYxNTA3M2E2MTRhZGNhOWU3NTA5YjZkYTMxZTc1NzNiNjY2NDNmNzUxYWZkNDdmZWNkMmExM2QxNWVmYWUzYSIsInRhZyI6IiJ9?field=1": "pdf"
+    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6ImpPVVBuVFgwc1c0UHVZSzdMNnc1MFE9PSIsInZhbHVlIjoidzdlOUJVMXpOYzB6K3p2cXZqMklCdz09IiwibWFjIjoiZDYxNTA3M2E2MTRhZGNhOWU3NTA5YjZkYTMxZTc1NzNiNjY2NDNmNzUxYWZkNDdmZWNkMmExM2QxNWVmYWUzYSIsInRhZyI6IiJ9?field=1": "pdf",
+    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6Ik1uZ2FWWUhDQ1hTa2Y0NnBzbmx5enc9PSIsInZhbHVlIjoiajNTRXI5dG1pNXJiUmFGZnMzcjBQUT09IiwibWFjIjoiNmI4M2I2NzMyYjBjNGMyMmNjMmFmMzNmZWJiODIwNmQ2MzQ0ZGYzZjAwNmM0Y2VkOWUwYjcwZWZjN2YyMzcwZiIsInRhZyI6IiJ9?field=1": "pdf"
    }
   },
   {
@@ -91,7 +92,7 @@
    "tags": [
     "합의문"
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [],
    "date": "2020-02-01",
@@ -113,7 +114,7 @@
    "url": "https://www.allergy.or.kr/board/treatment/view/6890?gubun=1",
    "link_resolved": true,
    "lang": "ko",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [],
    "date": "2020-02-01",
@@ -168,7 +169,7 @@
    "tags": [
     "합의문"
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [],
    "date": "2020-02-01",
@@ -192,12 +193,12 @@
    "lang": "ko",
    "attachments": [
     {
-     "name": "eyJpdiI6IjUwUm03RHlGSFFqVnFsN3dmUCs3Vnc9PSIsInZhbHVlIjoiOXBESTlaa0tzamplY00rMHd5NkM3QT09IiwibWFjIjoiMDFhZTczMjM2M2UwYzQ3Y2JlNjRmOTQxY2Y2ZmU2Y2I3YThjZWM1MWIwZmJhZTkyNTIxYTA2YTlmN2U4OGYxZiIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IjUwUm03RHlGSFFqVnFsN3dmUCs3Vnc9PSIsInZhbHVlIjoiOXBESTlaa0tzamplY00rMHd5NkM3QT09IiwibWFjIjoiMDFhZTczMjM2M2UwYzQ3Y2JlNjRmOTQxY2Y2ZmU2Y2I3YThjZWM1MWIwZmJhZTkyNTIxYTA2YTlmN2U4OGYxZiIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6IjdrbTgwL0k0R2tjNVZ5eVhzL2tSMlE9PSIsInZhbHVlIjoiV1JtUk5nckl0ekRMOE5UMWtvSGsyZz09IiwibWFjIjoiZTNlYTBjZmEzMWZjNTA1NjA2Zjk0NzFkMmM4Y2RiZTU3ZTJlMTZmNGFkNjdjYTY4MTlkZmRkODdlMDE4MzcyYyIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IjdrbTgwL0k0R2tjNVZ5eVhzL2tSMlE9PSIsInZhbHVlIjoiV1JtUk5nckl0ekRMOE5UMWtvSGsyZz09IiwibWFjIjoiZTNlYTBjZmEzMWZjNTA1NjA2Zjk0NzFkMmM4Y2RiZTU3ZTJlMTZmNGFkNjdjYTY4MTlkZmRkODdlMDE4MzcyYyIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2020-02-01",
    "date_precision": "day",
@@ -214,7 +215,8 @@
    "pub_year": "2017",
    "file_kinds": {
     "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IllnQlkxU0Q2OUZFY2pQM3BqUnJLYWc9PSIsInZhbHVlIjoiTVorQy9xMlNvejJnajc0Q1l6NThsZz09IiwibWFjIjoiNWI5YzAzNTliNDgwNjQxMmE5OWY4NjkwYThiOTZkNWE3MGY0YTBhYjIyMDM3ODlhNmFmNGRjMzUyOWYzNWJjMSIsInRhZyI6IiJ9?field=1": "pdf",
-    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IjUwUm03RHlGSFFqVnFsN3dmUCs3Vnc9PSIsInZhbHVlIjoiOXBESTlaa0tzamplY00rMHd5NkM3QT09IiwibWFjIjoiMDFhZTczMjM2M2UwYzQ3Y2JlNjRmOTQxY2Y2ZmU2Y2I3YThjZWM1MWIwZmJhZTkyNTIxYTA2YTlmN2U4OGYxZiIsInRhZyI6IiJ9?field=1": "pdf"
+    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IjUwUm03RHlGSFFqVnFsN3dmUCs3Vnc9PSIsInZhbHVlIjoiOXBESTlaa0tzamplY00rMHd5NkM3QT09IiwibWFjIjoiMDFhZTczMjM2M2UwYzQ3Y2JlNjRmOTQxY2Y2ZmU2Y2I3YThjZWM1MWIwZmJhZTkyNTIxYTA2YTlmN2U4OGYxZiIsInRhZyI6IiJ9?field=1": "pdf",
+    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IjdrbTgwL0k0R2tjNVZ5eVhzL2tSMlE9PSIsInZhbHVlIjoiV1JtUk5nckl0ekRMOE5UMWtvSGsyZz09IiwibWFjIjoiZTNlYTBjZmEzMWZjNTA1NjA2Zjk0NzFkMmM4Y2RiZTU3ZTJlMTZmNGFkNjdjYTY4MTlkZmRkODdlMDE4MzcyYyIsInRhZyI6IiJ9?field=1": "pdf"
    }
   },
   {
@@ -230,12 +232,12 @@
    "lang": "ko",
    "attachments": [
     {
-     "name": "eyJpdiI6IktOa2g0d01BU0ZkWUFVcytlS0Z5Rnc9PSIsInZhbHVlIjoiUFdsRjJjaVVJZWRGZGxkUlBDQWJPQT09IiwibWFjIjoiMjU3M2VkZjFlODQ3ZGJhNzE2MDU2Zjk3NmZiZjBhN2UxMDJjYTAzMjBjMWY3ODRmNDEzZjMzYzM4NGVkM2UwMSIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IktOa2g0d01BU0ZkWUFVcytlS0Z5Rnc9PSIsInZhbHVlIjoiUFdsRjJjaVVJZWRGZGxkUlBDQWJPQT09IiwibWFjIjoiMjU3M2VkZjFlODQ3ZGJhNzE2MDU2Zjk3NmZiZjBhN2UxMDJjYTAzMjBjMWY3ODRmNDEzZjMzYzM4NGVkM2UwMSIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6IkhBS2dRNU9tdnFHVGNyNHhvNnVGRkE9PSIsInZhbHVlIjoiUE9xZGNxbTRnNW0rZlFESXVyemFidz09IiwibWFjIjoiZDRkNGQzNTc2N2JlYmIyNjQ5ZmJhNzcwOTA1ZDdiNTllY2JkMTA1NGVhNTg4YjYyM2ZlYjRjNTM0MzcxOTkxNyIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IkhBS2dRNU9tdnFHVGNyNHhvNnVGRkE9PSIsInZhbHVlIjoiUE9xZGNxbTRnNW0rZlFESXVyemFidz09IiwibWFjIjoiZDRkNGQzNTc2N2JlYmIyNjQ5ZmJhNzcwOTA1ZDdiNTllY2JkMTA1NGVhNTg4YjYyM2ZlYjRjNTM0MzcxOTkxNyIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2020-02-01",
    "date_precision": "day",
@@ -252,7 +254,8 @@
    "pub_year": "2022",
    "file_kinds": {
     "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IndIU0JYQnF5aWtDekhVZENUclYyTXc9PSIsInZhbHVlIjoiNXZDajlJcHQxNklhUkR3VmU3Rkk0QT09IiwibWFjIjoiYzdlZWZhNzVlMjU4MDM2ZjdmZGM3MzgxNzk5ODI3MjczMWIxN2E2ZjhmNGI1YjYwMGM2NTI2ZDdlN2E5ZjdjOCIsInRhZyI6IiJ9?field=1": "pdf",
-    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IktOa2g0d01BU0ZkWUFVcytlS0Z5Rnc9PSIsInZhbHVlIjoiUFdsRjJjaVVJZWRGZGxkUlBDQWJPQT09IiwibWFjIjoiMjU3M2VkZjFlODQ3ZGJhNzE2MDU2Zjk3NmZiZjBhN2UxMDJjYTAzMjBjMWY3ODRmNDEzZjMzYzM4NGVkM2UwMSIsInRhZyI6IiJ9?field=1": "pdf"
+    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IktOa2g0d01BU0ZkWUFVcytlS0Z5Rnc9PSIsInZhbHVlIjoiUFdsRjJjaVVJZWRGZGxkUlBDQWJPQT09IiwibWFjIjoiMjU3M2VkZjFlODQ3ZGJhNzE2MDU2Zjk3NmZiZjBhN2UxMDJjYTAzMjBjMWY3ODRmNDEzZjMzYzM4NGVkM2UwMSIsInRhZyI6IiJ9?field=1": "pdf",
+    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IkhBS2dRNU9tdnFHVGNyNHhvNnVGRkE9PSIsInZhbHVlIjoiUE9xZGNxbTRnNW0rZlFESXVyemFidz09IiwibWFjIjoiZDRkNGQzNTc2N2JlYmIyNjQ5ZmJhNzcwOTA1ZDdiNTllY2JkMTA1NGVhNTg4YjYyM2ZlYjRjNTM0MzcxOTkxNyIsInRhZyI6IiJ9?field=1": "pdf"
    }
   },
   {
@@ -295,12 +298,12 @@
    "lang": "ko",
    "attachments": [
     {
-     "name": "eyJpdiI6Im1UbXpTQStTTFR1THR2V200ZEZ6TUE9PSIsInZhbHVlIjoiZUdKdnoxZVZ3WFFOa1NLT0hXYXU3dz09IiwibWFjIjoiNDdkNjRjNDllOTg1ZTRhZGJhNjJmNzkyYzZlNDc0YmQyMWFmYmUwNTNlNDFiNjNiNjUxMTIzNjI5MTMzZmNkOSIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6Im1UbXpTQStTTFR1THR2V200ZEZ6TUE9PSIsInZhbHVlIjoiZUdKdnoxZVZ3WFFOa1NLT0hXYXU3dz09IiwibWFjIjoiNDdkNjRjNDllOTg1ZTRhZGJhNjJmNzkyYzZlNDc0YmQyMWFmYmUwNTNlNDFiNjNiNjUxMTIzNjI5MTMzZmNkOSIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6IkFWM3gwZEV5dW10c24rdkJCR3RkRXc9PSIsInZhbHVlIjoiM1MrbWQ1T3NaL1pUSi9mVHJVT3BoQT09IiwibWFjIjoiOWRhYzhjMThhYjNmMTdjZGI0ZWY0YmYwZDMxNjcwMDk2MGFmMTkzNWQyMTZkMWEyZjdhOWZiOGJjMGU2ZWUwMiIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IkFWM3gwZEV5dW10c24rdkJCR3RkRXc9PSIsInZhbHVlIjoiM1MrbWQ1T3NaL1pUSi9mVHJVT3BoQT09IiwibWFjIjoiOWRhYzhjMThhYjNmMTdjZGI0ZWY0YmYwZDMxNjcwMDk2MGFmMTkzNWQyMTZkMWEyZjdhOWZiOGJjMGU2ZWUwMiIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2020-02-01",
    "date_precision": "day",
@@ -310,7 +313,8 @@
    "pub_year": "2016",
    "file_kinds": {
     "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6ImRyN0Y3aGlIOUgzTUFsdUVzZ29HV0E9PSIsInZhbHVlIjoiNkcvajBpamNNTU94UGZjRm1haFkrdz09IiwibWFjIjoiMzZkOGZmMGYxYmRiNGE2ZjM3NWNiZTM0NGRhNzJlMTFmMmEzNTM0NjY4OTc4MWU2MTk1NzQ4ODhhM2M5ZTVkNyIsInRhZyI6IiJ9?field=1": "pdf",
-    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6Im1UbXpTQStTTFR1THR2V200ZEZ6TUE9PSIsInZhbHVlIjoiZUdKdnoxZVZ3WFFOa1NLT0hXYXU3dz09IiwibWFjIjoiNDdkNjRjNDllOTg1ZTRhZGJhNjJmNzkyYzZlNDc0YmQyMWFmYmUwNTNlNDFiNjNiNjUxMTIzNjI5MTMzZmNkOSIsInRhZyI6IiJ9?field=1": "pdf"
+    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6Im1UbXpTQStTTFR1THR2V200ZEZ6TUE9PSIsInZhbHVlIjoiZUdKdnoxZVZ3WFFOa1NLT0hXYXU3dz09IiwibWFjIjoiNDdkNjRjNDllOTg1ZTRhZGJhNjJmNzkyYzZlNDc0YmQyMWFmYmUwNTNlNDFiNjNiNjUxMTIzNjI5MTMzZmNkOSIsInRhZyI6IiJ9?field=1": "pdf",
+    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IkFWM3gwZEV5dW10c24rdkJCR3RkRXc9PSIsInZhbHVlIjoiM1MrbWQ1T3NaL1pUSi9mVHJVT3BoQT09IiwibWFjIjoiOWRhYzhjMThhYjNmMTdjZGI0ZWY0YmYwZDMxNjcwMDk2MGFmMTkzNWQyMTZkMWEyZjdhOWZiOGJjMGU2ZWUwMiIsInRhZyI6IiJ9?field=1": "pdf"
    }
   },
   {
@@ -393,12 +397,12 @@
    ],
    "attachments": [
     {
-     "name": "eyJpdiI6IlJUMUZ4M0dkQVU4TEtKR0duTmgyMUE9PSIsInZhbHVlIjoickJwMU9ycENmOW5lSEVqRnBxVGhFQT09IiwibWFjIjoiZjY2M2RlZjRmNGE5YzI0OTZkZDczYzgzMGYxMjI0MDcyMTY3ZDc2NTQxYmE2NWE5ZGI4YmU0NTU2ZWYxNjY1NyIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IlJUMUZ4M0dkQVU4TEtKR0duTmgyMUE9PSIsInZhbHVlIjoickJwMU9ycENmOW5lSEVqRnBxVGhFQT09IiwibWFjIjoiZjY2M2RlZjRmNGE5YzI0OTZkZDczYzgzMGYxMjI0MDcyMTY3ZDc2NTQxYmE2NWE5ZGI4YmU0NTU2ZWYxNjY1NyIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6IkY2SmlHQ1htM0Fxbm55THZzR0FKSEE9PSIsInZhbHVlIjoiMG1sS0ZyK3JicUF3QW5ZZEt2M1BhZz09IiwibWFjIjoiNzg5YzBiMWU4YjI4YzMwMDU1MjIxZDhhYmQxNWY1MGE2N2E5YWQwOTg5NzQ4MTJmNmZkNDU1YTM3NmM0NDg1YSIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IkY2SmlHQ1htM0Fxbm55THZzR0FKSEE9PSIsInZhbHVlIjoiMG1sS0ZyK3JicUF3QW5ZZEt2M1BhZz09IiwibWFjIjoiNzg5YzBiMWU4YjI4YzMwMDU1MjIxZDhhYmQxNWY1MGE2N2E5YWQwOTg5NzQ4MTJmNmZkNDU1YTM3NmM0NDg1YSIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2020-02-01",
    "date_precision": "day",
@@ -408,7 +412,8 @@
    "pub_year": "2022",
    "file_kinds": {
     "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IlZtemVrV082UWNGN1B4NUdmSDFyUXc9PSIsInZhbHVlIjoiekc0TE8rUWZMaWUwcUVRUmFjeDdGUT09IiwibWFjIjoiZWExNmJlMTBlOTkwZmRhZDlkOTdmMjY1NDY4ZTczYzc5YWJmNTAxZTIzOWFkMWEwNTAyOTdjZWMwY2I0OGQ0ZiIsInRhZyI6IiJ9?field=1": "pdf",
-    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IlJUMUZ4M0dkQVU4TEtKR0duTmgyMUE9PSIsInZhbHVlIjoickJwMU9ycENmOW5lSEVqRnBxVGhFQT09IiwibWFjIjoiZjY2M2RlZjRmNGE5YzI0OTZkZDczYzgzMGYxMjI0MDcyMTY3ZDc2NTQxYmE2NWE5ZGI4YmU0NTU2ZWYxNjY1NyIsInRhZyI6IiJ9?field=1": "pdf"
+    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IlJUMUZ4M0dkQVU4TEtKR0duTmgyMUE9PSIsInZhbHVlIjoickJwMU9ycENmOW5lSEVqRnBxVGhFQT09IiwibWFjIjoiZjY2M2RlZjRmNGE5YzI0OTZkZDczYzgzMGYxMjI0MDcyMTY3ZDc2NTQxYmE2NWE5ZGI4YmU0NTU2ZWYxNjY1NyIsInRhZyI6IiJ9?field=1": "pdf",
+    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IkY2SmlHQ1htM0Fxbm55THZzR0FKSEE9PSIsInZhbHVlIjoiMG1sS0ZyK3JicUF3QW5ZZEt2M1BhZz09IiwibWFjIjoiNzg5YzBiMWU4YjI4YzMwMDU1MjIxZDhhYmQxNWY1MGE2N2E5YWQwOTg5NzQ4MTJmNmZkNDU1YTM3NmM0NDg1YSIsInRhZyI6IiJ9?field=1": "pdf"
    }
   },
   {
@@ -424,12 +429,12 @@
    "lang": "ko",
    "attachments": [
     {
-     "name": "eyJpdiI6Inl5VTdaV1kreDEyWlgxWkFId2xUc3c9PSIsInZhbHVlIjoiSEJqOFQvZXpDZURDcDFYRlo3aWxUUT09IiwibWFjIjoiZWI5NDdlMTZjNzk2ZmEzZWVkODc5ODJkZTFlYTVmODc1ODk3Y2M1ZGQyYmU3OTBkMGM4OGRjM2IyZTU1OWQzMiIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6Inl5VTdaV1kreDEyWlgxWkFId2xUc3c9PSIsInZhbHVlIjoiSEJqOFQvZXpDZURDcDFYRlo3aWxUUT09IiwibWFjIjoiZWI5NDdlMTZjNzk2ZmEzZWVkODc5ODJkZTFlYTVmODc1ODk3Y2M1ZGQyYmU3OTBkMGM4OGRjM2IyZTU1OWQzMiIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6ImVGOWxTQTlkTHo4K2ZwSVc0QnB2bGc9PSIsInZhbHVlIjoiWTRuMGRGK0ZWUVFaMHRCNk9XYUZFZz09IiwibWFjIjoiMTM4NjI3ZTk5NzdjNzg1ZWZkZGRkODg3YjhjOGY5NjQ2NjJjYWRkMTExMmVhYWIxNDYxMDZlNTY5MDA3MTY5ZSIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6ImVGOWxTQTlkTHo4K2ZwSVc0QnB2bGc9PSIsInZhbHVlIjoiWTRuMGRGK0ZWUVFaMHRCNk9XYUZFZz09IiwibWFjIjoiMTM4NjI3ZTk5NzdjNzg1ZWZkZGRkODg3YjhjOGY5NjQ2NjJjYWRkMTExMmVhYWIxNDYxMDZlNTY5MDA3MTY5ZSIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2020-02-01",
    "date_precision": "day",
@@ -446,7 +451,8 @@
    "pub_year": "2023",
    "file_kinds": {
     "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IjVobERGZ3BoV2dUMkxCaytONUNOb3c9PSIsInZhbHVlIjoiZ1czMExCQmorTTNyTmtLV1oybTlyZz09IiwibWFjIjoiNTkzNDM4M2QwOWFhMzQ5NWU3MGE1MWZhNGE1ZmRmZGI3MzJkZjAyOTE5ZTBmOTdiYTg5OGVjZDQ2YWFiNjA3YyIsInRhZyI6IiJ9?field=1": "pdf",
-    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6Inl5VTdaV1kreDEyWlgxWkFId2xUc3c9PSIsInZhbHVlIjoiSEJqOFQvZXpDZURDcDFYRlo3aWxUUT09IiwibWFjIjoiZWI5NDdlMTZjNzk2ZmEzZWVkODc5ODJkZTFlYTVmODc1ODk3Y2M1ZGQyYmU3OTBkMGM4OGRjM2IyZTU1OWQzMiIsInRhZyI6IiJ9?field=1": "pdf"
+    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6Inl5VTdaV1kreDEyWlgxWkFId2xUc3c9PSIsInZhbHVlIjoiSEJqOFQvZXpDZURDcDFYRlo3aWxUUT09IiwibWFjIjoiZWI5NDdlMTZjNzk2ZmEzZWVkODc5ODJkZTFlYTVmODc1ODk3Y2M1ZGQyYmU3OTBkMGM4OGRjM2IyZTU1OWQzMiIsInRhZyI6IiJ9?field=1": "pdf",
+    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6ImVGOWxTQTlkTHo4K2ZwSVc0QnB2bGc9PSIsInZhbHVlIjoiWTRuMGRGK0ZWUVFaMHRCNk9XYUZFZz09IiwibWFjIjoiMTM4NjI3ZTk5NzdjNzg1ZWZkZGRkODg3YjhjOGY5NjQ2NjJjYWRkMTExMmVhYWIxNDYxMDZlNTY5MDA3MTY5ZSIsInRhZyI6IiJ9?field=1": "pdf"
    }
   },
   {
@@ -502,12 +508,12 @@
    ],
    "attachments": [
     {
-     "name": "eyJpdiI6InFaMDFxZ25LRHlwRldoQ21iZU14UXc9PSIsInZhbHVlIjoiNTdreGloREhGWEVtY2FGU1greUJtQT09IiwibWFjIjoiNjE5MDc1M2M1OGVhNzE0MjdiNWFmMmY3Zjk5OWUxYjA5NDBiZGFmYjVhNGM0MDQwM2FmODFmMDZjY2VhYjFmNiIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6InFaMDFxZ25LRHlwRldoQ21iZU14UXc9PSIsInZhbHVlIjoiNTdreGloREhGWEVtY2FGU1greUJtQT09IiwibWFjIjoiNjE5MDc1M2M1OGVhNzE0MjdiNWFmMmY3Zjk5OWUxYjA5NDBiZGFmYjVhNGM0MDQwM2FmODFmMDZjY2VhYjFmNiIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6IkxWWFhjRWhoMnc3RTF3YUd1UDhtbmc9PSIsInZhbHVlIjoieitrYUUzMzBoZS9BdFp5UnB6cVIyZz09IiwibWFjIjoiNWE5MWM5NGJhNDRmOGU0ZjM4MTM3NTU5MzRlZTQxMGRkODdhOWVhY2Y4NDk5ZjUxNTE5YjVjZGI0MDBlYzcxMSIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IkxWWFhjRWhoMnc3RTF3YUd1UDhtbmc9PSIsInZhbHVlIjoieitrYUUzMzBoZS9BdFp5UnB6cVIyZz09IiwibWFjIjoiNWE5MWM5NGJhNDRmOGU0ZjM4MTM3NTU5MzRlZTQxMGRkODdhOWVhY2Y4NDk5ZjUxNTE5YjVjZGI0MDBlYzcxMSIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2020-02-01",
    "date_precision": "day",
@@ -524,7 +530,8 @@
    "pub_year": "2018",
    "file_kinds": {
     "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6ImdaSExNMmhTMVRZT2lrZnlJWFIvSUE9PSIsInZhbHVlIjoidDdBZkxSZitaSGJyamt5bGpFVlBTZz09IiwibWFjIjoiMzU4ODkyYjQyZWVmYzgwN2QzMjdmMTEzMGI4NjlhNmNjMzIyMTg3ZjIwZDYxZDhkYWJhYzY4YjAwM2QwODg1ZCIsInRhZyI6IiJ9?field=1": "pdf",
-    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6InFaMDFxZ25LRHlwRldoQ21iZU14UXc9PSIsInZhbHVlIjoiNTdreGloREhGWEVtY2FGU1greUJtQT09IiwibWFjIjoiNjE5MDc1M2M1OGVhNzE0MjdiNWFmMmY3Zjk5OWUxYjA5NDBiZGFmYjVhNGM0MDQwM2FmODFmMDZjY2VhYjFmNiIsInRhZyI6IiJ9?field=1": "pdf"
+    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6InFaMDFxZ25LRHlwRldoQ21iZU14UXc9PSIsInZhbHVlIjoiNTdreGloREhGWEVtY2FGU1greUJtQT09IiwibWFjIjoiNjE5MDc1M2M1OGVhNzE0MjdiNWFmMmY3Zjk5OWUxYjA5NDBiZGFmYjVhNGM0MDQwM2FmODFmMDZjY2VhYjFmNiIsInRhZyI6IiJ9?field=1": "pdf",
+    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IkxWWFhjRWhoMnc3RTF3YUd1UDhtbmc9PSIsInZhbHVlIjoieitrYUUzMzBoZS9BdFp5UnB6cVIyZz09IiwibWFjIjoiNWE5MWM5NGJhNDRmOGU0ZjM4MTM3NTU5MzRlZTQxMGRkODdhOWVhY2Y4NDk5ZjUxNTE5YjVjZGI0MDBlYzcxMSIsInRhZyI6IiJ9?field=1": "pdf"
    }
   },
   {
@@ -540,12 +547,12 @@
    "lang": "ko",
    "attachments": [
     {
-     "name": "eyJpdiI6IlR0NUxiWmNoQ1ROQklSREYrYmxYN2c9PSIsInZhbHVlIjoiN2hVSVF4Mm0zRmRFdERIT2VERks2UT09IiwibWFjIjoiNzg1ZTYxYjIyYzQ4YWU0N2E3MWM1ZjUzZDQ4OTE4MThiYzcxODE5MjI1Zjk4YWI4NzkxYjk4NzE1ZDdjMDM1YSIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IlR0NUxiWmNoQ1ROQklSREYrYmxYN2c9PSIsInZhbHVlIjoiN2hVSVF4Mm0zRmRFdERIT2VERks2UT09IiwibWFjIjoiNzg1ZTYxYjIyYzQ4YWU0N2E3MWM1ZjUzZDQ4OTE4MThiYzcxODE5MjI1Zjk4YWI4NzkxYjk4NzE1ZDdjMDM1YSIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6InFCSnE2UUw5b0g5QU1HM0VBVklOOFE9PSIsInZhbHVlIjoiNTFzMGpXT2JndHR2YXBhb1dNU0hJZz09IiwibWFjIjoiNmQ4MTYzNjYyYTIzZjFjNTM2ZmYwZjk5ZTZmODBmMjExY2EzODJhMjVjMDdmODU3MDZlOTE1ZDRmYjg3ZWI1OCIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6InFCSnE2UUw5b0g5QU1HM0VBVklOOFE9PSIsInZhbHVlIjoiNTFzMGpXT2JndHR2YXBhb1dNU0hJZz09IiwibWFjIjoiNmQ4MTYzNjYyYTIzZjFjNTM2ZmYwZjk5ZTZmODBmMjExY2EzODJhMjVjMDdmODU3MDZlOTE1ZDRmYjg3ZWI1OCIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2020-02-01",
    "date_precision": "day",
@@ -555,7 +562,8 @@
    "pub_year": "2022",
    "file_kinds": {
     "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IklndmJKV0VHcFQvY0NrSGpnODV5cGc9PSIsInZhbHVlIjoiNjhRWkUzMHlxQ1RvWHlFY0NjdEZVQT09IiwibWFjIjoiNzZkZjRlMjlmYjA5MmMwN2E4YjQ5YTI4OTEyYzMxZjRmNWYzNDEzNDYzNzRmYzRiYTRkYTVhZWQ5YTY2ODg5ZiIsInRhZyI6IiJ9?field=1": "pdf",
-    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IlR0NUxiWmNoQ1ROQklSREYrYmxYN2c9PSIsInZhbHVlIjoiN2hVSVF4Mm0zRmRFdERIT2VERks2UT09IiwibWFjIjoiNzg1ZTYxYjIyYzQ4YWU0N2E3MWM1ZjUzZDQ4OTE4MThiYzcxODE5MjI1Zjk4YWI4NzkxYjk4NzE1ZDdjMDM1YSIsInRhZyI6IiJ9?field=1": "pdf"
+    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IlR0NUxiWmNoQ1ROQklSREYrYmxYN2c9PSIsInZhbHVlIjoiN2hVSVF4Mm0zRmRFdERIT2VERks2UT09IiwibWFjIjoiNzg1ZTYxYjIyYzQ4YWU0N2E3MWM1ZjUzZDQ4OTE4MThiYzcxODE5MjI1Zjk4YWI4NzkxYjk4NzE1ZDdjMDM1YSIsInRhZyI6IiJ9?field=1": "pdf",
+    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6InFCSnE2UUw5b0g5QU1HM0VBVklOOFE9PSIsInZhbHVlIjoiNTFzMGpXT2JndHR2YXBhb1dNU0hJZz09IiwibWFjIjoiNmQ4MTYzNjYyYTIzZjFjNTM2ZmYwZjk5ZTZmODBmMjExY2EzODJhMjVjMDdmODU3MDZlOTE1ZDRmYjg3ZWI1OCIsInRhZyI6IiJ9?field=1": "pdf"
    }
   },
   {
@@ -572,7 +580,7 @@
    "tags": [
     "합의문"
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [],
    "date": "2020-02-01",
@@ -597,7 +605,7 @@
    "tags": [
     "개정"
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [],
    "date": "2020-02-01",
@@ -683,7 +691,7 @@
    "tags": [
     "개정"
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [],
    "date": "2020-02-01",
@@ -742,7 +750,7 @@
    "url": "https://www.allergy.or.kr/board/treatment-dev/view/6899?gubun=2",
    "link_resolved": true,
    "lang": "ko",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [],
    "date": "2020-02-01",
@@ -762,7 +770,7 @@
    "url": "https://www.allergy.or.kr/board/treatment-dev/view/6900?gubun=2",
    "link_resolved": true,
    "lang": "ko",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [],
    "date": "2020-02-01",
@@ -785,7 +793,7 @@
    "tags": [
     "합의문"
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [],
    "date": "2020-02-01",
@@ -805,7 +813,7 @@
    "url": "https://www.allergy.or.kr/board/treatment/view/6872?gubun=1",
    "link_resolved": true,
    "lang": "en",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [],
    "date": "2020-02-01",
@@ -829,12 +837,12 @@
    "lang": "ko",
    "attachments": [
     {
-     "name": "eyJpdiI6IlUzMjE3Z1Bnc1lGa2NLeWxGUHN3bGc9PSIsInZhbHVlIjoiZzZBTC9sK3U4cHRqUUs4OUlsazhxUT09IiwibWFjIjoiZDJjY2JjYjgxOGM2MDhlNTJmOTBjNTRkNGU1MjhmMzg2OGFjYjA3NDI3ZTg4OWFiZDNlM2JlMjJiOTg1ZDczMyIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IlUzMjE3Z1Bnc1lGa2NLeWxGUHN3bGc9PSIsInZhbHVlIjoiZzZBTC9sK3U4cHRqUUs4OUlsazhxUT09IiwibWFjIjoiZDJjY2JjYjgxOGM2MDhlNTJmOTBjNTRkNGU1MjhmMzg2OGFjYjA3NDI3ZTg4OWFiZDNlM2JlMjJiOTg1ZDczMyIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6ImNydTJodVhrYlV0RlJwVERuZHdwVGc9PSIsInZhbHVlIjoiT0hYM01hcWFZOENTK0JDTUpjbkpnZz09IiwibWFjIjoiYjkxMzU2Mzg5MjViZDFhMTcwYmQ4ZWUwZjhmNjk3N2Q0NmY2ZDE5MGI0NmFmNTU4ZTNiOWY3NWZmMWIxYjI2OCIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6ImNydTJodVhrYlV0RlJwVERuZHdwVGc9PSIsInZhbHVlIjoiT0hYM01hcWFZOENTK0JDTUpjbkpnZz09IiwibWFjIjoiYjkxMzU2Mzg5MjViZDFhMTcwYmQ4ZWUwZjhmNjk3N2Q0NmY2ZDE5MGI0NmFmNTU4ZTNiOWY3NWZmMWIxYjI2OCIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2020-02-01",
    "date_precision": "day",
@@ -844,7 +852,8 @@
    "pub_year": "2021",
    "file_kinds": {
     "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6InlUZUI0dlRsbDE0NFJCU2RkMENXT2c9PSIsInZhbHVlIjoiWHFrZ3BBYysxZ1ZKeHF4M3dlKzRHdz09IiwibWFjIjoiOTNkOThkMzU2Mjc5ZmNkYjJiYWE1NDEyZDBjMGNhZjViYjEyYjRmZWYxOTk3N2VhNTBiNGJmNzVlMmRkNzNlNyIsInRhZyI6IiJ9?field=1": "pdf",
-    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IlUzMjE3Z1Bnc1lGa2NLeWxGUHN3bGc9PSIsInZhbHVlIjoiZzZBTC9sK3U4cHRqUUs4OUlsazhxUT09IiwibWFjIjoiZDJjY2JjYjgxOGM2MDhlNTJmOTBjNTRkNGU1MjhmMzg2OGFjYjA3NDI3ZTg4OWFiZDNlM2JlMjJiOTg1ZDczMyIsInRhZyI6IiJ9?field=1": "pdf"
+    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IlUzMjE3Z1Bnc1lGa2NLeWxGUHN3bGc9PSIsInZhbHVlIjoiZzZBTC9sK3U4cHRqUUs4OUlsazhxUT09IiwibWFjIjoiZDJjY2JjYjgxOGM2MDhlNTJmOTBjNTRkNGU1MjhmMzg2OGFjYjA3NDI3ZTg4OWFiZDNlM2JlMjJiOTg1ZDczMyIsInRhZyI6IiJ9?field=1": "pdf",
+    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6ImNydTJodVhrYlV0RlJwVERuZHdwVGc9PSIsInZhbHVlIjoiT0hYM01hcWFZOENTK0JDTUpjbkpnZz09IiwibWFjIjoiYjkxMzU2Mzg5MjViZDFhMTcwYmQ4ZWUwZjhmNjk3N2Q0NmY2ZDE5MGI0NmFmNTU4ZTNiOWY3NWZmMWIxYjI2OCIsInRhZyI6IiJ9?field=1": "pdf"
    }
   },
   {
@@ -931,7 +940,7 @@
    "tags": [
     "합의문"
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [],
    "date": "2020-02-01",
@@ -953,7 +962,7 @@
    "url": "https://www.allergy.or.kr/board/treatment/view/6894?gubun=1",
    "link_resolved": true,
    "lang": "ko",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [],
    "date": "2020-02-01",
@@ -975,7 +984,7 @@
    "url": "https://www.allergy.or.kr/board/treatment/view/6893?gubun=1",
    "link_resolved": true,
    "lang": "ko",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [],
    "date": "2020-02-01",
@@ -1059,7 +1068,7 @@
    "url": "https://www.allergy.or.kr/board/treatment/view/6865?gubun=1",
    "link_resolved": true,
    "lang": "en",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [],
    "date": "2020-02-01",
@@ -1121,7 +1130,7 @@
    "tags": [
     "합의문"
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [],
    "date": "2020-02-01",
@@ -1185,7 +1194,7 @@
     "합의문",
     "권고·성명"
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [],
    "date": "2020-02-01",
@@ -1231,7 +1240,7 @@
    "url": "https://www.allergy.or.kr/board/treatment-dev/view/6902?gubun=2",
    "link_resolved": true,
    "lang": "ko",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [],
    "date": "2020-02-01",
@@ -1254,7 +1263,7 @@
    "tags": [
     "합의문"
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [],
    "date": "2020-02-01",
@@ -1277,7 +1286,7 @@
    "tags": [
     "합의문"
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [],
    "date": "2020-02-01",
@@ -1302,7 +1311,7 @@
    "tags": [
     "합의문"
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [],
    "date": "2020-02-01",
@@ -1327,7 +1336,7 @@
    "tags": [
     "합의문"
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [],
    "date": "2020-02-01",
@@ -1348,7 +1357,7 @@
    "url": "https://www.allergy.or.kr/board/treatment/view/6895?gubun=1",
    "link_resolved": true,
    "lang": "en",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [],
    "date": "2020-02-01",
@@ -1372,12 +1381,12 @@
    "lang": "ko",
    "attachments": [
     {
-     "name": "eyJpdiI6IjFsK1JyM3VWcnBjM21GL3F2RlF6SVE9PSIsInZhbHVlIjoiVXBhSVB6UGZCbjNSQWtISUwxL2dVUT09IiwibWFjIjoiMzJkNTEzNjI2OTVkNDgyYmZhZjUxZjFlODUwYzIyZjEwYjlkZmE2NmY0NzlhZjAxYjcyZmVhZmZiYjhhOWJmYSIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IjFsK1JyM3VWcnBjM21GL3F2RlF6SVE9PSIsInZhbHVlIjoiVXBhSVB6UGZCbjNSQWtISUwxL2dVUT09IiwibWFjIjoiMzJkNTEzNjI2OTVkNDgyYmZhZjUxZjFlODUwYzIyZjEwYjlkZmE2NmY0NzlhZjAxYjcyZmVhZmZiYjhhOWJmYSIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6IlNHNFFMYmcrb1JqMjV3cjFXRmxvbmc9PSIsInZhbHVlIjoiamovVFROeDFxOXkrSHp5UFRTQWM2dz09IiwibWFjIjoiNzdmOWE1NDc3ZTI3YWQ5NTRiYjEwOTZhZDk5OGI4MDViZTdhOTEwMGZlOWJmN2VkZTMyNTBiZWY3NTA0NzdlOCIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IlNHNFFMYmcrb1JqMjV3cjFXRmxvbmc9PSIsInZhbHVlIjoiamovVFROeDFxOXkrSHp5UFRTQWM2dz09IiwibWFjIjoiNzdmOWE1NDc3ZTI3YWQ5NTRiYjEwOTZhZDk5OGI4MDViZTdhOTEwMGZlOWJmN2VkZTMyNTBiZWY3NTA0NzdlOCIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2020-02-01",
    "date_precision": "day",
@@ -1394,7 +1403,8 @@
    "pub_year": "2018",
    "file_kinds": {
     "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6Ikw4V0pqajFNNnQyekhNcDhTWXhxOWc9PSIsInZhbHVlIjoiSkViK3BvUjU2NjgxOXY3dmliUTIxUT09IiwibWFjIjoiNTNmMDIwMDc1MGYyMjAwZjYwYzY2ZmFmNTRkZjkzYjM1ZTJiZjU3M2QzNDg0ZTUzYjI3OTZlMDA1MWVmNWRiOCIsInRhZyI6IiJ9?field=1": "pdf",
-    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IjFsK1JyM3VWcnBjM21GL3F2RlF6SVE9PSIsInZhbHVlIjoiVXBhSVB6UGZCbjNSQWtISUwxL2dVUT09IiwibWFjIjoiMzJkNTEzNjI2OTVkNDgyYmZhZjUxZjFlODUwYzIyZjEwYjlkZmE2NmY0NzlhZjAxYjcyZmVhZmZiYjhhOWJmYSIsInRhZyI6IiJ9?field=1": "pdf"
+    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IjFsK1JyM3VWcnBjM21GL3F2RlF6SVE9PSIsInZhbHVlIjoiVXBhSVB6UGZCbjNSQWtISUwxL2dVUT09IiwibWFjIjoiMzJkNTEzNjI2OTVkNDgyYmZhZjUxZjFlODUwYzIyZjEwYjlkZmE2NmY0NzlhZjAxYjcyZmVhZmZiYjhhOWJmYSIsInRhZyI6IiJ9?field=1": "pdf",
+    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IlNHNFFMYmcrb1JqMjV3cjFXRmxvbmc9PSIsInZhbHVlIjoiamovVFROeDFxOXkrSHp5UFRTQWM2dz09IiwibWFjIjoiNzdmOWE1NDc3ZTI3YWQ5NTRiYjEwOTZhZDk5OGI4MDViZTdhOTEwMGZlOWJmN2VkZTMyNTBiZWY3NTA0NzdlOCIsInRhZyI6IiJ9?field=1": "pdf"
    }
   },
   {
@@ -1432,12 +1442,12 @@
    "lang": "ko",
    "attachments": [
     {
-     "name": "eyJpdiI6IlBSQmxmUGlXYzhEeTZpTkVxNHBoVkE9PSIsInZhbHVlIjoiREVrN1VUY3hYKy9wMjVVb3dwSTJ1Zz09IiwibWFjIjoiYWE0ZTVhMTkxNzE3MWMyNjcwNDk3NmUyN2ExYjk2YzA5NjhhMWVjMWQ3MmI3Y2JkNzFjN2NjYjUyZGVkN2I0YyIsInRhZyI6IiJ9",
-     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IlBSQmxmUGlXYzhEeTZpTkVxNHBoVkE9PSIsInZhbHVlIjoiREVrN1VUY3hYKy9wMjVVb3dwSTJ1Zz09IiwibWFjIjoiYWE0ZTVhMTkxNzE3MWMyNjcwNDk3NmUyN2ExYjk2YzA5NjhhMWVjMWQ3MmI3Y2JkNzFjN2NjYjUyZGVkN2I0YyIsInRhZyI6IiJ9?field=1",
+     "name": "eyJpdiI6InQrRXZ2SklkSXRwbTY3QmdGbENUUEE9PSIsInZhbHVlIjoib3JnZnhpeTlLVGVBUDg1UjhCb2tHUT09IiwibWFjIjoiZjYzOWZlNzgxMDQ1NmQ0YmZjYmU1N2NkMDZhYWI2N2M1NjlhZjU4MjY1NTY0Nzc2OTVlYjU0NjBlYTA2OWQ5MSIsInRhZyI6IiJ9",
+     "url": "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6InQrRXZ2SklkSXRwbTY3QmdGbENUUEE9PSIsInZhbHVlIjoib3JnZnhpeTlLVGVBUDg1UjhCb2tHUT09IiwibWFjIjoiZjYzOWZlNzgxMDQ1NmQ0YmZjYmU1N2NkMDZhYWI2N2M1NjlhZjU4MjY1NTY0Nzc2OTVlYjU0NjBlYTA2OWQ5MSIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2020-02-01",
    "date_precision": "day",
@@ -1454,7 +1464,8 @@
    "pub_year": "2020",
    "file_kinds": {
     "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6InZOS2hBQUdDQ2dXTE44cUwwRHVuZ1E9PSIsInZhbHVlIjoiOVhZb2h2Z3I1bytFRDJsNHFNUmsyUT09IiwibWFjIjoiMzY3OGMzZjgzMGUwYmVkOGY0ZjdkMTJkZGUyNDBkNzg3MTFiM2RkNjVjZDU1MzhiN2ZhN2NlNjliZGQzMWY3MiIsInRhZyI6IiJ9?field=1": "pdf",
-    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IlBSQmxmUGlXYzhEeTZpTkVxNHBoVkE9PSIsInZhbHVlIjoiREVrN1VUY3hYKy9wMjVVb3dwSTJ1Zz09IiwibWFjIjoiYWE0ZTVhMTkxNzE3MWMyNjcwNDk3NmUyN2ExYjk2YzA5NjhhMWVjMWQ3MmI3Y2JkNzFjN2NjYjUyZGVkN2I0YyIsInRhZyI6IiJ9?field=1": "pdf"
+    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6IlBSQmxmUGlXYzhEeTZpTkVxNHBoVkE9PSIsInZhbHVlIjoiREVrN1VUY3hYKy9wMjVVb3dwSTJ1Zz09IiwibWFjIjoiYWE0ZTVhMTkxNzE3MWMyNjcwNDk3NmUyN2ExYjk2YzA5NjhhMWVjMWQ3MmI3Y2JkNzFjN2NjYjUyZGVkN2I0YyIsInRhZyI6IiJ9?field=1": "pdf",
+    "https://www.allergy.or.kr/common/fileDownload/only/board/eyJpdiI6InQrRXZ2SklkSXRwbTY3QmdGbENUUEE9PSIsInZhbHVlIjoib3JnZnhpeTlLVGVBUDg1UjhCb2tHUT09IiwibWFjIjoiZjYzOWZlNzgxMDQ1NmQ0YmZjYmU1N2NkMDZhYWI2N2M1NjlhZjU4MjY1NTY0Nzc2OTVlYjU0NjBlYTA2OWQ5MSIsInRhZyI6IiJ9?field=1": "pdf"
    }
   },
   {
@@ -1468,7 +1479,7 @@
    "url": "https://www.allergy.or.kr/board/treatment-dev/view/6901?gubun=2",
    "link_resolved": true,
    "lang": "ko",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [],
    "date": "2020-02-01",
@@ -1523,7 +1534,7 @@
    "tags": [
     "합의문"
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [],
    "date": "2020-02-01",
@@ -1582,7 +1593,7 @@
    "url": "https://www.allergy.or.kr/board/treatment/view/6873?gubun=1",
    "link_resolved": true,
    "lang": "en",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [],
    "date": "2020-02-01",
@@ -1611,7 +1622,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-15",
    "detail_v": 2,
@@ -1639,7 +1650,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-15",
    "detail_v": 2,
@@ -1667,7 +1678,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-15",
    "detail_v": 2,
@@ -1695,7 +1706,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-15",
    "detail_v": 2,
@@ -1723,7 +1734,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-15",
    "detail_v": 2,
@@ -1751,7 +1762,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-15",
    "detail_v": 2,
@@ -1780,7 +1791,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-15",
    "detail_v": 2,
@@ -1814,7 +1825,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-15",
    "detail_v": 2,
@@ -1845,7 +1856,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-15",
    "detail_v": 2,
@@ -1876,7 +1887,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-15",
    "detail_v": 2,
@@ -1907,7 +1918,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-15",
    "detail_v": 2,
@@ -1938,7 +1949,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-15",
    "detail_v": 2,
@@ -1967,7 +1978,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-15",
    "detail_v": 2,
@@ -2001,7 +2012,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-15",
    "detail_v": 2,
@@ -2032,7 +2043,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-15",
    "detail_v": 2,
@@ -2063,7 +2074,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-15",
    "detail_v": 2,
@@ -2092,7 +2103,7 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2020",
    "date_precision": "year",
@@ -2121,7 +2132,7 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2021",
    "date_precision": "year",
@@ -2149,7 +2160,7 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2015",
    "date_precision": "year",
@@ -2177,7 +2188,7 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2015",
    "date_precision": "year",
@@ -2202,7 +2213,7 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": false,
    "checked": "2026-11-18",
    "detail_v": 2,
@@ -2228,7 +2239,7 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": false,
    "checked": "2026-11-18",
    "detail_v": 2,
@@ -2278,7 +2289,7 @@
    "date": "2024-06-27",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -2312,7 +2323,7 @@
    "date": "2022-12-27",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -2340,7 +2351,7 @@
    "date": "2017-11-27",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -2374,7 +2385,7 @@
    "date": "2019-06-26",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -2420,7 +2431,7 @@
    "date": "2026-06-11",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -2486,7 +2497,7 @@
    "date": "2016-02-02",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -2542,7 +2553,7 @@
    "date": "2021-05-14",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -2648,7 +2659,7 @@
    "url": "https://www.kasl.org/bbs/?number=2160&mode=view&code=guide&keyfield=&keyword=&category=&gubun=&orderfield=",
    "link_resolved": true,
    "lang": "ko",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -2679,7 +2690,7 @@
    "date": "2025-05-28",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -2735,7 +2746,7 @@
    "date": "2018-11-27",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -2813,7 +2824,7 @@
    "date": "2026-07-13",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -2869,7 +2880,7 @@
    "url": "https://www.kasl.org/bbs/?number=3159&mode=view&code=guide&keyfield=&keyword=&category=&gubun=&orderfield=",
    "link_resolved": true,
    "lang": "ko",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-16",
    "attachments": [
     {
@@ -2929,7 +2940,7 @@
    "date": "2017-11-27",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -2957,7 +2968,7 @@
    "date": "2022-06-30",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -2985,7 +2996,7 @@
    "date": "2026-07-13",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -3044,7 +3055,7 @@
    "date": "2016-02-02",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -3078,7 +3089,7 @@
    "date": "2026-06-13",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -3112,7 +3123,7 @@
    "date": "2022-07-13",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -3163,7 +3174,7 @@
    "date": "2025-05-28",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -3175,6 +3186,38 @@
    "backfill": true,
    "file_kinds": {
     "https://www.kasl.org/bbs/skin/guide/download.php?code=guide&number=17026": "pdf"
+   }
+  },
+  {
+   "id": "9db647894d177181",
+   "first_seen": "2026-11-24",
+   "access": "public",
+   "society": "kasl",
+   "board": "https://www.kasl.org/bbs/?code=guide",
+   "board_name": "진료가이드라인",
+   "title": "2026 대한간학회 대사이상지방간염 약물치료 전문가 합의 의견: Semaglutide를 중심으로",
+   "url": "https://www.kasl.org/bbs/?number=6776&mode=view&code=guide&keyfield=&keyword=&category=&gubun=&orderfield=",
+   "link_resolved": true,
+   "lang": "ko",
+   "tags": [
+    "합의문"
+   ],
+   "date": "2026-11-23",
+   "date_precision": "day",
+   "date_source": "detail",
+   "last_seen": "2026-11-24",
+   "backfill": false,
+   "checked": "2026-11-24",
+   "detail_v": 2,
+   "attachments": [
+    {
+     "name": "대한간학회_2026 대사이상지방간염 약물치료 전문가 합의 의견.pdf (다운 : 13)",
+     "url": "https://www.kasl.org/bbs/skin/guide/download.php?code=guide&number=18061",
+     "kind": "file"
+    }
+   ],
+   "file_kinds": {
+    "https://www.kasl.org/bbs/skin/guide/download.php?code=guide&number=18061": "pdf"
    }
   },
   {
@@ -3222,11 +3265,11 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IjhmOE15cURVcGlTckE5d2ZqLzlnMGc9PSIsInZhbHVlIjoiZmVrQ01paDEyRTh2OXlwYll0bnQwQT09IiwibWFjIjoiYzlmOTNhOWMyNzQyZDM4NzI3YzZiMDQyNDRiOWJjYjcyOGFhYmE1NWE1ZTYwMjIyMDVkNjIxMWJlYWE5NzRkNyIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6InFCTnRoUVhyTnJ4RThwMExONW5NQnc9PSIsInZhbHVlIjoiTHdqcUsrdzNjUCtqdS8yWkpOK1Vadz09IiwibWFjIjoiY2RlZjIwNjU3MDFhNmRkNWZlZjg3MDVmYzU2M2E3ZWYzMjk1MGU0NmIzYTM5YmU2N2JmOWUwMTNkMTVkNmZiYSIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-16",
    "date": "2012-12-01",
    "date_precision": "day",
@@ -3235,7 +3278,8 @@
    "detail_v": 2,
    "file_kinds": {
     "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkNoc2Z1TUZmL1ZkTzNnUGRoOEU4TWc9PSIsInZhbHVlIjoiblVlcm1ZakE4emN4Kzh5cnZYSjROdz09IiwibWFjIjoiMjdmOGIwY2VlNGU3MGUxNGYyNmNkZDhkMmNhZTJkYmMwMzA1NmQ3ZmE5YWEwMDVkODQwYWZmYjcwOTNmOGM4NSIsInRhZyI6IiJ9?field=1": "pdf",
-    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IjhmOE15cURVcGlTckE5d2ZqLzlnMGc9PSIsInZhbHVlIjoiZmVrQ01paDEyRTh2OXlwYll0bnQwQT09IiwibWFjIjoiYzlmOTNhOWMyNzQyZDM4NzI3YzZiMDQyNDRiOWJjYjcyOGFhYmE1NWE1ZTYwMjIyMDVkNjIxMWJlYWE5NzRkNyIsInRhZyI6IiJ9?field=1": "pdf"
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IjhmOE15cURVcGlTckE5d2ZqLzlnMGc9PSIsInZhbHVlIjoiZmVrQ01paDEyRTh2OXlwYll0bnQwQT09IiwibWFjIjoiYzlmOTNhOWMyNzQyZDM4NzI3YzZiMDQyNDRiOWJjYjcyOGFhYmE1NWE1ZTYwMjIyMDVkNjIxMWJlYWE5NzRkNyIsInRhZyI6IiJ9?field=1": "pdf",
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6InFCTnRoUVhyTnJ4RThwMExONW5NQnc9PSIsInZhbHVlIjoiTHdqcUsrdzNjUCtqdS8yWkpOK1Vadz09IiwibWFjIjoiY2RlZjIwNjU3MDFhNmRkNWZlZjg3MDVmYzU2M2E3ZWYzMjk1MGU0NmIzYTM5YmU2N2JmOWUwMTNkMTVkNmZiYSIsInRhZyI6IiJ9?field=1": "pdf"
    }
   },
   {
@@ -3252,11 +3296,11 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkordDZzNlhjbVBYZm5yeDFBSk9nMnc9PSIsInZhbHVlIjoiQm9OaGtHRjA4Z1UrcjEvblA0UjZJUT09IiwibWFjIjoiNWY3YWU2ZGY1NGE3YmNmMDBhOWJjZmIzYTQwNTQ4MTRjMzg5ZDYyYjhkZjg5NzdlNDdlNDk1M2I3ODc4MzMwZCIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImpTR2NFK0NhK3VjSEpudDJUNFlvQVE9PSIsInZhbHVlIjoiV3ZEZzRWVDdsSG5MMFhzT0daWWFWZz09IiwibWFjIjoiYjkyNzdmZTM5YWExNTQzNDI3OGY3MDkwYzBkYTJmYmVkM2JlN2JjMjBiYzc1ZTQ1YzYxOTY4NmM4YWRkYTM1MiIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-16",
    "date": "2012-12-01",
    "date_precision": "day",
@@ -3265,7 +3309,8 @@
    "detail_v": 2,
    "file_kinds": {
     "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6InJBNjVHWTNxODZjRC8vNFZmUWUzeWc9PSIsInZhbHVlIjoiSHlWVG5zYy9KbHdaMVorWnRxTUx3UT09IiwibWFjIjoiNGIyZmIxNjE5MmM2OWMzMzAwMjE5NDUxOTZjN2Y0MmFlZmU5MTY4Y2ExODdjZGVkZTc1M2U3MWIyNzZkODdhMCIsInRhZyI6IiJ9?field=1": "pdf",
-    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkordDZzNlhjbVBYZm5yeDFBSk9nMnc9PSIsInZhbHVlIjoiQm9OaGtHRjA4Z1UrcjEvblA0UjZJUT09IiwibWFjIjoiNWY3YWU2ZGY1NGE3YmNmMDBhOWJjZmIzYTQwNTQ4MTRjMzg5ZDYyYjhkZjg5NzdlNDdlNDk1M2I3ODc4MzMwZCIsInRhZyI6IiJ9?field=1": "pdf"
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkordDZzNlhjbVBYZm5yeDFBSk9nMnc9PSIsInZhbHVlIjoiQm9OaGtHRjA4Z1UrcjEvblA0UjZJUT09IiwibWFjIjoiNWY3YWU2ZGY1NGE3YmNmMDBhOWJjZmIzYTQwNTQ4MTRjMzg5ZDYyYjhkZjg5NzdlNDdlNDk1M2I3ODc4MzMwZCIsInRhZyI6IiJ9?field=1": "pdf",
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImpTR2NFK0NhK3VjSEpudDJUNFlvQVE9PSIsInZhbHVlIjoiV3ZEZzRWVDdsSG5MMFhzT0daWWFWZz09IiwibWFjIjoiYjkyNzdmZTM5YWExNTQzNDI3OGY3MDkwYzBkYTJmYmVkM2JlN2JjMjBiYzc1ZTQ1YzYxOTY4NmM4YWRkYTM1MiIsInRhZyI6IiJ9?field=1": "pdf"
    }
   },
   {
@@ -3282,11 +3327,11 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6Ik9wOGp2Ym9HTFoxU1BKamZaSDdkUWc9PSIsInZhbHVlIjoiVms0eHZsbzQwT00wckNEeE15RGNkUT09IiwibWFjIjoiZGQyZjI5MWJmMDUzMjNhZjUwOTA0NWNkMDZkY2RhMTg3ZTFlODNkOGIwOGQyMzM5ZjI2YzkzZmZmYzdiODMzZCIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IjVtaWR3MW5HRmRRMzBCTEplcjUrSHc9PSIsInZhbHVlIjoia1RwSUx4SEQ4RzdoUElDYnNhekZ5dz09IiwibWFjIjoiMDRkMjA4MWRlZmUzOTI1NDU3YjQwZjJhN2EyYjBlZmZiZGE0ZjgxZWI0ZTcwYmExZjY1NjM2N2YzOWM5OTY0MSIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-16",
    "date": "2012-12-01",
    "date_precision": "day",
@@ -3295,7 +3340,8 @@
    "detail_v": 2,
    "file_kinds": {
     "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IlF6L2dCeTdFb2dEcHhTb094cC9ROEE9PSIsInZhbHVlIjoiZHZTWHQzUjB0amxrVWpNd0U4aWNmdz09IiwibWFjIjoiZjU1Nzc4ZWMyODYwYzI1ZmNlOTRhMTU1OGFhY2U3NTUxZDY5NjVlMDFjNDAyOGNhMDAyMGY4Y2RmMTAxYmE2OSIsInRhZyI6IiJ9?field=1": "pdf",
-    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6Ik9wOGp2Ym9HTFoxU1BKamZaSDdkUWc9PSIsInZhbHVlIjoiVms0eHZsbzQwT00wckNEeE15RGNkUT09IiwibWFjIjoiZGQyZjI5MWJmMDUzMjNhZjUwOTA0NWNkMDZkY2RhMTg3ZTFlODNkOGIwOGQyMzM5ZjI2YzkzZmZmYzdiODMzZCIsInRhZyI6IiJ9?field=1": "pdf"
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6Ik9wOGp2Ym9HTFoxU1BKamZaSDdkUWc9PSIsInZhbHVlIjoiVms0eHZsbzQwT00wckNEeE15RGNkUT09IiwibWFjIjoiZGQyZjI5MWJmMDUzMjNhZjUwOTA0NWNkMDZkY2RhMTg3ZTFlODNkOGIwOGQyMzM5ZjI2YzkzZmZmYzdiODMzZCIsInRhZyI6IiJ9?field=1": "pdf",
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IjVtaWR3MW5HRmRRMzBCTEplcjUrSHc9PSIsInZhbHVlIjoia1RwSUx4SEQ4RzdoUElDYnNhekZ5dz09IiwibWFjIjoiMDRkMjA4MWRlZmUzOTI1NDU3YjQwZjJhN2EyYjBlZmZiZGE0ZjgxZWI0ZTcwYmExZjY1NjM2N2YzOWM5OTY0MSIsInRhZyI6IiJ9?field=1": "pdf"
    }
   },
   {
@@ -3312,11 +3358,11 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkdMS1pUMUZkTWxOOGtYMTJodDFpQlE9PSIsInZhbHVlIjoiNGk1VzBBZUZ4RVJXallVVEx6OGcvUT09IiwibWFjIjoiZTkxNTViMzkxMjhkZGRjY2QwZDA4ZmNkM2ZiNWEwZDJlM2RiMjk2NTI0YjIyZjVlNmMyMDI5MzZmYTQzNGEzNSIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImphVEdDbWxpcHh4bG81SXNsRjJDYmc9PSIsInZhbHVlIjoiWmdOWjlqN2s5a2lrMS9RQm9qTlgydz09IiwibWFjIjoiMzk4MGI1ZmQ5ZmM2YzRmM2FmMWI4NjcwZWU0MmY4NTBlY2E5ZjBkY2YwYzRmNTkyYjViZjM1MWU3NWZhN2Q1OSIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-16",
    "date": "2012-12-01",
    "date_precision": "day",
@@ -3325,7 +3371,8 @@
    "detail_v": 2,
    "file_kinds": {
     "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IjdwZDJldksvd2FuYjJCTkZObzJVQXc9PSIsInZhbHVlIjoiM1VaRVRHL2NobVhtN29FZTdRSTV2UT09IiwibWFjIjoiY2VlODExYzA5MGNkM2I0YmUwM2NjNjI1ZGExNWUxNjJiZjRjNzE5MmU1MjBhYTgxODc2MWQzYWI3YjEyY2FkMyIsInRhZyI6IiJ9?field=1": "pdf",
-    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkdMS1pUMUZkTWxOOGtYMTJodDFpQlE9PSIsInZhbHVlIjoiNGk1VzBBZUZ4RVJXallVVEx6OGcvUT09IiwibWFjIjoiZTkxNTViMzkxMjhkZGRjY2QwZDA4ZmNkM2ZiNWEwZDJlM2RiMjk2NTI0YjIyZjVlNmMyMDI5MzZmYTQzNGEzNSIsInRhZyI6IiJ9?field=1": "pdf"
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkdMS1pUMUZkTWxOOGtYMTJodDFpQlE9PSIsInZhbHVlIjoiNGk1VzBBZUZ4RVJXallVVEx6OGcvUT09IiwibWFjIjoiZTkxNTViMzkxMjhkZGRjY2QwZDA4ZmNkM2ZiNWEwZDJlM2RiMjk2NTI0YjIyZjVlNmMyMDI5MzZmYTQzNGEzNSIsInRhZyI6IiJ9?field=1": "pdf",
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImphVEdDbWxpcHh4bG81SXNsRjJDYmc9PSIsInZhbHVlIjoiWmdOWjlqN2s5a2lrMS9RQm9qTlgydz09IiwibWFjIjoiMzk4MGI1ZmQ5ZmM2YzRmM2FmMWI4NjcwZWU0MmY4NTBlY2E5ZjBkY2YwYzRmNTkyYjViZjM1MWU3NWZhN2Q1OSIsInRhZyI6IiJ9?field=1": "pdf"
    }
   },
   {
@@ -3345,11 +3392,11 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IjRVNDE1NHB1VC82b0hIUERyNTR2NlE9PSIsInZhbHVlIjoiRmo0bStPRHRLNzlrQWVxZFkzQ2d3QT09IiwibWFjIjoiMDczNWJiNDIwNGMwOTE4NmZmMDY0OWE3NWUzYmRkODY1NGUzODkwNWYzZWI2NDc3OGQzZGRiMGQ4YzEyNzQ4MCIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IklkKzJVZUNJeDd4S2tlMkF5NEVnVlE9PSIsInZhbHVlIjoibjZBcXl1ci9wWEtpclVMUnFIZ2ZJZz09IiwibWFjIjoiMDkxMGZhNTI2ZWMwMGNjY2I5M2UwMzExZTBkNDE1NTMxMDhlM2QwMmVkYzk2OWU3YWQ2NDBlYTIxMDRjOGFmYyIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-16",
    "date": "2012-12-01",
    "date_precision": "day",
@@ -3358,7 +3405,8 @@
    "detail_v": 2,
    "file_kinds": {
     "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImkxVFYxSXpJTTVxeTl3VkFZaWNLekE9PSIsInZhbHVlIjoiVW1VNW1paGpsSVpyWTlsYW1hdVBXQT09IiwibWFjIjoiNGMzOWEyNzFjYzVlNTkzYWI0MGJmYTcyNWVkODk4N2JkMjc5NzM5OTBhYTVmMzVjOTJjNTFkNDA4MTc5NThmNCIsInRhZyI6IiJ9?field=1": "pdf",
-    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IjRVNDE1NHB1VC82b0hIUERyNTR2NlE9PSIsInZhbHVlIjoiRmo0bStPRHRLNzlrQWVxZFkzQ2d3QT09IiwibWFjIjoiMDczNWJiNDIwNGMwOTE4NmZmMDY0OWE3NWUzYmRkODY1NGUzODkwNWYzZWI2NDc3OGQzZGRiMGQ4YzEyNzQ4MCIsInRhZyI6IiJ9?field=1": "pdf"
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IjRVNDE1NHB1VC82b0hIUERyNTR2NlE9PSIsInZhbHVlIjoiRmo0bStPRHRLNzlrQWVxZFkzQ2d3QT09IiwibWFjIjoiMDczNWJiNDIwNGMwOTE4NmZmMDY0OWE3NWUzYmRkODY1NGUzODkwNWYzZWI2NDc3OGQzZGRiMGQ4YzEyNzQ4MCIsInRhZyI6IiJ9?field=1": "pdf",
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IklkKzJVZUNJeDd4S2tlMkF5NEVnVlE9PSIsInZhbHVlIjoibjZBcXl1ci9wWEtpclVMUnFIZ2ZJZz09IiwibWFjIjoiMDkxMGZhNTI2ZWMwMGNjY2I5M2UwMzExZTBkNDE1NTMxMDhlM2QwMmVkYzk2OWU3YWQ2NDBlYTIxMDRjOGFmYyIsInRhZyI6IiJ9?field=1": "pdf"
    }
   },
   {
@@ -3375,11 +3423,11 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImhsanpJbytCTy9OYlZ5K0RUVUxHSGc9PSIsInZhbHVlIjoiczRTbzFsL0hYSkYrWEZCeXNwRGhuUT09IiwibWFjIjoiODYyNjJmYTY0ZTM3ZWVhYmRkNmJmM2RhMTBkODhkOGE2OWVkMjA5NjA4MTdmNzI5OGZkMWY1YjQzODEzZGM0YiIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6Im1SS2huMEFGWGFPMjNhelhoQjlYTlE9PSIsInZhbHVlIjoiZ2ZmVldaQjNFOVd0M25IaEtsb014UT09IiwibWFjIjoiZWFmM2NmNDA4OTY1NThmNDk1MzIwODIxYTM3ZDAwZjU1OGEyMmZlZTBhNDNhZjQ5MzViMTVkYzRmYTM5OWM2MyIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-16",
    "date": "2012-12-01",
    "date_precision": "day",
@@ -3388,7 +3436,8 @@
    "detail_v": 2,
    "file_kinds": {
     "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6InU2NGloVG1KU0M5QXpZMjhydUJZU3c9PSIsInZhbHVlIjoiS1d6ajhqRHd0NGpxTEhzM2FsWUpOZz09IiwibWFjIjoiZWNiYzFkNDM1Nzg4ZjdjMmQ1MDgwNDM0MTYxMjdlNTUxZjkxMzM4YTlhOGU1YjU4ZmNkNmZkOWUxMDgyYWZmNSIsInRhZyI6IiJ9?field=1": "pdf",
-    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImhsanpJbytCTy9OYlZ5K0RUVUxHSGc9PSIsInZhbHVlIjoiczRTbzFsL0hYSkYrWEZCeXNwRGhuUT09IiwibWFjIjoiODYyNjJmYTY0ZTM3ZWVhYmRkNmJmM2RhMTBkODhkOGE2OWVkMjA5NjA4MTdmNzI5OGZkMWY1YjQzODEzZGM0YiIsInRhZyI6IiJ9?field=1": "pdf"
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImhsanpJbytCTy9OYlZ5K0RUVUxHSGc9PSIsInZhbHVlIjoiczRTbzFsL0hYSkYrWEZCeXNwRGhuUT09IiwibWFjIjoiODYyNjJmYTY0ZTM3ZWVhYmRkNmJmM2RhMTBkODhkOGE2OWVkMjA5NjA4MTdmNzI5OGZkMWY1YjQzODEzZGM0YiIsInRhZyI6IiJ9?field=1": "pdf",
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6Im1SS2huMEFGWGFPMjNhelhoQjlYTlE9PSIsInZhbHVlIjoiZ2ZmVldaQjNFOVd0M25IaEtsb014UT09IiwibWFjIjoiZWFmM2NmNDA4OTY1NThmNDk1MzIwODIxYTM3ZDAwZjU1OGEyMmZlZTBhNDNhZjQ5MzViMTVkYzRmYTM5OWM2MyIsInRhZyI6IiJ9?field=1": "pdf"
    }
   },
   {
@@ -3408,11 +3457,11 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImpLb1BXS1BHTmVVTENpTlpFWEZ1Y2c9PSIsInZhbHVlIjoiM3IyK1NJSkFIZ3NWOHlsdXlXV0pqUT09IiwibWFjIjoiNjQzZGE4NWYwODRlYTc0YTU3YTdmNDI3NmZkYjliMTIwYjA3NmExNWE3ZjE5MjkwZjc2NWIyMjg5YjhiZjE0MyIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkF6ZVkyei9kZlJVd1JHeEV2ZGdRUGc9PSIsInZhbHVlIjoiUUhZd3RsdmZtL2psSjFKalRVcXQ3Zz09IiwibWFjIjoiNjVlZWNjNWJkOGYyN2E2ZDhjODdjYzVkM2NhOWQxNmIxZGFlNTA0MWNhNmFlNTYzZTZhZDdmOWQ2YmYyMDU0OSIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-16",
    "date": "2012-12-01",
    "date_precision": "day",
@@ -3421,7 +3470,8 @@
    "detail_v": 2,
    "file_kinds": {
     "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImJvbE9SWG1oUFJkNFdVT0lYSVVJemc9PSIsInZhbHVlIjoiTWZXMkJuM1NvcnI5VGZ1VnJuWnZOUT09IiwibWFjIjoiNWZhMjhmYTA2YWU5ODI3ODExYmNiMjA2ODBjNzU0MGJlOGQ5NjUyOTU3NjBkZjM2NjEwNTgwMTJlYTY4ODExNSIsInRhZyI6IiJ9?field=1": "pdf",
-    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImpLb1BXS1BHTmVVTENpTlpFWEZ1Y2c9PSIsInZhbHVlIjoiM3IyK1NJSkFIZ3NWOHlsdXlXV0pqUT09IiwibWFjIjoiNjQzZGE4NWYwODRlYTc0YTU3YTdmNDI3NmZkYjliMTIwYjA3NmExNWE3ZjE5MjkwZjc2NWIyMjg5YjhiZjE0MyIsInRhZyI6IiJ9?field=1": "pdf"
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImpLb1BXS1BHTmVVTENpTlpFWEZ1Y2c9PSIsInZhbHVlIjoiM3IyK1NJSkFIZ3NWOHlsdXlXV0pqUT09IiwibWFjIjoiNjQzZGE4NWYwODRlYTc0YTU3YTdmNDI3NmZkYjliMTIwYjA3NmExNWE3ZjE5MjkwZjc2NWIyMjg5YjhiZjE0MyIsInRhZyI6IiJ9?field=1": "pdf",
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkF6ZVkyei9kZlJVd1JHeEV2ZGdRUGc9PSIsInZhbHVlIjoiUUhZd3RsdmZtL2psSjFKalRVcXQ3Zz09IiwibWFjIjoiNjVlZWNjNWJkOGYyN2E2ZDhjODdjYzVkM2NhOWQxNmIxZGFlNTA0MWNhNmFlNTYzZTZhZDdmOWQ2YmYyMDU0OSIsInRhZyI6IiJ9?field=1": "pdf"
    }
   },
   {
@@ -3438,11 +3488,11 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6Ik5IV0ZzczdOeFFDNyt0dE5YbU5HMVE9PSIsInZhbHVlIjoiV3hKZmF2TmZmdFNqTis2WkI0czFOUT09IiwibWFjIjoiYWYwZjc4NDYyMGUzZTYzZDBmNmMzMTM2NTVmODlkODJlYmE5MDk4MzNhNzNlZjg3NGE4OGEwYzJjNzk1ZWNmMCIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IlhNNEJCeURKaHg4cTRtaHNCdThaUnc9PSIsInZhbHVlIjoiUFV0RWVDbk9ub2UvTG5ITnZVdXQzUT09IiwibWFjIjoiM2UxMzQ0OWZkMWQ2NGU5ZjM3YzdjODk3OGQwM2VmMDQ3ZmM5YWM2NzUzNTIzMjAzOTM0NzFkNDNkMzgxNjE1NiIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-16",
    "date": "2012-12-01",
    "date_precision": "day",
@@ -3451,7 +3501,8 @@
    "detail_v": 2,
    "file_kinds": {
     "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6InlmMzB3TksyeFNSYzVWdjFjVm1FVEE9PSIsInZhbHVlIjoiTm9YbmZORWRQRDh1QkNsVkhnTWlRZz09IiwibWFjIjoiMmY0NDBiZGYzOTBlOGVhMjg3YWVkMWE5Y2E4MTZmZjNhOWI0ZGM3Y2ViNDllYWIwZDE4YjFkNDE5NTY2MDJjOCIsInRhZyI6IiJ9?field=1": "pdf",
-    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6Ik5IV0ZzczdOeFFDNyt0dE5YbU5HMVE9PSIsInZhbHVlIjoiV3hKZmF2TmZmdFNqTis2WkI0czFOUT09IiwibWFjIjoiYWYwZjc4NDYyMGUzZTYzZDBmNmMzMTM2NTVmODlkODJlYmE5MDk4MzNhNzNlZjg3NGE4OGEwYzJjNzk1ZWNmMCIsInRhZyI6IiJ9?field=1": "pdf"
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6Ik5IV0ZzczdOeFFDNyt0dE5YbU5HMVE9PSIsInZhbHVlIjoiV3hKZmF2TmZmdFNqTis2WkI0czFOUT09IiwibWFjIjoiYWYwZjc4NDYyMGUzZTYzZDBmNmMzMTM2NTVmODlkODJlYmE5MDk4MzNhNzNlZjg3NGE4OGEwYzJjNzk1ZWNmMCIsInRhZyI6IiJ9?field=1": "pdf",
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IlhNNEJCeURKaHg4cTRtaHNCdThaUnc9PSIsInZhbHVlIjoiUFV0RWVDbk9ub2UvTG5ITnZVdXQzUT09IiwibWFjIjoiM2UxMzQ0OWZkMWQ2NGU5ZjM3YzdjODk3OGQwM2VmMDQ3ZmM5YWM2NzUzNTIzMjAzOTM0NzFkNDNkMzgxNjE1NiIsInRhZyI6IiJ9?field=1": "pdf"
    }
   },
   {
@@ -3496,11 +3547,11 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6Imw4SXYzcEt2R0c2QUt5UkJ4UHNNUXc9PSIsInZhbHVlIjoiUHJpQzhMcVNET3hOcVIrZkxBSDNYUT09IiwibWFjIjoiMGM4OWNkY2NiN2RkOTM1OTY3MDY4Y2Y0NTM2MzRlYjY3NmUyYWIwNGJmNzg3ZWZkZDMyNTViNzRlYTI5ZTA2OSIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6InlDNUJtRU5sZ3dIZFRkMXUyK2NEaFE9PSIsInZhbHVlIjoiKzdERzV6ODJvTGFDVFFnL2UvT25hQT09IiwibWFjIjoiNjEyMGYyMjRhMTA3OWFlMDlkMDYyYWU0NGExMjg5MThmZmI3ZGIxNzE3ZTdlNmVhODc0ZGVmNTc1M2RkNWM1MiIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-16",
    "date": "2012-12-01",
    "date_precision": "day",
@@ -3509,7 +3560,8 @@
    "detail_v": 2,
    "file_kinds": {
     "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkUzc0dxVkpCM1pJYTlaZWxwQThwRFE9PSIsInZhbHVlIjoiSnMzZU10aEV2US9Objh3bkZzakF1UT09IiwibWFjIjoiNDBkOTVlNGQ5ZmYyZTExODEzYzBmMTc0YmMzMDNlZThlYTc4ZTA2MDU3ZWI5NTQxMDVlNTZhY2JlN2QzZDY2NSIsInRhZyI6IiJ9?field=1": "pdf",
-    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6Imw4SXYzcEt2R0c2QUt5UkJ4UHNNUXc9PSIsInZhbHVlIjoiUHJpQzhMcVNET3hOcVIrZkxBSDNYUT09IiwibWFjIjoiMGM4OWNkY2NiN2RkOTM1OTY3MDY4Y2Y0NTM2MzRlYjY3NmUyYWIwNGJmNzg3ZWZkZDMyNTViNzRlYTI5ZTA2OSIsInRhZyI6IiJ9?field=1": "pdf"
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6Imw4SXYzcEt2R0c2QUt5UkJ4UHNNUXc9PSIsInZhbHVlIjoiUHJpQzhMcVNET3hOcVIrZkxBSDNYUT09IiwibWFjIjoiMGM4OWNkY2NiN2RkOTM1OTY3MDY4Y2Y0NTM2MzRlYjY3NmUyYWIwNGJmNzg3ZWZkZDMyNTViNzRlYTI5ZTA2OSIsInRhZyI6IiJ9?field=1": "pdf",
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6InlDNUJtRU5sZ3dIZFRkMXUyK2NEaFE9PSIsInZhbHVlIjoiKzdERzV6ODJvTGFDVFFnL2UvT25hQT09IiwibWFjIjoiNjEyMGYyMjRhMTA3OWFlMDlkMDYyYWU0NGExMjg5MThmZmI3ZGIxNzE3ZTdlNmVhODc0ZGVmNTc1M2RkNWM1MiIsInRhZyI6IiJ9?field=1": "pdf"
    }
   },
   {
@@ -3529,11 +3581,11 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IjR2ck9EMzc4OWZveVFTTDZjMmJMRWc9PSIsInZhbHVlIjoib2JTSnBEUFgyZ1QyZXpuWDZ0dGlmZz09IiwibWFjIjoiOTlhOTExMmE1NjlmZWZiNzY1MWQzMzU1NWYxNjQwNWIwODI1YWUyNzAzMDNlOWYwMDdlYjQyNDJmNGZlOWU0OSIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImRzKzhlRnF1MHQ5OTlERFIxRWhMVXc9PSIsInZhbHVlIjoiRkV3cDlzYzR6dytPUGE1UVVaQmR5dz09IiwibWFjIjoiMzU4OTkwMDQzOTAwZTU1Y2NjMTMzYzBlZjYwMjE4OTkyODJlNTUzNDA2YjIxMzUzZWU2Y2YyYzc3OTYyZTNlMyIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-16",
    "date": "2012-12-01",
    "date_precision": "day",
@@ -3542,7 +3594,8 @@
    "detail_v": 2,
    "file_kinds": {
     "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6Ilorb3p0SmszVjhZb3hVVm54YStaVnc9PSIsInZhbHVlIjoiQ3RjNVh4UTlYYlgySEt0MGRLazlEdz09IiwibWFjIjoiNWEzNjk1NTY3ZDdiYzY1N2RkNWRjNWE3ZWQ5NGM5YmFjMTFlZjU3YTkyMzIzMDQ5YzU4ZGU0NWI1ZjY2NGVhZiIsInRhZyI6IiJ9?field=1": "pdf",
-    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IjR2ck9EMzc4OWZveVFTTDZjMmJMRWc9PSIsInZhbHVlIjoib2JTSnBEUFgyZ1QyZXpuWDZ0dGlmZz09IiwibWFjIjoiOTlhOTExMmE1NjlmZWZiNzY1MWQzMzU1NWYxNjQwNWIwODI1YWUyNzAzMDNlOWYwMDdlYjQyNDJmNGZlOWU0OSIsInRhZyI6IiJ9?field=1": "pdf"
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IjR2ck9EMzc4OWZveVFTTDZjMmJMRWc9PSIsInZhbHVlIjoib2JTSnBEUFgyZ1QyZXpuWDZ0dGlmZz09IiwibWFjIjoiOTlhOTExMmE1NjlmZWZiNzY1MWQzMzU1NWYxNjQwNWIwODI1YWUyNzAzMDNlOWYwMDdlYjQyNDJmNGZlOWU0OSIsInRhZyI6IiJ9?field=1": "pdf",
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImRzKzhlRnF1MHQ5OTlERFIxRWhMVXc9PSIsInZhbHVlIjoiRkV3cDlzYzR6dytPUGE1UVVaQmR5dz09IiwibWFjIjoiMzU4OTkwMDQzOTAwZTU1Y2NjMTMzYzBlZjYwMjE4OTkyODJlNTUzNDA2YjIxMzUzZWU2Y2YyYzc3OTYyZTNlMyIsInRhZyI6IiJ9?field=1": "pdf"
    }
   },
   {
@@ -3627,11 +3680,11 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkFsc3lKNDVyVGRaL0ZINVhnUnI3dHc9PSIsInZhbHVlIjoiZlpVRkcwNkRrNFJ2bnNudmJ2RlFjQT09IiwibWFjIjoiNmVkMzZjMjhiNzYxNTBmY2ExNjc4MTg3YzcyZTliM2Y0NzhkNjk4NWEzMGFkZDY2MzA1MTJlMGE1NzMwMmQwZCIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkFNSzNUN29oUW81ZGRGN1JrbmtLZ2c9PSIsInZhbHVlIjoiZThDSkNwRWZKdU1GbEw4d3haSENEdz09IiwibWFjIjoiMmE1YTkwZTI2ZTQ0MWRmMGE3ZWQxNDQxYzA5YTQ1ZTA1OGI1YWRmY2RjNGVkMGFiYWVhMDQxNGRkZWM3ZTVlMCIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-16",
    "date": "2012-12-01",
    "date_precision": "day",
@@ -3640,7 +3693,8 @@
    "detail_v": 2,
    "file_kinds": {
     "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6InBMRVFqVmV4OEM4dHZ0aVh5K3lNVHc9PSIsInZhbHVlIjoiTFZFMWZmSEdXUWlidmVsS0ZIUTlkdz09IiwibWFjIjoiNTlmNTBhYjNhYTc0NjQxNDIwOGY1ZTA5YTBkNmVkYzI1NGI4MjljZDkwYmQ0ODNjY2QyNmNiM2ZjYzY3NWI3MSIsInRhZyI6IiJ9?field=1": "pdf",
-    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkFsc3lKNDVyVGRaL0ZINVhnUnI3dHc9PSIsInZhbHVlIjoiZlpVRkcwNkRrNFJ2bnNudmJ2RlFjQT09IiwibWFjIjoiNmVkMzZjMjhiNzYxNTBmY2ExNjc4MTg3YzcyZTliM2Y0NzhkNjk4NWEzMGFkZDY2MzA1MTJlMGE1NzMwMmQwZCIsInRhZyI6IiJ9?field=1": "pdf"
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkFsc3lKNDVyVGRaL0ZINVhnUnI3dHc9PSIsInZhbHVlIjoiZlpVRkcwNkRrNFJ2bnNudmJ2RlFjQT09IiwibWFjIjoiNmVkMzZjMjhiNzYxNTBmY2ExNjc4MTg3YzcyZTliM2Y0NzhkNjk4NWEzMGFkZDY2MzA1MTJlMGE1NzMwMmQwZCIsInRhZyI6IiJ9?field=1": "pdf",
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkFNSzNUN29oUW81ZGRGN1JrbmtLZ2c9PSIsInZhbHVlIjoiZThDSkNwRWZKdU1GbEw4d3haSENEdz09IiwibWFjIjoiMmE1YTkwZTI2ZTQ0MWRmMGE3ZWQxNDQxYzA5YTQ1ZTA1OGI1YWRmY2RjNGVkMGFiYWVhMDQxNGRkZWM3ZTVlMCIsInRhZyI6IiJ9?field=1": "pdf"
    }
   },
   {
@@ -3660,11 +3714,11 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IjNkei93Zzl5cEgrNUR4YlFJUStXMXc9PSIsInZhbHVlIjoiYmNTL3RnZVlDdTVWWGpIWlUyQjdOQT09IiwibWFjIjoiZjdmMjYxZDMzN2UwYWVhZWJiYTE5MWU0NmQzMjcxNmE5MjllYTI3NDc2ZTQwMzcyOWNhMDk3ZmNkNWJjMzQzMCIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IlhibXQvaTY2aTdBN1Z6cnRqT2dtVXc9PSIsInZhbHVlIjoiVmMweGpldzk0dE0rNEg0elIyeUE1UT09IiwibWFjIjoiNDkwNGNmYTNjMTY0ZGIwZWMzYmE1N2U0Y2M2NTk5ZjFiNzYwNDNmNzNhNzU3OWI1NGJhMDBmNzE4NGI0MmY3YyIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-16",
    "date": "2012-12-01",
    "date_precision": "day",
@@ -3673,7 +3727,8 @@
    "detail_v": 2,
    "file_kinds": {
     "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6InlEY3lzSkgrMW90dmRDWXZMR2d1eHc9PSIsInZhbHVlIjoiekZkVmlwaWJoMStKMkozNlhPWEU1UT09IiwibWFjIjoiM2JkOWUzOTBjNzIxN2U0MWFhZDY3MTJhZmFlYzc1M2EyNGUxOWQ0YTIxNjM5Njk2NzE3OGQwNzU5YmY0OTdiMiIsInRhZyI6IiJ9?field=1": "pdf",
-    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IjNkei93Zzl5cEgrNUR4YlFJUStXMXc9PSIsInZhbHVlIjoiYmNTL3RnZVlDdTVWWGpIWlUyQjdOQT09IiwibWFjIjoiZjdmMjYxZDMzN2UwYWVhZWJiYTE5MWU0NmQzMjcxNmE5MjllYTI3NDc2ZTQwMzcyOWNhMDk3ZmNkNWJjMzQzMCIsInRhZyI6IiJ9?field=1": "pdf"
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IjNkei93Zzl5cEgrNUR4YlFJUStXMXc9PSIsInZhbHVlIjoiYmNTL3RnZVlDdTVWWGpIWlUyQjdOQT09IiwibWFjIjoiZjdmMjYxZDMzN2UwYWVhZWJiYTE5MWU0NmQzMjcxNmE5MjllYTI3NDc2ZTQwMzcyOWNhMDk3ZmNkNWJjMzQzMCIsInRhZyI6IiJ9?field=1": "pdf",
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IlhibXQvaTY2aTdBN1Z6cnRqT2dtVXc9PSIsInZhbHVlIjoiVmMweGpldzk0dE0rNEg0elIyeUE1UT09IiwibWFjIjoiNDkwNGNmYTNjMTY0ZGIwZWMzYmE1N2U0Y2M2NTk5ZjFiNzYwNDNmNzNhNzU3OWI1NGJhMDBmNzE4NGI0MmY3YyIsInRhZyI6IiJ9?field=1": "pdf"
    }
   },
   {
@@ -3721,11 +3776,11 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImxSNTF3VE00djhtSHhGTzh2RFd5WUE9PSIsInZhbHVlIjoiK29Qc0VqYTF2QTRDR1QxdDRSRmZmZz09IiwibWFjIjoiZmJjOTZiMWE3ZWYwMTRjNjNiYTQ3MWFjNmI2ODZmMjY3ZWNiYWE2NmRlYjE0MjFjZDc3MzA0YjliOGZlMjQ1MSIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImRFck1XZzNvYm9wNEdTclVBSzc4VkE9PSIsInZhbHVlIjoia3pCbzV0bXlvUzM4T0h2Qlc0ODhIQT09IiwibWFjIjoiYTE4ZGViYjhlYmQxODE1YmIxMmQ0YjY1ZjQ4ODFlNDMwNjJjNTY1MzZkOTBjYjJjM2U1ODA5Zjc3M2Q3YzMyMSIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-16",
    "date": "2012-12-01",
    "date_precision": "day",
@@ -3734,7 +3789,8 @@
    "detail_v": 2,
    "file_kinds": {
     "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IlVKaVpuSWIvbmVPcVZSTy9jek1lTlE9PSIsInZhbHVlIjoibktwVUhKOEZIWG5lQUl3ZXMvNGJyUT09IiwibWFjIjoiZGRkZDc5MDVkYzAyZWQxODFiNzM0YzYxZDY3YTc0MWNkMjg5OTAzMDQ0M2NmYWFjZTAwMTk4MjVlMDJkZWIzOCIsInRhZyI6IiJ9?field=1": "pdf",
-    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImxSNTF3VE00djhtSHhGTzh2RFd5WUE9PSIsInZhbHVlIjoiK29Qc0VqYTF2QTRDR1QxdDRSRmZmZz09IiwibWFjIjoiZmJjOTZiMWE3ZWYwMTRjNjNiYTQ3MWFjNmI2ODZmMjY3ZWNiYWE2NmRlYjE0MjFjZDc3MzA0YjliOGZlMjQ1MSIsInRhZyI6IiJ9?field=1": "pdf"
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImxSNTF3VE00djhtSHhGTzh2RFd5WUE9PSIsInZhbHVlIjoiK29Qc0VqYTF2QTRDR1QxdDRSRmZmZz09IiwibWFjIjoiZmJjOTZiMWE3ZWYwMTRjNjNiYTQ3MWFjNmI2ODZmMjY3ZWNiYWE2NmRlYjE0MjFjZDc3MzA0YjliOGZlMjQ1MSIsInRhZyI6IiJ9?field=1": "pdf",
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImRFck1XZzNvYm9wNEdTclVBSzc4VkE9PSIsInZhbHVlIjoia3pCbzV0bXlvUzM4T0h2Qlc0ODhIQT09IiwibWFjIjoiYTE4ZGViYjhlYmQxODE1YmIxMmQ0YjY1ZjQ4ODFlNDMwNjJjNTY1MzZkOTBjYjJjM2U1ODA5Zjc3M2Q3YzMyMSIsInRhZyI6IiJ9?field=1": "pdf"
    }
   },
   {
@@ -3754,21 +3810,21 @@
    "attachments": [
     {
      "name": "요약본",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImsrSkwybHEzYVpIdWdyUFZkWmdlTGc9PSIsInZhbHVlIjoiYXVaNStzMXZsVXU5b1NGSDBpaGR5dz09IiwibWFjIjoiYTU5YWI4Y2E4ZTUyYzQ0MDk5MmY4YWY3ZjQ0ZTJiYjgwZjhjYjE5ZDFlOGYwZTViYzg0YjUxZDdiZmM2ZTIyYSIsInRhZyI6IiJ9?field=2",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkhmSjFlUi9qdkVaNDdKbHhqelhMZmc9PSIsInZhbHVlIjoidUFHTmxiZ1VUMUVkbm9iNyttaGlIdz09IiwibWFjIjoiZWQ0MWQxZDExMWM5MTkzYzA5NTk0NzAxNDE1ODM3YmM3YTg5OGUxZGQwYjgzZTIxMGIwMjE3ZjFmYzE5MDRkNSIsInRhZyI6IiJ9?field=2",
      "kind": "file"
     },
     {
      "name": "교육 슬라이드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IjNBdDFnaVg0MVkwTFdNbTRjWG5zZWc9PSIsInZhbHVlIjoiU3dRQ1QzWkloQmZVU3N6V3dkU2hlUT09IiwibWFjIjoiNjAyZDE0OGYzM2M0Y2E0OGMyMzVjNDk0YTg1MmYwMWI4NWZmZjk3YjczMWQyMDM2ZWIxMDk0NDVkYzk2OTQ3MyIsInRhZyI6IiJ9?field=3",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkNkUzlKclQ2OExqYklwWk50bE5DVGc9PSIsInZhbHVlIjoicW9EWVlqak1BZ1ZGNzNVOFlPelkvZz09IiwibWFjIjoiNWQ5Nzk0MTJkMDI4OTVjMTRkNzI0YTlmY2U4OWRhNzk3ODc0YjU5NWI3MjFlMWNlOGRhNDAzZTA0YTYwNDc2OCIsInRhZyI6IiJ9?field=3",
      "kind": "file"
     },
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImduRmNzdmsyYlZVSUlCOUxja1R5R1E9PSIsInZhbHVlIjoid3VCS3oyUjVHQ1o2Rm5uT1Y0aGhiZz09IiwibWFjIjoiZmFiMjcxMWExZTFkMjkzMDQxYmNhMTYxMzliOWMzM2YyZTEzNGE5ZjNkZmI2ZTAyMjFhMzdlZWFmYzFmMDAzNCIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6Ijl0N3VjMnpjaG52Y2trWEQ3ZG1LdXc9PSIsInZhbHVlIjoiT1p5c0I2N3NSUERuTkxKZW54Q1AxQT09IiwibWFjIjoiZTY4N2FhMTQxZjk4NGZiNWRjYjlmMDQ1N2YwMDk0NjU3YWRjMDNmNWNlYWI3ZDk2ZmQwMGZmNmNhOTU2ZWM5YSIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-16",
    "date": "2012-12-01",
    "date_precision": "day",
@@ -3781,7 +3837,10 @@
     "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6Ik8zY2cvQnppdDVGZXVmd1gva1lvR0E9PSIsInZhbHVlIjoicTBPTHY1QlgwR0FVekdHY2lXRnlGQT09IiwibWFjIjoiY2ViNWY3YjVmY2YxOTNkZmIzZWU3Y2QxNTYzYWI2MTcyZWMyNTcxMjI0ODhiM2RmZmQ1YjZlOGZjMTY0ZDQwMSIsInRhZyI6IiJ9?field=1": "pdf",
     "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImsrSkwybHEzYVpIdWdyUFZkWmdlTGc9PSIsInZhbHVlIjoiYXVaNStzMXZsVXU5b1NGSDBpaGR5dz09IiwibWFjIjoiYTU5YWI4Y2E4ZTUyYzQ0MDk5MmY4YWY3ZjQ0ZTJiYjgwZjhjYjE5ZDFlOGYwZTViYzg0YjUxZDdiZmM2ZTIyYSIsInRhZyI6IiJ9?field=2": "pptx",
     "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IjNBdDFnaVg0MVkwTFdNbTRjWG5zZWc9PSIsInZhbHVlIjoiU3dRQ1QzWkloQmZVU3N6V3dkU2hlUT09IiwibWFjIjoiNjAyZDE0OGYzM2M0Y2E0OGMyMzVjNDk0YTg1MmYwMWI4NWZmZjk3YjczMWQyMDM2ZWIxMDk0NDVkYzk2OTQ3MyIsInRhZyI6IiJ9?field=3": "pptx",
-    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImduRmNzdmsyYlZVSUlCOUxja1R5R1E9PSIsInZhbHVlIjoid3VCS3oyUjVHQ1o2Rm5uT1Y0aGhiZz09IiwibWFjIjoiZmFiMjcxMWExZTFkMjkzMDQxYmNhMTYxMzliOWMzM2YyZTEzNGE5ZjNkZmI2ZTAyMjFhMzdlZWFmYzFmMDAzNCIsInRhZyI6IiJ9?field=1": "pdf"
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImduRmNzdmsyYlZVSUlCOUxja1R5R1E9PSIsInZhbHVlIjoid3VCS3oyUjVHQ1o2Rm5uT1Y0aGhiZz09IiwibWFjIjoiZmFiMjcxMWExZTFkMjkzMDQxYmNhMTYxMzliOWMzM2YyZTEzNGE5ZjNkZmI2ZTAyMjFhMzdlZWFmYzFmMDAzNCIsInRhZyI6IiJ9?field=1": "pdf",
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkhmSjFlUi9qdkVaNDdKbHhqelhMZmc9PSIsInZhbHVlIjoidUFHTmxiZ1VUMUVkbm9iNyttaGlIdz09IiwibWFjIjoiZWQ0MWQxZDExMWM5MTkzYzA5NTk0NzAxNDE1ODM3YmM3YTg5OGUxZGQwYjgzZTIxMGIwMjE3ZjFmYzE5MDRkNSIsInRhZyI6IiJ9?field=2": "pptx",
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkNkUzlKclQ2OExqYklwWk50bE5DVGc9PSIsInZhbHVlIjoicW9EWVlqak1BZ1ZGNzNVOFlPelkvZz09IiwibWFjIjoiNWQ5Nzk0MTJkMDI4OTVjMTRkNzI0YTlmY2U4OWRhNzk3ODc0YjU5NWI3MjFlMWNlOGRhNDAzZTA0YTYwNDc2OCIsInRhZyI6IiJ9?field=3": "pptx",
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6Ijl0N3VjMnpjaG52Y2trWEQ3ZG1LdXc9PSIsInZhbHVlIjoiT1p5c0I2N3NSUERuTkxKZW54Q1AxQT09IiwibWFjIjoiZTY4N2FhMTQxZjk4NGZiNWRjYjlmMDQ1N2YwMDk0NjU3YWRjMDNmNWNlYWI3ZDk2ZmQwMGZmNmNhOTU2ZWM5YSIsInRhZyI6IiJ9?field=1": "pdf"
    }
   },
   {
@@ -3801,11 +3860,11 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImdVUkdMSjdtRU5xR1Q2YTV0Z2IxZHc9PSIsInZhbHVlIjoiWWx4cHoyOGRBMHhrbk5FMCs4bEhoQT09IiwibWFjIjoiZWQ3ZDk3Y2EzNTUzNDVhM2ZjNjQ2ZGFjMDI3MDIxOGVhMmQ0YmFlOGU2NjAwNWI0ZGM0YzQ5NDczMjcxMjA5MiIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6Ik9CUkRkK0pkaVp3NHZBYjhwQi9sNHc9PSIsInZhbHVlIjoiT3pESnlELy9lMVZkRmMzUWw5SFVtQT09IiwibWFjIjoiZDIxZWFiZTAwZWVlOWY4M2JlOThlMzdiMTU1MTczNWVmZjE2ZjZhZjgyMTUwODAwMGExNzBiMDJjNTJiNzY0MSIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-16",
    "date": "2012-12-01",
    "date_precision": "day",
@@ -3814,7 +3873,8 @@
    "detail_v": 2,
    "file_kinds": {
     "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6Ik9Jei9iSEtYZkhDanNtaHc4U2EwYkE9PSIsInZhbHVlIjoiY2x1TVR1MDN3K3JoVjE3UE8zTHpVUT09IiwibWFjIjoiZDNiNTE3OTVlODE0ZmQ4OThlMTUzZTFiODcwNTZlYTM5MGI5YzQ0MGZiOWU3YThjOTQ3YmYwYmE1MDIwZWNmNiIsInRhZyI6IiJ9?field=1": "pdf",
-    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImdVUkdMSjdtRU5xR1Q2YTV0Z2IxZHc9PSIsInZhbHVlIjoiWWx4cHoyOGRBMHhrbk5FMCs4bEhoQT09IiwibWFjIjoiZWQ3ZDk3Y2EzNTUzNDVhM2ZjNjQ2ZGFjMDI3MDIxOGVhMmQ0YmFlOGU2NjAwNWI0ZGM0YzQ5NDczMjcxMjA5MiIsInRhZyI6IiJ9?field=1": "pdf"
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImdVUkdMSjdtRU5xR1Q2YTV0Z2IxZHc9PSIsInZhbHVlIjoiWWx4cHoyOGRBMHhrbk5FMCs4bEhoQT09IiwibWFjIjoiZWQ3ZDk3Y2EzNTUzNDVhM2ZjNjQ2ZGFjMDI3MDIxOGVhMmQ0YmFlOGU2NjAwNWI0ZGM0YzQ5NDczMjcxMjA5MiIsInRhZyI6IiJ9?field=1": "pdf",
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6Ik9CUkRkK0pkaVp3NHZBYjhwQi9sNHc9PSIsInZhbHVlIjoiT3pESnlELy9lMVZkRmMzUWw5SFVtQT09IiwibWFjIjoiZDIxZWFiZTAwZWVlOWY4M2JlOThlMzdiMTU1MTczNWVmZjE2ZjZhZjgyMTUwODAwMGExNzBiMDJjNTJiNzY0MSIsInRhZyI6IiJ9?field=1": "pdf"
    }
   },
   {
@@ -3871,11 +3931,11 @@
    "attachments": [
     {
      "name": "다운로드",
-     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImtmeGFuSUFoOGxNRURWeEduU0RqSkE9PSIsInZhbHVlIjoiYmsvM2tzVTBMTDRQVGNxbjJrY3duQT09IiwibWFjIjoiNTc2NmQyZjU4ZWRkZWMzOTMzOWIxOThhMGNjMDk5ZWY0ZWNmZWEyNDJhNjhmMzkwMDBhMjRjZGYwOGFlZmI3ZCIsInRhZyI6IiJ9?field=1",
+     "url": "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkZaeUdLYzJlbU92alk3c2RzdG9WWnc9PSIsInZhbHVlIjoiZWVRdVFFTXoyZzJ6RkNTbHdPeXZJdz09IiwibWFjIjoiNTExMzRjMjdmMmM4MWNiMzk4MjYxNTdmZDkxYzJhY2RlMzQxNTRiNWI2OTU5MTAwZmNmNzY3NjBhNTE0YmQ0NyIsInRhZyI6IiJ9?field=1",
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-16",
    "date": "2012-12-01",
    "date_precision": "day",
@@ -3884,7 +3944,8 @@
    "detail_v": 2,
    "file_kinds": {
     "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6InhKTUtYT2loRTcxZDJzVW1qWkhvZ0E9PSIsInZhbHVlIjoiWFpYNHJKRDIwQ28xMDNHYzRUbFROZz09IiwibWFjIjoiNWI4OGJlYTBhYjE2ZTU2MGZlZjY4OTg2NTMxMjJiMDg2YzgyNDIyMjdmMThlNzdlY2Y5ZTRiN2ZkNWViMTk1MSIsInRhZyI6IiJ9?field=1": "pdf",
-    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImtmeGFuSUFoOGxNRURWeEduU0RqSkE9PSIsInZhbHVlIjoiYmsvM2tzVTBMTDRQVGNxbjJrY3duQT09IiwibWFjIjoiNTc2NmQyZjU4ZWRkZWMzOTMzOWIxOThhMGNjMDk5ZWY0ZWNmZWEyNDJhNjhmMzkwMDBhMjRjZGYwOGFlZmI3ZCIsInRhZyI6IiJ9?field=1": "pdf"
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6ImtmeGFuSUFoOGxNRURWeEduU0RqSkE9PSIsInZhbHVlIjoiYmsvM2tzVTBMTDRQVGNxbjJrY3duQT09IiwibWFjIjoiNTc2NmQyZjU4ZWRkZWMzOTMzOWIxOThhMGNjMDk5ZWY0ZWNmZWEyNDJhNjhmMzkwMDBhMjRjZGYwOGFlZmI3ZCIsInRhZyI6IiJ9?field=1": "pdf",
+    "https://new.lungkorea.org/common/fileDownload/only/board/eyJpdiI6IkZaeUdLYzJlbU92alk3c2RzdG9WWnc9PSIsInZhbHVlIjoiZWVRdVFFTXoyZzJ6RkNTbHdPeXZJdz09IiwibWFjIjoiNTExMzRjMjdmMmM4MWNiMzk4MjYxNTdmZDkxYzJhY2RlMzQxNTRiNWI2OTU5MTAwZmNmNzY3NjBhNTE0YmQ0NyIsInRhZyI6IiJ9?field=1": "pdf"
    }
   },
   {
@@ -4044,8 +4105,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kcr",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -4105,8 +4166,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kcr",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -4139,8 +4200,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kcr",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -4277,7 +4338,7 @@
    "date": "2019-10-30",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -4302,7 +4363,7 @@
    "date": "2025-09-16",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -4327,7 +4388,7 @@
    "date": "2021-09-02",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -4358,7 +4419,7 @@
    "date": "2025-09-09",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -4383,7 +4444,7 @@
    "date": "2016-10-13",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -4408,7 +4469,7 @@
    "date": "2019-11-08",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -4433,7 +4494,7 @@
    "date": "2019-10-30",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -4458,7 +4519,7 @@
    "date": "2023-11-30",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -4483,7 +4544,7 @@
    "date": "2017-10-13",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -4508,7 +4569,7 @@
    "date": "2019-06-21",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -4536,7 +4597,7 @@
    "date": "2018-04-10",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -4561,7 +4622,7 @@
    "date": "2016-10-12",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -4586,7 +4647,7 @@
    "date": "2021-07-05",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -4614,7 +4675,7 @@
    "date": "2023-05-26",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -4639,7 +4700,7 @@
    "date": "2019-06-19",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -4664,7 +4725,7 @@
    "date": "2019-05-15",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -4692,7 +4753,7 @@
    "date": "2021-05-07",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -4717,7 +4778,7 @@
    "date": "2023-07-25",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -4742,7 +4803,7 @@
    "date": "2016-03-23",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -4767,7 +4828,7 @@
    "date": "2017-10-13",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -4797,7 +4858,7 @@
    "date": "2025-07-09",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -4822,7 +4883,7 @@
    "date": "2019-10-22",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -4847,7 +4908,7 @@
    "date": "2023-07-27",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -4886,8 +4947,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kes",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -4915,8 +4976,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kes",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -4947,8 +5008,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kes",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -4976,8 +5037,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kes",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -5008,8 +5069,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kes",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -5040,8 +5101,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kes",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -5072,8 +5133,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kes",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -5104,8 +5165,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kes",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -5136,8 +5197,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kes",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -5168,9 +5229,41 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kes",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
+  },
+  {
+   "id": "e098415304ecee58",
+   "first_seen": "2026-11-24",
+   "access": "unknown",
+   "society": "kes",
+   "board": "https://www.e-enm.org",
+   "board_name": "Endocrinology and Metabolism",
+   "title": "2026 Consensus on the Management of Cushing's Disease: A Collaborative Statement from the Korean Endocrine Society and Japan Endocrine Society",
+   "url": "https://doi.org/10.3803/enm.2026.3284",
+   "link_resolved": true,
+   "lang": "en",
+   "tags": [
+    "합의문"
+   ],
+   "attachments": [
+    {
+     "name": "PubMed",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/43069611/",
+     "kind": "PubMed"
+    }
+   ],
+   "doi": "https://doi.org/10.3803/enm.2026.3284",
+   "pmid": "43069611",
+   "journal": true,
+   "date": "2026-11-23",
+   "date_precision": "day",
+   "date_source": "journal",
+   "journal_of": "kes",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
+   "backfill": false
   },
   {
    "id": "0bd2ff47221a47b7",
@@ -5197,8 +5290,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kges",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -5226,8 +5319,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kges",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -5255,8 +5348,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kges",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -5284,8 +5377,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kges",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -5313,8 +5406,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kges",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -5345,8 +5438,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kges",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -5374,8 +5467,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kges",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -5403,8 +5496,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kges",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -5435,8 +5528,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kges",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -5464,8 +5557,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kges",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -5493,8 +5586,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kges",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -5522,8 +5615,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kges",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -5554,8 +5647,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kges",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -5583,8 +5676,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kges",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -5612,8 +5705,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kges",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -5645,8 +5738,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kgs",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -5677,8 +5770,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kgs",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -5699,7 +5792,7 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2021",
    "date_precision": "year",
@@ -5727,7 +5820,7 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2018",
    "date_precision": "year",
@@ -5755,7 +5848,7 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2018",
    "date_precision": "year",
@@ -5780,7 +5873,7 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2024",
    "date_precision": "year",
@@ -5805,7 +5898,7 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2022",
    "date_precision": "year",
@@ -5830,7 +5923,7 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2018",
    "date_precision": "year",
@@ -5855,7 +5948,7 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2018",
    "date_precision": "year",
@@ -5883,7 +5976,7 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2018",
    "date_precision": "year",
@@ -5911,7 +6004,7 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2018",
    "date_precision": "year",
@@ -5939,7 +6032,7 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2018",
    "date_precision": "year",
@@ -5967,7 +6060,7 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2018",
    "date_precision": "year",
@@ -5992,7 +6085,7 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2024",
    "date_precision": "year",
@@ -6017,7 +6110,7 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2024",
    "date_precision": "year",
@@ -6045,8 +6138,8 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "date": "2024",
    "date_precision": "year",
    "date_source": "title",
@@ -6096,8 +6189,8 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "date": "2026",
    "date_precision": "year",
    "date_source": "title",
@@ -6132,8 +6225,8 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "date": "2016",
    "date_precision": "year",
    "date_source": "title",
@@ -6161,8 +6254,8 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "date": "2023",
    "date_precision": "year",
    "date_source": "title",
@@ -6190,8 +6283,8 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "date": "2026",
    "date_precision": "year",
    "date_source": "title",
@@ -6219,8 +6312,8 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "date": "2025",
    "date_precision": "year",
    "date_source": "title",
@@ -6245,8 +6338,8 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "date": "2022",
    "date_precision": "year",
    "date_source": "title",
@@ -6278,8 +6371,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kosar",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -6328,9 +6421,9 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
-   "checked": "2026-11-23",
+   "checked": "2026-11-24",
    "date": "2021",
    "date_precision": "year",
    "date_source": "title",
@@ -6354,9 +6447,9 @@
      "kind": "zip"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
-   "checked": "2026-11-23",
+   "checked": "2026-11-24",
    "date": "2017",
    "date_precision": "year",
    "date_source": "title",
@@ -6380,9 +6473,9 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
-   "checked": "2026-11-23",
+   "checked": "2026-11-24",
    "date": "2023",
    "date_precision": "year",
    "date_source": "title",
@@ -6406,9 +6499,9 @@
      "kind": "zip"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
-   "checked": "2026-11-23",
+   "checked": "2026-11-24",
    "date": "2022",
    "date_precision": "year",
    "date_source": "title",
@@ -6432,9 +6525,9 @@
      "kind": "zip"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
-   "checked": "2026-11-23",
+   "checked": "2026-11-24",
    "date": "2014",
    "date_precision": "year",
    "date_source": "title",
@@ -6462,7 +6555,7 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-15",
    "date": "2020",
@@ -6487,9 +6580,9 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
-   "checked": "2026-11-23",
+   "checked": "2026-11-24",
    "date": "2022",
    "date_precision": "year",
    "date_source": "title",
@@ -6523,8 +6616,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kps",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -6555,8 +6648,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kps",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -6584,8 +6677,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kps",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -6616,8 +6709,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kps",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -6648,8 +6741,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kps",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -6680,8 +6773,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kps",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -6712,8 +6805,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksbmr",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -6744,8 +6837,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksbmr",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -6776,8 +6869,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksbmr",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -6808,8 +6901,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksbmr",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -6840,8 +6933,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksbmr",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -6872,8 +6965,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksbmr",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -6904,8 +6997,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksbmr",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -6936,8 +7029,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksbmr",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -6968,8 +7061,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksbmr",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -7000,8 +7093,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksbmr",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -7032,8 +7125,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksbmr",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -7064,8 +7157,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksbmr",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -7096,8 +7189,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksbmr",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -7125,8 +7218,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksbmr",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -7143,7 +7236,7 @@
    "date": "2022-11-11",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -7171,7 +7264,7 @@
    "date": "2025-08-18",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -7202,7 +7295,7 @@
    "date": "2024-10-30",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -7230,7 +7323,7 @@
    "date": "2021-07-13",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -7261,7 +7354,7 @@
    "date": "2021-10-19",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -7289,7 +7382,7 @@
    "date": "2024-10-30",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -7317,7 +7410,7 @@
    "date": "2022-07-22",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -7345,7 +7438,7 @@
    "date": "2020-05-18",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-16",
    "detail_v": 2,
@@ -7378,7 +7471,7 @@
    "date": "2021-06-16",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-16",
    "detail_v": 2,
@@ -7408,7 +7501,7 @@
    "date": "2019-06-25",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-16",
    "detail_v": 2,
@@ -7441,7 +7534,7 @@
    "date": "2020-10-22",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-16",
    "detail_v": 2,
@@ -7471,7 +7564,7 @@
    "date": "2020-11-27",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-16",
    "detail_v": 2,
@@ -7504,7 +7597,7 @@
    "date": "2020-11-16",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-16",
    "detail_v": 2,
@@ -7534,7 +7627,7 @@
    "date": "2019-06-19",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-16",
    "detail_v": 2,
@@ -7564,7 +7657,7 @@
    "date": "2020-03-16",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-16",
    "detail_v": 2,
@@ -7594,7 +7687,7 @@
    "date": "2019-06-12",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-16",
    "detail_v": 2,
@@ -7630,7 +7723,7 @@
    "date": "2019-06-25",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-16",
    "detail_v": 2,
@@ -7660,7 +7753,7 @@
    "date": "2019-06-25",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-16",
    "detail_v": 2,
@@ -7693,7 +7786,7 @@
    "date": "2016-06-15",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-16",
    "detail_v": 2,
@@ -7731,7 +7824,7 @@
    "date": "2021-06-01",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-16",
    "detail_v": 2,
@@ -7761,7 +7854,7 @@
    "date": "2014-12-11",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-16",
    "detail_v": 2,
@@ -7796,7 +7889,7 @@
    "date": "2019-06-12",
    "date_precision": "day",
    "date_source": "detail",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "backfill": true,
    "checked": "2026-11-16",
    "detail_v": 2,
@@ -7830,8 +7923,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksog",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -7859,8 +7952,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksog",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -7888,8 +7981,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksog",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -7920,8 +8013,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kosar",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -7952,8 +8045,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kosar",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -7981,8 +8074,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kosar",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -8013,8 +8106,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kosar",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -8071,7 +8164,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2024-09-23",
    "date_precision": "day",
@@ -8100,7 +8193,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2024-09-23",
    "date_precision": "day",
@@ -8324,7 +8417,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-16",
    "date": "2024-04-05",
    "date_precision": "day",
@@ -8356,7 +8449,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-16",
    "date": "2024-04-05",
    "date_precision": "day",
@@ -8413,7 +8506,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-16",
    "date": "2024-04-05",
    "date_precision": "day",
@@ -8442,7 +8535,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2025-01-21",
    "date_precision": "day",
@@ -8501,7 +8594,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-16",
    "date": "2024-04-05",
    "date_precision": "day",
@@ -8530,7 +8623,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2024-09-23",
    "date_precision": "day",
@@ -8589,7 +8682,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2024-10-16",
    "date_precision": "day",
@@ -8645,7 +8738,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2025-04-16",
    "date_precision": "day",
@@ -8735,7 +8828,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-16",
    "date": "2024-04-05",
    "date_precision": "day",
@@ -8772,7 +8865,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2026-10-27",
    "date_precision": "day",
@@ -8829,7 +8922,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2025-04-16",
    "date_precision": "day",
@@ -8885,7 +8978,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2026-10-27",
    "date_precision": "day",
@@ -8972,7 +9065,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-16",
    "date": "2024-04-05",
    "date_precision": "day",
@@ -9004,7 +9097,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-16",
    "date": "2024-04-05",
    "date_precision": "day",
@@ -9033,7 +9126,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2026-10-27",
    "date_precision": "day",
@@ -9054,7 +9147,7 @@
    "url": "https://gastrokorea.org/bbs2/index.php?code=guide3&category=&gubun=&page=1&number=2189&mode=view&keyfield=&key=",
    "link_resolved": true,
    "lang": "ko",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2024-09-23",
    "date_precision": "day",
@@ -9110,7 +9203,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-16",
    "date": "2024-04-05",
    "date_precision": "day",
@@ -9142,7 +9235,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2025-12-12",
    "date_precision": "day",
@@ -9198,7 +9291,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2024-09-23",
    "date_precision": "day",
@@ -9254,7 +9347,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-16",
    "date": "2024-04-05",
    "date_precision": "day",
@@ -9345,7 +9438,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-16",
    "date": "2024-04-05",
    "date_precision": "day",
@@ -9458,7 +9551,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2026-10-27",
    "date_precision": "day",
@@ -9486,7 +9579,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2026-10-27",
    "date_precision": "day",
@@ -9517,7 +9610,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-16",
    "date": "2024-04-05",
    "date_precision": "day",
@@ -9581,8 +9674,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksgo",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -9613,8 +9706,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksgo",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -9645,8 +9738,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksgo",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -9674,8 +9767,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksgo",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -9706,8 +9799,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksgo",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -9739,8 +9832,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksgo",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -9771,8 +9864,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksgo",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -9803,8 +9896,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksgo",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -9835,8 +9928,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksgo",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -9864,8 +9957,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksgo",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -9893,8 +9986,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksgo",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -9925,8 +10018,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksgo",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -9954,8 +10047,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksgo",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -9986,8 +10079,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksgo",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -10018,8 +10111,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksog",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -10050,8 +10143,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksgo",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -10082,8 +10175,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksgo",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -10111,8 +10204,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksgo",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -10143,8 +10236,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksog",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -10175,8 +10268,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksgo",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -10207,8 +10300,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksgo",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -10225,7 +10318,7 @@
    "date": "2026-05-22",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "backfill": true
   },
@@ -10243,7 +10336,7 @@
    "date": "2022-11-05",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "backfill": true
   },
@@ -10261,7 +10354,7 @@
    "date": "2023-11-03",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "backfill": true
   },
@@ -10279,7 +10372,7 @@
    "date": "2026-05-22",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "backfill": true
   },
@@ -10297,7 +10390,7 @@
    "date": "2025-11-06",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "backfill": true
   },
@@ -10315,7 +10408,7 @@
    "date": "2023-01-19",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "backfill": true
   },
@@ -10333,7 +10426,7 @@
    "date": "2026-05-08",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "backfill": true
   },
@@ -10351,7 +10444,7 @@
    "date": "2026-11-05",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "backfill": true
   },
@@ -10369,7 +10462,7 @@
    "date": "2024-11-08",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "backfill": true
   },
@@ -10390,7 +10483,7 @@
    "date": "2026-11-05",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "backfill": true
   },
@@ -10419,8 +10512,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksh-hema",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -10451,8 +10544,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksh-hema",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -10483,8 +10576,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksh-hema",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -10515,8 +10608,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksh-hema",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -10548,8 +10641,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksh-hema",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -10581,8 +10674,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksh-hema",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -10610,8 +10703,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksh-hema",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -10642,8 +10735,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kshf",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -10671,8 +10764,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kshf",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -10703,8 +10796,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kshf",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -10732,8 +10825,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kshf",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -10764,8 +10857,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kshf",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -10793,8 +10886,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kshf",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -10822,8 +10915,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kshf",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -10851,8 +10944,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kshf",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -12345,8 +12438,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksmenop",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -12374,8 +12467,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksmenop",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -12403,8 +12496,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksmenop",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -12432,8 +12525,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksmenop",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -12484,7 +12577,7 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "backfill": true,
    "file_checked": "2026-11-15",
@@ -12647,7 +12740,7 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2023",
    "date_precision": "year",
@@ -12837,7 +12930,7 @@
      "kind": "pdf"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2024",
    "date_precision": "year",
@@ -12865,7 +12958,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2026-01",
    "date_precision": "month",
@@ -12893,7 +12986,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2025-11",
    "date_precision": "month",
@@ -12924,7 +13017,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2025-12",
    "date_precision": "month",
@@ -12952,7 +13045,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2026-04",
    "date_precision": "month",
@@ -12983,7 +13076,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2025-06",
    "date_precision": "month",
@@ -13073,7 +13166,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2025-10",
    "date_precision": "month",
@@ -13132,7 +13225,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2025-07",
    "date_precision": "month",
@@ -13160,7 +13253,7 @@
      "kind": "file"
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "date": "2024-12",
    "date_precision": "month",
@@ -13226,8 +13319,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksnm",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -13258,8 +13351,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksnm",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -13290,8 +13383,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksnm",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -13322,8 +13415,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksnm",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -13354,8 +13447,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksnm",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -13388,8 +13481,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksnm",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -13417,8 +13510,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksnm",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -13449,8 +13542,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksnm",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -13481,8 +13574,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksnm",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -13510,8 +13603,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksnm",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -13542,8 +13635,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksog",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -13574,8 +13667,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "ksog",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -13595,7 +13688,7 @@
    "date": "2018-07-27",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -13625,7 +13718,7 @@
    "date": "2026-09-10",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -13653,7 +13746,7 @@
    "date": "2026-09-10",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -13714,7 +13807,7 @@
    "date": "2018-04-25",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -13747,7 +13840,7 @@
    "date": "2022-09-15",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -13810,7 +13903,7 @@
    "date": "2024-01-08",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -13891,7 +13984,7 @@
    "date": "2022-09-15",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -13924,7 +14017,7 @@
    "date": "2016-04-04",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -14027,7 +14120,7 @@
    "date": "2026-09-10",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -14085,7 +14178,7 @@
    "date": "2016-04-04",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -14110,7 +14203,7 @@
    "date": "2018-11-21",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -14168,7 +14261,7 @@
    "date": "2022-11-18",
    "date_precision": "day",
    "date_source": "list",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "checked": "2026-11-15",
    "attachments": [
     {
@@ -14204,8 +14297,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kps",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -14233,8 +14326,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kspe",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -14262,8 +14355,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kspe",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -14291,8 +14384,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kspe",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -14320,8 +14413,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kspe",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -14352,8 +14445,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kps",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -14384,8 +14477,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kspghan",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -14556,8 +14649,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kes",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -15102,8 +15195,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kes",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -15134,8 +15227,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kes",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -15166,8 +15259,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kes",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -15195,8 +15288,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kes",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -15224,8 +15317,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kes",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   },
   {
@@ -15253,8 +15346,8 @@
    "date_precision": "day",
    "date_source": "journal",
    "journal_of": "kes",
-   "last_seen": "2026-11-23",
-   "checked": "2026-11-23",
+   "last_seen": "2026-11-24",
+   "checked": "2026-11-24",
    "backfill": true
   }
  ]

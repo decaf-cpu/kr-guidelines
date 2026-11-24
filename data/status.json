@@ -21,7 +21,7 @@
   },
   "kges": {
    "id": "kges",
-   "run_at": "2026-11-23T08:37:02+09:00",
+   "run_at": "2026-11-24T12:57:39+09:00",
    "boards": [
     {
      "url": "https://www.e-ce.org",
@@ -39,11 +39,11 @@
    "error": null,
    "ok": true,
    "journal_only": true,
-   "last_ok": "2026-11-23T08:37:02+09:00"
+   "last_ok": "2026-11-24T12:57:39+09:00"
   },
   "kasl": {
    "id": "kasl",
-   "run_at": "2026-11-23T08:37:02+09:00",
+   "run_at": "2026-11-24T12:57:39+09:00",
    "boards": [
     {
      "url": "https://www.kasl.org/bbs/?code=guide",
@@ -52,20 +52,20 @@
      "pages": 2,
      "rows": 20,
      "matched": 20,
-     "new": 0,
+     "new": 1,
      "members_only": 0,
      "error": null
     }
    ],
    "error": null,
    "file_dates": 0,
-   "file_kinds": 0,
+   "file_kinds": 1,
    "ok": true,
-   "last_ok": "2026-11-23T08:37:02+09:00"
+   "last_ok": "2026-11-24T12:57:39+09:00"
   },
   "kasid": {
    "id": "kasid",
-   "run_at": "2026-11-23T08:37:02+09:00",
+   "run_at": "2026-11-24T12:57:39+09:00",
    "boards": [
     {
      "url": "https://www.kasid.org/academic/education/guide/01",
@@ -83,7 +83,7 @@
    "file_dates": 0,
    "file_kinds": 0,
    "ok": true,
-   "last_ok": "2026-11-23T08:37:02+09:00"
+   "last_ok": "2026-11-24T12:57:39+09:00"
   },
   "kchugr": {
    "id": "kchugr",
@@ -107,7 +107,7 @@
   },
   "ksnm": {
    "id": "ksnm",
-   "run_at": "2026-11-23T08:37:02+09:00",
+   "run_at": "2026-11-24T12:57:39+09:00",
    "boards": [
     {
      "url": "https://www.jnmjournal.org",
@@ -125,11 +125,11 @@
    "error": null,
    "ok": true,
    "journal_only": true,
-   "last_ok": "2026-11-23T08:37:02+09:00"
+   "last_ok": "2026-11-24T12:57:39+09:00"
   },
   "ksc": {
    "id": "ksc",
-   "run_at": "2026-11-23T08:37:05+09:00",
+   "run_at": "2026-11-24T12:57:42+09:00",
    "boards": [
     {
      "url": "https://www.circulation.or.kr/bbs/index.php?code=guide&category=X",
@@ -147,11 +147,11 @@
    "file_dates": 0,
    "file_kinds": 0,
    "ok": true,
-   "last_ok": "2026-11-23T08:37:05+09:00"
+   "last_ok": "2026-11-24T12:57:42+09:00"
   },
   "kshf": {
    "id": "kshf",
-   "run_at": "2026-11-23T08:37:08+09:00",
+   "run_at": "2026-11-24T12:57:44+09:00",
    "boards": [
     {
      "url": "https://www.e-heartfailure.org",
@@ -169,11 +169,11 @@
    "error": null,
    "ok": true,
    "journal_only": true,
-   "last_ok": "2026-11-23T08:37:08+09:00"
+   "last_ok": "2026-11-24T12:57:44+09:00"
   },
   "klcs": {
    "id": "klcs",
-   "run_at": "2026-11-23T08:37:02+09:00",
+   "run_at": "2026-11-24T12:57:39+09:00",
    "boards": [
     {
      "url": "https://www.livercancer.or.kr/html/?pmode=guidelines",
@@ -191,11 +191,11 @@
    "file_dates": 0,
    "file_kinds": 0,
    "ok": true,
-   "last_ok": "2026-11-23T08:37:02+09:00"
+   "last_ok": "2026-11-24T12:57:39+09:00"
   },
   "khrs": {
    "id": "khrs",
-   "run_at": "2026-11-23T08:37:08+09:00",
+   "run_at": "2026-11-24T12:57:47+09:00",
    "boards": [
     {
      "url": "https://www.k-hrs.org/expert/guide/atrial",
@@ -218,7 +218,7 @@
    "file_dates": 0,
    "file_kinds": 0,
    "ok": true,
-   "last_ok": "2026-11-23T08:37:08+09:00"
+   "last_ok": "2026-11-24T12:57:47+09:00"
   },
   "kscvi": {
    "id": "kscvi",
@@ -234,16 +234,16 @@
   },
   "kes": {
    "id": "kes",
-   "run_at": "2026-11-23T08:37:11+09:00",
+   "run_at": "2026-11-24T12:57:49+09:00",
    "boards": [
     {
      "url": "https://www.e-enm.org",
      "name": "Endocrinology and Metabolism",
      "source": "journal",
      "pages": 1,
-     "rows": 38,
-     "matched": 17,
-     "new": 0,
+     "rows": 39,
+     "matched": 18,
+     "new": 1,
      "members_only": 0,
      "error": null,
      "routed": {
@@ -255,11 +255,11 @@
    "error": null,
    "ok": true,
    "journal_only": true,
-   "last_ok": "2026-11-23T08:37:11+09:00"
+   "last_ok": "2026-11-24T12:57:49+09:00"
   },
   "ksola": {
    "id": "ksola",
-   "run_at": "2026-11-23T08:37:10+09:00",
+   "run_at": "2026-11-24T12:57:48+09:00",
    "boards": [
     {
      "url": "https://www.lipid.or.kr/reference/guideline.php",
@@ -277,11 +277,11 @@
    "file_dates": 0,
    "file_kinds": 0,
    "ok": true,
-   "last_ok": "2026-11-23T08:37:10+09:00"
+   "last_ok": "2026-11-24T12:57:48+09:00"
   },
   "kta": {
    "id": "kta",
-   "run_at": "2026-11-23T08:37:13+09:00",
+   "run_at": "2026-11-24T12:57:51+09:00",
    "boards": [
     {
      "url": "https://www.thyroid.kr/board/list.html?code=c_guide",
@@ -303,7 +303,7 @@
   },
   "kda": {
    "id": "kda",
-   "run_at": "2026-11-23T08:37:11+09:00",
+   "run_at": "2026-11-24T12:57:49+09:00",
    "boards": [
     {
      "url": "https://www.diabetes.or.kr/bbs/?code=guide",
@@ -376,11 +376,11 @@
    "file_dates": 0,
    "file_kinds": 0,
    "ok": true,
-   "last_ok": "2026-11-23T08:37:11+09:00"
+   "last_ok": "2026-11-24T12:57:49+09:00"
   },
   "ksbmr": {
    "id": "ksbmr",
-   "run_at": "2026-11-23T08:37:13+09:00",
+   "run_at": "2026-11-24T12:57:56+09:00",
    "boards": [
     {
      "url": "https://e-jbm.org",
@@ -398,11 +398,11 @@
    "error": null,
    "ok": true,
    "journal_only": true,
-   "last_ok": "2026-11-23T08:37:13+09:00"
+   "last_ok": "2026-11-24T12:57:56+09:00"
   },
   "ksso": {
    "id": "ksso",
-   "run_at": "2026-11-23T08:37:21+09:00",
+   "run_at": "2026-11-24T12:58:03+09:00",
    "boards": [
     {
      "url": "https://www.kosso.or.kr/popup/obesity_cpg.html",
@@ -424,7 +424,7 @@
   },
   "ksn": {
    "id": "ksn",
-   "run_at": "2026-11-23T08:37:33+09:00",
+   "run_at": "2026-11-24T12:58:04+09:00",
    "boards": [
     {
      "url": "https://ksn.or.kr/bbs/?code=guideline_k",
@@ -442,11 +442,11 @@
    "file_dates": 0,
    "file_kinds": 0,
    "ok": true,
-   "last_ok": "2026-11-23T08:37:33+09:00"
+   "last_ok": "2026-11-24T12:58:04+09:00"
   },
   "kattd": {
    "id": "kattd",
-   "run_at": "2026-11-23T08:37:37+09:00",
+   "run_at": "2026-11-24T12:58:08+09:00",
    "boards": [
     {
      "url": "https://new.lungkorea.org/board/guide",
@@ -464,11 +464,11 @@
    "file_dates": 0,
    "file_kinds": 18,
    "ok": true,
-   "last_ok": "2026-11-23T08:37:37+09:00"
+   "last_ok": "2026-11-24T12:58:08+09:00"
   },
   "ksh": {
    "id": "ksh",
-   "run_at": "2026-11-23T08:37:08+09:00",
+   "run_at": "2026-11-24T12:57:44+09:00",
    "boards": [
     {
      "url": "https://www.koreanhypertension.org/reference/guide",
@@ -491,11 +491,11 @@
    "file_dates": 0,
    "file_kinds": 0,
    "ok": true,
-   "last_ok": "2026-11-23T08:37:08+09:00"
+   "last_ok": "2026-11-24T12:57:44+09:00"
   },
   "ksid": {
    "id": "ksid",
-   "run_at": "2026-11-23T08:37:45+09:00",
+   "run_at": "2026-11-24T12:58:24+09:00",
    "boards": [
     {
      "url": "https://www.ksid.or.kr/rang_board/list.html?code=ncov_guide_do",
@@ -517,7 +517,7 @@
   },
   "kcr": {
    "id": "kcr",
-   "run_at": "2026-11-23T08:37:54+09:00",
+   "run_at": "2026-11-24T12:58:31+09:00",
    "boards": [
     {
      "url": "https://www.jrd.or.kr",
@@ -535,7 +535,7 @@
    "error": null,
    "ok": true,
    "journal_only": true,
-   "last_ok": "2026-11-23T08:37:54+09:00"
+   "last_ok": "2026-11-24T12:58:31+09:00"
   },
   "ksat": {
    "id": "ksat",
@@ -558,7 +558,7 @@
   },
   "ksh-hema": {
    "id": "ksh-hema",
-   "run_at": "2026-11-23T08:37:57+09:00",
+   "run_at": "2026-11-24T12:58:34+09:00",
    "boards": [
     {
      "url": "https://www.bloodresearch.or.kr",
@@ -576,11 +576,11 @@
    "error": null,
    "ok": true,
    "journal_only": true,
-   "last_ok": "2026-11-23T08:37:57+09:00"
+   "last_ok": "2026-11-24T12:58:34+09:00"
   },
   "kgs": {
    "id": "kgs",
-   "run_at": "2026-11-23T08:38:05+09:00",
+   "run_at": "2026-11-24T12:58:37+09:00",
    "boards": [
     {
      "url": "https://www.e-agmr.org",
@@ -598,11 +598,11 @@
    "error": null,
    "ok": true,
    "journal_only": true,
-   "last_ok": "2026-11-23T08:38:05+09:00"
+   "last_ok": "2026-11-24T12:58:37+09:00"
   },
   "ksmo": {
    "id": "ksmo",
-   "run_at": "2026-11-23T08:38:03+09:00",
+   "run_at": "2026-11-24T12:58:35+09:00",
    "boards": [
     {
      "url": "https://www.ksmo.or.kr/Pages/Publication/publication03.aspx",
@@ -620,11 +620,11 @@
    "file_dates": 0,
    "file_kinds": 0,
    "ok": true,
-   "last_ok": "2026-11-23T08:38:03+09:00"
+   "last_ok": "2026-11-24T12:58:35+09:00"
   },
   "kpba": {
    "id": "kpba",
-   "run_at": "2026-11-23T08:37:05+09:00",
+   "run_at": "2026-11-24T12:57:41+09:00",
    "boards": [
     {
      "url": "https://www.kpba.kr/html/?pmode=guideline",
@@ -647,11 +647,11 @@
    "file_dates": 0,
    "file_kinds": 0,
    "ok": true,
-   "last_ok": "2026-11-23T08:37:05+09:00"
+   "last_ok": "2026-11-24T12:57:41+09:00"
   },
   "ksg": {
    "id": "ksg",
-   "run_at": "2026-11-23T08:37:02+09:00",
+   "run_at": "2026-11-24T12:57:39+09:00",
    "boards": [
     {
      "url": "https://gastrokorea.org/bbs2/index.php?code=guide2",
@@ -680,11 +680,11 @@
    "file_dates": 0,
    "file_kinds": 0,
    "ok": true,
-   "last_ok": "2026-11-23T08:37:02+09:00"
+   "last_ok": "2026-11-24T12:57:39+09:00"
   },
   "kaaaci": {
    "id": "kaaaci",
-   "run_at": "2026-11-23T08:37:43+09:00",
+   "run_at": "2026-11-24T12:58:10+09:00",
    "boards": [
     {
      "url": "https://www.allergy.or.kr/board/treatment?gubun=1",
@@ -718,7 +718,7 @@
    "file_dates": 0,
    "file_kinds": 11,
    "ok": true,
-   "last_ok": "2026-11-23T08:37:43+09:00"
+   "last_ok": "2026-11-24T12:58:10+09:00"
   },
   "ksneo": {
    "id": "ksneo",
@@ -748,7 +748,7 @@
   },
   "kspghan": {
    "id": "kspghan",
-   "run_at": "2026-11-23T08:38:11+09:00",
+   "run_at": "2026-11-24T12:58:44+09:00",
    "boards": [
     {
      "url": "https://www.pghn.org",
@@ -766,11 +766,11 @@
    "error": null,
    "ok": true,
    "journal_only": true,
-   "last_ok": "2026-11-23T08:38:11+09:00"
+   "last_ok": "2026-11-24T12:58:44+09:00"
   },
   "kps": {
    "id": "kps",
-   "run_at": "2026-11-23T08:38:06+09:00",
+   "run_at": "2026-11-24T12:58:39+09:00",
    "boards": [
     {
      "url": "https://www.e-cep.org",
@@ -791,7 +791,7 @@
    "error": null,
    "ok": true,
    "journal_only": true,
-   "last_ok": "2026-11-23T08:38:06+09:00"
+   "last_ok": "2026-11-24T12:58:39+09:00"
   },
   "kspho": {
    "id": "kspho",
@@ -833,7 +833,7 @@
   },
   "kapard": {
    "id": "kapard",
-   "run_at": "2026-11-23T08:38:08+09:00",
+   "run_at": "2026-11-24T12:58:41+09:00",
    "boards": [
     {
      "url": "https://www.kapard.or.kr/community/guide.php",
@@ -851,7 +851,7 @@
    "file_dates": 0,
    "file_kinds": 0,
    "ok": true,
-   "last_ok": "2026-11-23T08:38:08+09:00"
+   "last_ok": "2026-11-24T12:58:41+09:00"
   },
   "kspc": {
    "id": "kspc",
@@ -868,7 +868,7 @@
   },
   "kspe": {
    "id": "kspe",
-   "run_at": "2026-11-23T08:38:13+09:00",
+   "run_at": "2026-11-24T12:58:50+09:00",
    "boards": [
     {
      "url": "https://www.e-apem.org",
@@ -886,7 +886,7 @@
    "error": null,
    "ok": true,
    "journal_only": true,
-   "last_ok": "2026-11-23T08:38:13+09:00"
+   "last_ok": "2026-11-24T12:58:50+09:00"
   },
   "kcns": {
    "id": "kcns",
@@ -958,7 +958,7 @@
   },
   "ksgo": {
    "id": "ksgo",
-   "run_at": "2026-11-23T08:38:32+09:00",
+   "run_at": "2026-11-24T12:59:12+09:00",
    "boards": [
     {
      "url": "https://www.ejgo.org",
@@ -976,7 +976,7 @@
    "error": null,
    "ok": true,
    "journal_only": true,
-   "last_ok": "2026-11-23T08:38:32+09:00"
+   "last_ok": "2026-11-24T12:59:12+09:00"
   },
   "kugs": {
    "id": "kugs",
@@ -1044,7 +1044,7 @@
   },
   "ksmenop": {
    "id": "ksmenop",
-   "run_at": "2026-11-23T08:38:44+09:00",
+   "run_at": "2026-11-24T12:59:26+09:00",
    "boards": [
     {
      "url": "https://www.e-jmm.org",
@@ -1062,11 +1062,11 @@
    "error": null,
    "ok": true,
    "journal_only": true,
-   "last_ok": "2026-11-23T08:38:44+09:00"
+   "last_ok": "2026-11-24T12:59:26+09:00"
   },
   "ksog": {
    "id": "ksog",
-   "run_at": "2026-11-23T08:38:18+09:00",
+   "run_at": "2026-11-24T12:58:56+09:00",
    "boards": [
     {
      "url": "https://www.ogscience.org",
@@ -1088,7 +1088,7 @@
    "error": null,
    "ok": true,
    "journal_only": true,
-   "last_ok": "2026-11-23T08:38:18+09:00"
+   "last_ok": "2026-11-24T12:58:56+09:00"
   },
   "kspm": {
    "id": "kspm",
@@ -1118,7 +1118,7 @@
   },
   "kosar": {
    "id": "kosar",
-   "run_at": "2026-11-23T08:38:23+09:00",
+   "run_at": "2026-11-24T12:59:05+09:00",
    "boards": [
     {
      "url": "https://www.eCERM.org",
@@ -1138,9 +1138,9 @@
    "error": null,
    "ok": true,
    "journal_only": true,
-   "last_ok": "2026-11-23T08:38:23+09:00"
+   "last_ok": "2026-11-24T12:59:05+09:00"
   }
  },
- "updated": "2026-11-23T08:39:49+09:00",
- "requests": 97
+ "updated": "2026-11-24T13:00:23+09:00",
+ "requests": 100
 }
